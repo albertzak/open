@@ -55,7 +55,53 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 |  🧼  | shower thoughts / own ideas (they get better from bottom to top) |
 | **bold** | this is the good stuff (i think) |
 
+
+
+
 ---
+
+common lisp like condition system in clojure
+
+https://github.com/clojureman/special + related works
+
+https://github.com/bwo/conditions
+
+
+---
+
+
+Quokka/Wallaby
+
+Our plans for 2024
+
+As we step into 2024, our focus remains steadfast on enhancing the ergonomics and user experience of our development tools. Over the years, we've witnessed significant advancements in the UI capabilities of various editors, particularly in VS Code. Recognizing these developments, our goal for 2024 is to elevate how we present and display information beyond code coverage indicators, inline values/errors, and Code Lens. Beginning with Wallaby for VS Code, we're looking to rework/improve the following areas:
+
+- Test Execution Progress
+- Wallaby/Quokka Consoles
+- Test Results
+- Runtime Values
+- Logs & Errors
+- Test/Code Stories
+- Value Explorer
+- Output Inspector
+- Time Travel Debugger
+- We envision transforming the output window from its current form, which often involves navigating multiple panes and simplistic text views, into a rich, interactive experience. This will provide context-sensitive information, tailored to the specific file and line of code that you're working on. The new UX will not only offer helpful suggestions but also a more intuitive and efficient way to interact with our tools.
+
+
+
+---
+
+https://news.ycombinator.com/item?id=13455811
+
+2. Folks in the CS and programming world seem to ignore bleeding edge work being done in the arts space. To get a broader view of languages than "characters that go into a plain text file", expose yourself to the live-ness of the following -
+
+2.a Max/MSP/Jitter - by David Zicrelli and Millet Pickette's - Visual data flow programming language with decades of dominance in the Computer Music scene.
+
+2.b SuperCollider - for architecture lessons as well as another multi-paradigm language.
+
+2.c Impromptu - a Scheme based live coding environment for music and visuals by Andrew Sorenson. Normal REPLs will bow in front of most "live coding" languages used for music.
+
+2.d Ixilang by Thor Magnusson - another live coding language, where the language is in a sense inseparable from its run time environment. The current running behaviour of a textual program could also depend on how the program evolved.
 
 
 
