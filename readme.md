@@ -59,6 +59,35 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 
 
+leo noel
+
+missionary
+
+discrete time: streams = succession of similar events, requires backpressure (all evts need to be processed in order)  (mouse clicks, log entries, db transactions) - only exists at time of event
+continous time: signal = the state of an entity, requires lazy sampling (mouse position, clock time, db state (why?) spreadsheet cells (why? - they are always defined, can take an immutable snapshot at a point in time, can also watch them. derived computations are also continuous signals)
+
+- it's about backpressure vs lazy sampling.
+  - in CT you get lazy sampling,
+  - in DT you get backpressure.
+
+```
+(what?) (one) (many)
+data: values | sequences
+effects: task | flow
+```
+
+  - tasks are effects that produce one value
+  - flows are effects that produce multiple values
+
+
+
+- functional effect and streaming system
+  - you can use CT and DT with both effects (dual and complementary)
+  - many effect systems are either CT or DT, but you'd want both since some effects are inherently discrete or continuous and they have different requirements
+  - language extension, alternative to monads
+
+
+
 ---
 
 
