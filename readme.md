@@ -58,7 +58,44 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
+### April 2023
 
+🧼 IDEA: Plain text UI for EAV forms, inspired by imp
+
+```
+; create/upsert entity by id
+#"entityid"34a12fd893e4da1"
+:person/first-name "Joe"
+:person/last-name "Erl"
+
+; update existing entity by query
+[:= :person/last-name "Patsch"]
+:access/banned true
+
+; create entity with new random id
+; editor would need to fill new id
+```
+
+
+
+🧼 IDEA: unison + clojure - bloat = nij
+
+- lisp, clojure data literals,
+- same namespaces: no mutable globals
+- transactional reified changes to the whole codebase
+
+
+---
+
+
+mech lang by cmontella from eve
+
+https://www.hytradboi.com/2022/i-tried-rubbing-a-database-on-a-robot
+
+<33333
+
+
+---
 
 https://github.com/davidbullado/blog/blob/main/we-need-a-new-versioning-notation.md
 
