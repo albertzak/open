@@ -55,8 +55,69 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 🧼 shower thoughts
 
 
+---
 
 
+
+
+---
+
+🧼
+
+maybe i can implement:
+ - based on js/cljs:
+ - hash fns, distribute to nodes via eav db
+   - (or is a merkle tree sync better=more efficient, nah stay simple and just replicate all)
+ - pure interpreter that exposes a few obj capabilities
+
+
+open Qs:
+  - what is even code that always runs?
+  - how to reprensent changes to the codebase, especially with regards to captured bindings in scope of lexical closures?
+  - can we do without closures if we represent all logic as relations that make their dependencies explicit?
+
+btw IF we had a generic change algo, we could represent all state as "code" (data structures) - state incl. deployment, "processes" nodes etc
+
+would need custom editor + source control
+
+
+---
+
+
+dark: **"using live traffic as an assistant as you're writing code"**
+
+hn pbiggar: **Dark has "live values" which is where at any point in your program, we show you the actual value for the expression you're on. We use "traces" for this, which means the input (usually a HTTP request) as well as saved results of every expressions.**
+we need a language where we can mark which functions are pure, where we can instrument the runtime, and where we can play the runtime back in our editor, filling in the saved trace values.
+Similarly, we want your program to deploy instantly. That means that we need a technical way to deploy in 50ms (not sure that's available in python), but we also need language features that support that (such as **feature flags built in, and the ability to safely make changes to programs**). Otherwise, you'd find it's super easy to break your program with a typo.
+
+  - very small compilation units: you're editing a single function at a time, and so nothing else needs to be parsed.
+  - no parser: The editor directly updates the AST, so you don't have to read the whole file (there isn't a "file" concept). Even in JS, that means an update takes a few milliseconds at the most.
+  - extremely incremental compilation: making a change in the editor only changes the exact AST construct that's changing.
+
+This is really about compilation. One thing you can do, which is what we do, is have an interpreter. Now, interpreters are slow, but we simply have a different goal with the language, which is to run HTTP requests quickly. We do run into problems with the limit of the interpreter, but we plan to add a compiler later to deal with this.
+
+"We built a structural editor for an OCaml-like language (Darklang). Our first version was very AST-based, with all movement using the AST. The feedback we got was that AST-based editing is hard to grok and that you need line-based editing too. So we re-implemented and now we have both (although we broke and are re-adding a bunch of the editor refactorings)."
+
+
+re hn herebebeasties: "Your vision is extremely compelling and well articulated.
+I'm not sure I buy the "coalescing multiple things into one makes things simpler" argument - the simplicity comes at the expense of expressiveness, flexibility and optionality. **A large, highly-opinionated monolith, right the way across the stack, is bound to have made some design trade-offs and decisions that are either plain wrong (we all make mistakes) or don't fit with however I want to actually use it.**
+To do this at the AST graph/language level strikes me as both genius and absurd - not only is language design very hard, but you clearly have a massive uphill struggle to provide sufficient library and framework-level code on top of that to be able to start to compete with more mature options. Not to mention things like code review tooling (it's neither text-based, nor even in any form of conventional revision control system, so likely start from scratch). Security controls, auditability, vulnerability management for any library ecosystem that springs up around this, etc. etc.
+
+By **rejecting text you are having to reinvent and support a compiler, an IDE, github/gitlab (or equivalent, with their massive functionality set including protected branches and security controls and the like), package management maybe, debugger tooling (on the web), release/rollback systems/UIs, perhaps even monitoring and alerting** (because you're promising the users they don't need to run infrastructure/services like Prometheus and the like and your "roll out" process looks so different).
+
+Does Dark really have sufficient expertise around all of that to want to make this stuff totally monolithic? Is it even possible for a startup company to really compete in that sort of global (massively open source) scene?
+Convincing people to bet their company on your company, both as an ongoing enterprise and as a place that can get all the inherent trade-offs here well-matched to their individual use-cases is going to be an almost impossible sell. Regardless of how much you assert that you believe in your mission and don't want to ever pivot. You can't blame people for being sceptical, especially when the opening paragraphs essentially say "this is a silver bullet"."
+
+audio lisp dsl w/ strucutral editing http://kevinmahoney.co.uk/ocellator/
+
+structured editing talk: https://youtu.be/CnbVCNIh1NA
+https://hazel.org
+
+hazel "we hope that this will allow Hazel to function not only as a structured programming environment, but also as a structured document authoring environment!"
+
+dark videos/docs/sample app: https://docs.darklang.com/tutorials/tutorial-intro/
+
+https://michaelfeathers.silvrback.com/10-papers-every-developer-should-read-at-least-twice
 
 
 ---
