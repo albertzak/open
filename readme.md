@@ -7,7 +7,7 @@ _"So I'm trying to incubate a personal dynamic..."_ nah
 
 <br>
 
-> I just want to to **look inside** variables
+> I just want to to **look inside** and see the data
 >
 > or tell **that machine** over there to **run this** piece of code.
 
@@ -22,7 +22,7 @@ _that's basically it. how hard could it be?_
 
 - [ ] get this thing working well enough to give a fun presentation in 1 week and 1 day.
 - [ ] **CURRENT** share huge apple notes
-- [ ] slides (+ text?) of presentations
+- [ ] upload slides (+ text?) of presentations
 - [ ] upload codebases as-is (except check gitignore before)
 
 
