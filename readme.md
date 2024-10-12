@@ -59,6 +59,20 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+🧼 paper idea: CLOJURESCRIPT ON SES (or even better within Jessie subset of SES?)
+
+https://es.discourse.group/t/what-is-the-current-status-of-ses-tinyses-and-jessie/1306/10
+
+  - seems like jessie, jessica, ses, are abandoned
+  - hardnened js moniker is stale
+    - can we really just use sci?
+      - how can the js world not produce a cap safe subset in 20 years
+        - but borkdude can?
+          - while building maintaining 20 other hard core libs?
+            - 🧠
+
+---
+
 paula gearon - not your mother's datalog
 
 https://www.youtube.com/watch?v=Ug__63h_qm4
