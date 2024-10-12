@@ -56,6 +56,36 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+🕺
+
+proficiency exam in march
+
+0 was ist thema programming verbessern 0- was will ich machen -
+
+1 state of the art - last 50years most inspired
+
+2 geplanter beitrag - abgrenzung artikulueren - forchungsfrage - wie schuat ddiss au wenn fertig
+> konkrete forschungsfragen, wie validieren
+> embedded distribution
+
+3 wie überprüf dass das konzept gut ist / verbesserungist methodische validierung -- design science research in lit anschauen (!) good für engineering, lang nicht anekannt von hardoce wissenschaftlern, idee bauen, evtl anreichern mit eingebetteten quantitative / empirical things. is qualitativt, aber immer schwäche in nachvollziehbarkeit. ein paar quantitative einbetten: simulate, compare, quant studies überelegen, bis hin zu übung mit studenten im labor. interviews. wie will ich die methodiken einsetzen, welche ARTIFAKTE kommen raus. evaluieren, anforderungen+blickwinkel verändern, nochmal testen
+
+/ 20min
+
+next time: präzise forschungsfragen, wie bauen die sich auf. plan/timeline. 1-2 sehr konkret, nächste diffuser optionaler. 3 y jeweils 2 fragen pro jahr
+
+Topics: simulation/interactivity, semi-structural editing, controlled side effects, logic-/rule-based programming
+Abgrenzung:
+Nicht visual programming: (UML, LabView, https://blueprintsfromhell.tumblr.com)
+Fokus auf sw-engineering von Hickeys "situated programs" statt bloße visualization/exploration/algorithms/computation a la Victor https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/EffectivePrograms.md
+
+> compilerbau mit unix
+> pyjava g;asgow
+
+---
+
+Obvious Related Work:
+
 Lisp, Smalltalk
 
 Hancock 2003: Archer/hose analogy
