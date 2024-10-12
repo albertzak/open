@@ -35,13 +35,14 @@ I collected random interesting internet finds in Apple Notes. Order is somewhat 
 
 ---
 
-
 problems:
-> traditional programming is not interactive
-> too many closed systems with weak composition
+- traditional programming is not interactive
+- too many closed systems with weak composition
 
-wir haben zu viele in sich abgeschlossene systeme mit ihren eigenen kleinen sprachen und semantiken
-fühle mich wie 2000er: videokamera, gameboy, usbstick, taschenrechner mp3pl, uhr, navigerät -> ein smartphone
+we've got too many closed-world systems with their own little languages and semantics. I feel like in the 2000s: video camera, gameboy, usb stick, pocket calculator, mp3 payer, clock, gps -> one smartphone.
+
+operating systems, shells, filesystems, files, compilers, packages, package managers, languages, databases
+
 betriebssyssteme, shell, filesystem, files, compiler, packages, versch manager, sprachen, datanbanken, webserver, reverseproxy, configfiles inf xyz formaten, ssh, programme kompositionieren kaum, sockets/http/tls/files/rawbytes/textfiles/ permissions
 tropfen der das fass überlauft: security. code reuse, packages, pola? kann alles machen was mein user kann?!
 -> convergenz
