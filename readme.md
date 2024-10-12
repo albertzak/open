@@ -206,7 +206,7 @@ Unison
 
 "haskell+erlang"
 
-> semantic equivalence: (+ 1 x 1) vs. (+ x 2)
+? semantic equivalence: (+ 1 x 1) vs. (+ x 2)
 
 ---
 
