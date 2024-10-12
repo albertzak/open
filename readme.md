@@ -64,7 +64,21 @@ yes i also feel the academic system isn't a good fit for you (🚮)
 
 collect related work (+ edit it nicely)
 
+10 pages for proficiency exam
 
+sort by topic or concept
+
+call it "technical report"
+
+be critical
+
+but with evidence for claims (your feeling that uml, codegen is bad)
+
+write down superset of aaaaaaalllll questions
+
+then: these go in, these dont
+
+find 10 journals/confs
 
 
 
