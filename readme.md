@@ -58,6 +58,48 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+🧼 some ideas for possible self-contained papers
+
+  - `deffn`
+    - a wrapper for (could also monkeypatch core/defn - haha) top level functions, and saves anonymous closures under its top level entry ID (best effort match?)
+    - definitions to give them IDs / track evolution of a single fn over time, and evolution of a namespace over time to save call/return data and perf metrics (and any other custom metrics defined inline) to display in editor **(using custom viz functions, also defined inline)**.
+
+where to save/stream metrics to? save locally in persistent fact db, that's all.
+data layer should take care to replicate this somewhere else
+
+(deffn mimi []) ; full color when available in all
+; missing from: prod-a _eval_
+(deffn bar []) ; greyed out because it is not present in all connected(monitored) nodes' namespaces
+
+-
+
+drop-in atom: record state changes of nodes, stream back to editor, experiment with prod data
+
+-
+
+Polajure: A POLA capability subset of clojure: SES/Agoric/Jessie, remove effectful fns from stdlib
+---
+
+what's the difference between edit/developer mode and user mode?
+user mode: POLA is in effect, only given references are available in scope, effects happen (!)
+dev mode: POLA is off, all refernces are visible to the dev, can look into any fn params/state/reconfigure code, effects are simulated (!)
+
+in other words, master dev has a capability to see/change everything (an access cap to every fn defined by them)
+another dev may have a capability to see [args/returns of] or change a particular function used in my system?
+
+HOW to unify a global freely accessible db with ocap/POLA?
+a. db reads are side effect free and unrestricted (if given the db as arg) - no cap needed except db value (and pure query fn)
+b. local db simulations / ephemeral data overlay (with db db' ...) are free and unrestricted, again just db value and pure fn needed
+c. persistent db writes to local vat/node - effectful cap needed (closure with bound swap!) (fn update! [new-db] (reset! db new-db)) or better because more confined: (fn append-tx! [tx] (swap! db d/apply-tx tx))
+
+while a, b seem like no caps because they are just values (but give free access to db value), they are caps as well (?) - the read only cap to an value
+it's just a static value. quote miller: "Data provides only irrevocable knowledge, so don’t bother wrapping it (in a caretaker/membrane)"
+
+"the right to exercise access carries with it the right to grant access”. [capmyths, (Gong’s citation [1] is Boebert’s 1984 paper, which corresponds to our citation [2]).]
+
+
+---
+
 clerk
 
 As top-level form to change the document defaults
