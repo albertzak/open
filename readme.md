@@ -78,11 +78,9 @@ Topics:
  - logic-/rule-based programming
 
 Differentiation:
-Nicht visual programming: (UML, LabView, https://blueprintsfromhell.tumblr.com)
-Fokus auf sw-engineering von Hickeys "situated programs" statt bloße visualization/exploration/algorithms/computation a la Victor https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/EffectivePrograms.md
-
-> compilerbau mit unix
-> pyjava g;asgow
+ - **NOT visual progamming** (UML, LabView, https://blueprintsfromhell.tumblr.com)
+ - **focus on sw-engineering of Hickeys "situated programs" instead of pure visualization/exploration/algorithms/computation a la Victor**
+   - https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/EffectivePrograms.md
 
 ---
 
