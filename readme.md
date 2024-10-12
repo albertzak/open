@@ -57,6 +57,40 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+
+
+---
+
+
+🧼 demo agenda
+
+slides: take problem tree from scaling the repl experience (2021-09-09)
+
+- cljs devtool file writing client
+- cljs devtool browser / visualization reading thing
+- cljs runtime / server
+- cljs runtime / client node tool
+
+editor interactions:
+
+- write db query form, save,
+- forms get id if they don't already have one
+- results get written in next form (append after current top level)
+- write fn -> save -> fn gets installed
+
+show:
+
+- bootstrap node with cap key
+- hello world blinky
+- server has full access to db
+- clients can transact via server
+  - (but still have a local only db, which they may post parts fo to the server for debugging if requested by a data item)
+- paused exceptions: programmer workflow to resolve by transacting data
+- server has tx database, shares all data to all clients.
+- editor is a client that can query data, send txs to main server
+
+
+
 ### November 2022
 
 🧼 I HAVE A FEELING INTERACTIVE PROGRAMMING IS A GREAT FIT FOR CAPABILITY SYSTEMS
