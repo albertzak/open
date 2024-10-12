@@ -31,7 +31,36 @@ _that's basically it. how hard could it be?_
 
 From 2020-09 until 2024-08 I got paid to daydream (🚮). This is all I have to show for it.
 
-I collected random interesting internet finds in Apple Notes. Order is somewhat chronological, newest at the top. Sadly only very few entries are timestamped or properly sourced.
+I collected random interesting internet finds in Apple Notes. Order is somewhat chronological, newest at the top. Sadly only very few entries are timestamped or properly sourced. Lightly edited (typos, clarity) and small parts translated from German.
+
+---
+
+
+problems:
+> traditional programming is not interactive
+> too many closed systems with weak composition
+
+wir haben zu viele in sich abgeschlossene systeme mit ihren eigenen kleinen sprachen und semantiken
+fühle mich wie 2000er: videokamera, gameboy, usbstick, taschenrechner mp3pl, uhr, navigerät -> ein smartphone
+betriebssyssteme, shell, filesystem, files, compiler, packages, versch manager, sprachen, datanbanken, webserver, reverseproxy, configfiles inf xyz formaten, ssh, programme kompositionieren kaum, sockets/http/tls/files/rawbytes/textfiles/ permissions
+tropfen der das fass überlauft: security. code reuse, packages, pola? kann alles machen was mein user kann?!
+-> convergenz
+
+
+“Most programs are not write-once. They are reworked and rewritten again and again in their lives. Bugs must be debugged… During this process, human beings must be able to read and understand the original code; it is therefore more important by far for humans to be able to understand the program than it is for the computer.” - Matsumoto Yukihiro 2007
+code testen? discovery - response von webservice testen? herumspielen?
+-> interaktives computing
+
+
+claim: layers of systems on top of out os: OS are at a local maximum
+ja, OS soll hw resourcen manager, aber es ist auch eine plattform auf die wir systeme aufbauen können
+welt der programmiersprachen und der datenbanken kollidieren, haben kategorische gemeinsamkeiten
+
+
+---
+
+want: "one set of mechanisms to deal with abstraction, modularity, naming, security/access control" together, see "problems as a single fabric" (miller 2006)
+
 
 ---
 
