@@ -52,9 +52,53 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 |    | Legend |
 | 🕺 | chats with [my advisor](https://i4c.at/goeschka/) (btw he was awesome that he just let me do anything, and nothing at the same time, and didn't force any academic 🚮 on me. 🫶) |
 | 🧼 | shower thoughts / own ideas |
+---
+
 
 ---
 
+holonforth <3
+
+http://holonforth.com/holonforth.html
+
++ also see wolf wejgaards papers
+
+http://holonforth.com/papers.html
+
+1989 - Not Screens nor Files but Words
+
+The benefits of storing source code in a database.
+
+1990 - The Beauty of Separate Systems
+
+Why Forth is at its best when host and target are connected by an umbilical link.
+
+1994 - A Taste of Direct Programming
+
+About immediacy and direct, instant, "hands-on" programming.
+
+1995 - A Fresh Look at the Forth Dictionary
+
+Let the editor create the dictionary!
+
+1996 - The Invisible Language
+
+Why computer science ignores Forth.
+
+1997 - Objects in Holon
+
+About objecttypes. Keeping it simple with separated messages and methods.
+
+2016 - Planet Holonforth
+
+Where the text space of Forth is celebrated.
+
+OH YES!
+prev work on smalltalk like code browser: extended basic in sinclair, burroughs b20
+
+---
+
+🧼 IDEA what if this is all controlled via text? eg write `(ed pat-modal)` => editor pops up below, eval to save
 
 
 ---
