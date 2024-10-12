@@ -38,25 +38,26 @@ I collected random interesting internet finds in Apple Notes. Order is somewhat 
 
 Multics 1965
 "Multiplexed information and computing service"
-(ARPA, MIT, Bell labs, GE, vorläufter project MAC '62 / Licklider "internet" "On-Line Man Computer Communication")
+(ARPA, MIT, Bell labs, GE, precursor project MAC '62 / Licklider "internet" "On-Line Man Computer Communication")
 
-PL/1, 1MB RAM, NSA >1998
-expensive process creation: 3 procs per user, later 1 proc.
-W^X: actually from a cost mem optimization, keep only one copy in ram, should not modify itself when multiple users access same program
 
-70s: Algol, Cobol, Fortran
-Mid-70s: Maclisp Macsyma, APL interpreter
-80s: C compiler, aber C code moddifiziert gerne adressen, pointer maagic, null pointer arithmetic etc,
+- PL/1, 1MB RAM, NSA >1998
+- expensive process creation: 3 procs per user, later 1 proc.
+- W^X: actually from a cost mem optimization, keep only one copy in ram, should not modify itself when - - - multiple users access same program
 
-1984 dynamic reconfiguration: CPU, mem, drives, peripherals (Schell 1084)
+- 70s: Algol, Cobol, Fortran
+- Mid-70s: Maclisp Macsyma, APL interpreter
+- 80s: C compiler (note: but how is that memory safe then?), pointer maagic, null pointer arithmetic etc,
+- 1984 dynamic reconfiguration: CPU, mem, drives, peripherals (Schell 1084)
 
 "Bigger, slower, less reliable than planned" - 60-70 sites, last site closed in 1998
-Myths:
-Not first timesharing
-not first virtual memory
-Thompson's unix "Unics" re-write was the smallest possible timesharing on pdp-7 assembly
-Super secure? Per-user
-Ritchie/Thompson: "Overengineered"
+
+- Myths:
+- Not first timesharing
+- not first virtual memory
+- Thompson's unix "Unics" re-write was the smallest possible timesharing on pdp-7 assembly
+- Super secure? Per-user
+- Ritchie/Thompson: "Overengineered"
 
 - van horn: supervisor, pdp-1 1969
 
