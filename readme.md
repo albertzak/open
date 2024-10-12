@@ -54,7 +54,50 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 🧼 shower thoughts
 
+---
 
+
+
+---
+
+wp on bracha: It has been proposed by Bracha that choice of type system be made independent of choice of language; that a type system should be a module that can be "plugged" into a language as required. He believes this is advantageous, because what he calls mandatory type systems make languages less expressive and code more fragile. The only language designed with pluggable type system in mind from the beginning is Newspeak.
+
+pluggable types variously called optional typing, type hinting, type annotations or gradual type checking
+
+---
+
+MIRROR-BASED REFLECTION
+
+Gilad Bracha, David Ungar — Reflection breaks pretty much every security property a programming language could hope to provide. Mirror-based reflection allows one to use reflection as a distinct capability, and finally reconcile reflection and security. Sadly not adopted by… almost every programming language out there—Dart is possibly the only mainstream one (it has Bracha in the design team), even though JavaScript tried to get them as well… but without removing the non-mirror based part.
+
+
+---
+
+quil on typed/untyped: https://www.quora.com/What-is-fascinating-about-dynamically-typed-programming-languages/answer/Quildreen-Motta
+
+**untyped as tool for exploration and creativity**
+
+  - functional ocap & algebraic effects, typed
+  - global relational fact database
+  - controlled adaption mechanism for reuse/sharing/modifications: open/exposing/override
+
+https://robotlolita.me/diary/2021/04/why-crochet-is-oop/
+
+overriding is a capability, prevents prototype pollution
+
+---
+
+livelits / omar
+
+https://www.youtube.com/watch?v=OFAYcHyG_NI
+
+"evaluation interlaced with editing is live coding"
+
+"as it turns out, GUIs and symbolic code can live together harmoniously"
+
+andrew blinn: livelits allow interleaved and compositional text and graphical editors. here, i insert a percent slider within a color picker, and drive the picker both through direct manipulation, and programatically through the upstream baseline slider:
+
+https://twitter.com/disconcision/status/1408155813768830983
 
 
 ---
