@@ -60,6 +60,29 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 
 
+
+---
+
+jamie brandon again
+
+the program is the database is the interface
+
+https://www.scattered-thoughts.net/writing/the-program-is-the-database-is-the-interface
+
+**OOOOH MY MIND IS BLOWN, THIS IS THE _LITERAL_ "self modifying code" INTERACTION MODEL I WAWS DREAMING ABOUT**
+
+https://www.scattered-thoughts.net/log/0022
+
+Continuing with the 'the program is the database' theme from last month, I made a clojurescript dialect (called preimp) where **the only source of mutable state is the source code itself**. It works well enough for spreadsheet-sized datasets:
+
+
+jamie data soup problems
+
+https://www.scattered-thoughts.net/log/0020#data-soup
+
+**"my computer usage is full of tiny CRUD problems that are typically solved either with single-purpose apps or with adhoc manual effort. Here's a random selection off the top of my head:**
+
+
 ---
 
 
