@@ -32,6 +32,13 @@ _that's basically it. how hard could it be?_
 
 - [ ] make it nice
 - [ ] can we do it in [<26 loc](https://buttondown.com/tensegritics-curiosities/archive/writing-the-worst-datalog-ever-in-26loc/)? see data and run fns?
+- [ ] make it run my website
+- [ ]
+
+
+## Observations
+
+`2024-10-12 15:35` It is so fun to... live code writing?
 
 
 
