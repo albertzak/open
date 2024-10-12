@@ -58,7 +58,24 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
+
+
+
+
 ### April 2023
+
+
+🧼 IDEA: multi repl over mqtt
+
+- one topic per "object"
+  - **inspired by alan kays "every object should have an url/ip address"**
+   - topic name is a capability token
+- node listens to its (root?) cap token channel
+
+
+🧼 IDEA: repl sections in plaintext ui delimited by `--`
+  - evaluation results go on empty lines between section delimiters
+
 
 🧼 IDEA: Plain text UI for EAV forms, inspired by imp
 
