@@ -1,11 +1,9 @@
 # 🌱 [open practice](https://www.youtube.com/watch?v=MJzV0CX0q8o)
 a.k.a. **NEW COMMIT EVERY MINUTE**
 
-**STATUS: Highly experimental.** Don't even try.
+STATUS: **Highly experimental.** Don't even think about trying. (have fun following along if you want.)
 
-(Have fun following along if you want.)
-
-"So I'm trying to incubate a personal dynamic..." nah
+_"So I'm trying to incubate a personal dynamic..."_ nah
 
 I just want to to **look inside** variables
 
