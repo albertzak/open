@@ -57,6 +57,32 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
+Miller's thesis -- OMG related works
+
+"**Global namespaces create intractable political problems.** Froomkin’s Toward a Critical Theory of Cyberspace [Fro03] examines some of the politics surrounding ICANN. In a world using key-centric rather than name-centric systems, these intractable political problems would be replaced with tractable technical problems."
+
+**"Data provides only irrevocable knowledge, so don’t bother wrapping it (in a caretaker/membrane)"**
+
+"Lauer and Needham’s On the Duality of Operating System Structures [LN79] contrasts “message-oriented systems” with “procedure-oriented systems.” Message-oriented systems consist of separate process, not sharing any memory, and communicating only by means of messages. The example model presented in their paper uses asynchronous messages. Procedure-oriented systems consist of concurrently executing processes with shared access to memory, using locking to exclude each other, in order to preserve the consistency of this memory. . The example model presented in their paper uses monitor locks [Hoa74]. Their “procedure-oriented systems” corresponds to the term “shared-state concurrency” as used by Roy and Haridi [RH04] and this dissertation."
+
+
+
+OCaps: Small step from pure objects
+
++ Memory safety and encapsulation+ Effects only by using held references + No powerful references by default
+
+(miller http://soft.vub.ac.be/events/mobicrant_talks/talk1_ocaps_js.pdf)
+
+Dr. SES - Distributed Resilient Secure EcmaScript
+
+Stretch reference graph between event loops & machine
+
+Crypto analog of memory safety
+
+**Unguessable URLs as Crypto-Caps**
+
+
+---
 
 Potluck
 
