@@ -38,7 +38,7 @@ _that's basically it. how hard could it be?_
 
 ## Observations
 
-`2024-10-12 15:35` It is so fun to... live code writing?
+- `2024-10-12 15:35` writing live like this is so so so fun
 
 
 
