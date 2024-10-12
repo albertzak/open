@@ -1,11 +1,13 @@
 # 🌱 [open practice](https://www.youtube.com/watch?v=MJzV0CX0q8o)
 a.k.a. **NEW COMMIT EVERY MINUTE**
 
-**STATUS: Highly experimental.** Don't even try. just follow along for now if you want.
+**STATUS: Highly experimental.**
 
-so i'm trying to incubate a personal dynamic... nah
+Don't even try. Just have fun following along for now if you want.
 
-is it really that far fetched to want to look inside a variable?
+"so i'm trying to incubate a personal dynamic..." nah
+
+no really, i just want to to look at the data inside a variable?
 
 or tell that machine over there to run this piece of code?
 
