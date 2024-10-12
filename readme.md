@@ -56,6 +56,24 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+
+---
+
+**Why we need lisp machines**
+
+**A personal mind dump on operating systems**
+
+https://fultonsramblings.substack.com/p/why-we-need-lisp-machines?r=1dlesj&s=w&utm_campaign=post&utm_medium=web
+
+"UNIX was designed as a self-contained system. you simply didn’t have other computers you would rely on. You had your department’s computer, and you would sometimes send messages and files to their department computers. That’s the full extent of UNIX’s intended networking abilities."
+
+"**A modern UNIX system isn’t self-contained.** I have 4 UNIX systems on my desk (Desktop, laptop, iPhone, iPad) I’m contentiously using the cloud (iCloud for photos, GitHub for text files, Dropbox for everything else) to sync files between these machines. The **cloud is just a workaround for UNIX’s self-contained nature**"
+
+https://liam-on-linux.dreamwidth.org/80795.html
+
+
+---
+
 Hell Is Other REPLs: Being Mutable and Avoiding Bad Faith Programming
 
 https://hyperthings.garden/posts/2021-06-20/hell-is-other-repls.html
