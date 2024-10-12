@@ -56,6 +56,74 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+Lisp, Smalltalk
+
+Hancock 2003: Archer/hose analogy
+
+Bret Victor's works:
+
+Ten Brighter Ideas - 2010 http://worrydream.com/TenBrighterIdeas/
+
+Scrubbing Calculator - 2011 http://worrydream.com/ScrubbingCalculator/
+
+Up and Down the Ladder of Abstraction - 2011 - http://worrydream.com/LadderOfAbstraction/
+
+Kill Math - 2011 - http://worrydream.com/KillMath/
+
+Predator/Prey Relationship - Bret Victor 2011 https://vimeo.com/23839605
+
+die ersten 35min von Inventing on Principle - Bret Victor, CUSEC 2012 https://www.youtube.com/watch?v=EGqwXt90ZqA
+
+Learnable Programming - 2012 - http://worrydream.com/LearnableProgramming/
+
+Media for Thinking the Unthinkable - Bret Victor, MIT Media Lab 2013 https://www.youtube.com/watch?v=oUaOucZRlmE
+
+(quick summary on his works, includes good quotes https://notes.fringeling.com/slides/SLS_BretVictor_2020-03-05.pdf)
+
+Light Table - Granger 2012
+
+APX - McDirmid 2015 file:///Users/albertzak/Dropbox/FH/PhD/mcdirmid15/index.html
+
+Eve - Granger 2015
+
+Dark - Biggar, Chisa 2018
+
+Seymour - Kasibatla/Warth 2017 https://harc.github.io/seymour-live2017/
+
+
+
+---
+
+i always memorize my likes for the first slide only. the rest is easy.
+
+i am interested in finding better ways to program,
+that reduce incidental complexity
+and reduce feedback time.
+
+gain resilience through dynamism.
+
+when we write code,
+mostly we still simulate in our heads - edit - save - compile - restart
+
+in computing, dynamism and interactivity
+always been controversial topics
+
+this image is of sketchpad, ivan suth phd thesis from 1963
+you could use that light pen on a crt screen to draw shapes,
+attach constraints like this should be a right angle, and even design
+entire physical structures like bridges
+and run weight/load simulations with gravity
+
+this was at a time when... computer time expensive, batch oriented
+hci, cad, foreshadowings of object orientation
+
+**i want to be able to programmatically sketch entire
+systems almost as fast as i can think of them.**
+
+especially a subset of cps what hickey calls situated systems ...
+
+
+---
 
 **plan9**
 
