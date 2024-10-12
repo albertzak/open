@@ -1,5 +1,7 @@
 #!/usr/bin/env bb
 
+(ns fun)
+
 (require '[clojure.java.shell :refer [sh]])
 (require '[clojure.string :as s]) ; why is this a separate ns 😒
 
