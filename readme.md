@@ -58,13 +58,38 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+🧼 thinking about a subset of clojure that is cap-safe, impl'd as a library within clojure
+
+- rework namespace mechanism:
+  - no more mutable map
+  - require modules at runtime by hash
+  - **requiring modules is a capability**
+
+- open world:
+  - just ocap safe subset of clojure
+  - **inspectable atoms, defns**
+  - code in global db
+    - but fns may not access global db
+      - unless given access
+
+
+- **~ASSUME A SINGLE CENTRAL SERVER~**
+  - and trusted clients
+  - this is for **building personal scale software**
+    - this simplifies everything
+  - a place to store logs/defn-invokes/atom-changes
+  - a serializer for global time
+
+
+---
+
 🧼 some ideas for possible self-contained papers
 
   - `deffn`
     - a wrapper for (could also monkeypatch core/defn - haha) top level functions, and saves anonymous closures under its top level entry ID (best effort match?)
     - definitions to give them IDs / track evolution of a single fn over time, and evolution of a namespace over time to save call/return data and perf metrics (and any other custom metrics defined inline) to display in editor **(using custom viz functions, also defined inline)**.
       - where to save/stream metrics to?
-        - save locally in persistent fact db, that's all.
+        - save locally in persistent fact db, that's all
         - data layer should take care to replicate this somewhere else
 
 possible editor UI:
