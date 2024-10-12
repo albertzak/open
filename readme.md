@@ -33,7 +33,7 @@ From 2020-09 until 2024-08 I got paid to daydream (🚮). This is all I have to 
 
 I collected random interesting internet finds and a few own ideas in Apple Notes. Order is somewhat chronological, newest at the top. Sadly only very few entries are timestamped or properly sourced. Lightly edited (typos, clarity, formatting) and small parts translated from German.
 
-Notes from chats with my advisor are blockquoted. (btw he was awesome that he just let me do anything, and nothing at the same time, and didn't force any academic 🚮 on me. 🫶)
+Notes from chats with [my advisor](https://i4c.at/goeschka/) are blockquoted. (btw he was awesome that he just let me do anything, and nothing at the same time, and didn't force any academic 🚮 on me. 🫶)
 
 ---
 
