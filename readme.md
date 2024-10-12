@@ -56,8 +56,41 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 
 
+---
+
+
+
 
 ---
+
+
+🕺
+
+okay use those summer months to recharge.
+
+if you are worried all the time,
+
+that's a waste of energy.
+
+
+you need to make a decision.
+
+deadline for your decision: end of summer semester.
+
+no matter what, you will stay employed over the summer so you can relax some more.
+
+then it's just 2 more years.
+
+you can do that.
+
+but whatever decision you make,
+
+write down good and thorough reasons.
+
+so that you don't regret that decision in the future.
+
+<3
+
 
 ---
 
@@ -81,6 +114,7 @@ i enjoyed having a mentor who is also interested in this
 
 i put too much pressure on myself to find out something grand.
 
+i'm pretty sure i don't want to finish this program
 
 ---
 
