@@ -60,15 +60,13 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 proficiency exam in march
 
-0 was ist thema programming verbessern 0- was will ich machen -
+1. what's the topic? improve programming. what do you want do? (todo)
+2. state of the art - last 50 years most inspired
+3. planned contribution: demarcate.articulate. research question. how does the dissertation look when done? concrete research questions. how to validate claims? (ugh) use case: embedded + distributed.
+4. how to validate that the concept is good?
 
-1 state of the art - last 50years most inspired
 
-2 geplanter beitrag - abgrenzung artikulueren - forchungsfrage - wie schuat ddiss au wenn fertig
-> konkrete forschungsfragen, wie validieren
-> embedded distribution
-
-3 wie überprüf dass das konzept gut ist / verbesserungist methodische validierung -- design science research in lit anschauen (!) good für engineering, lang nicht anekannt von hardoce wissenschaftlern, idee bauen, evtl anreichern mit eingebetteten quantitative / empirical things. is qualitativt, aber immer schwäche in nachvollziehbarkeit. ein paar quantitative einbetten: simulate, compare, quant studies überelegen, bis hin zu übung mit studenten im labor. interviews. wie will ich die methodiken einsetzen, welche ARTIFAKTE kommen raus. evaluieren, anforderungen+blickwinkel verändern, nochmal testen
+wie überprüf dass das konzept gut ist / verbesserungist methodische validierung -- design science research in lit anschauen (!) good für engineering, lang nicht anekannt von hardoce wissenschaftlern, idee bauen, evtl anreichern mit eingebetteten quantitative / empirical things. is qualitativt, aber immer schwäche in nachvollziehbarkeit. ein paar quantitative einbetten: simulate, compare, quant studies überelegen, bis hin zu übung mit studenten im labor. interviews. wie will ich die methodiken einsetzen, welche ARTIFAKTE kommen raus. evaluieren, anforderungen+blickwinkel verändern, nochmal testen
 
 / 20min
 
