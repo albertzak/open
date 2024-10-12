@@ -1,0 +1,36 @@
+#!/usr/bin/env bb
+
+(require '[clojure.java.shell :refer [sh]])
+
+(defn changes? []
+  (->> (sh "git" "diff-index" "--quiet" "HEAD" "--")
+       :exit
+       zero?))
+
+(defn commit-count []
+  (->> (sh "git" "rev-list" "--count" "HEAD")
+       :out
+       clojure.string/trim
+       Integer/parseInt
+       inc))
+
+(defn commit-and-push []
+  (when (changes?)
+    (let [n (commit-count)]
+      (sh "git" "add" "-A")
+      (sh "git" "commit" "-m" (str n))
+      (sh "git" "push")
+      (println (str (java.time.Instant/now)) n))))
+
+; for better aesthetics
+(defn wait-until-next-full-minute []
+  (let [m (* 60 1000)
+        now (System/currentTimeMillis)
+        next-m (* m (quot (+ now m) m))
+        remaining (- next-m now)]
+    (Thread/sleep remaining)))
+
+(loop []
+  (wait-until-next-full-minute)
+  (commit-and-push)
+  (recur))
