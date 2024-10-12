@@ -59,6 +59,73 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 
 
+
+
+🧼 IDEA: clj-quick
+
+main contribution: **just textual programming ui for seeing values + interacting by text**
+
+principle: "worse is better" (vs e.g. oz)
+
+
+- in scope:
+  - install q/fns on one or more remote nodes
+  - see q/fns installed on nodes (lifecycle: under construction, fake-queue)
+  - see q/fn calls, timestamp, args and return values in text
+- tradeoffs:
+  - for backoffice apps with one central server.
+  - organizational trust assumed
+    - all clients generate a unique id, need to be known to server (though may register)
+  - close-enough clock synchronization between all nodes assumed
+    - global order for shared facts imposed by single central server
+  - no special handling of network or node failures, flow control, determinism, ordering, consistency semantics
+- incidental:
+  - multitier programming, deployment as a concern of the language
+  - maybe compile dataflow dag to nodes' code (probably hard, let the electric people figure it out kthxbye)
+- no:
+  - secure code sharing
+  - package mgmt
+
+
+
+Open Qs:
+
+- ? processes are stable identities (they have an id that serves as capability token)
+- ? should they nest deeply and form a supervision tree?
+- ? or should they be flat namespaced in the node db (and accessible via cap id?)
+
+
+`(? ...)` and `(?? ...)` forms signal interest for matching nodes/pids to best-effort publish some data to the server. they MAY follow this request.
+
+
+- `!` sends the form to the evaluator,
+  - which is a process on the central server that gives ids, installs into the global db...
+  - -> this is a process that can be inspected, changed, paused
+    - just liken anything else in the system
+      - is this a good idea?
+        - if the eval proc is broken, there's no way to fix the system
+          - maybe its ok after all, we can just install the prev vsn of the proc handler
+
+
+
+
+
+
+---
+
+https://ocsigen.org/eliom/latest/manual/clientserver-react
+
+http://mozart2.org/mozart-v1/doc-1.4.0/dstutorial/index.html
+
+https://scala-loci.github.io/
+
+unison
+
+**Electric Clojure is unique in that we hyperfocus on the use case of practical web development (targeting a local maxima in utility) rather than trying to maximize the global abstraction power. ("Worse is better")**
+
+
+---
+
 leo noel
 
 missionary
