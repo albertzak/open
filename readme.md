@@ -59,16 +59,22 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ### November 2022
 
-🧼
+🧼 I HAVE A FEELING INTERACTIVE PROGRAMMING IS A GREAT FIT FOR CAPABILITY SYSTEMS
 
-  - how to interact with capabilities in an interactive programming system?
-  -  attenuate
+- how to interact with capabilities in an interactive programming system?
+  - create
+  - attenuate
+  - delegate
 
-"Wie kann man capabilities mit einem interaktiven prog system live erzeugen/delegieren/attenuieren..."
-weitere Einschränkunen:
-JUST rosalind-like line of business apps, one central master controller with full authority, many dumb clients and some special devices (sms, imaging, scanners, door locks, leds, sensors), few named known snowflake pet servers. <1000 users.
-NOT mutually suspicious parties (packages, signatures, pubkeys)
-NOT end user programming (customize, control caps of device)
+- scope: JUST rosalind-like line of business apps,
+  - one central master controller with full authority,
+  - many dumb clients
+  - and some special devices
+    - (sms, imaging, scanners, door locks, leds, sensors)
+    - few named known snowflake pet servers
+  - <1000 users
+  - NOT mutually suspicious parties (packages, signatures, pubkeys)
+  - NOT end user programming (customize, control caps of device)
 
 
 ---
