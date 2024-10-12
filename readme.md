@@ -54,9 +54,23 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 🧼 shower thoughts
 
+
+
+
+
 ---
 
+multiple dispatch (correct) vs function overloading (bad approiximation)
 
+https://www.youtube.com/watch?v=kc9HwsxE1OY karpinski
+
+md supports generic code reuse / composition of arbitrary types+code like in julia
+
+example with measurement errors package and physics equations package, they just work.
+
+example catsdogspets/c++ gets fallback every time
+
+**"pro tip: to write highly generic code, just leave off all the types"**
 
 ---
 
