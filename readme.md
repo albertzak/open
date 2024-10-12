@@ -7,7 +7,7 @@ so i'm trying to incubate a personal dynamic... nah
 
 is it really that far fetched to want to look inside a variable?
 
-or tell some piece of code to run on that machine over there?
+or tell that machine over there to run this piece of code?
 
 
 
