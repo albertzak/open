@@ -31,8 +31,38 @@ _that's basically it. how hard could it be?_
 
 From 2020-09 until 2024-08 I got paid to daydream (🚮). This is all I have to show for it.
 
-I collected random interesting internet finds in Apple Notes. Order is somewhat chronological, newest at the top. Sadly only very few entries are timestamped.
+I collected random interesting internet finds in Apple Notes. Order is somewhat chronological, newest at the top. Sadly only very few entries are timestamped or properly sourced.
 
+
+
+
+
+---
+
+lispm
+
+- Hardware Type Checking. Special type bits let the type be checked
+  efficiently at run-time.
+- Hardware Garbage Collection.
+- Fast Function Calls.
+- Efficient Representation of Lists.
+- System Software and Integrated Programming Environments.
+
+
+STEPS
+
+---
+
+Eve
+
+literate programming (knuth 1984)
+
+eav / relational
+
+virualizations, bidirectional mapping, "why not drawing?"
+
+
+---
 
 Unison
 
