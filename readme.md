@@ -58,7 +58,34 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
+peter saxton
 
+https://petersaxton.uk/log/
+
+typed structural editor, hot code reloading, built on gleam = (erlang, js)
+
+actor primitives, config is code (client random id) for cluster mgmt
+
+effect types
+
+<3
+
+---
+
+Show HN: We built a developer-first open-source Zapier alternative (trigger.dev)
+
+https://www.reddit.com/r/ProgrammingLanguages/comments/10gylhm/are_there_any_languages_with_transactions_as_a/
+
+
+https://flora.sourceforge.net/aboutTR.html
+
+Flora-2, an object oriented logic language, has first-class support for transaction logic
+
+
+---
+
+Paper ideas 2023-01-16
+Survey: Side-by-side Code/REPL state visualization tools/approaches: REPLugger, Clerk, Proto REPL
 
 ---
 
