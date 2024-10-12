@@ -63,17 +63,19 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
   - `deffn`
     - a wrapper for (could also monkeypatch core/defn - haha) top level functions, and saves anonymous closures under its top level entry ID (best effort match?)
     - definitions to give them IDs / track evolution of a single fn over time, and evolution of a namespace over time to save call/return data and perf metrics (and any other custom metrics defined inline) to display in editor **(using custom viz functions, also defined inline)**.
+      - where to save/stream metrics to?
+        - save locally in persistent fact db, that's all.
+        - data layer should take care to replicate this somewhere else
 
-where to save/stream metrics to? save locally in persistent fact db, that's all.
-data layer should take care to replicate this somewhere else
+possible editor UI:
 
+```
 (deffn mimi []) ; full color when available in all
 ; missing from: prod-a _eval_
 (deffn bar []) ; greyed out because it is not present in all connected(monitored) nodes' namespaces
+```
 
--
-
-drop-in atom: record state changes of nodes, stream back to editor, experiment with prod data
+`drop-in atom`: record state changes of nodes, stream back to editor, experiment with prod data
 
 -
 
