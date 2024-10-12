@@ -59,6 +59,53 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
+landau / eros/capros
+
+http://www.charlielandau.com/EROS_Interface_Design.html
+
+**Separate functionality from human interface.**
+
+This principle seems obvious when you consider that it is easier to write a program to take a program-friendly interface and translate it into a human-friendly interface, than vice-versa, because the translator is a program not a human.
+
+---
+
+"Novel problems arise while fixing bugs in confined programs."
+
+notes on debugging keykos http://cap-lore.com/CapTheory/KK/Debug.html
+
+---
+
+The Can Opener
+
+Often some family of brands have no proprietary interests to protect from each other and we invented the can opener for such a family. A can opener will try to open a domain by invoking each domain creator whose brander is in the family. If it succeeds it instals a DDT and reports the real type of the opened object.
+An unimplemented recent idea is to include creators outside the family. The opener recalls that such creators are not of the family and reports the type by numeric code, probably the alleged key type.
+
+keykos / cap-lore
+
+branding ~= nominal typing
+
+family ~= (super-)class hierarchy ~= certificate chain
+
+
+---
+
+Perspective
+
+Security and Privacy, and even reliability, rely on the inabilities of programs, not so much the abilities. Unix fails the capability test because **there are too many ways for programs to have effects, or receive information. Manuals list ways to do things. You don’t find in manuals even claims such as “the above are all those ways”.** A kernel programmer is usually pleased that he has provided a new way to move information around. I worry about the Mac’s 115 kernel extensions.
+Another observation is that connection begets connection; message may convey capabilities. More importantly: Only connection begets connection.
+
+
+---
+
+**The art of upgrade is to preserve state amid change and to enable change amid state. --with apologies to Alfred North Whitehead**
+
+The original being "The art of progress is to preserve order amid change and to preserve change amid order." from Alfred North Whitehead in "Science and the Modern World", Macmillan, 1925 or 1929.
+from http://erights.org/data/serial/jhu-paper/intro.html
+
+
+
+---
+
 Miller's thesis -- OMG related works
 
 "**Global namespaces create intractable political problems.** Froomkin’s Toward a Critical Theory of Cyberspace [Fro03] examines some of the politics surrounding ICANN. In a world using key-centric rather than name-centric systems, these intractable political problems would be replaced with tractable technical problems."
