@@ -59,6 +59,23 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+ssb [lavoie 20] https://www.youtube.com/watch?v=rvaM74AgCmM
+
+eventually-consistent replication via secure scuttlebutt
+
+- async (devices can be offline)
+- authenticated (verified authorship of events)
+- secure (immutable events)
+- causal (single writer, earlier events from same author received first)
+- not dependent on servers, but can leverage them for faster propagation when available
+
+---
+
+joyride to script vscode with cljs <3
+
+
+---
+
 🧼 IDEA: sigils for "pausing" function while editing.
 
 we don't want all editing actions to be live.
