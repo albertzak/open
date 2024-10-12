@@ -59,6 +59,29 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 
 
+eli parra
+
+homoiconic spreadsheets + clojure
+
+  - "code is evaluated data"
+  - "data is quoted code"
+
+since 2018, excel and sheets have a literal representation of cells as text, aka dynamic arrays (as opposed to static/autofilled ones)
+```
+a1 b1
+a2 b2 ===
+usually by rows === {a1, b1; a2, b2}
+can be by cols === {{a1; a2}, {b1, b2}}
+comma , next column (like csv)
+semicolon ; next row (like sentences, like newline)
+```
+
+  - (can only create NxM tables, must be rectangle)
+  - BUT they break the fundamental value rule of spreadsheets (a cell can only effect its own value) by spilling over right and bottom cells.
+    - (excel required an entire rewrite of its formula engine)
+  - in practice, it only bends the rules. array spills need space (empty cells) - if the cells contain a value, the ={} expression is an error and no values are filled
+
+
 
 ---
 
