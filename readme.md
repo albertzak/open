@@ -58,6 +58,44 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
+
+
+https://github.com/davidbullado/blog/blob/main/we-need-a-new-versioning-notation.md
+
+Ending Dependency Chaos: A Proposal for Comprehensive Function Versioning
+
+````
+@moduleVersion 2
+ ...
+@funcVersion 16
+export function addFunction(a: number, b: number): string {
+  return a + b;
+}
+```
+
+hmmm dunno
+
+---
+
+<3
+
+https://xtdb.com/blog/trucks-tubes-truth/
+
+Differentiate into categories:
+
+- Commands
+  - "passive-aggressive events"
+  - **if an event implies anything at all will happen when it is read, it isn’t an event**
+- Application/Domain Events
+  - CQRS-like, eg. FundsTransferred
+- System Event
+  - aka change data capture CDC
+  - opaque computational observations ("accountUpdated")
+- document events
+  - pure stateful observations, a declaration of state at a point in time, RESTful event-carried state transfer
+
+
+
 ---
 
 from the epic Future of Coding log by Steve Krouse
