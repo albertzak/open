@@ -55,6 +55,88 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 🧼 shower thoughts
 
+
+---
+
+
+
+---
+
+proton/hyperfiddle update
+
+https://old.reddit.com/r/Clojure/comments/vizdcc/hyperfiddlephoton_progress_update/
+
+uses missionary event streaming/effect system below:
+
+https://github.com/leonoel/missionary - wtf!
+
+
+BORING ACADEMIC PAPER IDEA: evaluate proton/hyperfiddle for network failure cases
+
+---
+
+https://lambdaisland.com/blog/2022-06-23-the-repl-is-not-enough
+
+"sessions are forever" common lisp repl persists state
+
+"build up your program over time, at the cost of some state ambiguity"
+
+
+---
+
+hickey, bozhidar batsov et al discussion on nested repls/nrepl!=repl
+
+https://groups.google.com/g/clojure-dev/c/Dl3Stw5iRVA/m/IHoVWiJz5UIJ
+
+repl is a misnomer, again environment matters
+
+nested repls "homework problem"
+
+stream based vs. discrete messages
+
+
+---
+
+Dynamicland Geokit
+
+https://omar.website/posts/notes-from-dynamicland-geokit/
+
+---
+
+
+Joel Jakubovic on GameMaker
+
+https://programmingmadecomplicated.wordpress.com/2019/07/03/post-tutorial-tour-of-gamemaker/
+
+
+---
+
+Granger on Eve
+
+We've certainly taken a lot of inspiration from Smalltalk, but I think the semantics we've arrived at make a really nice programming environment, with some surprising properties you may not think are possible.
+
+Eve has a similar philosophy to Red/Rebol - that programming is needlessly complex, and by fixing the model we can make the whole ordeal a lot nicer. We start with a uniform data model - everything in Eve is represented by records (key value pairs attached to a unique ID). This keeps the language small, both implementation-wise and in terms of the number of operators you need to learn.
+Programs in Eve are made up of small blocks of code that compose automatically. In each block you query records and then specify transforms on those records. Blocks are short and declarative, and are reactive to changes in data so you don't worry about callbacks, caching, routing, etc.
+
+Due to this design, we've reduced the error footprint of the language -- there are really only 3 kinds of errors you'll ever encounter, and those mostly relate to data missing or being in the wrong shape that you expect. What's more, we'll actually be able to catch most errors with the right tooling. You'll never experience your app crashing or errors related to undefined/nil values.
+
+We've made sure your program is transparent and inspectable. If you want to monitor a value in the system, you can just write a query that displays it, as the program is running. I like to think of this as a "multimeter for code". You can do this for variables, memory, HTTP requests, the code itself ... since everything is represented as records, everything is inspectable.
+
+Because at its core Eve is a database, we also store all the information necessary to track the provenance of values. This is something most languages can't do, because the information just isn't there. So for instance if a value is wrong, you can find out exactly how it was generated.
+
+There's a lot more work to do, but we have big plans going forward. We plan to make the runtime distributed and topology agnostic, so you can potentially write a program that scales to millions of users without having to worry about provisioning servers or worrying about how your code scales.
+
+We're also planning on multiple interfaces to the runtime. Right now we have a text syntax, but there's no reason we couldn't plug in a UI specific editor that integrates with text code. We've explored something like this already.
+
+Anyway, those are future directions, but what we have right now is a set of semantics that allow for the expression of programs without a lot of the boilerplate and hassle you have to go through in traditional languages, and which provide some unique properties you won't find in any other language (at least none that I've used).
+
+---
+
+Litt: Cambria: store document as version-tagged edit log.
+
+allows you to interpret writes later in a different way
+
+
 ---
 
 🧼 IDEA: DREAM CLOJURE
