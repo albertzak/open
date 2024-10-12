@@ -35,7 +35,7 @@ I collected random interesting internet finds in Apple Notes. Order is somewhat 
 
 
 
-
+seL4 / 10k lines microkernel, formally verified capability system
 
 ---
 
