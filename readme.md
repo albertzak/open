@@ -80,10 +80,7 @@ use case: not the artefact but the process of programming is very important. sho
 
 industrial control + security. maintainability/visibility of iot is baaaaad
 
-> konkretisierennnnnnnnnnnnn, iterate challenge+lösungsansatz
-> ende aug / anfang sept: 1 praktisch + 2 tiefe (+ 3 text iwann)
-
-
+get concreteeeeeeeee, iterate challenge+approach
 
 ---
 
