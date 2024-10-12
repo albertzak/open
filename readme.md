@@ -57,6 +57,97 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+
+🕺 Email to advisor
+
+Hi Michael,
+
+The tinkering is coming along pretty well, but I'm starting to feel a bit uncomfortable because I just can't seem to get into writing. Do you have any ideas on whether/how some of this could be packaged as a smaller paper?
+
+**Identity of top-level definitions** More theoretical: what are the tradeoffs when functions (or other top-level definitions) are identified either by hash or by unique ID? In reality, both forms are rare; most often, only the name exists anyway. What hybrid forms make sense and when?
+Hash: Unison; Unique ID: cap'n'proto, homeassistant
+
+**Survey of the previous versions of Eve** The Eve project has apparently produced 34 completely different programming environments. Besides a GitHub repo, there isn't much information about it—so this would be more of an archaeology study, one I'd rather read than write.
+
+**Pause execution on exceptions, inspect bindings, resume with new code—without support from continuations** A poor approximation of Smalltalk's "does not understand" or Common Lisp's condition system, except that it does without continuations in the host runtime, using only indirection+promises at every function call.
+But it doesn't really work reliably, is a weird hack, only works for simple code without closures/callbacks, "poisons" call sites with promises, and inspecting or modifying the call stack will never work (only local bindings). And updating/resuming doesn't work yet either.
+I'd be too embarrassed to publish it at the moment—maybe when it's more useful and together with a workflow/editor integration, or at least "distilled" API primitives.
+
+**Editor integration via language server protocol** I can now finally show simple autocomplete, hover tooltips, and read-only text over top-level definitions.
+Essentially, custom mini-editor UIs that are defined inline with the code.
+It's probably still too early to settle on a specific workflow or built-ins, but these small UI additions are already quite helpful, for example, when editing an existing function.
+Todo: refine the API, find more use cases, abstract recurring usage patterns.
+I find it promising and interesting but don't yet see a paper in it.
+
+**Current test project for the system:** live reading of my electricity/gas consumption. The Good: working with real data right away: tapping the IR port via serial, ring buffer code, message header/length/footer parsing, AES decryption, byte offsets/bytes to int, and even live writing to MQTT and debugging was incredibly fun. I rarely had so much flow while programming, all without waiting for compile/restart.
+The Bad: it still needs much more editor support and more interactivity in the editor itself; at the moment, the editor is just input, and the viewer window is just output—that's "too far apart." I also still had to restart often and lost state, but that wasn't too bad here.
+The Ugly: single-writer EAVT as a "one data model to rule them all" is nonsense, at least in direct use (i.e., everything is global). It clearly needs normal primitive state containers (atom) and also implicit local state in closures. State in atoms can be mapped well to EAVT; but closures, which are equivalent to object instances, not at all. Dynamic software update of function instances/objects is probably the biggest unsolved question mark in this field for the last 60 years; I hope to handle it well enough with the other tools, like "if the system has to restart or crash, then that's okay too."
+
+-- Or something from the completely untouched construction sites from our last conversation? Surface syntax, namespacing, when-then production rules, data constraints
+Since there's nothing really new here, probably only in combination with the rest.
+
+Thanks ✨
+
+
+---
+
+a few programming language features i'd like to see
+
+https://neilmadden.blog/2023/01/18/a-few-programming-language-features-id-like-to-see/
+
+teleo-reactive programs
+
+```
+to make_tea:
+  when perfect(tea) -> done
+  when brewed(tea) -> remove_teabag; add_milk
+  when hot(water) -> pour_into(cup); add_teabag
+  when cold(water) and full(kettle) -> boil_kettle
+  when empty(kettle) -> fill(kettle)
+```
+
++ design by contract
+
+```
+to make_tea:
+  achieves full_of(cup, tea)
+  requires not empty(tea_box)
+```
+
+
++ STRIPS planner
+
+```
+achieve full_of(cup, tea)
+```
+
+
+---
+
+c.a.r. hoare's turing speech 1980
+
+the emperors new clothes
+
+The first principle was security: The principle that every syntactically incorrect program should be rejected by the compiler and that every syntactically correct program should give a result or an error message that was predictable and comprehensible in terms of the source language program itself. Thus no core dumps should ever be necessary. It was logically impossible for any source language program to cause the computer to run wild, either at compile time or at run time. **A consequence of this principle is that every occurrence of every subscript of every subscripted variable was on every occasion checked at run time against both the upper and the lower declared bounds of the array.** Many years later we asked our customers whether they wished us to provide an option to switch off these checks in the interests of efficiency on production runs. Unanimously, they urged us not to - they already knew how frequently subscript errors occur on production runs where failure to detect them could be disastrous. **I note with fear and horror that even in 1980, language designers and users have not learned this lesson. In any respectable branch of engineering, failure to observe such elementary precautions would have long been against the law.**
+
+
+The story of the Mariner space rocket to Venus, lost because of the lack of compulsory declarations in FORTRAN, was not to be published until later.
+
+The way to shorten programs is to use procedures, not to omit vital declarative information.
+
+At last, there breezed into my office the most senior manager of all, a general manager of our parent company, Andrew St. Johnston. I was surprised that he had even heard of me. "You know what went wrong?" he shouted - he always shouted - "You let your programmers do things which you yourself do not understand." I stared in astonishment. He was obviously out of touch with present day realities. How could one person ever understand the whole of a modern software product like the Elliott 503 Mark II software system?
+
+I realized later that he was absolutely right; he had diagnosed the true cause of the problem and he had planted the seed of its later solution.
+
+[granger adds in "against the current": this is basically incompatible with open source software]
+
+I gave desperate warnings against the obscurity, the complexity, and overambition of the new design, but my warnings went unheeded. I conclude that there are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies and the other way is to make it so complicated that there are no obvious deficiencies.
+
+But to me, each revision of the document simply showed how far the initial Flevel implementation had progressed. Those parts of the language that were not yet implemented were still described in free-flowing flowery prose giving promise of unaltoyed delight. In the parts that had been implemented, the flowers had withered; they were choked by an undergrowth of explanatory footnotes, placing arbitrary and unpleasant restrictions on the use of each feature and loading upon a programmer the responsibility for controlling the complex and unexpected side-effects and interaction effects with all the other features of the language.
+
+
+---
+
 granger: "a really fast db is still a really slow programming language"
 
 we (eve) could put 2,000 balls on the screen (at 60 fps), rust could do 4,000,000
@@ -111,15 +202,15 @@ Glench: REPLugger temporary overrides of values, fake into if statements, save a
 http://worrydream.com/MagicInk/#interactivity_considered_harmful
 
 
-That is, this software is normally “used” by simply looking at it, with no interaction whatsoever. In contradiction to the premise of interaction design, this software is at its best when acting non-interactively.
+That is, this software is normally "used" by simply looking at it, with no interaction whatsoever. In contradiction to the premise of interaction design, this software is at its best when acting non-interactively.
 
-Accordingly, all interactive mechanisms—the buttons and bookmarks list—are hidden when the mouse pointer is outside the widget. Unless the user deliberately wants to interact with it, the widget appears as a pure information graphic with no manipulative clutter. (Tufte uses the term “administrative debris.”)
-
-
-Generality. If we think of a computer as a machine that runs software, then in some sense, all data handled by a computer platform must be “software.” The data making up a JPEG image, for example, can be thought of as the encoding of a program that describes a picture. (This is sometimes called the “data is code” equivalence.) But the limitations of the JPEG platform result in severely lobotomized “programs”—they cannot animate, respond to context, incorporate new compression techniques, or otherwise take any advantage of the computer beyond what JPEG explicitly allows. A crippled platform cripples a designer’s means of expression.
+Accordingly, all interactive mechanisms—the buttons and bookmarks list—are hidden when the mouse pointer is outside the widget. Unless the user deliberately wants to interact with it, the widget appears as a pure information graphic with no manipulative clutter. (Tufte uses the term "administrative debris.")
 
 
-In order for a designer to take full advantage of the medium, a good platform must provide safe access to everything that is technologically possible. A platform for information software must offer: inputs from the environment (that is, communication with other software and physical sensors), from history (that is, storage), and from the user (that is, interaction); computational resources with which to respond to inputs; and unrestricted graphical output. Anything less robs information software of its full potential. The proper way to prevent destructive behavior is a well-designed security model, not arbitrarily amputating the computer’s capabilities.
+Generality. If we think of a computer as a machine that runs software, then in some sense, all data handled by a computer platform must be "software." The data making up a JPEG image, for example, can be thought of as the encoding of a program that describes a picture. (This is sometimes called the "data is code" equivalence.) But the limitations of the JPEG platform result in severely lobotomized "programs"—they cannot animate, respond to context, incorporate new compression techniques, or otherwise take any advantage of the computer beyond what JPEG explicitly allows. A crippled platform cripples a designer's means of expression.
+
+
+In order for a designer to take full advantage of the medium, a good platform must provide safe access to everything that is technologically possible. A platform for information software must offer: inputs from the environment (that is, communication with other software and physical sensors), from history (that is, storage), and from the user (that is, interaction); computational resources with which to respond to inputs; and unrestricted graphical output. Anything less robs information software of its full potential. The proper way to prevent destructive behavior is a well-designed security model, not arbitrarily amputating the computer's capabilities.
 
 
 **"The platform must make it possible to create information software. The tool must make it easy"**
@@ -393,9 +484,9 @@ b. local db simulations / ephemeral data overlay (with db db' ...) are free and 
 c. persistent db writes to local vat/node - effectful cap needed (closure with bound swap!) (fn update! [new-db] (reset! db new-db)) or better because more confined: (fn append-tx! [tx] (swap! db d/apply-tx tx))
 
 while a, b seem like no caps because they are just values (but give free access to db value), they are caps as well (?) - the read only cap to an value
-it's just a static value. quote miller: "Data provides only irrevocable knowledge, so don’t bother wrapping it (in a caretaker/membrane)"
+it's just a static value. quote miller: "Data provides only irrevocable knowledge, so don't bother wrapping it (in a caretaker/membrane)"
 
-"the right to exercise access carries with it the right to grant access”. [capmyths, (Gong’s citation [1] is Boebert’s 1984 paper, which corresponds to our citation [2]).]
+"the right to exercise access carries with it the right to grant access". [capmyths, (Gong's citation [1] is Boebert's 1984 paper, which corresponds to our citation [2]).]
 
 
 ---
@@ -458,7 +549,7 @@ family ~= (super-)class hierarchy ~= certificate chain
 
 Perspective
 
-Security and Privacy, and even reliability, rely on the inabilities of programs, not so much the abilities. Unix fails the capability test because **there are too many ways for programs to have effects, or receive information. Manuals list ways to do things. You don’t find in manuals even claims such as “the above are all those ways”.** A kernel programmer is usually pleased that he has provided a new way to move information around. I worry about the Mac’s 115 kernel extensions.
+Security and Privacy, and even reliability, rely on the inabilities of programs, not so much the abilities. Unix fails the capability test because **there are too many ways for programs to have effects, or receive information. Manuals list ways to do things. You don't find in manuals even claims such as "the above are all those ways".** A kernel programmer is usually pleased that he has provided a new way to move information around. I worry about the Mac's 115 kernel extensions.
 Another observation is that connection begets connection; message may convey capabilities. More importantly: Only connection begets connection.
 
 
@@ -475,11 +566,11 @@ from http://erights.org/data/serial/jhu-paper/intro.html
 
 Miller's thesis -- OMG related works
 
-"**Global namespaces create intractable political problems.** Froomkin’s Toward a Critical Theory of Cyberspace [Fro03] examines some of the politics surrounding ICANN. In a world using key-centric rather than name-centric systems, these intractable political problems would be replaced with tractable technical problems."
+"**Global namespaces create intractable political problems.** Froomkin's Toward a Critical Theory of Cyberspace [Fro03] examines some of the politics surrounding ICANN. In a world using key-centric rather than name-centric systems, these intractable political problems would be replaced with tractable technical problems."
 
-**"Data provides only irrevocable knowledge, so don’t bother wrapping it (in a caretaker/membrane)"**
+**"Data provides only irrevocable knowledge, so don't bother wrapping it (in a caretaker/membrane)"**
 
-"Lauer and Needham’s On the Duality of Operating System Structures [LN79] contrasts “message-oriented systems” with “procedure-oriented systems.” Message-oriented systems consist of separate process, not sharing any memory, and communicating only by means of messages. The example model presented in their paper uses asynchronous messages. Procedure-oriented systems consist of concurrently executing processes with shared access to memory, using locking to exclude each other, in order to preserve the consistency of this memory. . The example model presented in their paper uses monitor locks [Hoa74]. Their “procedure-oriented systems” corresponds to the term “shared-state concurrency” as used by Roy and Haridi [RH04] and this dissertation."
+"Lauer and Needham's On the Duality of Operating System Structures [LN79] contrasts "message-oriented systems" with "procedure-oriented systems." Message-oriented systems consist of separate process, not sharing any memory, and communicating only by means of messages. The example model presented in their paper uses asynchronous messages. Procedure-oriented systems consist of concurrently executing processes with shared access to memory, using locking to exclude each other, in order to preserve the consistency of this memory. . The example model presented in their paper uses monitor locks [Hoa74]. Their "procedure-oriented systems" corresponds to the term "shared-state concurrency" as used by Roy and Haridi [RH04] and this dissertation."
 
 
 
@@ -519,7 +610,7 @@ buttons edit text (and cause recomputation) - this avoids loops
 
 "Text editors are generic and refined tools that have many built-in features like copy/paste and undo/redo. Having state directly in the text gives us these features for free. For example, you can copy a document to a different text editor to edit and then paste it back into Potluck, and it retains all of its behavior. By using text as the source of truth, Potluck inherits the affordances and powers of text.
 Originally we tried allowing users to manually highlight entities in the text. We abandoned this approach mainly because manual highlighting was tedious, but also because it created hidden state outside the text that was hard to reason about."
-"In some cases, our demos violate this general principle by storing ephemeral state which isn’t stored in the text. For example, our default timer widget doesn’t store the remaining time in the text, so a running timer won’t survive a copy-paste. This wasn’t a particularly principled decision though; in theory, any state that can be encoded as text can be stored in the document itself."
+"In some cases, our demos violate this general principle by storing ephemeral state which isn't stored in the text. For example, our default timer widget doesn't store the remaining time in the text, so a running timer won't survive a copy-paste. This wasn't a particularly principled decision though; in theory, any state that can be encoded as text can be stored in the document itself."
 
 "The text-based todo list app TaskTXT has a good solution to storing timer state in the document. When a timer is started, it records the start time into the text document in a human-friendly format. The result is that even a running timer can survive a cut-paste."
 
@@ -541,9 +632,9 @@ https://maggieappleton.com/programming-portals
 
 https://fultonsramblings.substack.com/p/why-we-need-lisp-machines?r=1dlesj&s=w&utm_campaign=post&utm_medium=web
 
-"UNIX was designed as a self-contained system. you simply didn’t have other computers you would rely on. You had your department’s computer, and you would sometimes send messages and files to their department computers. That’s the full extent of UNIX’s intended networking abilities."
+"UNIX was designed as a self-contained system. you simply didn't have other computers you would rely on. You had your department's computer, and you would sometimes send messages and files to their department computers. That's the full extent of UNIX's intended networking abilities."
 
-"**A modern UNIX system isn’t self-contained.** I have 4 UNIX systems on my desk (Desktop, laptop, iPhone, iPad) I’m contentiously using the cloud (iCloud for photos, GitHub for text files, Dropbox for everything else) to sync files between these machines. The **cloud is just a workaround for UNIX’s self-contained nature**"
+"**A modern UNIX system isn't self-contained.** I have 4 UNIX systems on my desk (Desktop, laptop, iPhone, iPad) I'm contentiously using the cloud (iCloud for photos, GitHub for text files, Dropbox for everything else) to sync files between these machines. The **cloud is just a workaround for UNIX's self-contained nature**"
 
 https://liam-on-linux.dreamwidth.org/80795.html
 
@@ -562,7 +653,7 @@ Monte lang (python+ocaps)
 
 https://monte.readthedocs.io/en/latest/intro.html
 
-"While “arbitrary code execution” is a notorious security vulnerability, Monte enables the fearless yet powerful use of multi-party limited-trust mobile code."
+"While "arbitrary code execution" is a notorious security vulnerability, Monte enables the fearless yet powerful use of multi-party limited-trust mobile code."
 
 ---
 
@@ -578,7 +669,7 @@ cap'n proto schema definitions
 top level defns have random IDs
 
 
-"A Cap’n Proto file must have a unique 64-bit ID, and each type and annotation defined therein may also have an ID. Use capnp id to generate a new ID randomly. ID specifications begin with @:"
+"A Cap'n Proto file must have a unique 64-bit ID, and each type and annotation defined therein may also have an ID. Use capnp id to generate a new ID randomly. ID specifications begin with @:"
 
 ```
 @0xdbb9ad1f14bf0b36; # file id
@@ -592,14 +683,14 @@ enum Bar @0xb400f69b5334aab3 {
 }
 ```
 
-If you omit the ID for a type or annotation, one will be assigned automatically. This default ID is derived by taking the first 8 bytes of the MD5 hash of the parent scope’s ID concatenated with the declaration’s name (where the “parent scope” is the file for top-level declarations, or the outer type for nested declarations). You can see the automatically-generated IDs by “compiling” your file with the -ocapnp flag, which echos the schema back to the terminal annotated with extra information, e.g. capnp compile -ocapnp myschema.capnp. In general, you would only specify an explicit ID for a declaration if that declaration has been renamed or moved and you want the ID to stay the same for backwards-compatibility.
+If you omit the ID for a type or annotation, one will be assigned automatically. This default ID is derived by taking the first 8 bytes of the MD5 hash of the parent scope's ID concatenated with the declaration's name (where the "parent scope" is the file for top-level declarations, or the outer type for nested declarations). You can see the automatically-generated IDs by "compiling" your file with the -ocapnp flag, which echos the schema back to the terminal annotated with extra information, e.g. capnp compile -ocapnp myschema.capnp. In general, you would only specify an explicit ID for a declaration if that declaration has been renamed or moved and you want the ID to stay the same for backwards-compatibility.
 
 
-IDs exist to provide a relatively short yet unambiguous way to refer to a type or annotation from another context. They may be used for representing schemas, for tagging dynamically-typed fields, etc. Most languages prefer instead to define a symbolic global namespace e.g. full of “packages”, but this would have some important disadvantages in the context of Cap’n Proto:
+IDs exist to provide a relatively short yet unambiguous way to refer to a type or annotation from another context. They may be used for representing schemas, for tagging dynamically-typed fields, etc. Most languages prefer instead to define a symbolic global namespace e.g. full of "packages", but this would have some important disadvantages in the context of Cap'n Proto:
 
   - Programmers often feel the need to change symbolic names and organization in order to make their code cleaner, but the renamed code should still work with existing encoded data.
 
-  - It’s easy for symbolic names to collide, and these collisions could be hard to detect in a large distributed system with many different binaries using different versions of protocols.
+  - It's easy for symbolic names to collide, and these collisions could be hard to detect in a large distributed system with many different binaries using different versions of protocols.
 
   - Fully-qualified type names may be large and waste space when transmitted on the wire.
 
@@ -609,8 +700,8 @@ Evolving Your Protocol
 
 A protocol can be changed in the following ways without breaking backwards-compatibility, and without changing the canonical encoding of a message:
 
-  - New types, constants, and aliases can be added anywhere, since they obviously don’t affect the encoding of any existing type.
-  - New fields, enumerants, and methods may be added to structs, enums, and interfaces, respectively, as long as each new member’s number is larger than all previous members. Similarly, new fields may be added to existing groups and unions.
+  - New types, constants, and aliases can be added anywhere, since they obviously don't affect the encoding of any existing type.
+  - New fields, enumerants, and methods may be added to structs, enums, and interfaces, respectively, as long as each new member's number is larger than all previous members. Similarly, new fields may be added to existing groups and unions.
   - New parameters may be added to a method. The new parameters must be added to the end of the parameter list and must have default values.
   - Members can be re-arranged in the source code, so long as their numbers stay the same.
   - Any symbolic name can be changed, as long as the type ID / ordinal numbers stay the same.
@@ -1094,10 +1185,10 @@ This kind of system will suffer from the ratchet problem. A single bug that nega
 In theory, this sort of setup would be nice in a perfect world, but in the real world of buggy software and faulty hardware and cosmic rays, it's a disaster waiting to happen.
 (hn)
 
-What about some middle ground? I’d like my IDE to remain constant between reboots, my browser to some degree is already (if it crashes, it reopens all current tabs on start, which is effectively the same).
+What about some middle ground? I'd like my IDE to remain constant between reboots, my browser to some degree is already (if it crashes, it reopens all current tabs on start, which is effectively the same).
 I would have thought some clever hacks on an existing kernel would be reliable enough rather than an entirely new OS just for one feature, though.
 
-Something like “crash-only software”; programs are expected to be killed and relaunched. Software should cope with it, as there is no swap space and ideally the user shouldn’t be managing memory. An app may create to some degree the appearance of persistence but it’s not persistence. Users, also, can easily force kill apps. Ongoing background operations like downloads, uploads and some media playback is delegated to the operating system. Such operations continue when your process is killed, and you check up on them when your process starts. I hope it’s not TMI, but the standard library includes atomic file saves.
+Something like "crash-only software"; programs are expected to be killed and relaunched. Software should cope with it, as there is no swap space and ideally the user shouldn't be managing memory. An app may create to some degree the appearance of persistence but it's not persistence. Users, also, can easily force kill apps. Ongoing background operations like downloads, uploads and some media playback is delegated to the operating system. Such operations continue when your process is killed, and you check up on them when your process starts. I hope it's not TMI, but the standard library includes atomic file saves.
 
 
 ---
@@ -1208,7 +1299,7 @@ summary https://gist.github.com/Profpatsch/abda97a7b635f876e29f544a26840666
 ---
 
 "A computer is like a violin. You can imagine a novice trying first a phonograph and then a violin. The latter, he says, sounds terrible. That is the argument we have heard from our humanists and most of our computer scientists. Computer programs are good, they say, for particular purposes, but they aren't flexible. Neither is a violin, or a typewriter, until you learn how to use it."
-Marvin Minsky, “Why Programming Is a Good Medium for Expressing Poorly-Understood and Sloppily-Formulated Ideas” in Design and Planning, (1967)
+Marvin Minsky, "Why Programming Is a Good Medium for Expressing Poorly-Understood and Sloppily-Formulated Ideas" in Design and Planning, (1967)
 
 
 ---
@@ -1793,11 +1884,11 @@ especially a subset of cps what hickey calls situated systems ...
 **plan9**
 
 plan9 distribution: With the small kernel size mentioned above, it is worth pausing a bit and reflecting on what these kernels can actually do. First of all, the filesystem in Plan 9/Inferno runs on a network protocol (9P). Whether the file in question is actually on the local computer, or somewhere on the web, is irrelevant. Nat- urally a solid security framework is built deep into the system to ensure that all such transactions are safe, again whether or not such transactions happen locally or via the internet, is irrelevant, they are secured regardless (Plan 9 does not have root or setuid problems, and neither does it implicitly trust foreign kernels, like UNIX does). What this means, is that Plan 9/Inferno is network and security agnostic. Any program running on these systems gets these things for free.
-In addition, each process in Plan 9/Inferno has its own private view of the filesystem, or "names- pace." So in effect, all processes run inside their own mini-jails. It is easy to control just how much, or how little, access each process should have to the system. But this technique was not devised primarily to isolate resources, but to distribute them. For example, if you want to run a Mips binary on a PC, just import the cpu from a Mips machine. If you want to debug a system that crashes during startup, just import its /proc on a working machine, and run the debugger from there, etc. Since all resources are files, and all processes have their own private view of files, and networks and security are transparent, you can freely mix and mash any resources on the net as you see fit. In fact, Plan 9 was designed to run as a single operating system, spread out across multiple physical machines on a network. No other operating system, that I am aware of, is even close to providing such capabilities. In recent years modern UNIX systems have begun incorporating unicode, jails and snapshots, technologies that Plan 9 had invented in the early 90’s, but their implementations have been clunky, clumsy and laborious to learn in comparison.
+In addition, each process in Plan 9/Inferno has its own private view of the filesystem, or "names- pace." So in effect, all processes run inside their own mini-jails. It is easy to control just how much, or how little, access each process should have to the system. But this technique was not devised primarily to isolate resources, but to distribute them. For example, if you want to run a Mips binary on a PC, just import the cpu from a Mips machine. If you want to debug a system that crashes during startup, just import its /proc on a working machine, and run the debugger from there, etc. Since all resources are files, and all processes have their own private view of files, and networks and security are transparent, you can freely mix and mash any resources on the net as you see fit. In fact, Plan 9 was designed to run as a single operating system, spread out across multiple physical machines on a network. No other operating system, that I am aware of, is even close to providing such capabilities. In recent years modern UNIX systems have begun incorporating unicode, jails and snapshots, technologies that Plan 9 had invented in the early 90's, but their implementations have been clunky, clumsy and laborious to learn in comparison.
 
 
 plan9 gui: The difference in focus between these two developments of graphics were paramount. While X tried to develop a massive Windows like system full of new GUI programs, and more or less ignored the termi- nal, Blit was designed for the purpose of running terminal windows. The original UNIX team exploited graphics in many interesting ways to augment the text terminal. For example while X went to great lengths to emulate the physical limitations of teletypes in xterm, Blits terminals behaved much like a regular GUI text editor. You could freely copy-paste and edit text using simple mouse actions, like you would in any graphical editor. This meant that many interactive features of the text terminal, such as substitutions, history and line editing ect, were unnecessary, and subsequently dropped.
-One external desktop did peek their interests though, that of the Oberon operating system. At the sur- face the Oberon desktop looks like a regular tiling window manager, but its approach to GUI’s is radically different and unique. Text can be written anywhere inside the GUI and executed with mouse actions. This
+One external desktop did peek their interests though, that of the Oberon operating system. At the sur- face the Oberon desktop looks like a regular tiling window manager, but its approach to GUI's is radically different and unique. Text can be written anywhere inside the GUI and executed with mouse actions. This
 
 
 design is simple and ingenious, any command line program is automatically available in the GUI, and tech support is simply a matter of emailing the correct instructions to the user and asking him to click on them. This design greatly inspired the acme text editor in Plan 9.
@@ -2179,7 +2270,7 @@ https://www.brandons.me/blog/the-bagel-language
 
 ---
 
-“bricoleur science” <3 https://drossbucket.com/2017/04/08/im-a-bricoleur-scientist/
+"bricoleur science" <3 https://drossbucket.com/2017/04/08/im-a-bricoleur-scientist/
 
 erlang supervision trees https://adoptingerlang.org/docs/development/supervision_trees/
 
@@ -2256,7 +2347,7 @@ last straw: security. code reuse, packages pola? WHY CAN I DO EVERYTHING MY "USE
 
 -convergence
 
-“Most programs are not write-once. They are reworked and rewritten again and again in their lives. Bugs must be debugged… During this process, human beings must be able to read and understand the original code; it is therefore more important by far for humans to be able to understand the program than it is for the computer.” - Matsumoto Yukihiro (matz) 2007
+"Most programs are not write-once. They are reworked and rewritten again and again in their lives. Bugs must be debugged… During this process, human beings must be able to read and understand the original code; it is therefore more important by far for humans to be able to understand the program than it is for the computer." - Matsumoto Yukihiro (matz) 2007
 
 test code? discovery - test response of web service? play around?
 
