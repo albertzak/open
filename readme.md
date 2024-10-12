@@ -54,6 +54,8 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 |  🕺  | [my advisor](https://i4c.at/goeschka/) (btw he was awesome: just let me do anything, or nothing, no academic 🚮) |
 |  🧼  | shower thoughts / own ideas (they get better from bottom to top) |
 
+**bold** things are good (i think)
+
 ---
 
 
