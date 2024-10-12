@@ -1,7 +1,9 @@
 # 🌱 [open practice](https://www.youtube.com/watch?v=MJzV0CX0q8o)
 a.k.a. **NEW COMMIT EVERY MINUTE**
 
-STATUS: **Highly experimental.** Don't even think about trying. (have fun following along if you want.)
+STATUS: **Highly experimental.** (have fun following along if you want.)
+
+<br>
 
 _"So I'm trying to incubate a personal dynamic..."_ nah
 
@@ -29,7 +31,7 @@ _that's basically it. how hard could it be?_
 #### After LIVE@SPLASH
 
 - [ ] make it nice
-- [ ] can we do it in <26 loc? see data and run fns?
+- [ ] can we do it in [<26 loc](https://buttondown.com/tensegritics-curiosities/archive/writing-the-worst-datalog-ever-in-26loc/)? see data and run fns?
 
 
 
