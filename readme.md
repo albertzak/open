@@ -56,11 +56,14 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 
 
+
+
+
 ---
 
 🕺
 
-yes i also feel the academic system isn't a good fit for you (🚮)
+yes **i also feel the academic system isn't a good fit for you** (🚮)
 
 collect related work (+ edit it nicely)
 
@@ -86,7 +89,7 @@ commission expects: you can demonstrate credibly that you've got a set of plausi
 
 plausible: never has human time been so expensive as now, plan to create the last programming language that will ever be used by humans. what would be the perfect programming language for humans? at the same time never was computing/storage/networking that cheap.
 
-usability engineering for programming languages
+**usability engineering for programming languages**
 
 if you don't really want it, then you will not succeed
 
@@ -200,7 +203,7 @@ https://github.com/pen-lang/pen
 
 [summer 2021]
 
-Debug mode is the only mode
+**Debug mode is the only mode**
 
 https://gbracha.blogspot.com/2012/11/debug-mode-is-only-mode.html
 
@@ -258,7 +261,7 @@ http://joeduffyblog.com/2016/02/07/the-error-model/
 
 CAPS
 
-the problem that caps solve, beautifully explained "like medicine 1870"
+the problem that **caps solve, beautifully explained "like medicine 1870"**
 
 intro rant: http://habitatchronicles.com/2016/10/software-crisis-the-next-generation/
 
