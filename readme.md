@@ -57,7 +57,40 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+granger: "a really fast db is still a really slow programming language"
 
+we (eve) could put 2,000 balls on the screen (at 60 fps), rust could do 4,000,000
+
+over the course of the eve project they built
+  - 34 programming environments
+  - 24 compilers
+  - 16 storage engines
+  - 9 interpreters
+  - dozens of parsers and standard libraries
+
+
+eve bibliography
+
+https://github.com/witheve/eve-experiments/blob/master/design/bibliography.md
+
+https://www.cl.cam.ac.uk/~afb21/publications/HCC02a.pdf
+
+Makes a strong argument that programming is inherently non-direct
+
+
+---
+
+Abraham Coetzee's Masters thesis
+
+"Combining reverse debugging and live programming towards visual thinking in computer programming"
+
+The thesis is full of great insights and gives a great summary of other work.
+
+algojammer + related work
+https://github.com/ChrisKnott/Algojammer
+
+
+---
 http://glench.com/NonprogrammersPaper/
 
 glench redesign of
