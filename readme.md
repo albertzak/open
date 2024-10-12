@@ -66,10 +66,11 @@ i think the topics are very interesting
 
 but i don't feel at home in this academic setting
 
-papers, titles,
+papers, titles, fame and glory i don't care about
 
-papers, titel, ruhm ehre egal
-will eigentlich lieber hobbymäßig
+it's a litte too intense
+
+i'd rather do it as a hobby for a few hours per week
 
 hab genossen mich mit dem them auserianderzusetzen,
 habe genossen einen menot zu haben der sich auch far interessiert
