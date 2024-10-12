@@ -59,6 +59,51 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+🧼 INTERACTON STYLE IDEA: PAUSED LIVE EXCEPTIONS
+
+  - What's the programmer's workflow?
+    - Don't unwind the stack
+      - but give user the opportunity to unwind to known-good stack location (refresh ui)
+  - + ui to attach user messages
+    - "chat with programmer"
+      - what I was doing,
+      - programmer asking for clarifications
+      - user responding while their app gets fixed
+    - subsumes github issues
+      - support chat no longer living in a separate infra
+        - through this has obvious drawbacks re stability
+
+
+
+  - Pause at exception site
+   - until "live" programmer fixes the issue
+     - usually within a few minutes
+
+  - Similar to Smalltalk's didNotUnderstand message
+    - or Dark's 404
+  - the programmer looks at live exceptions
+    - the system groups similar errors (like Sentry)
+      - but shows CL-like unwind-protect debugger
+      - and call data inline with callee code
+
+
+  - this also elegantly "solves" hanging closures error
+    - and errors when hot upgrades would have failed
+    - instead of failing, they just hang with all open closures
+     - + data/state visible to the programmer
+       - can edit data; can replace code; can resume or abort
+
+Editor UI ideas for lexical wrapping / define "blast membranes"
+
+```
+(local ...)
+(node # { aaa }  ...)
+(temp ...) - retracted when deleted
+(??) -simulate side effects
+```
+
+---
+
 🧼 paper idea: CLOJURESCRIPT ON SES (or even better within Jessie subset of SES?)
 
 https://es.discourse.group/t/what-is-the-current-status-of-ses-tinyses-and-jessie/1306/10
