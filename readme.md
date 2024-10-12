@@ -71,6 +71,7 @@ possible editor UI:
 
 ```
 (deffn mimi []) ; full color when available in all
+
 ; missing from: prod-a _eval_
 (deffn bar []) ; greyed out because it is not present in all connected(monitored) nodes' namespaces
 ```
@@ -79,9 +80,10 @@ possible editor UI:
 
   - `Polajure`:
     - A POLA capability subset of clojure
-    - like SES/Agoric/Jessie, remove effectful fns from stdlib
-    - hell i'd use that immediately
-      - hmm maybe SCI already does that
+    - like SES/Agoric/Jessie, **remove effectful fns from stdlib**
+    - **hell i'd use that immediately**
+      - hmm maybe **SCI already does that**
+        - yep of course ❤️
 
 
 ---
