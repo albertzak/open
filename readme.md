@@ -84,7 +84,11 @@ you show at the prof exam: you read up on these topics, understand the open ques
 
 commission expects: you can demonstrate credibly that you've got a set of plausible questions, and you have some overview
 
-plausible: never has human time been so expensive as now, plan to create the last programming language that will ever be used by humans. what would be the perfect programming language for humans?
+plausible: never has human time been so expensive as now, plan to create the last programming language that will ever be used by humans. what would be the perfect programming language for humans? at the same time never was computing/storage/networking that cheap.
+
+usability engineering for programming languages
+
+if you don't really want it, then you will not succeed
 
 
 
