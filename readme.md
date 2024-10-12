@@ -59,6 +59,37 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 
 
+"A computer is like a violin. You can imagine a novice trying first a phonograph and then a violin. The latter, he says, sounds terrible. That is the argument we have heard from our humanists and most of our computer scientists. Computer programs are good, they say, for particular purposes, but they aren't flexible. Neither is a violin, or a typewriter, until you learn how to use it."
+Marvin Minsky, “Why Programming Is a Good Medium for Expressing Poorly-Understood and Sloppily-Formulated Ideas” in Design and Planning, (1967)
+
+
+---
+
+JOSS first "repl" 1963 https://en.wikipedia.org/wiki/JOSS
+
+precursor to MUMPS <3
+
+https://en.wikipedia.org/wiki/FOCAL_(programming_language)#Direct_and_indirect_modes
+
+"allowed users to type in commands in "direct mode", which were performed immediately, or to prefix them with a line number, in which case they were added to the program if they were unique, or overrode existing code if the same number had previously been used.
+
+The method of operation is similar to BASIC's "immediate mode" vs. "program mode""
+
+
+https://lispcookbook.github.io/cl-cookbook/editor-support.html
+
+---
+
+
+functional effect streams Functional effect and streaming systems in Clojure - Léo Noel - reClojure 2021
+
+---
+
+http://akkartik.name/post/division-of-labor
+
+10 years against division of labor in software
+
+
 
 ---
 
