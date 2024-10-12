@@ -56,11 +56,34 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+🕺
+
+phd == 3 good papers
+
+todo: fill gaps
+
+saltzer e2e argument 1985
+
+"low code/no-code"
+
+idea: programming = visualized interaction
+
+scope problem in depth: "caps + code db + relations + distributed deployment"
+
+> history multics 1000e-referencen in textform (nicht nur history if informatics) / zielorientiert einfachheit progging / so dass es self-contained ist, aber mal nur material (später für diss+pe wirder gekürzt
+> report pe: mostly state of the art recherche
+> publizieren: history, und übrigens wir haben das
+> "research challenge paper" / student track / doctoral symposium / identifieren problem aufgrund von breiter recherche / phd stud paper / in early stages
+> use case ist nicht artefakt, sondern prozess des proggens ist sehr wichtig. zeigen wie schaut das nrmalerweise aus, wie mit meinem system. industrial control + security. wartbarkeit/visibility von iot ist baaaaad
+
+> konkretisierennnnnnnnnnnnn, iterate challenge+lösungsansatz
+> ende aug / anfang sept: 1 praktisch + 2 tiefe (+ 3 text iwann)
 
 
 
+---
 
-
+Genode sculpt https://genode.org/documentation/articles/sculpt-21-10
 
 ---
 
