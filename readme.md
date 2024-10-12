@@ -59,6 +59,9 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 
 
+---
+
+
 https://merveilles.town/@nakst/110904552263386432?utm_source=substack&utm_medium=email
 
 (via omar rizwan folk newsletter)
@@ -75,8 +78,8 @@ Aug 17, 2023 at 12:46
 
 @nakst
 
-It's noteworthy how while typical APIs have data types like int, bool and string, filesystem-based APIs have data types like text, images and others that can be dynamically registered by applications.
-I also think it would be cool if there were ".bool" and ".int" files, and when you open them you get a window with a lone checkbox or slider respectively.
+It's noteworthy how while typical APIs have data types like int, bool and string, **filesystem-based APIs have data types like text, images and others that can be dynamically registered** by applications.
+I also think it would be **cool if there were ".bool" and ".int" files, and when you open them you get a window with a lone checkbox or slider** respectively.
 
 
 
