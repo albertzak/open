@@ -35,6 +35,79 @@ I collected random interesting internet finds in Apple Notes. Order is somewhat 
 
 
 
+
+Multics 1965
+"Multiplexed information and computing service"
+(ARPA, MIT, Bell labs, GE, vorläufter project MAC '62 / Licklider "internet" "On-Line Man Computer Communication")
+
+PL/1, 1MB RAM, NSA >1998
+expensive process creation: 3 procs per user, later 1 proc.
+W^X: actually from a cost mem optimization, keep only one copy in ram, should not modify itself when multiple users access same program
+
+70s: Algol, Cobol, Fortran
+Mid-70s: Maclisp Macsyma, APL interpreter
+80s: C compiler, aber C code moddifiziert gerne adressen, pointer maagic, null pointer arithmetic etc,
+
+1984 dynamic reconfiguration: CPU, mem, drives, peripherals (Schell 1084)
+
+"Bigger, slower, less reliable than planned" - 60-70 sites, last site closed in 1998
+Myths:
+Not first timesharing
+not first virtual memory
+Thompson's unix "Unics" re-write was the smallest possible timesharing on pdp-7 assembly
+Super secure? Per-user
+Ritchie/Thompson: "Overengineered"
+
+- van horn: supervisor, pdp-1 1969
+
+---
+
+lampson: capOS cal-tss protection+refinement
+
+---
+
+Intel i432
+
+between 6 and 321 bits
+
+---
+
+Smalltalk
+
+simula 67 (objects, classes, inheritance)
+
+---
+
+POLA / least privilege
+
+- 1975 GNOSIS/KeyKOS "cloud computing" (before dial up)
+- resume processes within 30s / demo pull plug
+- 20kloc
+- <100kb kernel ram usage / microkernel, never allocates mem (only mutates processes' memory, unbuffered messagepassing)
+- capabilities (naming+locating+accesrights)
+- slm/persistent virtual mem/orthogonal persistence
+- no serialized on disk/deserialized in mem
+- persistent objects: each file/process/supervisor is an object
+- home location on disk, optional transparently in ram
+- checkpointing, CoW, "opportunistic scheduling"
+- network+keyboard journaled (nicht ganz transparente persistency)
+
+
+- "directory" assocs name with keys
+- service keys for debugging, closely held
+- "sensory key" solves problem of getting access to a r/w key via a read only key by downgrading all keys fetched via the sensory key to sensory keys.
+- discreetness compartments: an actor (domain) with no keys to outside of the domain, avoids exfiltration
+
+
+- domains=cpu/segments=mem/meters=powersupply
+
+
+myths: inability to enforce/cannot solve confinement
+
+"just a bit string"
+
+---
+
 seL4 / 10k lines microkernel, formally verified capability system
 
 ---
