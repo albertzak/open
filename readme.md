@@ -58,6 +58,61 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
+http://glench.com/NonprogrammersPaper/
+
+glench redesign of
+
+Studying the Language and Structure in Non-Programmers' Solutions to Programming Problems by Pane, Ratanamahatana, and Myers
+
+
+--
+
+protorepl: save macro takes a unique identifier (y not containing fn name) and recognizes local binding values
+
+
+Glench: REPLugger temporary overrides of values, fake into if statements, save and name overrides to edit them also if we're in a different part of the code -- maybe unnecess w scratch namespacing only pulling together relevant fns
+
+
+---
+
+http://worrydream.com/MagicInk/#interactivity_considered_harmful
+
+
+That is, this software is normally “used” by simply looking at it, with no interaction whatsoever. In contradiction to the premise of interaction design, this software is at its best when acting non-interactively.
+
+Accordingly, all interactive mechanisms—the buttons and bookmarks list—are hidden when the mouse pointer is outside the widget. Unless the user deliberately wants to interact with it, the widget appears as a pure information graphic with no manipulative clutter. (Tufte uses the term “administrative debris.”)
+
+
+Generality. If we think of a computer as a machine that runs software, then in some sense, all data handled by a computer platform must be “software.” The data making up a JPEG image, for example, can be thought of as the encoding of a program that describes a picture. (This is sometimes called the “data is code” equivalence.) But the limitations of the JPEG platform result in severely lobotomized “programs”—they cannot animate, respond to context, incorporate new compression techniques, or otherwise take any advantage of the computer beyond what JPEG explicitly allows. A crippled platform cripples a designer’s means of expression.
+
+
+In order for a designer to take full advantage of the medium, a good platform must provide safe access to everything that is technologically possible. A platform for information software must offer: inputs from the environment (that is, communication with other software and physical sensors), from history (that is, storage), and from the user (that is, interaction); computational resources with which to respond to inputs; and unrestricted graphical output. Anything less robs information software of its full potential. The proper way to prevent destructive behavior is a well-designed security model, not arbitrarily amputating the computer’s capabilities.
+
+
+**"The platform must make it possible to create information software. The tool must make it easy"**
+
+
+---
+
+Beautiful Software
+
+Christopher Alexander's research initiative on computing and the environment
+
+"...the character of the computer environment of the future needs to become more childish,
+and more human, if it is to help human beings to genuinely extract the best of themselves...
+this change may well affect activities which are apparently technical, not only those that one
+broadly classifies as 'creative'."
+
+In the future we'll only understand how to build good software,
+if we focus, now, on creating software that does good ...
+
+"It is a view of programming as the natural genetic infrastructure of a living world which
+you/we are capable of creating, managing, making available, and which could then have the result
+that a living structure in our towns, houses, work places, cities, becomes an attainable thing.
+That would be remarkable. It would turn the world around, and make living structure the norm once again,
+throughout society, and make the world worth living in again." -- Christopher Alexander
+
+https://beautiful.software
 
 
 ---
