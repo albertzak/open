@@ -78,7 +78,9 @@ write down superset of aaaaaaalllll questions
 
 then: these go in, these dont
 
-find 10 journals/confs
+find 10 journals/confs/symposia/workshops
+
+you show at the prof exam:
 
 
 
