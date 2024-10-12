@@ -29,4 +29,4 @@ _that's basically it. how hard could it be?_
 
 ## Random Notes
 
-from
+from 2020-09 until 2024-08 i got paid to daydream
