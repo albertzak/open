@@ -59,6 +59,42 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 
 
+
+---
+
+<3 deno
+
+https://matklad.github.io/2023/02/12/a-love-letter-to-deno.html
+
+---
+
+jamie again
+
+https://www.scattered-thoughts.net/log/0021/
+
+**EVERY TOP LEVEL DEF HAS AN ID hash23412321**
+
+After taking a step back and thinking about the problem from scratch I had an epiphany - **why is there even a database? If you have a declarative language which can describe data and computation, why use that to compute an imperative action to apply to a totally different system for describing the same data. This is implementation driven thinking.**
+
+Let's just mutate the source code instead.
+
+The history of the program lives in a sqlite database. You can use the cli tools to spit out the current version of the program into a text file, edit it in a text editor and then commit the diff back into the database.
+
+```
+#2280651848495541
+parent("Bob", "Charlie").
+
+#3378495017200132
+ancestor(x, z) <-
+  parent(x, y),
+  ancestor(y, z).
+
+#3531648068531767
+ancestor(x, y) <-
+  parent(x, y).
+```
+
+
 ---
 
 expressions of change:
