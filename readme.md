@@ -9,9 +9,9 @@ _"So I'm trying to incubate a personal dynamic..."_ nah
 
 <br>
 
-> I just want to to **look inside** and see the data
->
-> or tell **that machine** over there to **run this** piece of code.
+I just want to to **look inside** and see the data
+
+or tell **that machine** over there to **run this** piece of code.
 
 <br>
 
@@ -48,36 +48,36 @@ From 2020-09 until 2024-08 I got paid to daydream (🚮). This is all I have to 
 
 I collected random interesting internet finds and a few own ideas in Apple Notes. Order is somewhat chronological, newest at the top. Sadly only very few entries are timestamped or properly sourced. Lightly edited (typos, clarity, formatting) and small parts translated from German.
 
-Notes from chats with [my advisor](https://i4c.at/goeschka/) are blockquoted. (btw he was awesome that he just let me do anything, and nothing at the same time, and didn't force any academic 🚮 on me. 🫶)
+Notes from chats with [my advisor](https://i4c.at/goeschka/) are in code fences. (btw he was awesome that he just let me do anything, and nothing at the same time, and didn't force any academic 🚮 on me. 🫶)
 
 ---
 
-> problems:
-> - traditional programming is not interactive
-> - too many closed systems with weak composition
->
-> we've got too many closed-world systems with their own little languages and semantics. I feel like in the 2000s: video camera, gameboy, usb stick, pocket calculator, mp3 payer, clock, gps -> one smartphone.
->
-> operating systems, shells, filesystems, files, compilers, packages, package managers, languages, databases, web servers, reverse proxies, config files (in ~infinitely many formats), ssh, programs don't compose, communication: sockets/http/tls/files/raw bytes/textfiles/permissions
->
-> last straw: security. code reuse, packages pola? WHY CAN I DO EVERYTHING MY "USER" CAN DO?
->
-> -> convergence
->
-> “Most programs are not write-once. They are reworked and rewritten again and again in their lives. Bugs must be debugged… During this process, human beings must be able to read and understand the original code; it is therefore more important by far for humans to be able to understand the program than it is for the computer.” - Matsumoto Yukihiro (matz) 2007
->
-> test code? discovery - test response of web service? play around?
->
-> -> interactive computing
->
->
-> claim: layers of systems on top of out os: OS are at a local maximum
->
-> yes, OS should manage hw resources, but it's also a platform on which we build systems.
->
-> world of programming languages and databases collide, and they have categorical similarities.
+```
+problems:
+- traditional programming is not interactive
+- too many closed systems with weak composition
+
+we've got too many closed-world systems with their own little languages and semantics. I feel like in the 2000s: video camera, gameboy, usb stick, pocket calculator, mp3 payer, clock, gps -> one smartphone.
+
+operating systems, shells, filesystems, files, compilers, packages, package managers, languages, databases, web servers, reverse proxies, config files (in ~infinitely many formats), ssh, programs don't compose, communication: sockets/http/tls/files/raw bytes/textfiles/permissions
+
+last straw: security. code reuse, packages pola? WHY CAN I DO EVERYTHING MY "USER" CAN DO?
+
+-convergence
+
+“Most programs are not write-once. They are reworked and rewritten again and again in their lives. Bugs must be debugged… During this process, human beings must be able to read and understand the original code; it is therefore more important by far for humans to be able to understand the program than it is for the computer.” - Matsumoto Yukihiro (matz) 2007
+
+test code? discovery - test response of web service? play around?
+
+-> interactive computing
 
 
+claim: layers of systems on top of out os: OS are at a local maximum
+
+yes, OS should manage hw resources, but it's also a platform on which we build systems.
+
+world of programming languages and databases collide, and they have categorical similarities.
+```
 
 ---
 
