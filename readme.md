@@ -34,7 +34,7 @@ _that's basically it. how hard could it be?_
 - [ ] make it nice
 - [ ] can we do it in [<26 loc](https://buttondown.com/tensegritics-curiosities/archive/writing-the-worst-datalog-ever-in-26loc/)? see data and run fns?
 - [ ] make it run my website
-- [ ]
+- [ ] blog post: dream clojure notes (see below)
 
 
 ## Observations
@@ -56,6 +56,38 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 🧼 shower thoughts
 
 ---
+
+🧼 IDEA: DREAM CLOJURE
+
+- keep: data structures
+  - clojure provide high perf immutable data structures, keep using them unchanged. / hamt by bagwell
+- keep: update via commutation functions as opposed to read-modify-write
+- ignore: stm. nor used in practice, just atom/cas, atoms dont support coordinated updates, but thats ok
+- extend: move from concretions to abstractions, eg. instead of cons (a concretion), build against ISeq, an abstraction that supports first, next, nil but leaves open the implementation
+- **extend reader**: keep support for data structures, (maybe?) extend **with function replacement/state keeping sigils?** -- BUT thismay break the read-eval-print, as the clojure reader still just reads not only lists  but also vectors and maps -- does it break code==data?
+- keep: lisp-1, non-interning reader
+- implement: continuations (hahaha)
+- implement: conditions (ummmm, one can dream, right?)
+- **keep: wire-based "just data" service interop (! that's huge) to go on and off the wire at will**
+- keep: where semantics match, eg. strings (+data structures, atoms maybe)
+- extend: interactive programming from lisp. see processes, agents, state, experiment
+  - ^^ **hickey says that there still remains growth there for clojure, seek out some of the facilities that were common in lisps and smalltalks from their heyday, we don't have rich environments yet, a lot more tool work to be done to bring us back to where we were" (!!)**
+- add: safety/ocap?
+- **remove: top level code execution. top level is only for definitions and local notebook-style evaluation**
+- need a library that provides state management, function namespace management, effects
+- embedded in clojure, not a layer on top (like clojure is embedded into the host language, not a layer on top)  -- basically a language in a language, a library, like dustingetz photon
+- can we adapt clojure's runtime polymorphism to use as function replacement layer? (dispatch on data and types)
+
+
+next idea: fantasy repl session in this dream lang
+
+--
+
+one char markers:
+see the state, "printf"
+experiment on the state
+REVELATION while watching complexity of hello world in fsx:
+REALIZE this function replacement strategies via CLOJURE METADATA
 
 
 
