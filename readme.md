@@ -55,7 +55,7 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 |  🧼  | shower thoughts / own ideas (they get better from bottom to top) |
 | **bold** | this is the good stuff (i think) |
 
-
+---
 
 
 ---
@@ -69,6 +69,75 @@ https://github.com/bwo/conditions
 
 ---
 
+
+### January 2024
+
+🧼 IDEAS
+
+decouple fn name from fn definition. name != id.
+
+"programming with petnames"
+
+"like google docs share link to edit, but section-wise" (for any function, or any tiny subexpression)
+
+just early explorations about the interactions
+
+ausdrücke mit IDs markieren: (readable :r342ew ...) | writable | custom
+macro: expose | read | write | ID | editable | readable | share | release | publish | access | open | changeable | capify
+
+**"delegate authority to change a part of the system by changing a part of the system in plain text"**
+
+**filtering "glasses"**
+
+CAP SHARING WORKFLOW
+
+editor: click cap link, adds to editor; or drop, or paste cap in > line.
+
+mix multiple projects in one editor
+
+```
+> cap://acme.co#proj:31232 [enter]
+(u/defn petname-for-that-cap [] ...)
+```
+
+
+WHAT DOES A CAP LINK CONTAIN?
+
+the id, duh. but maybe also: location? suggested name?
+
+`cap://acme.co/#suggestion:opas-fn;cjrf290qewja`
+
+custom protocol or http link that then
+
+universal link: https://developer.apple.com/documentation/xcode/allowing-apps-and-websites-to-link-to-your-content
+
+can simply support both: interchangeable protocol `ocap://` and universal link via domain
+
+
+
+FUNCTION DEFINITIONS
+
+`u/defn`: separate name from rest
+
+defines fn under hash of current code
+
+and defines a petname (updated?) that points to the newest id.
+
+maybe: u/defn rewrites symbols in body to be deref'd late with `#'`
+
+EXTERNAL RESOURCES
+
+btw: how to add external resource
+
+dragdrop int editor
+
+saves hashed in ipfs-like cas, turns in to a cap string in text.
+
+this solves external resouce problem, makes it super open world
+
+(note from sept 2024: this is like realtalk refs work!)
+
+---
 
 Quokka/Wallaby
 
