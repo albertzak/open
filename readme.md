@@ -29,7 +29,13 @@ _that's basically it. how hard could it be?_
 
 ## Random Notes
 
-from 2020-09 until 2024-08 i got paid to daydream (🚮). this is all i have to show for it.
+From 2020-09 until 2024-08 I got paid to daydream (🚮). This is all I have to show for it.
+
+(Order is somewhat chronological, newest at the top.)
+
+
+
+
 
 
 
