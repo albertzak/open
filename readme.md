@@ -59,8 +59,21 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 
 
+
 ---
 
+https://worrydream.com/SeeingSpaces/
+
+bret victor
+
+seeing spaces
+
+you need to be able to:
+1. see inside
+2. see across time
+3. see across possibilities
+
+---
 
 🧼 demo agenda
 
