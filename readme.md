@@ -24,11 +24,12 @@ _that's basically it. how hard could it be?_
 - [ ] **CURRENT** share huge apple notes
 - [ ] upload slides (+ text?) of presentations
 - [ ] upload codebases as-is (except check gitignore before)
+- [ ] think of what to demo in 14min
 
 #### After LIVE@SPLASH
 
-- [ ]
-- [ ] can we see data and run fns in <26 loc?
+- [ ] make it nice
+- [ ] can we do it in <26 loc? see data and run fns?
 
 
 
