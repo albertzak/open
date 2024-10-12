@@ -57,6 +57,37 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+CAPS
+
+the problem that caps solve, beautifully explained "like medicine 1870"
+
+intro rant: http://habitatchronicles.com/2016/10/software-crisis-the-next-generation/
+
+more on caps: http://habitatchronicles.com/2017/05/what-are-capabilities/
+
+kentonv & urbit on capablities
+
+https://news.ycombinator.com/item?id=16091975
+
+With that out of the way, what would a pure capability system look like, if we exposed it directly in a user interface?
+
+Let's say you want to give access to Bob.
+
+In a pure capability system, you don't assign a role to "Bob". Instead, you create a capability for the role, and you send that capability to Bob, via some arbitrary communications mechanism. Bob uses the capability, which grants him access.
+
+Crucially, there is no need for the system to have any notion of how to authenticate "Bob". It doesn't care if the user is really "Bob", it only cares that the user presents the correct capability. This is where capability systems are powerful -- they avoid the need for any centralized list of principals (user identities) and avoid the need for a way to authenticate those principals. This is especially helpful when you need to, say, delegate some responsibility to an automated system that shouldn't be treated as a full user.
+
+But does this mean that when someone accesses the capability, the system actually has no idea who they are, and so can't attribute the changes to anyone?
+
+No. In a capability system, we can take a different approach to auditability.
+
+When you create a capability to send to Bob, you can arrange so that any actions performed using the capability are logged as, e.g., "via Bob". Note that this may be a mere text string. The system still doesn't need to know what "Bob" means, but you can now see in the logs which actions were done by Bob. If Bob further delegates his capability to Carol, he may want to add a second label, "via Carol". Now when you look at the logs, you might see "via Bob; via Carol". This means: "Bob claims that Carol performed this action." No one other than Bob actually needs to know who "Carol" is, much less how to authenticate her. Carol could very well be Bob's imaginary friend. Since the assertion in the audit log says "via Bob" first, we know to hold Bob responsible first. We only care about Carol to the extent that we trust Bob.
+
+Now, again, I don't actually endorse creating a UX like this, because not many users are equipped to understand it. But if you think about it, it does emulate real-life interactions. If I lend my car to Bob, and then the car ends up crashed, I will blame Bob. Bob can say "Oh, I lent it to my friend Carol, she was the one who crashed it," but I don't care, I'm going to hold Bob responsible. At no point in this process do I need to check Bob or Carol's government-issued ID to find out who really crashed my car.
+
+
+---
+
 Bagel lang
 
 https://www.brandons.me/blog/the-bagel-language
