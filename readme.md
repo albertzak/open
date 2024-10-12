@@ -64,7 +64,7 @@ todo: fill gaps
 
 saltzer e2e argument 1985
 
-"low code/no-code"
+preempt how is is different from "low code/no-code"
 
 idea: programming = visualized interaction
 
@@ -74,7 +74,7 @@ write a history paper about multics? 1000s of references. write now, use shorten
 
 need: write report for proficiency exam: it's mostly state of the art
 
-
+ii
 
 
 
