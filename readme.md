@@ -58,6 +58,35 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
+
+
+---
+
+
+jamie brandon (eve, logicblox, hytradboi...) <3
+
+https://www.scattered-thoughts.net/writing/the-shape-of-data/ <3
+
+- handles are the better pointers
+  - Another way to think about it is that a pointer combines an id with the context for interpreting that id. The id 42 is just a number, but the pointer 42 is something we can dereference to find out what it refers to.
+  - At some point we have to interpret ids, so we have to have pointers or something like them for providing context. But there are hefty advantages to restricting our application-level data model to be a tree and using ids to model the graph-like parts.
+
+
+refset response on reddit:
+
+There are plenty of good insights in there, so it's worth a proper skim, but I'd summarise it for this audience as "This is not a blog post about Clojure, **however Clojure+edn gets a tonne of things very right compared with most languages and is really only missing the-codebase-is-data and the-execution-is-data**". There are explanations of these concepts plus a wishlist towards the end.
+
+
+**Initiatives that I suspect can help Clojure's ecosystem greatly on those two fronts...**
+  1. **Durable, transactional REPL**: https://github.com/repl-acement/repl-acement (explanation here https://github.com/repl-acement/editors)
+  2. UI toolkits: https://github.com/HumbleUI/HumbleUI and https://github.com/phronmophobic/membrane
+  3. **Alternative runtime paradigms**: https://github.com/babashka/sci and https://github.com/Convex-Dev/convex (not Clojure...but close enough)
+  4. (any others to suggest?)
+
+
+
+---
+
   - omniscient debugger (can access multiple points in time simultaneously)
   - time travel debugging (can move forward/backwards)
   - robert o callahan
@@ -74,16 +103,11 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 robert: [on connecting debuggers to a running system] **if your program is actually 100s of processes running on 100s of machines in the cloud, you don't know which one to atttach to ahead of time**, and if you stop it, you kind of break the whole system [...] so these things have to keep running -> record and replay is a better fit.
 
 
-debugging has been trending on a downward spiral:
-
-**infratstructure doesn't even support attaching debuggers (anymore)**
-
-people don't use debuggers anymore, whatever language/tooling support there was kind of rots away
-
-fall back to log debugging
-
-eventually people come to assume that dedicated debug tools don't work, can't work
-
+  1. debugging has been trending on a downward spiral:
+  2. **infrastructure doesn't even support attaching debuggers (anymore)**
+  3. people don't use debuggers anymore, whatever language/tooling support there was kind of rots away
+  4. fall back to log debugging
+  5. eventually people come to assume that dedicated debug tools don't work, can't work
 
 
 ---
