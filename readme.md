@@ -53,8 +53,22 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 | --- | --- |
 |  🕺  | [my advisor](https://i4c.at/goeschka/) (btw he was awesome: just let me do anything, or nothing, no academic 🚮) |
 |  🧼  | shower thoughts / own ideas (they get better from bottom to top) |
+| **bold** | this is the good stuff (i think) |
 
-**bold** things are good (i think)
+---
+
+### November 2022
+
+🧼
+
+  - how to interact with capabilities in an interactive programming system?
+  -  attenuate
+
+"Wie kann man capabilities mit einem interaktiven prog system live erzeugen/delegieren/attenuieren..."
+weitere Einschränkunen:
+JUST rosalind-like line of business apps, one central master controller with full authority, many dumb clients and some special devices (sms, imaging, scanners, door locks, leds, sensors), few named known snowflake pet servers. <1000 users.
+NOT mutually suspicious parties (packages, signatures, pubkeys)
+NOT end user programming (customize, control caps of device)
 
 
 ---
