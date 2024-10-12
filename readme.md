@@ -59,10 +59,30 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 
 
+
+---
+
+why relational data models are better
+
+https://news.ycombinator.com/item?id=29964911
+
+You're right: object orientation and relational data don't mesh well together.
+
+Where you're wrong, and it may take more experience to realize, is that the problems in the mismatch lie far more on the OOP side than on the relational side.
+Object oriented designs - the navigable graphs of objects, leaving aside polymorphism - usually privilege a particular perspective of the data, a perspective which is suited to a specific application. For example, a store with items, customers and orders: the application is focused on creating transactions. Relational models, on the other hand, support multiple perspectives "out of the box" and are expected to support multiple applications; for example, reports that roll up by item, by category and by customer; reusing the same customers for a different application; and so on.
+
+Different applications and perspectives usually require different object models. The alternate application reusing the same customer entities won't want to couple with a store application and decorate every customer with an irrelevant list of orders. A reporting app is better off with a visual query builder that creates SQL to hand off to the database than trying to iterate over object graphs performing aggregations and sorts. And so on.
+
+For applications with ambitions for a longer lifespan, start with the database schema. Keep application models fairly thin; focus on verbs; try to ensure only one piece of code owns mutating a logical database entity with a set of verbs; and keep entanglements like UI out of those verb implementations so that you reuse the verbs, rather than being too tempted to reimplement direct database modifications or push too much logic into models.
+
+Object oriented models come and go, applications are rewritten, but database migrations happen at a much slower pace, and data lasts for a very long time.
+
+
 ---
 
 https://docs.microsoft.com/en-us/dotnet/api/microsoft.office.interop.excel._application.run?view=excel-pia
-`_Application.Run(Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object) Method`
+
+```_Application.Run(Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object) Method```
 
 note that "you cannot pass objects".
 
