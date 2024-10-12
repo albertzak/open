@@ -5,21 +5,23 @@ a.k.a. **NEW COMMIT EVERY MINUTE**
 
 (Have fun following along if you want.)
 
-"so i'm trying to incubate a personal dynamic..." nah
+"So I'm trying to incubate a personal dynamic..." nah
 
-no really, i just want to to **look inside** variables.
+I just want to to **look inside** variables
 
 or tell **that machine** over there to **run this** piece of code.
+
+<br>
 
 _how hard could it be?_
 
 
 
-i need to get this thing working well enough to give a fun presentation in 1 week and 1 day.
 
 ### TODO
 
-- [ ] share huge apple notes
+- [ ] get this thing working well enough to give a fun presentation in 1 week and 1 day.
+- [ ] **CURRENT** share huge apple notes
 - [ ] slides (+ text?) of presentations
 - [ ] upload codebases as-is (except check gitignore before)
 
