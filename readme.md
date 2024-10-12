@@ -58,6 +58,19 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+OH YES OOH YES
+
+https://www.youtube.com/watch?v=8htgAxJuK5c
+
+"Adding Interactive Visual Syntax to Textual Code" + Leif Andersen / Felleisen
+
+https://visr.pl
+
+https://dl.acm.org/doi/abs/10.1145/3428290
+
+racket + cljs https://github.com/LeifAndersen/interactive-syntax-clojure
+
+
 ---
 
 eshell has some ideas that could be pulled out and explored further
