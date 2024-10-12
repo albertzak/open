@@ -59,6 +59,28 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 
 
+---
+
+
+https://twitter.com/Mappletons/status/1561357946960990213
+
+Mini apps and bits of software you’ve built just for yourself and/or friends and family.
+
+Things that don’t scale, aren’t meant for others to use, & valuable just for your specific, snowflake use case.
+
+---
+
+on headers <3
+
+**open-ended metadata, "allow all, bless some"** (clj maps philosophy <3)
+
+https://subconscious.substack.com/p/if-headers-did-not-exist-it-would
+
+"We really do build entire apps just to tag files with a bit of metadata.
+Way back in 1990, BeOS took this insight and ran with it. Files in BeOS could be tagged with any key-value metadata you liked. The metadata could be displayed as columns in the file finder."
+￼
+In fact, many BeOS "apps" were really just finder windows with specific metadata columns. You could customize or create your own "apps" by modifying the columns in a window.
+
 
 ---
 
