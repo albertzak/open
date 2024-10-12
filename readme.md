@@ -41,9 +41,10 @@ problems:
 
 we've got too many closed-world systems with their own little languages and semantics. I feel like in the 2000s: video camera, gameboy, usb stick, pocket calculator, mp3 payer, clock, gps -> one smartphone.
 
-operating systems, shells, filesystems, files, compilers, packages, package managers, languages, databases
+operating systems, shells, filesystems, files, compilers, packages, package managers, languages, databases, web servers, reverse proxies, config files (in ~infinitely many formats), ssh, programs don't compose, communication: sockets/http/tls/files/raw bytes/textfiles/permissions
 
-betriebssyssteme, shell, filesystem, files, compiler, packages, versch manager, sprachen, datanbanken, webserver, reverseproxy, configfiles inf xyz formaten, ssh, programme kompositionieren kaum, sockets/http/tls/files/rawbytes/textfiles/ permissions
+last straw
+
 tropfen der das fass überlauft: security. code reuse, packages, pola? kann alles machen was mein user kann?!
 -> convergenz
 
