@@ -59,7 +59,48 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 
 
+---
 
+
+🧼 idea: val.town but via email:
+
+  - lisp repl as email service
+  - send code/fns/defs/schedule
+  - receive acks/data/scheduled
+  - build systems by email? wtf dunno
+
+
+---
+
+dave ackley <3
+
+**efficiency and robutness are at odds over redundancy - which robustness requires - and efficiency - eliminates**
+
+that's what it means to be efficient
+
+we think that the alternative to efficiency is waste
+
+but there is another choice: robustness
+"somebody else doing it too, just in case"
+
+need to get past the idea that correctness and efficiency are all that matters
+
+**embrace diversity, fallibility, open-ended scalability w fundamentally improved securability**
+
+**best-effort computing**
+
+cpu-ram-ram-ram-ram-ram-ram-ram-ram-ram-ram-ram-ram-ram-ram-ram-ram-ram-ram-ram-ram-ram
+
+ram = identity functiuon
+
+cpu = tinpot dictator
+
+
+old ackley work: http://keys.ccrcentral.net/ccr/text/jargo-blast.html
+
+
+
+---
 
 🧼 IDEA: clj-quick
 
