@@ -1,6 +1,7 @@
 #!/usr/bin/env bb
 
 (require '[clojure.java.shell :refer [sh]])
+(require '[clojure.string :as s]) ; why is this a separate ns 😒
 
 (defn changes? []
   (->> (sh "git" "dif" "--exit-code")
@@ -11,7 +12,7 @@
 (defn commit-count []
   (->> (sh "git" "rev-list" "--count" "HEAD")
        :out
-       clojure.string/trim
+       s/trim
        Integer/parseInt
        inc))
 
