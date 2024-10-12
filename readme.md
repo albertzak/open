@@ -63,17 +63,21 @@ proficiency exam in march
 1. what's the topic? improve programming. what do you want do? (todo)
 2. state of the art - last 50 years most inspired
 3. planned contribution: demarcate.articulate. research question. how does the dissertation look when done? concrete research questions. how to validate claims? (ugh) use case: embedded + distributed.
-4. how to validate that the concept is good? improvement is methodical validation. (i disagree) look at design science research in literature (smells like 🚮) it's good for engineering, not really accepted by hardcore scientists: build idea, possibly enhance with embedded quantitative/empirical things. it is qualitative, that's always weaker when it comes to replicability.
+4. how to validate that the concept is good? improvement is methodical validation. (i disagree) look at design science research in literature (smells like 🚮) it's good for engineering, not really accepted by hardcore scientists: build idea, possibly enhance with embedded quantitative/empirical things. it is qualitative, that's always weaker when it comes to replicability. embed some quantitative stuff: simulate, compare, think of quant studies, up to lab sessions with students. interviews. how do i want to use what methods. what artefacts will emerge? evaluate. change requirements and point of view, try again.
 
+exam is ~20min
 
-wie überprüf dass das konzept gut ist / verbesserungist methodische validierung -- design science research in lit anschauen (!) good für engineering, lang nicht anekannt von hardoce wissenschaftlern, idee bauen, evtl anreichern mit eingebetteten quantitative / empirical things. is qualitativt, aber immer schwäche in nachvollziehbarkeit. ein paar quantitative einbetten: simulate, compare, quant studies überelegen, bis hin zu übung mit studenten im labor. interviews. wie will ich die methodiken einsetzen, welche ARTIFAKTE kommen raus. evaluieren, anforderungen+blickwinkel verändern, nochmal testen
+next time: more precise research questions. how do they build on each other. plan a timeline. next 1-2 Qs very concretely, next ones more diffuse.
 
-/ 20min
+3 years left = 2 Qs per year
 
-next time: präzise forschungsfragen, wie bauen die sich auf. plan/timeline. 1-2 sehr konkret, nächste diffuser optionaler. 3 y jeweils 2 fragen pro jahr
+Topics:
+ - simulation/interactivity
+ - semi-structural editing
+ - controlled side effects
+ - logic-/rule-based programming
 
-Topics: simulation/interactivity, semi-structural editing, controlled side effects, logic-/rule-based programming
-Abgrenzung:
+Differentiation:
 Nicht visual programming: (UML, LabView, https://blueprintsfromhell.tumblr.com)
 Fokus auf sw-engineering von Hickeys "situated programs" statt bloße visualization/exploration/algorithms/computation a la Victor https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/EffectivePrograms.md
 
