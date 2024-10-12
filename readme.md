@@ -55,7 +55,69 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
+---
 
+🧼 some notes of when i thought secure scuttlebutt might serve as data layer. contains glimpses of node bootstrapping.
+
+make backend:
+
+principle: value orientation.
+
+problem with dapps: url centralization
+
+ssp propose to put js of app in blobs; but can we map programming primitives to ssb concepts directly/more fine grained, control over side effects, control who can update what dependency...
+
+decentralized "app store", run apps from friends. apps are identified by their initial code hash, updates are replies to that post by the original trusted author to their own code. (see also ssb browser turtle demo)
+
+
+replication: stream all facts everywhere, authenticated by producer (network of untrusted peers, scuttlebutt style, Selective Complete Log Replication, with facts being pushed for faster convergence).
+
+"SSB primarily uses social dynamics to determine which data should flow to whom, not how it should flow to where." [tarr, lavoie]
+
+practically infinite s3 style value "space" [see also: hickey values, free from historic memory constraints].
+
+garbage collection is future work.
+
+delay tolerance: from ssb: "The delay tolerance allows routing layers that can optimize for different tradeoffs, for example by minimizing the bandwidth required to disseminate updates rather than minimizing latency." [tarr, lavoie 2019]
+
+timestamps: untrusted best effort timestamps, only ordered within node. no global clock, no coordination. assumes node clocks to be within some ntp tolerance.
+
+interaction: just create values, append them to your own log. values can be functions, data, logs. interested nodes can subscribe to your log.
+
+(?) node exposes a single api method: transact! accepts a collection of assertions and retractions
+
+(signed by whom? the same privkey as is booted with the node? yes, unless the node has in its inital facts some facility to accept transactions from a different keypair.)
+
+(initial) node setup: should a node be interested in someone's functions (pull); or should someone specify node ids to run their code on? (push) - both can be supported, depending on the evaluation model.
+
+nonono actually a node should decide who to trust, it could delegate this decision to another pubkey
+
+first boot: generate keypair, start node with privkey and initial facts (persistence). eg. whom to trust=whose actor/suptree definitions to spawn.
+
+boot: ensures previously needed capabilities are available. (re)creates actors with their persisted state, and gives them capabilities.
+
+
+capabilities: ssb handshake where the server (other's) pubkey is a capability (! - so the pubkey is actually a secret, and cannot be inferred from the handshake) (after handshake, client/server distinction goes away and a shared secret is established) [secret handshake, tarr 2015] ?
+
+capabilities delegation: server exposes ssb functions to actors ?? how/where/whodecides?
+
+implies some notion of root actor? OR is a supervision tree not an actor (yeah, it's its own ether like thing in between actors, like in erlang, a concern of the host) -
+
+actor system: how are message inboxes represented? who "owns" them? likely the host cap again, and it's a cap to put msgs into an inbox.
+note there's a symmetry between nodes and actors: should each actor have its own pubkey/communication-capability??
+
+
+starts listening to transact! via some arbitrary method (file watcher, http api, i2c, etc)
+
+node vs actor: node is the supervision tree. actors can spawn actors (via capability).
+
+evaluation model: compilation/evaluation unit is the top level definition (like in cljs)
+
+recording evaluation metadata of top level definitions only motivates users to keep them short, as e.g. function input/output values are only recorded on top level defn level - guides towards better factored design of small functions with a focused purpose - the smaller the functions, the more debug information is available.
+
+async code support: likely just transparent via macros, as in cljs/promesa
+
+backend implementation: within browser/wasm: one browser=one hardware node, easy simulation, allows us to run code right there
 
 
 ---
