@@ -59,10 +59,46 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 
 
+https://merveilles.town/@nakst/110904552263386432?utm_source=substack&utm_medium=email
+
+(via omar rizwan folk newsletter)
+
+@nakst@merveilles.town
+
+"everything is a file"
+
+**applications can dynamically register global, stateless APIs that are inspectable by the end-user and accessible from any programming language**
+
+[running] applications can [as root] dynamically register [with some work] global, stateless APIs [either str foo() or void foo(str bar)] that are inspectable by the end-user [but confusable with real files] and accessible from any programming language [but awkward to use in e.g. C because of the text parsing, or gathering events]
+
+Aug 17, 2023 at 12:46
+
+@nakst
+
+It's noteworthy how while typical APIs have data types like int, bool and string, filesystem-based APIs have data types like text, images and others that can be dynamically registered by applications.
+I also think it would be cool if there were ".bool" and ".int" files, and when you open them you get a window with a lone checkbox or slider respectively.
 
 
+
+---
+
+what i want is basically console ninja in prod
+
+https://github.com/wallabyjs/console-ninja/tree/main#logpoints
+
+---
 
 ### April 2023
+
+🧼 IDEA: **sigils**
+
+dynamic scope **wrapping forms wrapped and topform-eval'd by a single character stroke**
+
+definable inline (maybe)
+
+(note from 2024) yes! the bang is a sigil per this definition because it _does_ something the moment you type it out to the (top level) form right after it. the dynamic scoping part is not important.
+
+
 
 
 🧼 IDEA: multi repl over mqtt
