@@ -57,6 +57,22 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
+---
+
+
+### December 2021
+
+DC-RES Talk Abstract: **Human-first interactive programming systems**
+
+Cyber-physical systems are situated in our irregular world, interacting with humans and other machines, exchanging information, accreting memory over time, and are subject to faults and change.
+
+Research and experimentation over the past 60 years yielded ideas and systems that allowed gradual refinement and experimentation on a running system, notably Lisp, Multics, Smalltalk, GNOSIS/KeyKOS, Emacs, Lisp Machines, Plan9, STEPS, Eve, and Dark among others.
+
+The aim of the proposed project, inspired by such systems, is to find a data model based on facts with awareness of time and history, to represent code, ephemeral and long-term state, and changes to both, together with a minimal set of interactions that allow inspection of state, transient experimentation, and maintenance at runtime of a pervasively late-bound, distributed actor production system.
+
+
+---
+
 ALWAYS: WHAT IS THE POINT THE POINT THE POINT THE POINT THE POINT THE POINT???????
 
 i am interested in finding better ways to program
@@ -319,7 +335,8 @@ emacs org mode to write out scm files via org-babble-tangle
 
 https://ncase.me/joy/demo/turtle/?drawing=flower
 
----
+
+### November 2020
 
 **People currently think of text as information to be consumed. I want text to be used as an environment to think in (victor 2011)**
 
