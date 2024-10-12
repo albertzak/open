@@ -55,8 +55,10 @@ test code? discovery - test response of web service? play around?
 
 
 claim: layers of systems on top of out os: OS are at a local maximum
-ja, OS soll hw resourcen manager, aber es ist auch eine plattform auf die wir systeme aufbauen können
-welt der programmiersprachen und der datenbanken kollidieren, haben kategorische gemeinsamkeiten
+
+yes, OS should manage hw resources, but it's also a platform on which we build systems.
+
+world of programming languages and databases collide, and they have categorical similarities.
 
 
 ---
