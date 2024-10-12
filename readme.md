@@ -61,6 +61,62 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+jamie 0020
+
+
+Fossil
+
+Fossil is the one of the few local-first apps I know that is actually used in anger. It started out as just a DVCS but over time grew a wiki, issue tracker, forum and various other embedded apps. All of which run offline and can be pushed/pulled between repos and even forked.
+So I was curious to find out how it worked under the hood.
+The underlying data-structure is content-addressed append-only set of artefacts. Forum threads, wiki pages, issues etc are built by summing up the effects of special event artefacts.
+Forums are effectively OR-sets - all you can do to a post once it has been made is delete it, leaving a tombstone in the tree.
+Wiki pages do last-write-wins. I expected to at least get a merge conflict, but no.
+Issues are bags of key-value pairs, where each pair does last-write-wins.
+In one sense, it's disappointing that there is so little handling of conflicts.
+But on the other hand, there is very little handling of conflicts and it seems like it's fine in practice. So maybe many problems can fall to being broken down into atomic facts and doing last-write-wins for each fact?
+
++
+
+Self-hosting
+
+https://www.scattered-thoughts.net/log/0020/
+
+
+I lurked in various discussions of self-hosting recently. One point that seemed rarely challenged is that self-hosting is hard.
+
+That has been my experience for many pieces of software. But self-hosting fossil is really easy.
+
+What makes most software hard to self-host?
+  - **Too many moving pieces**
+  - **Too many configs to learn**
+  - Non-trivial backup and restore
+
+What makes fossil easy to self-host?
+  - Single executable
+  - Builtin web server (fossil serve)
+  - Single file database (easy backup and recovery)
+  - Sync to other devices (your local working copy of a fossil repo is also a backup)
+  - Config stored in the database
+  - Config edited by builtin web interface (fossil ui)
+
+Other things we could add:
+  - Automatic updates
+      - Notifies me first if update requires more than a few seconds downtime, manual action (eg migration) or might break something. (Notifying people is often the part I'm most worried about breaking and is often hard to configure eg synapse wants a separate email gateway set up. But fossil will talk directly to fastmail for me.)
+  - **Self-check**
+      - Notify me if not reachable from the internet
+      - Notify me if running out of disk space
+  - Simplified hosting
+      - Give them a binary and a database, they run it (and restart it if necessary)
+      - **Notify me about crashes/restarts**
+      - Ship a minimal OS that does nothing but run my binary
+      - Deal with OS upgrades (shouldn't cause problems if not depending on dynamic libraries, userland services etc)
+  - **Put a console/repl in the web interface so I can do bulk edits (eg banning users)**
+
+Why isn't this more common? I suspect because most software is optimized for **industrial use, not personal use.** For industrial uses the operations overhead is not a big deal compared to the development and operational efficiency gained by breaking things up into communicating services. **But for personal uses the overwhelming priority is reducing complexity so that nothing fails.**
+
+
+---
+
 fosdem2022
 
 The relational model in the modern development age. Schema migrations suck. The state of the art has barely changed since the first SQL databases. Vitess has put a ton of effort into fixing this. (?)
