@@ -58,10 +58,16 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
-come here / accept dont read
-wie komm ich aus dem programm halbwegs graceful raus?
-das thema interessiert mich sehr
-aber ich fühl mich im akademischen umfeld nicht zuhause und
+🧼
+
+how do i quit this phd program somewhat gracefully?
+
+i think the topics are very interesting
+
+but i don't feel at home in this academic setting
+
+papers, titles,
+
 papers, titel, ruhm ehre egal
 will eigentlich lieber hobbymäßig
 
