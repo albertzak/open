@@ -33,13 +33,26 @@ From 2020-09 until 2024-08 I got paid to daydream (🚮). This is all I have to 
 
 I collected random interesting internet finds in Apple Notes. Order is somewhat chronological, newest at the top. Sadly only very few entries are timestamped or properly sourced.
 
+---
 
+- 60s prog
+- 70s db
+- 80s sql
+- 90s web
 
+---
+
+B5000 Algol, virtual memory, inspired forth (?)
+
+Still sold as Unisys ClearPath/MCP
+
+---
 
 Multics 1965
-"Multiplexed information and computing service"
-(ARPA, MIT, Bell labs, GE, precursor project MAC '62 / Licklider "internet" "On-Line Man Computer Communication")
 
+"Multiplexed information and computing service"
+
+(ARPA, MIT, Bell labs, GE, precursor project MAC '62 / Licklider "internet" "On-Line Man Computer Communication")
 
 - PL/1, 1MB RAM, NSA >1998
 - expensive process creation: 3 procs per user, later 1 proc.
@@ -47,7 +60,7 @@ Multics 1965
 
 - 70s: Algol, Cobol, Fortran
 - Mid-70s: Maclisp Macsyma, APL interpreter
-- 80s: C compiler (note: but how is that memory safe then?), pointer maagic, null pointer arithmetic etc,
+- 80s: C compiler (note: but how is that memory safe then?), pointer magic, null pointer arithmetic etc,
 - 1984 dynamic reconfiguration: CPU, mem, drives, peripherals (Schell 1084)
 
 "Bigger, slower, less reliable than planned" - 60-70 sites, last site closed in 1998
