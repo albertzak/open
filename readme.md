@@ -55,20 +55,28 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 🧼 shower thoughts
 
 
-gary benhardt 2012 https://www.destroyallsoftware.com/talks/a-whole-new-world
-editor: overlays - overlay crashes from production in editor, highlight lines that have ever been involved (yellow) or caused (red) a crash. scans for git hash and fast-forwqrds to that commit while viewing (medium okayish solution - how to do that better?)
-performance layer (obtained via parsing regular language profiler dump)
+---
+
+gary benhardt 2012 "a whole new world" a.k.a "an editor" talk
+
+https://www.destroyallsoftware.com/talks/a-whole-new-world
+
+
+editor: overlays - **overlay crashes from production in editor, highlight lines that have ever been involved (yellow) or caused (red) a crash**. scans for git hash and fast-forwqrds to that commit while viewing (medium okayish solution - how to do that better?)
+
+**performance layer** (obtained via parsing regular language profiler dump)
+
 type layer: overlay types inline before function definition
+
 exprtype: overlay next to each expression its observed type
+
 shorten layer: make variaable names single/two letter, like haskell, to see structure via type layer only
-none of the information is obtained via static analysis, only by observing the system (!!!!)
-scope layers to fn/lines and within a few seconds see the live prod profiling data inline in your layer <3333
-(note: type inferrence is expensive/graph walk, while displaying recorded types is linear)
 
+**none of the information is obtained via static analysis, only by observing the system (!!!!)**
 
+**scope layers to fn/lines and within a few seconds see the live prod profiling data inline in your layer <3333**
 
-
-
+(note: type inference is expensive/graph walk, while displaying recorded types is linear)
 
 
 ---
