@@ -60,6 +60,20 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
+
+---
+
+🧼
+
+`>> eval (defn :foo/f (fn [x] ...))` to add quasi top level form to codebase
+
+`>> (edit :foo)` macro dumps out form it was originally defined in. used with eval+replace with expanded macro
+
+quote me on this: _"i don't think accretion (of unused snippets=code) is a problem"_
+
+
+---
+
 residential programming
 
 [Residential Programming without Mutable State - Thomas Getgood](https://www.youtube.com/watch?v=Kgw9fblSOx4)
@@ -82,13 +96,9 @@ impose coordination on changes
 
 
 
-
-`>> eval (defsn :foo/f (fn [x] ...)) to add quasi top level form to codebase
->> (edit :foo) macro dumps out form it was originally defined in. used with eval+replace with expanded macro
-"i don't think accretion (of unused snippets=code) is a problem"
-
-mein fazit: vll eher doch nicht wegen workflow challenges, "build master", sondern lieber den editor als teil des distributed/situated systems sehen. eher schon aber als interne representation für die code db
-
+🧼 conclusion:
+  - maybe not because of wokflow challenges, "build master", but rather see the editor as part of the distributed/situated system.
+  - maybe yes as internal representation for code db
 
 
 
