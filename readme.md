@@ -70,9 +70,14 @@ idea: programming = visualized interaction
 
 scope problem in depth: "caps + code db + relations + distributed deployment"
 
-> history multics 1000e-referencen in textform (nicht nur history if informatics) / zielorientiert einfachheit progging / so dass es self-contained ist, aber mal nur material (später für diss+pe wirder gekürzt
-> report pe: mostly state of the art recherche
-> publizieren: history, und übrigens wir haben das
+write a history paper about multics? 1000s of references. write now, use shortened version for thesis. publish as survey + add "btw we've got this" (nah would rather read than write that paper)
+
+need: write report for proficiency exam: it's mostly state of the art
+
+
+
+
+
 > "research challenge paper" / student track / doctoral symposium / identifieren problem aufgrund von breiter recherche / phd stud paper / in early stages
 > use case ist nicht artefakt, sondern prozess des proggens ist sehr wichtig. zeigen wie schaut das nrmalerweise aus, wie mit meinem system. industrial control + security. wartbarkeit/visibility von iot ist baaaaad
 
