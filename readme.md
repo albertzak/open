@@ -31,7 +31,26 @@ _that's basically it. how hard could it be?_
 
 From 2020-09 until 2024-08 I got paid to daydream (🚮). This is all I have to show for it.
 
-(Order is somewhat chronological, newest at the top.)
+I collected random interesting internet finds in Apple Notes. Order is somewhat chronological, newest at the top. Sadly only very few entries are timestamped.
+
+
+Unison
+
+"haskell+erlang"
+
+> semantic equivalence: (+ 1 x 1) vs. (+ x 2)
+
+---
+
+Rein Gottschalk (@multix_labs)
+
+https://multix.substack.com/
+
+wtf? but also intriguing. don't really understand
+
+---
+
+OS Family Tree https://eylenburg.github.io/pics/Eylenburg_Operating_System_Timeline_Family_Tree.svg
 
 
 
