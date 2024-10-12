@@ -58,6 +58,13 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+🕺
+
+yes i also feel the academic system isn't a good fit for you (🚮)
+
+collect related work (+ edit it nicely)
+
+
 
 
 
