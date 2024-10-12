@@ -55,6 +55,84 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 🧼 shower thoughts
 
+---
+
+https://oh4.co/site/on-abstraction.html
+
+The concept of abstraction - The term abstraction has a long history of senses, it derives from the Latin abstractus originally connoting asceticism and meaning "to withdraw from worldly affairs". Etymologically it is derived from the combination of the word-forming element "ab-" meaning "off, away from" and the verb "trahere" meaning "to drag, draw" and translating as "to detach, to pull away".
+
+
+---
+
+persistent OS
+
+This kind of system will suffer from the ratchet problem. A single bug that negatively impacts state is no longer fixable by rebooting. Instead, you have to format/reinstall.
+In theory, this sort of setup would be nice in a perfect world, but in the real world of buggy software and faulty hardware and cosmic rays, it's a disaster waiting to happen.
+(hn)
+
+What about some middle ground? I’d like my IDE to remain constant between reboots, my browser to some degree is already (if it crashes, it reopens all current tabs on start, which is effectively the same).
+I would have thought some clever hacks on an existing kernel would be reliable enough rather than an entirely new OS just for one feature, though.
+
+Something like “crash-only software”; programs are expected to be killed and relaunched. Software should cope with it, as there is no swap space and ideally the user shouldn’t be managing memory. An app may create to some degree the appearance of persistence but it’s not persistence. Users, also, can easily force kill apps. Ongoing background operations like downloads, uploads and some media playback is delegated to the operating system. Such operations continue when your process is killed, and you check up on them when your process starts. I hope it’s not TMI, but the standard library includes atomic file saves.
+
+
+---
+
+🧼
+
+IDEA: **each sub/expression gets its own unique id, normally hidden/collapsed in editor view but copyable as text**
+auto generated while typing, displayed maybe as "u32...fe3"
+allows tracking edits
+
+
+IDEA: **edit time functions that modify their call sites like [/] in org mode**
+
+```
+(done (34%) (2 of 4))
+(TODO wash dishes)
+(DONE cook dinner)
+```
+
+
+```
+; type 1: return value fully replaces args. called when subtree changes.
+(defe done [subtree]
+  '((count (filter "done" subtree)) (count subtree)))
+```
+
+```
+; type 2: read args and replace. called when subtree changes.
+(defe done [subtree current]
+  '(current +1))
+```
+
+```
+; type 2: read args and replace. called when subtree changes OR current args change
+(defe done [subtree current]
+  '(current +1))
+```
+
+```
+; type 3: explicit update callback to enable async update triggered by external events?
+(defe done [subtree update! current])
+```
+
+how is this compatible with events/ocap? likely via dynamic scoping+event handlers
+
+orthogonal feature: render graphical ui / to be combined with type 1 or 2
+
+```
+(let [size (slider 1 100 0.5 60))]) ; step size 0.5, curr value 60
+(defe slider [_subtree update! from to step curr] ; update callback to change editor value while editing
+  [:slider {from, to, step, curr, on-change: (fn [new]  (update! from to step new)}])
+```
+
+may also be implemented **as meta data on the returned**
+
+
+OR IDEA: these are just functions. but there's an orthogonal concept of LEVELS OF IMMEDIACY
+when does that function run? where? what must it poke to compute? data? other fns? user? programmer?
+
 
 ---
 
