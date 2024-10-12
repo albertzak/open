@@ -58,6 +58,31 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+clerk
+
+As top-level form to change the document defaults
+
+Independently of what defaults are set via your ns form, you can use a top-level map as a marker to override the visibility settings for any forms following it.
+
+Example: Code is hidden by default but you want to show code for all top-level forms after a certain point:
+
+```
+(ns visibility
+  {:nextjournal.clerk/visibility {:code :hide}})
+
+(+ 39 3) ;; code will be hidden
+(range 25) ;; code will be hidden
+
+{:nextjournal.clerk/visibility {:code :show}}
+
+(range 500) ;; code will be visible
+(rand-int 42) ;; code will be visible
+```
+
+This comes in quite handy for debugging too!
+
+
+---
 
 landau / eros/capros
 
