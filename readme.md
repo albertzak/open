@@ -58,6 +58,52 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
+---
+
+from the epic Future of Coding log by Steve Krouse
+
+https://futureofcoding.org/log
+
+"steve krouse OS"
+
+"From my chat with JE [Jonathan Edwards] I realized I've been secretly dreaming of a dataflow OS, not a strictly Conal-DCTP-one. [Conal Elliott's Denotational Continuous Time Programming, what FRP should have meant]. Architecture feels a lot like CycleJS actually
+
+"It’s more related to algebraic effect handlers, which I think Conal would say are like monads in that they import the imperitive way of thinking into FP instead of building better abstractions on top"
+
+"**Programming is setting up computation over time.** Unfortunately this means that many important **insights about your program aren't apparent until future times**  Live programming is about **bringing insights from future times to the time of programming**"
+
+"I've actually been asking for a definition of "programming" that is better than "telling a computer what to do" and now I like "telling what a computer what it should do later""
+
+Eric Green New Deal Now Gade @ecgade
+
+
+
+**"How many language features can be replaced with editor ones? (stub outline)**
+
+  - lets, closures, imports (Cyrus Omar of Hazel talks about this)
+  - it seems like most things can be editor features, especially if the editor is recognizing patterns and making syntactic sugar out of them (a la lamdu)
+  - it’s the things you want in the AST (stored as metadata) that maybe should be in the language semantics?
+"
+
+
+"Show the (inner) data (and it’s structure/type). BV says it best, “Some people believe that spreadsheets are popular because of their two-dimensional grid, but that’s a minor factor. Spreadsheets rule **because they show the data**.... If you are serious about creating a programming environment for learning, the number one thing you can do – more important than live coding or [ … or … or … ] or anything else – is to **show the data**.”"
+
+"But despite these shortcoming’s spreadsheets succeed because of the above discussed adherence to “**show the data**” as well as embodying what I would argue is the second most important programming environment characteristic: create by reacting, which is distinct from by is enabled by live coding."
+
+"But again, to be clear, I want to focus on **show the data as my only focus first, and maybe after that’s mostly done, I’ll see if I can slip in a create by reacting.** (The jury is still out on whether live coding is absolutely require. My gut says it is, but I don’t want to make the mistake again of thinking more things than are necessary are necessary.)"
+
+"Another key insight: **the default behavior of FRP applications should be to persist data for forever unless programmed otherwise. The resetting of app’s data on page reload is a wacky accident!**"
+
+
+---
+
+https://rxmarbles.com/#max
+
+https://rxviz.com
+
+https://rxfiddle.net
+
+---
 
 eli parra
 
