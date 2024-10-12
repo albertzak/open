@@ -55,9 +55,42 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 🧼 shower thoughts
 
+
 ---
 
+---
 
+eshell has some ideas that could be pulled out and explored further
+
+ehell pipes go through buffers (not fast but useful)
+
+howard abrams: https://www.youtube.com/watch?v=RhYNu6i_uY4
+
+visual / interactive composition, ido-, remote/tramp,
+
+---
+
+https://karl-voit.at/2017/02/10/evolution-of-systems/
+
+towards org mode
+
+emacs not an editor but an extensible environment
+
+https://irreal.org/blog/?p=8809
+
+---
+
+literate devops howard emacs org mode
+
+http://howardism.org/Technical/Emacs/literate-devops.html
+
+https://www.youtube.com/watch?v=dljNabciEGg
+
+OH LORD YES THIS IS IT THE TRUE WAY TO DEVELOP (?)
+
+summary https://gist.github.com/Profpatsch/abda97a7b635f876e29f544a26840666
+
+---
 
 "A computer is like a violin. You can imagine a novice trying first a phonograph and then a violin. The latter, he says, sounds terrible. That is the argument we have heard from our humanists and most of our computer scientists. Computer programs are good, they say, for particular purposes, but they aren't flexible. Neither is a violin, or a typewriter, until you learn how to use it."
 Marvin Minsky, “Why Programming Is a Good Medium for Expressing Poorly-Understood and Sloppily-Formulated Ideas” in Design and Planning, (1967)
