@@ -57,6 +57,40 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
+
+Potluck
+
+https://www.inkandswitch.com/potluck/
+
+**"application state lives in the text"**
+
+"no hidden metadata; searches are just a function of the text."
+
+**structured personal micro-syntax**
+
+**computational freeform text**
+
+**results displayed in overlays (next/atop/over), text stays editable**
+
+buttons edit text (and cause recomputation) - this avoids loops
+
+
+"Text editors are generic and refined tools that have many built-in features like copy/paste and undo/redo. Having state directly in the text gives us these features for free. For example, you can copy a document to a different text editor to edit and then paste it back into Potluck, and it retains all of its behavior. By using text as the source of truth, Potluck inherits the affordances and powers of text.
+Originally we tried allowing users to manually highlight entities in the text. We abandoned this approach mainly because manual highlighting was tedious, but also because it created hidden state outside the text that was hard to reason about."
+"In some cases, our demos violate this general principle by storing ephemeral state which isn’t stored in the text. For example, our default timer widget doesn’t store the remaining time in the text, so a running timer won’t survive a copy-paste. This wasn’t a particularly principled decision though; in theory, any state that can be encoded as text can be stored in the document itself."
+
+"The text-based todo list app TaskTXT has a good solution to storing timer state in the document. When a timer is started, it records the start time into the text document in a human-friendly format. The result is that even a running timer can survive a cut-paste."
+
+---
+
+Programming Portals
+
+https://maggieappleton.com/programming-portals
+
+"Small, scoped areas within a graphical interface that allow users to read and write simple programmes"
+
+
+
 ---
 
 **Why we need lisp machines**
