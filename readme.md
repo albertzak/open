@@ -80,7 +80,9 @@ then: these go in, these dont
 
 find 10 journals/confs/symposia/workshops
 
-you show at the prof exam:
+you show at the prof exam: you read up on these topics, understand the open questions in the field, and chose a handful of them as your goal
+
+commission expects: you can demonstrate credibly that you've got a set of plausible questions, and you have some overview
 
 
 
