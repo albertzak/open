@@ -59,7 +59,7 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
-🧼 refining node bootstrapping and capability system. this vision is surprisingly close to what was implemented in 2024.
+🧼 refining node bootstrapping and capability system. feels like the first time some coherent picture emerges. it is surprisingly close to what was actually implemented in 2024.
 
 **setup a node: generates its secret keypair**.
 
@@ -114,7 +114,7 @@ or should entity ids be capabilities, ie random unguessable strings?
 
 that would be like #2 except then we'd need a more explicit way for magic like `:root`, `:subscription`, `:publication` etc. which may be better as it's less magic.
 
-subbing/pubbing should be a capability, right?
+**subbing/pubbing should be a capability, right?**
 
 what if the cap was not function (that'd be too imperative and not play nice with delcarative data updating) but if the cap was a string, the one you'd use as entity id to create subs like so in a main fn:
 
