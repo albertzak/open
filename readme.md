@@ -61,6 +61,19 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+expressions of change:
+
+- change as language primitive, design a formalization,
+- reify modifications in the program
+- custom editor+pl
+
+i'm not sold on the approach, seems abandoned.
+
+haha comment from audience: it's just catamorphism+anamorphism (speaker asks to get explanation later)
+
+
+---
+
 jamie 0020
 
 
