@@ -54,10 +54,63 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 🧼 shower thoughts
 
-
 ---
 
 
+
+---
+
+odoyle <> rum
+
+precept <> clara -- updating facts is a pain
+
+dynadoc
+
+---
+
+https://www.youtube.com/watch?v=iBaqOK75cho
+
+guix
+
+emacs org mode to write out scm files via org-babble-tangle
+
+
+https://ncase.me/joy/demo/turtle/?drawing=flower
+
+---
+
+**People currently think of text as information to be consumed. I want text to be used as an environment to think in (victor 2011)**
+
+http://www.vpri.org/writings.php
+
+https://www.mail-archive.com/fonc@vpri.org/msg04222.html
+
+https://github.com/d-cook/SomethingNew/blob/master/Emails/CommonMechanism.md
+
+
+Combine concatenative lang (as vm) with unison distribution/code sharing - because refactoring point free style is trivial
+http://evincarofautumn.blogspot.com/2012/02/why-concatenative-programming-matters.html
+
+---
+
+metamine: "completely declarative lang" "equations instead of statements"
+
+gh: https://web.archive.org/web/20201101065701/https://github.com/ymte/metamine
+
+snake: http://web.archive.org/web/20201014024057if_/https://www.youtube.com/watch?v=RvRc3c9TQ6c&gl=US&hl=en
+
+reddit: http://web.archive.org/web/20201130115327/https://www.reddit.com/r/programming/comments/j94lgd/metamine_a_completely_declarative_programming/
+
+``out = draw objects
+
+objects = [ circle(mouse.x, mouse.y, 10) ]```
+
+
+---
+
+https://web.media.mit.edu/~lieber/PBE/Your-Wish/
+
+http://acypher.com/wwid/FrontMatter/index.html#Foreword
 
 
 ---
