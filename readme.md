@@ -31,7 +31,9 @@ _that's basically it. how hard could it be?_
 
 From 2020-09 until 2024-08 I got paid to daydream (🚮). This is all I have to show for it.
 
-I collected random interesting internet finds in Apple Notes. Order is somewhat chronological, newest at the top. Sadly only very few entries are timestamped or properly sourced. Lightly edited (typos, clarity, formatting) and small parts translated from German.
+I collected random interesting internet finds and a few own ideas in Apple Notes. Order is somewhat chronological, newest at the top. Sadly only very few entries are timestamped or properly sourced. Lightly edited (typos, clarity, formatting) and small parts translated from German.
+
+Notes from chats with my advisor are blockquoted. (btw he was awesome that hejust letting me do anything )
 
 ---
 
