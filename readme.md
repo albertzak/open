@@ -58,6 +58,31 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+🧼 Redell's caretaker pattern in Clojure
+
+```
+(defn
+  make-caretaker
+  "Redell's caretaker pattern"
+  [o]
+  (let [ok? (atom true)
+        o' (fn [& args]
+             (if @atom
+               (apply o args)
+               (throw :unauthorized)))
+        gate (fn [new-ok?] (reset! ok? new-ok?))]
+    [o' gate]))
+
+
+(defn main [{:keys [carol bob] :as sys}]
+  (let [carol (:carol sys)
+        [carol2 carol2gate] (make-caretaker carol)]
+    ((:bob sys) carol2)
+    (carol2gate false)))
+```
+
+---
+
 🧼 thinking about a subset of clojure that is cap-safe, impl'd as a library within clojure
 
 - rework namespace mechanism:
