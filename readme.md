@@ -56,7 +56,24 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 
 
+---
 
+come here / accept dont read
+wie komm ich aus dem programm halbwegs graceful raus?
+das thema interessiert mich sehr
+aber ich fühl mich im akademischen umfeld nicht zuhause und
+papers, titel, ruhm ehre egal
+will eigentlich lieber hobbymäßig
+
+hab genossen mich mit dem them auserianderzusetzen,
+habe genossen einen menot zu haben der sich auch far interessiert
+ich mach mir zu viel druck, was großartiges rauszufinden
+
+
+
+---
+
+dokuwiki
 
 ---
 
