@@ -7,9 +7,9 @@ _"So I'm trying to incubate a personal dynamic..."_ nah
 
 <br>
 
-I just want to to **look inside** variables
-
-or tell **that machine** over there to **run this** piece of code.
+> I just want to to **look inside** variables
+>
+> or tell **that machine** over there to **run this** piece of code.
 
 <br>
 
