@@ -60,6 +60,34 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 
 
+---
+
+pitfalls of edn
+
+https://nitor.com/en/articles/pitfalls-and-bumps-clojures-extensible-data-notation-edn
+
+
+---
+
+jamie brandon again, imp/preimp
+
+imp live repl, evals whole buffer on every keystroke
+
+language co-design needed to give semantics to partial programs without structural editing
+
+(cut buffer in half, evaluate up to cursor point is still a valid expression)
+
+has only tiny fixes like auto closing parens
+
+brandon proposes: reify watches.
+
+select expression to watch, hit key to reify as (expression34241),
+
+then compare with other watch expr
+
+
+**🧼 IDEA: reify watches by sigil/edwards-probe, give id**
+
 
 ---
 
