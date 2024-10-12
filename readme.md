@@ -62,6 +62,75 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+talk: how to be a repl sorcerer
+
+https://www.youtube.com/watch?v=lR2vbwuzrIM
+
+nice description overview of repls, esp. clj
+
+prepl = unstructured input (string) but structured output { tag val ns form ms }, tag says whether this is a return/print/tap value
+
+unrepl, a bit more extensible. can be ejected into socket repl to upgrade it
+
+nREPL: give id to each evaluation, to allow async/multiple return values [also lang agnostic and most popular under the hood]
+
+nrepl accepts structured input: { form, id, op: eval }
+
+olical/propel
+
+
+---
+
+https://hirrolot.github.io/posts/why-static-languages-suffer-from-complexity
+
+awesome template metaprogramming meme <3
+
+"Static languages enforce compile-time checks; this is good. But they suffer from feature biformity and inconsistency – this is bad. Dynamic languages, on the other hand, suffer from these drawbacks to a lesser extent, but they lack compile-time checks. A hypothetical solution should take the best from the both worlds.
+
+Programming languages ought to be rethought"
+
++ hn discussion: https://news.ycombinator.com/item?id=29996240
+
+---
+
+dijkstra: "Progress is possible only if we train ourselves to think about programs without thinking of them as pieces of executable code."
+
+---
+
+disessa boxer with nice images
+
+https://eurologo.web.elte.hu/lectures/dis.htm
+
+**pokability**
+
+---
+
+repairable user accessible schematics
+
+telephone österreichische post KS1952
+
+https://interactionmagic.com/Design-for-repair
+
+kapsch und söhne
+
+---
+
+plan9 successors: inferno, octopus
+
+https://lsub.org/octopus/
+
+"decentralize by centralizing"
+
+
+---
+
+"we need more operating system"
+
+awesome discussion https://news.ycombinator.com/item?id=4992845
+
+
+---
+
 why relational data models are better
 
 https://news.ycombinator.com/item?id=29964911
