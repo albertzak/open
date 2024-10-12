@@ -58,6 +58,19 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
+eve dev diary http://incidentacomplexity.com/archive/
+
+
+certain details in the way it is usually applied only work with compiled languages and, when applied to interpreted languages, result in the trivialization of theory noted by Wand's classic paper, "The Theory of Fexprs is Trivial".
+
+Mitchell Wand. The Theory of Fexprs is Trivial. Lisp and Symbolic Computation, 10:189--199, 1998.
+Abstract: We provide a very simple model of a reflective facility based on the pure lambda-calculus, and we show that its theory of contextual equivalence is trivial: two terms in the language are contextually equivalent iff they are alpha-congruent.
+
+ummmmmmmm
+
+
+---
+
 peter saxton
 
 https://petersaxton.uk/log/
