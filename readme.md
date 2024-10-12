@@ -58,8 +58,41 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
+  - omniscient debugger (can access multiple points in time simultaneously)
+  - time travel debugging (can move forward/backwards)
+  - robert o callahan
+  - chromometer=amber
+  - rr = for c/c++
+  - pernosco
+
+
+  - how time travel debuggers work:
+    - a: state snapshots (git -- actually not, noone does this in practice but its only the presented logical model)
+    - b: change tracking (sun, amber, odb? -- usually mixed with periodic snapshots)
+    - c: deterministic replay (rr, panda)
+
+robert: [on connecting debuggers to a running system] **if your program is actually 100s of processes running on 100s of machines in the cloud, you don't know which one to atttach to ahead of time**, and if you stop it, you kind of break the whole system [...] so these things have to keep running -> record and replay is a better fit.
+
+
+debugging has been trending on a downward spiral:
+
+**infratstructure doesn't even support attaching debuggers (anymore)**
+
+people don't use debuggers anymore, whatever language/tooling support there was kind of rots away
+
+fall back to log debugging
+
+eventually people come to assume that dedicated debug tools don't work, can't work
+
+
+
+---
+
 eve dev diary http://incidentacomplexity.com/archive/
 
+<3
+
+---
 
 certain details in the way it is usually applied only work with compiled languages and, when applied to interpreted languages, result in the trivialization of theory noted by Wand's classic paper, "The Theory of Fexprs is Trivial".
 
