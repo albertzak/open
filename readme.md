@@ -7,11 +7,11 @@ a.k.a. **NEW COMMIT EVERY MINUTE**
 
 "so i'm trying to incubate a personal dynamic..." nah
 
-no really, i just want to to look inside variables.
+no really, i just want to to **look inside** variables.
 
-or tell that machine over there to run this piece of code.
+or tell **that machine** over there to **run this** piece of code.
 
-how hard could it be?
+_how hard could it be?_
 
 
 
