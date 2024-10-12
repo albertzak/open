@@ -35,30 +35,31 @@ I collected random interesting internet finds in Apple Notes. Order is somewhat 
 
 ---
 
-problems:
-- traditional programming is not interactive
-- too many closed systems with weak composition
+> problems:
+> - traditional programming is not interactive
+> - too many closed systems with weak composition
+>
+> we've got too many closed-world systems with their own little languages and semantics. I feel like in the 2000s: video camera, gameboy, usb stick, pocket calculator, mp3 payer, clock, gps -> one smartphone.
+>
+> operating systems, shells, filesystems, files, compilers, packages, package managers, languages, databases, web servers, reverse proxies, config files (in ~infinitely many formats), ssh, programs don't compose, communication: sockets/http/tls/files/raw bytes/textfiles/permissions
+>
+> last straw: security. code reuse, packages pola? WHY CAN I DO EVERYTHING MY "USER" CAN DO?
+>
+> -> convergence
+>
+> “Most programs are not write-once. They are reworked and rewritten again and again in their lives. Bugs must be debugged… During this process, human beings must be able to read and understand the original code; it is therefore more important by far for humans to be able to understand the program than it is for the computer.” - Matsumoto Yukihiro (matz) 2007
+>
+> test code? discovery - test response of web service? play around?
+>
+> -> interactive computing
+>
+>
+> claim: layers of systems on top of out os: OS are at a local maximum
+>
+> yes, OS should manage hw resources, but it's also a platform on which we build systems.
+>
+> world of programming languages and databases collide, and they have categorical similarities.
 
-we've got too many closed-world systems with their own little languages and semantics. I feel like in the 2000s: video camera, gameboy, usb stick, pocket calculator, mp3 payer, clock, gps -> one smartphone.
-
-operating systems, shells, filesystems, files, compilers, packages, package managers, languages, databases, web servers, reverse proxies, config files (in ~infinitely many formats), ssh, programs don't compose, communication: sockets/http/tls/files/raw bytes/textfiles/permissions
-
-last straw: security. code reuse, packages pola? WHY CAN I DO EVERYTHING MY "USER" CAN DO?
-
--> convergence
-
-“Most programs are not write-once. They are reworked and rewritten again and again in their lives. Bugs must be debugged… During this process, human beings must be able to read and understand the original code; it is therefore more important by far for humans to be able to understand the program than it is for the computer.” - Matsumoto Yukihiro (matz) 2007
-
-test code? discovery - test response of web service? play around?
-
--> interactive computing
-
-
-claim: layers of systems on top of out os: OS are at a local maximum
-
-yes, OS should manage hw resources, but it's also a platform on which we build systems.
-
-world of programming languages and databases collide, and they have categorical similarities.
 
 
 ---
