@@ -61,6 +61,18 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+aphyr salticid <3
+
+Salticid is not a cloud deployment system, though you could dynamically create hosts to make it into one. As presented here, **it's designed for fixed sets of nodes**. We used it at Showyou and Vodpod to manage ~30 physical nodes in two datacenters.
+Salticid has no central control of deployment. **There is no server or locking. There is nothing to install. All you need is SSH. Anyone with credentials can use it, which makes it ideal for scenarios when you don't have control over the entire infrastructure but still need to automate some tasks.** We had a small team and kept our config in a git repo, and added a ruby check to verify the repo was up to date before running any commands. All is anarchy.
+This is not a config management tool. It has no notion of convergence or scheduled checks, and can't tell you when things are out of sync with a target. **On the other hand, it runs at interactive latencies and tells you what went wrong immediately, so you may find keeping systems up to date is easier with Salticid.** I strongly recommend writing idempotent tasks so you can just re-run them whenever you make a change or want to confirm everything is in order.
+
+https://github.com/aphyr/salticid
+
+
+
+---
+
 
 🧼 idea: val.town but via email:
 
