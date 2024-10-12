@@ -58,7 +58,11 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
-🕺 Email to advisor
+
+
+---
+
+🕺 help advisor i don't want to write
 
 Hi Michael,
 
@@ -79,12 +83,15 @@ It's probably still too early to settle on a specific workflow or built-ins, but
 Todo: refine the API, find more use cases, abstract recurring usage patterns.
 I find it promising and interesting but don't yet see a paper in it.
 
-**Current test project for the system:** live reading of my electricity/gas consumption. The Good: working with real data right away: tapping the IR port via serial, ring buffer code, message header/length/footer parsing, AES decryption, byte offsets/bytes to int, and even live writing to MQTT and debugging was incredibly fun. I rarely had so much flow while programming, all without waiting for compile/restart.
-The Bad: it still needs much more editor support and more interactivity in the editor itself; at the moment, the editor is just input, and the viewer window is just output—that's "too far apart." I also still had to restart often and lost state, but that wasn't too bad here.
-The Ugly: single-writer EAVT as a "one data model to rule them all" is nonsense, at least in direct use (i.e., everything is global). It clearly needs normal primitive state containers (atom) and also implicit local state in closures. State in atoms can be mapped well to EAVT; but closures, which are equivalent to object instances, not at all. Dynamic software update of function instances/objects is probably the biggest unsolved question mark in this field for the last 60 years; I hope to handle it well enough with the other tools, like "if the system has to restart or crash, then that's okay too."
+**Current test project for the system:** live reading of my electricity/gas consumption.
 
--- Or something from the completely untouched construction sites from our last conversation? Surface syntax, namespacing, when-then production rules, data constraints
-Since there's nothing really new here, probably only in combination with the rest.
+**The Good** working with real data right away: tapping the IR port via serial, ring buffer code, message header/length/footer parsing, AES decryption, byte offsets/bytes to int, and even live writing to MQTT and debugging was incredibly fun. I rarely had so much flow while programming, all without waiting for compile/restart.
+
+**The Bad** it still needs much more editor support and more interactivity in the editor itself; at the moment, the editor is just input, and the viewer window is just output—that's "too far apart." I also still had to restart often and lost state, but that wasn't too bad here.
+
+**The Ugly** single-writer EAVT as a "one data model to rule them all" is nonsense, at least in direct use (i.e., everything is global). It clearly needs normal primitive state containers (atom) and also implicit local state in closures. State in atoms can be mapped well to EAVT; but closures (equivalent to object instances) not at all. Dynamic software update of function instances/objects is probably the biggest unsolved question mark in this field for the last 60 years (yes CLOS but no); I hope to handle it well enough with the other tools, like "if the system has to restart or crash, then that's okay too."
+
+Or something from the completely untouched construction sites from our last conversation? Surface syntax, namespacing, when-then production rules, data constraints -- Since there's nothing really new here, probably only in combination with the rest.
 
 Thanks ✨
 
