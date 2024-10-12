@@ -55,6 +55,37 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 🧼 shower thoughts
 
+---
+
+
+
+---
+
+https://docs.microsoft.com/en-us/dotnet/api/microsoft.office.interop.excel._application.run?view=excel-pia
+`_Application.Run(Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object) Method`
+
+note that "you cannot pass objects".
+
+---
+
+literate is misunderstood http://akkartik.name/post/literate-programming
+
+commenter proposes experimentation with cap systems <3
+
+https://dev.to/redbar0n/features-of-a-dream-programming-language-cio
+
+https://malleable.systems/catalog/
+
+best ocap survey https://fossandcrafts.org/episodes/20-hygiene-for-a-computing-pandemic.html
+
+https://www.expressionsofchange.org/homoiconicity-revisited/
+
+https://www.hytradboi.com "HAVE YOU TRIED RUBBING A DATABASE ON IT?"
+
+nice intro and reasons
+
+cambria/litt: schema evolution https://www.inkandswitch.com/cambria/#distributed-schema-evolution-is-a-shared-problem
+
 
 ---
 
