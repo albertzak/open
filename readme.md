@@ -49,26 +49,36 @@ From 2020-09 until 2024-08 I got paid to daydream (🚮). This is all I have to 
 
 I collected random interesting internet finds and a few own ideas in Apple Notes. Order is somewhat chronological, newest at the top. Sadly only very few entries are timestamped or properly sourced. Lightly edited (typos, clarity, formatting) and small parts translated from German.
 
-**Legend:**
+|    | Legend |
+| 🕺 | chats with [my advisor](https://i4c.at/goeschka/) (btw he was awesome that he just let me do anything, and nothing at the same time, and didn't force any academic 🚮 on me. 🫶) |
+| 🧼 | shower thoughts / own ideas |
 
+---
 
-🕺 chats with [my advisor](https://i4c.at/goeschka/) (btw he was awesome that he just let me do anything, and nothing at the same time, and didn't force any academic 🚮 on me. 🫶)
-
-🧼 shower thoughts / own ideas
 
 
 ---
 
-🧼
-IDEA: sigils for "pausing" function while editing. we don't want all editing actions to be live, when we start editing a top level defn, we add a sigil in front that says execution in prod should continue with the previous version, but stream any calls and (and previous calls) into the editor for experimentation
+🧼 IDEA: sigils for "pausing" function while editing.
+
+we don't want all editing actions to be live.
+
+when we start editing a top level defn, we add a sigil in front that says execution in prod should continue with the previous version
+
+but stream any calls and (and previous calls) into the editor for experimentation
+
+```
 %(defn funfun [...])
+```
+
 when editing is done, see all paused/edited defs in a list and commit the changeset to prod by removing the sigils.
+
 clients will update to the new fn eventually.
 
 
 
+related work: sidekick live prod debugging
 
-sidekick live prod debugging
 similar: lightrun, rookout
 
 
