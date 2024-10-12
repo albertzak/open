@@ -55,6 +55,72 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
+
+
+---
+
+🧼 refining node bootstrapping and capability system. this vision is surprisingly close to what was implemented in 2024.
+
+**setup a node: generates its secret keypair**.
+
+**default main actor fn: identity**: `(fn [all-caps] all-caps)`
+
+all caps: `pubkey, privkey, transact! + platform-dependent effectful globals: document, require, GPIO, fs, fetch,`
+
+initial code: `(transact! [:main :allow-updates-from "pubkeyOfMeAsExternalAdmin"])`
+
+this gives full control over the node to another one's pubkey (me)
+
+**I can now send transact! messages to the node, building up the core incrementally.**
+
+(what if I want to relinquish my rights? just send a retraction: `(transact! [:main :allow-updates-from "me" false])`)
+
+(what **if I send a messed up fn?** The root actor is special in that it always receives _all_ caps as args, not just the previously-returned actor state. if i mess up, i can always start from a **fresh empty actor with all global caps still there**)
+
+
+**so i want to display something: `(transact! [:main :fn (fn [document] (set! (.-innerText body) "yo"])`**
+
+
+**can we get rid of explicit transactions and just declare what code we want to run, and let any interested clients subscribe?**
+
+sure, just transact to your own log: `(transact! ["42fjeqir" :fn (fn [{:keys [body]] (set! innerText body "hi")])`
+
+`42fjeqir` is **a cap, a secret (?) identifier for that project.**
+
+it is just data and does nothing on the machine it was transacted to.
+
+we need to instantiate an actor running that code to see anything. **to instantiate an actor, we can replace the root fn:**
+
+`(transact! [:root :fn (fn [{:keys [db document]}] (get-in db [:eav "42fjeqir" :fn]))])`
+
+how did the `42fjeqir` data get to the node? two parts are needed for data to appear:
+
+the **consuming node declares an interest in receiving** tuples matching some pattern: `(transact! [:subscription/23 :e "42fjeqir"])`
+
+and the **source node must declare an intent to publish** data matching some pattern: `(transact! [:publication/695 :e "42fjeqir"])`
+
+the network will **eventually replicate** the facts intersecting requested and allowed. (right now nodes just replicate everything, selective replication is future work)
+
+global node db contains all actor's states (or state dbs?), actors can only access their tiny slice of the db (?) elaborate some time...
+
+
+open design questions:
+
+should tuples be multi-valued or have namespaced entity ids? `[:subscriptions :e "323da4f"]` vs. `[:subscription/433 :e "323da4f"]` - maybe #2 is better as it allows attaching additional constraints to a sub, eg authored by whom, and also matching an `:a` or `:v`
+
+...nah that would work as compound query anyways, eg `[:subscription/43243 :query [:and [:= :by "pubkey"] [:= :e "12343"]]]`
+
+or should entity ids be capabilities, ie random unguessable strings?
+
+that would be like #2 except then we'd need a more explicit way for magic like `:root`, `:subscription`, `:publication` etc. which may be better as it's less magic.
+
+subbing/pubbing should be a capability, right?
+
+what if the cap was not function (that'd be too imperative and not play nice with delcarative data updating) but if the cap was a string, the one you'd use as entity id to create subs like so in a main fn:
+
+`(fn [{:keys [subscriptions main transact!]}] (transact! [subscriptions :query ]))`
+
+
 ---
 
 🧼 some notes of when i thought secure scuttlebutt might serve as data layer. contains glimpses of node bootstrapping.
