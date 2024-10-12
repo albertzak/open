@@ -60,6 +60,38 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
+residential programming
+
+[Residential Programming without Mutable State - Thomas Getgood](https://www.youtube.com/watch?v=Kgw9fblSOx4)
+
+"language have nothing to say until after code is written"
+
+"assumptions about files and file systems are baked into our language, build tools, and editors" [example: ns require, missing underscore throws file not found]
+
+"source code of a program is a value in another program"
+
+"source code is shared mutable state"
+
+"most languages have nothing to say about how changes to source code are coordinated"
+
+dereference names _when you know what they mean_
+
+reify history of source code changes
+
+impose coordination on changes
+
+
+
+
+`>> eval (defsn :foo/f (fn [x] ...)) to add quasi top level form to codebase
+>> (edit :foo) macro dumps out form it was originally defined in. used with eval+replace with expanded macro
+"i don't think accretion (of unused snippets=code) is a problem"
+
+mein fazit: vll eher doch nicht wegen workflow challenges, "build master", sondern lieber den editor als teil des distributed/situated systems sehen. eher schon aber als interne representation für die code db
+
+
+
+
 ### December 2021
 
 DC-RES Talk Abstract: **Human-first interactive programming systems**
