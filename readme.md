@@ -25,3 +25,8 @@ _that's basically it. how hard could it be?_
 - [ ] slides (+ text?) of presentations
 - [ ] upload codebases as-is (except check gitignore before)
 
+
+
+## Random Notes
+
+from
