@@ -61,6 +61,49 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+fosdem2022
+
+The relational model in the modern development age. Schema migrations suck. The state of the art has barely changed since the first SQL databases. Vitess has put a ton of effort into fixing this. (?)
+
+---
+
+jamie on instrospecing async
+
+I'm still thinking about this async gui pattern.
+
+If I convert code that uses explicit state machines to use async/await then it's easier to read, easier to write, and I can use defer to manage lifetimes. But I can no longer just print out the state, or make debugging tools that tell me eg which users have requests that are currently waiting on database io. **Are there any implementations of async that let you inspect the closed-over state of awaited futures/promises/frames?**
+
+---
+
+from jamie 0021:
+
+Typed Image-based Programming with Structure Editing.
+
+Dealing with type/schema migration by recording changes to types in a structural editor and using an OT-like process to reconcile conflicts. I'm not sold on this approach - it spends a lot of complexity dealing with changes to anonymous product types, but given that you're editing in a structural editor already there is no need for anonymous product types - **just insert ids under the hood.** But I think the paper is still valuable for elucidating the problem. **Version control of code and schema migration of persistent data are clearly two facets of the same problem but our current tools treat them as entirely separate domains.**
+
+
+---
+
+ideas from subtext 10 design doc:
+
+user mode (can only change data, value types must stay fixed, limited errors possible) vs programmer mode (can change functions, more errors possible)
+
+function run forwards are pure, ref transparent etc; but when run backwards, they have imperative effects: user can edit the output, which feeds backwards through the fn to change inputs.
+
+fns are defined with concrete values that serve as examples of their types
+
+Subtext has no syntax for describing types: it only talks about values. Function inputs are defined with a default value, so no type needs be specified. Likewise error messages never talk about types — instead they point to a mismatch between values at two code locations, additionally referencing the code locations where they were defined.
+
+We believe that type systems are an essential formalism for language theoreticians and designers, but that many language users would prefer to obtain their benefits without having to know about them and write about them.
+
+_FIXME: simpler: names are nominal, everything else is structural. Field names can be nominal because we can bind them contextually, even in constructors, because of argument defaults. _
+In PL theory terms, Subtext mixes aspects of structural and nominal type systems. It is structural in that x = array{0} and y = array{1} have the same type. It is nominal in that x = record {a: 0} and y = record {a: 0} have different types. Every time a block item is defined a globally unique ID is assigned to it. There is a workspace-wide dictionary that maps these item IDs to their current names. Renaming a block item just changes that dictionary entry. Type equality requires that block item IDs be equal, not that their names are currently spelled the same.
+
+
+
+
+---
+
 
 https://twitter.com/Mappletons/status/1561357946960990213
 
