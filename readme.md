@@ -61,6 +61,37 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+**Above all else, show the data. -- Edward Tufte (via Bret?)**
+
+---
+
+
+biff
+
+Biff is designed so that **as much as possible, changes take effect immediately without needing to restart the system (through the use of late binding)**.
+
+Biff is designed to give you strong defaults while still allowing you to change just about anything without too much hassle. The goal is that Biff **helps you to launch quickly and it doesn't get in the way later** on as your needs evolve.
+
+Biff doesn't need to add much frontend architecture thanks to htmx. htmx allows server-side frameworks like Django, Rails, and Biff to to be used for moderately interactive apps, while still keeping most of your code on the backend.
+
+
+---
+
+jepsen history task
+
+https://github.com/jepsen-io/history/blob/521d9b85a6d3ff72bc6af0c364e745839dfeeda5/src/jepsen/history/task.clj
+
+**Tasks either run to completion or are cancelled; they are never interrupted. -- If they are, who knows what could happen?**
+
+"Unlike standard j.u.c executors, tasks in this system may be created,
+queried, and cancelled *transactionally*. The executor's state (`State`) is a
+persistent, immutable structure. You perform a transaction with `(txn!
+executor (fn [state] ...))`, which returns a new state. Any transformations
+you apply to the state take place atomically."
+
+
+---
+
 aphyr salticid <3
 
 Salticid is not a cloud deployment system, though you could dynamically create hosts to make it into one. As presented here, **it's designed for fixed sets of nodes**. We used it at Showyou and Vodpod to manage ~30 physical nodes in two datacenters.
