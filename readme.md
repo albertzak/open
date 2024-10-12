@@ -54,6 +54,49 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 🧼 shower thoughts
 
+
+---
+
+Bagel lang
+
+https://www.brandons.me/blog/the-bagel-language
+
+  1. A hard, enforced separation between stateless functional code and stateful procedural code
+  2. Reactivity as a first-class citizen
+  3. LSP Language Server Protocol
+
+
+---
+
+“bricoleur science” <3 https://drossbucket.com/2017/04/08/im-a-bricoleur-scientist/
+
+erlang supervision trees https://adoptingerlang.org/docs/development/supervision_trees/
+
+
+---
+
+Ideas:
+
+Victor 2021
+
+OS in rough chronological order:
+
+lispm / genera / macsyma
+
+b5000
+
+eros/e
+
+plan9
+
+hp/400
+
+STEPS
+
+mu
+
+wasm capsec?
+
 ---
 
 🕺
