@@ -5,13 +5,15 @@ STATUS: **Highly experimental.** Don't even think about trying. (have fun follow
 
 _"So I'm trying to incubate a personal dynamic..."_ nah
 
+<br>
+
 I just want to to **look inside** variables
 
 or tell **that machine** over there to **run this** piece of code.
 
 <br>
 
-_how hard could it be?_
+_that's basically it. how hard could it be?_
 
 
 
