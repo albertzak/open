@@ -56,6 +56,9 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 
 
+
+---
+
 ---
 
 🧼
@@ -72,10 +75,11 @@ it's a litte too intense
 
 i'd rather do it as a hobby for a few hours per week
 
-hab genossen mich mit dem them auserianderzusetzen,
-habe genossen einen menot zu haben der sich auch far interessiert
-ich mach mir zu viel druck, was großartiges rauszufinden
+thank you, i enjoyed grappling with these topics
 
+i enjoyed having a mentor who is also interested in this
+
+i put too much pressure on myself to find out something grand.
 
 
 ---
