@@ -75,11 +75,15 @@ possible editor UI:
 (deffn bar []) ; greyed out because it is not present in all connected(monitored) nodes' namespaces
 ```
 
-`drop-in atom`: record state changes of nodes, stream back to editor, experiment with prod data
+  - `drop-in atom`: record state changes of nodes, stream back to editor, experiment with prod data
 
--
+  - `Polajure`:
+    - A POLA capability subset of clojure
+    - like SES/Agoric/Jessie, remove effectful fns from stdlib
+    - hell i'd use that immediately
+      - hmm maybe SCI already does that
 
-Polajure: A POLA capability subset of clojure: SES/Agoric/Jessie, remove effectful fns from stdlib
+
 ---
 
 what's the difference between edit/developer mode and user mode?
