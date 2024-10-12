@@ -27,7 +27,7 @@ _that's basically it. how hard could it be?_
 - [ ] upload slides (+ text?) of presentations
 - [ ] upload codebases as-is (except check gitignore before)
 - [ ] think of what to demo in 14min
-- [ ] add [gary bernhardt talk "a whole new world"](https://www.destroyallsoftware.com/talks/a-whole-new-world) to related work
+- [ ] add [gary bernhardt talk "a whole new world"](https://www.destroyallsoftware.com/talks/a-whole-new-world) to related work. **it is sooo good**
 
 #### After LIVE@SPLASH
 
