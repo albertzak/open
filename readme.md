@@ -59,6 +59,35 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+on stupidity of performance over everything (1990)
+
+To Editors, Communications of the ACM
+
+Dear Sirs:
+
+The paper, "An Empirical Study of the Reliability of Unix Utilities", by Miller, Fredriksen and So, in the December, 1990 issue of the Communications, provides extremely valuable empirical feedback on the state of the art in commercial software today. Unfortunately, the state that it exhibits is somewhat embarrassing, mostly because the programming errors discussed in the paper are the direct result of programming styles recommended by popular texts on C programming, and aided and abetted by today's RISC architectures.
+
+Much more ominous is the current practise of demonstrating high speed on benchmarks with all run-time checks turned off. Because computer hardware (and sometimes software) is sold on the basis of execution speed, it is inevitable that every corner will be cut in achieving the maximum speed on these artificial benchmarks. The customer wants the same code that was benchmarked, so the code is delivered with all run-time checks disabled. Unfortunately, the costs of recovering from a disaster due to array-bounds or pointer violations usually far exceeds the savings from the slightly increased execution performance.
+
+Some of these benchmarked systems are "mission-critical" embedded systems, in which bad programming style can kill people. The run-time checks generated automatically by Ada compilers are often turned off to gain a few additional percent in execution speed. Thus, rather than having the software discover its own errors in a benign way, the discovery of such errors is left to the FAA or a Congressional committee.
+
+Software engineering has long stressed the need for defensive programming styles which constantly check for array bounds and null pointer violations (among other things), but because the C language does not provide for these checks to be automatically generated, programmers often leave them out. Furthermore, the code is "more elegant" when the checks are suppressed. This is a good example of a variation on Whorf's hypothesis, which states that language affects thinking; in the case of programming, the language used does affect the quality of the code produced.
+
+Today's untagged RISC architectures put the burden on optimizing compilers to generate efficient run-time array-bounds and pointer checks. Unfortunately, on a serial architecture these additional checks do take additional time. While clever optimizing compilers can move many checks out of inner loops, the availability and quality of the average compiler leaves a lot to be desired. As a result, benchmarkers continue to find it productive to remove such run-time checks. Perhaps the new "superscaler" architectures capable of executing several instructions simultaneously will eliminate most of the cost of these run-time checks. The existence of such architectures will do nothing, however, to correct a whole generation of computer software which was written without these checks.
+
+Engineers optimize what can be quantified; that is their job. Since execution performance is readily quantified, it is most often measured and optimized--even when increased performance is of marginal value; viz., the mandatory "performance results" section in most published papers. Quality and reliability of software is much more difficult to measure, and is therefore rarely optimized. It is human nature to "look for one's keys under the street-lamp, because that is where the light is brightest".
+
+Scientists, on the other hand, determine models and methods of quantification. It should be a high priority among computer scientists to provide models and methods for quantifying the quality and reliability of software, so that these can be optimized by engineers, as well as performance. If these measures provide the correct information, then programs such as buggy Unix utilities can be more easily classified as "poor quality", so that purchasers of such software can base their decisions on more information than the running speed of some benchmark.
+
+Sincerely,
+
+Henry G. Baker, Ph.D.
+
+https://plover.com/~mjd/misc/hbaker-archive/letters/CACM-DubiousAchievement.html
+
+
+---
+
 🧼 refining node bootstrapping and capability system. feels like the first time some coherent picture emerges. it is surprisingly close to what was actually implemented in 2024.
 
 **setup a node: generates its secret keypair**.
