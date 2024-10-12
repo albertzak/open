@@ -54,12 +54,62 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 🧼 shower thoughts
 
+
+
+
 ---
 
+zookos pet names
+
+http://www.skyhunter.com/marcs/petnames/IntroPetNames.html
+
 
 ---
 
+epic list of pointers https://news.ycombinator.com/item?id=10926038
 
+---
+
+http://www.cs.cmu.edu/~NatProg/index.html
+
+
+https://github.com/dmbarbour/awelon/blob/master/AwelonProject.md
+
+
+https://pchiusano.github.io/2013-05-22/future-of-software.html
+
+
+https://www.researchgate.net/profile/Lennart-Loevstrand/publication/221515740_User-tailorable_systems_Pressing_the_issues_with_buttons/links/5721020f08ae5454b230fbec/User-tailorable-systems-Pressing-the-issues-with-buttons.pdf?origin=publication_detail
+
+
+https://www.geoffreylitt.com/2020/07/19/tools-over-apps-for-personal-notetaking.html
+
+
+---
+
+[moseley + marks: out of the tar pit]
+
+---
+
+laprie 2008
+
+"As ubiquitous systems are under continuous changes or evolutions, a central property they should exhibit, via appropriate technology, is evolvability, i.e., the ability to successfully accommodate changes. Within evolvability, an important topic is **adaptivity, i.e., the capability of evolving while executing**.
+As our definition of resilience retains the notion of justified confidence, assessability, in both senses of verification and evaluation, comes immediately second. Classically, verification and evaluation are performed off- line, pre-deployment. Such an approach falls obviously short in the case of evolving systems, for which assessment has to be performed at run-time, during operation.
+Computing systems have already pervaded all activities of our life, and this will still be even more true with ubiquitous systems, hence the importance of usability. Ubiquitous systems being highly complex systems, heterogeneity and diversity are naturally present."
+
+
+
+---
+
+https://www.youtube.com/watch?v=6Cs-gFn8r_E
+
+montiarc / deployarc -- mapping virtual deployment onto physical instances, dsl to describe deployments for distributed cps
+
+- architecture lang: logical arch, functionality, model behavior
+- platform lang: model systems (?)
+- deployment lang: assign components to systems
+
+(smells like bs to me)
 
 ---
 
