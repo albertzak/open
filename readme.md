@@ -54,6 +54,34 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 | 🧼 | shower thoughts / own ideas |
 ---
 
+
+
+
+
+---
+
+🧼 IDEA for an editor plugin:
+
+**your buffer is like a terminal/repl.**
+
+**deleting code does not delete anything in the system**, its like clearing your terminal.
+
+each top level defn has an id.
+
+make sure to not accidentally change some fn defn into something else entirely, as any references to it will be changed
+
+v1: **top level things get an id** and it is collapsed by default
+
+**type "(changes)" to see current "changes staging area" printed below**
+
+text based interactions: local (single caret), fancy (multi caret?)
+
+**mapping to real world filesystem**: each tx is a file, txid/timestamp as append-only
+
+
+
+---
+
 bazant hierarchical spreadsheet tool building
 
 https://www.researchgate.net/publication/326141821_A_non-tabular_spreadsheet_with_broad_applicability
