@@ -56,6 +56,121 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+
+ALWAYS: WHAT IS THE POINT THE POINT THE POINT THE POINT THE POINT THE POINT???????
+
+i am interested in finding better ways to program
+
+reduce incidental complexity
+
+reduce feedback time
+
+especially a subset of cps, what hickey calls situated programs (Hickey 2017)
+
+~
+
+different kinds of programs - 'entangled' with the world
+
+situate - meaning to put in or on a particular site or place
+
+time: execute often continuously and remain in use for
+
+deal with information
+
+have time-extensive memory / remeber/recall from databases
+
+deal with real-world irregularities
+
+~
+
+why current programming problematic?
+
+mutable state, high number of truly concurrent processors,
+
+distribution, associated complexities
+
+proliferation of languages, parsing complex syntax for no reason
+
+weak introspection and little dynamism
+
+genreally no notions of memory over time, no going back or experimenting safely
+
+insecurity, mutation without memory/history,
+
+uncontrolled side effects, ambient authority
+
+~
+
+...was not always the case / past 6 decades
+
+there were computer systems with OS written in memory safe HLL
+
+or just an OS, the precursor our present day unix
+introduced a vast number of features we tage for granted today
+
+~
+
+on types:
+
+they don't solve the big problems, testing in production does (haha what a claim)
+
+names dominate semantics and always will, eg. reverse :: [a] -> [a] (hickey fanboy speak yes)
+
+types help with performance
+
+types help with maintenance
+
+---
+
+on hugeness of task:
+
+"Two things seem clear. First, that designing a complete infrastructure for managing user rights, roles and rules is an essentially open-ended task. Second that building a simple, open-ended framework for the same domain can probably be completed with very little effort."
+
+---
+
+programming is not a solved problem
+
+logic should be one of my tools, not my almighty master
+
+solve problems instead of puzzles
+
+i want to **encourage design at the system level, outside of what was considered in-scope of languages**
+
+---
+
+On Pragmatism
+
+There are a class of "ideal attractors" in engineering, concepts like "everything is an object," "homoiconicity," "purely functional," "pure capability system," etc.
+
+Engineers fall into orbit around these ideas quite easily. Systems that follow these principles often get useful properties out of the deal.
+
+However, **going too far in any of these directions is also a great way to find a deep reservoir of unsolved problems**, which is part of why these are popular directions in academia.
+
+In the interest of shipping, we are consicously steering around unsolved problems, even when it means we lose some attractive features. For instance:
+
+---
+
+🧼
+
+goal
+
+- **find a data model**
+  - to represent code
+  - and state (ephemeral and long-term)
+    - time-aware
+    - represent changes to both
+- and **find an editing ui** for that data model
+  - to create, read, update, find, visualize such data structures
+  - that allow inspection and safe experimentation/evolution on a running distributed production system.
+
+
+via editor macros, prefab style
+
+demo use cases: sms gateway: one clinic, multiple clinics, many carriers/SIMs, live swap, quotas, auto swap, queues, reply, access control + storage management + home automation / security
+
+
+
+---
 🕺
 
 proficiency exam in march
