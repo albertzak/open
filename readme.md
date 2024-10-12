@@ -48,11 +48,24 @@ From 2020-09 until 2024-08 I got paid to daydream (🚮). This is all I have to 
 
 I collected random interesting internet finds and a few own ideas in Apple Notes. Order is somewhat chronological, newest at the top. Sadly only very few entries are timestamped or properly sourced. Lightly edited (typos, clarity, formatting) and small parts translated from German.
 
-Notes from chats with [my advisor](https://i4c.at/goeschka/) are in code fences. (btw he was awesome that he just let me do anything, and nothing at the same time, and didn't force any academic 🚮 on me. 🫶)
+**Legend:**
+
+🕺 chats with [my advisor](https://i4c.at/goeschka/) (btw he was awesome that he just let me do anything, and nothing at the same time, and didn't force any academic 🚮 on me. 🫶)
+
+🧼 shower thoughts
 
 ---
 
-```
+
+
+
+
+
+
+---
+
+🕺
+
 problems:
 - traditional programming is not interactive
 - too many closed systems with weak composition
@@ -77,7 +90,7 @@ claim: layers of systems on top of out os: OS are at a local maximum
 yes, OS should manage hw resources, but it's also a platform on which we build systems.
 
 world of programming languages and databases collide, and they have categorical similarities.
-```
+
 
 ---
 
@@ -107,7 +120,7 @@ Multics 1965
 
 - PL/1, 1MB RAM, NSA >1998
 - expensive process creation: 3 procs per user, later 1 proc.
-- W^X: actually from a cost mem optimization, keep only one copy in ram, should not modify itself when - - - multiple users access same program
+- W^X: actually from a cost mem optimization, keep only one copy in ram, should not modify itself when multiple users access same program
 
 - 70s: Algol, Cobol, Fortran
 - Mid-70s: Maclisp Macsyma, APL interpreter
