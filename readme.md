@@ -29,4 +29,8 @@ _that's basically it. how hard could it be?_
 
 ## Random Notes
 
-from 2020-09 until 2024-08 i got paid to daydream
+from 2020-09 until 2024-08 i got paid to daydream (🚮). this is all i have to show for it.
+
+
+
+
