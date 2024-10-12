@@ -54,6 +54,31 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 | 🧼 | shower thoughts / own ideas |
 ---
 
+bazant hierarchical spreadsheet tool building
+
+https://www.researchgate.net/publication/326141821_A_non-tabular_spreadsheet_with_broad_applicability
+
+Hierarchical spreadsheet demo video
+
+---
+
+List of structural/projectional editors
+
+https://github.com/futureofcoding/futureofcoding.org/issues/52
+
+---
+
+plain text misfeatures
+
+shalabh <3
+
+https://shalabh.com/programmable-systems/plain-text-misfeatures.html
+
+- linear order
+- requires us to consider presentation aspects [less so in lisps]
+- no rich exploratory features
+- denormalized links
+
 
 ---
 
