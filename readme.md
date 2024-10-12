@@ -74,12 +74,11 @@ write a history paper about multics? 1000s of references. write now, use shorten
 
 need: write report for proficiency exam: it's mostly state of the art
 
-ii
+write a tiny "research challenge paper" and submit it to student track / doctoral symposium (early stage ok)
 
+use case: not the artefact but the process of programming is very important. show: how does it look usually? how does it look with this system?
 
-
-> "research challenge paper" / student track / doctoral symposium / identifieren problem aufgrund von breiter recherche / phd stud paper / in early stages
-> use case ist nicht artefakt, sondern prozess des proggens ist sehr wichtig. zeigen wie schaut das nrmalerweise aus, wie mit meinem system. industrial control + security. wartbarkeit/visibility von iot ist baaaaad
+industrial control + security. maintainability/visibility of iot is baaaaad
 
 > konkretisierennnnnnnnnnnnn, iterate challenge+lösungsansatz
 > ende aug / anfang sept: 1 praktisch + 2 tiefe (+ 3 text iwann)
