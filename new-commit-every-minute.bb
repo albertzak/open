@@ -3,9 +3,10 @@
 (require '[clojure.java.shell :refer [sh]])
 
 (defn changes? []
-  (->> (sh "git" "diff-index" "--quiet" "HEAD" "--")
+  (->> (sh "git" "dif" "--exit-code")
        :exit
-       zero?))
+       zero?
+       not))
 
 (defn commit-count []
   (->> (sh "git" "rev-list" "--count" "HEAD")
