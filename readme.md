@@ -56,7 +56,70 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+Hell Is Other REPLs: Being Mutable and Avoiding Bad Faith Programming
 
+https://hyperthings.garden/posts/2021-06-20/hell-is-other-repls.html
+
+
+
+---
+
+Monte lang (python+ocaps)
+
+https://monte.readthedocs.io/en/latest/intro.html
+
+"While “arbitrary code execution” is a notorious security vulnerability, Monte enables the fearless yet powerful use of multi-party limited-trust mobile code."
+
+---
+
+emakers
+
+Emakers have an important security property: they come to life contained in a world with no authority. Such a world is even more restrictive than the Java sandbox used for applets. However, this world is more flexible than the sandbox because authority can be granted and revoked during operation using capabilities
+
+
+---
+
+cap'n proto schema definitions
+
+top level defns have random IDs
+
+
+"A Cap’n Proto file must have a unique 64-bit ID, and each type and annotation defined therein may also have an ID. Use capnp id to generate a new ID randomly. ID specifications begin with @:"
+
+```
+@0xdbb9ad1f14bf0b36; # file id
+
+struct Foo @0x8db435604d0d3723 {
+  # ...
+}
+
+enum Bar @0xb400f69b5334aab3 {
+  # ...
+}
+```
+
+If you omit the ID for a type or annotation, one will be assigned automatically. This default ID is derived by taking the first 8 bytes of the MD5 hash of the parent scope’s ID concatenated with the declaration’s name (where the “parent scope” is the file for top-level declarations, or the outer type for nested declarations). You can see the automatically-generated IDs by “compiling” your file with the -ocapnp flag, which echos the schema back to the terminal annotated with extra information, e.g. capnp compile -ocapnp myschema.capnp. In general, you would only specify an explicit ID for a declaration if that declaration has been renamed or moved and you want the ID to stay the same for backwards-compatibility.
+
+
+IDs exist to provide a relatively short yet unambiguous way to refer to a type or annotation from another context. They may be used for representing schemas, for tagging dynamically-typed fields, etc. Most languages prefer instead to define a symbolic global namespace e.g. full of “packages”, but this would have some important disadvantages in the context of Cap’n Proto:
+
+  - Programmers often feel the need to change symbolic names and organization in order to make their code cleaner, but the renamed code should still work with existing encoded data.
+
+  - It’s easy for symbolic names to collide, and these collisions could be hard to detect in a large distributed system with many different binaries using different versions of protocols.
+
+  - Fully-qualified type names may be large and waste space when transmitted on the wire.
+
+Note that IDs are 64-bit (actually, 63-bit, as the first bit is always 1). Random collisions are possible, but unlikely – there would have to be on the order of a billion types before this becomes a real concern. Collisions from misuse (e.g. copying an example without changing the ID) are much more likely.
+
+Evolving Your Protocol
+
+A protocol can be changed in the following ways without breaking backwards-compatibility, and without changing the canonical encoding of a message:
+
+  - New types, constants, and aliases can be added anywhere, since they obviously don’t affect the encoding of any existing type.
+  - New fields, enumerants, and methods may be added to structs, enums, and interfaces, respectively, as long as each new member’s number is larger than all previous members. Similarly, new fields may be added to existing groups and unions.
+  - New parameters may be added to a method. The new parameters must be added to the end of the parameter list and must have default values.
+  - Members can be re-arranged in the source code, so long as their numbers stay the same.
+  - Any symbolic name can be changed, as long as the type ID / ordinal numbers stay the same.
 
 
 ---
