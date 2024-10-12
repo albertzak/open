@@ -25,6 +25,11 @@ _that's basically it. how hard could it be?_
 - [ ] upload slides (+ text?) of presentations
 - [ ] upload codebases as-is (except check gitignore before)
 
+#### After LIVE@SPLASH
+
+- [ ]
+- [ ] can we see data and run fns in <26 loc?
+
 
 
 ## Random Notes
