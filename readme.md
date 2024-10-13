@@ -27,7 +27,6 @@ _that's basically it. how hard could it be?_
 - [ ] get this thing working well enough to give a fun presentation in 1 week and 1 day.
 - [ ] upload slides (+ text?) of presentations
 - [ ] think of what to demo in 14min
-- [x] add [gary bernhardt talk "a whole new world"](https://www.destroyallsoftware.com/talks/a-whole-new-world) to related work. **it is sooo good and nobody has seen it**
 
 
 
@@ -54,6 +53,9 @@ _that's basically it. how hard could it be?_
 
 </summary>
 
+(newest first)
+
+- [x] add [gary bernhardt talk "a whole new world"](https://www.destroyallsoftware.com/talks/a-whole-new-world) to related work. **it is sooo good and nobody has seen it**
 - [x] share [live 2024 submission reviews](2024-08-16-live2024-reviews.md)
 - [x] share huge [raw notes](#raw-notes) file
 
