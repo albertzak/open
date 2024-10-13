@@ -58,6 +58,22 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
+Is it really "Complex"? Or did we just make it "Complicated"?
+
+https://youtu.be/ubaX1Smg6pY?t=4326
+
+```
+Object: :needs [a b]  :produces [x y]
+Object: :needs [b u]  :produces [a]
+```
+
+Kay: an **OO system in which messages are only RECEIVED** (something to think about)
+
+Kay: Sending msgs is the problem; who are you gonna send them to?
+
+Kay: **Ship the design (the "what": constraints, meanings**...., not the "how")
+
+
 ---
 
 common lisp like condition system in clojure
