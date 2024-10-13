@@ -46,7 +46,9 @@ _that's basically it. how hard could it be?_
 
 <summary>
 
-## Raw notes [20,000+ words]
+## Raw notes
+
+click to expand [20,000+ words]
 
 
 </summary>
