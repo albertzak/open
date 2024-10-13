@@ -9,25 +9,13 @@ _"So I'm trying to incubate a personal dynamic..."_ nah
 
 <br>
 
-I just want to to **look inside** and see the data
+I just want to to **look inside** a function or variable and **see the data**
 
-or tell **that machine** over there to **run this** piece of code.
+and tell **that machine** over there to **keep running this piece of code**.
 
 <br>
 
 _that's basically it. how hard could it be?_
-
-
-
-
-### TODO
-
-
-- [ ] **CURRENT** upload codebases as-is (except check gitignore before)
-- [ ] get this thing working well enough to give a fun presentation in 1 week and 1 day.
-- [ ] upload slides (+ text?) of presentations
-- [ ] think of what to demo in 14min
-
 
 
 #### Live scratchpad (what i'm typing this very minute)
@@ -41,6 +29,17 @@ _that's basically it. how hard could it be?_
 
 
 ```
+
+
+### TODO
+
+
+- [ ] **CURRENT** upload codebases as-is (except check gitignore before)
+- [ ] get this thing working well enough to give a fun presentation in 1 week and 1 day.
+- [ ] upload slides (+ text?) of presentations
+- [ ] think of what to demo in 14min
+
+
 
 
 
