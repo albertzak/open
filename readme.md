@@ -3387,6 +3387,17 @@ wtf? but also intriguing. don't really understand
 OS Family Tree https://eylenburg.github.io/pics/Eylenburg_Operating_System_Timeline_Family_Tree.svg
 
 
+<details>
+
+<summary>☯️</summary>
+
+```
+just let go
+of what you know
+```
+
+</details>
+
 </details>
 
 
