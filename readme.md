@@ -99,6 +99,31 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
+
+Glisp - wow! bidirectional ui+code, bound via clj metadata or type-wrapping fns
+
+looks like clojure, but it's not, it's implemented in typescript via MAL (make-a-lisp)
+
+`(fn {})` lovely map destructuring args -- i wish clojure had that
+
+https://glisp.app/commit:e7fbaae/?code_url=
+
+
+https://scrapbox.io/glisp/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E5%AE%9A%E7%BE%A9%E3%82%B7%E3%82%A7%E3%82%A4%E3%83%97
+
+https://scrapbox.io/glisp/Glisp_v2:_Why_strong_type%3F
+
+"Unlike conventional language, the types in Glisp is more like a metadata that stores informations for GUI"
+
+https://scrapbox.io/glisp/Inverse_Evaluation
+
+https://github.com/baku89/glisp/tree/main/docs
+
+https://mit.zoom.us/rec/play/TibuQ8H2Bp1_8x7lPtl68MDoFTUttLuLx20RnUyff20wsRFPUFp8OS8dtbwzEU40KcIlOIqPizZoLXyz.Lpkw0-g0XsMoyBKp?canPlayFromShare=true&from=share_recording_detail&startTime=1621440014000&componentName=rec-play&originRequestUrl=https%3A%2F%2Fmit.zoom.us%2Frec%2Fshare%2FH9FyRt_JDjFh2UognOBr3AuGeHts3f128d5vlUuJ64JuX5_7aJA_OkA0jD2DjK0t.VN86tdpeSPH7FIjP%3FstartTime%3D1621440014000
+
+
+
+
 ### January 2024
 
 🧼 IDEAS
