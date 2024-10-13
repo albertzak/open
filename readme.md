@@ -37,10 +37,13 @@ _that's basically it. how hard could it be?_
 
 https://www.destroyallsoftware.com/talks/a-whole-new-world
 
-- crash layer: editor highlights lines involved in exceptions from production
-- performance layer: color slow lines
-- type layer: but inferred from _production runtime_ data
+mock-up of a dream text editor for making situated systems.
 
+- crash layer: highlight lines involved in _actual_ exceptions
+- performance layer: color slow lines
+- type layer: inferred from _production runtime_ data
+
+exactly what i'm trying to build.
 
 
 
