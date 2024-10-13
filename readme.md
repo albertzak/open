@@ -29,24 +29,26 @@ _that's basically it. how hard could it be?_
 - [ ] think of what to demo in 14min
 - [ ] add [gary bernhardt talk "a whole new world"](https://www.destroyallsoftware.com/talks/a-whole-new-world) to related work. **it is sooo good and nobody has seen it**
 
+
+
+#### Live scratchpad (what i'm typing this very minute)
+
+```
+
+
+
+
+
+
+
+```
+
+
+
+
+
 <details>
 <summary>
-
-
-#### What i'm typing this minute
-
-https://www.destroyallsoftware.com/talks/a-whole-new-world
-
-mock-up of a dream text editor for making situated systems.
-
-- crash layer: highlight lines involved in _actual_ exceptions
-- performance layer: color slow lines
-- type layer: inferred from _production runtime_ data
-
-exactly what i'm trying to build.
-
-
-
 
 ### DONE
 
