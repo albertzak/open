@@ -18,18 +18,6 @@ and tell **that machine** over there to **keep running this piece of code**.
 _that's basically it. how hard could it be?_
 
 
-#### Live scratchpad (what i'm typing this very minute)
-
-```
-
-
-
-
-
-
-
-```
-
 
 ### TODO
 
@@ -38,8 +26,6 @@ _that's basically it. how hard could it be?_
 - [ ] get this thing working well enough to give a fun presentation in 1 week and 1 day.
 - [ ] upload slides (+ text?) of presentations
 - [ ] think of what to demo in 14min
-
-
 
 
 
@@ -107,7 +93,6 @@ looks like clojure, but it's not, it's implemented in typescript via MAL (make-a
 `(fn {})` lovely map destructuring args -- i wish clojure had that
 
 https://glisp.app/commit:e7fbaae/?code_url=
-
 
 https://scrapbox.io/glisp/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E5%AE%9A%E7%BE%A9%E3%82%B7%E3%82%A7%E3%82%A4%E3%83%97
 

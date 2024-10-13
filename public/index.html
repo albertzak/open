@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>small.systems</title>
+    <style id="custom-theme"></style>
+    <style>
+      * {
+        font-family: 'Source Code Pro', 'Monaco', 'Fira Code Retina', 'Fira Code', monospace;
+      }
+
+      html, body, #editor-root {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        background-color: var(--background, #000);
+        color: #fff;
+      }
+
+      pre {
+        margin: 0;
+        padding: 0;
+      }
+
+      .query-result {
+        background-color: hsla(81.6, 100%, 50%, 0.14);
+        border-radius: 3px;
+      }
+
+      .query-emacro-symbol {
+        color: #04fb6b;
+        background: #3c3a35;
+        border-radius: 3px;
+      }
+
+      .d-flex {
+        display: flex
+      }
+
+      .flex-end {
+        align-items: flex-end;
+      }
+
+      .h100 {
+        height: 100px;
+      }
+
+      .w20 {
+        width: 20px;
+      }
+
+      .bg-green {
+        background: MediumSpringGreen;
+      }
+
+      #render-root {
+        position: fixed;
+        top: 1.3rem;
+        right: 0;
+        padding: 0.6rem
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="editor-root"></div>
+    <div id="render-root"></div>
+
+    <script type="module">
+      window.jsImport = async (url) => {
+        const p = await import(url)
+        console.log('jsImport', p)
+        return p
+      }
+
+      const ident = window.location.hash.split('#')[2]
+      document.title = '*' + ident
+    </script>
+
+    <script type="module" src="/build/editor.js"></script>
+  </body>
+</html>

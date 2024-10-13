@@ -1,0 +1,13 @@
+{:deps {thheller/shadow-cljs {:mvn/version "2.25.8"}
+        nextjournal/clojure-mode {:git/url "https://github.com/nextjournal/clojure-mode"
+                                  :sha "3df5e837095e049fe489831742bcfa1e9704c691"}
+        reagent/reagent {:mvn/version "1.2.0"}
+        instaparse/instaparse {:mvn/version "1.4.12"}
+        datascript/datascript {:mvn/version "1.4.2"}
+        datascript-transit/datascript-transit {:mvn/version "0.3.0"}
+        rewrite-clj/rewrite-clj {:mvn/version "1.1.47"}
+        funcool/promesa {:mvn/version "11.0.671"}
+        zprint/zprint {:mvn/version "1.2.9"}
+        org.babashka/sci {:mvn/version "0.8.41"}
+        djblue/portal {:mvn/version "0.42.0"}
+        binaryage/zones {:mvn/version "0.1.0"}}}

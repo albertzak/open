@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>small.systems</title>
+    <style id="custom-theme"></style>
+    <style>
+      * {
+        font-family: 'Fira Code Retina', 'Fira Code', 'Source Code Pro', monospace;
+      }
+
+      html, body, #editor-root {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        background-color: #000;
+        color: #fff;
+      }
+
+      pre {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="editor-root"></div>
+    <script src="/build/editor.js"></script>
+
+    <script type="module">
+      const ident = window.location.hash.split('#')[2]
+      document.title = ident
+    </script>
+  </body>
+</html>

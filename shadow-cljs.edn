@@ -1,0 +1,38 @@
+{:deps true
+ :http {:host "fxp1.local"}
+ :dev-http
+ {2000 {:root "public"
+        :host "fxp1.local"}
+  2001 {:root "public"
+        :host "0.0.0.0"}}
+ :builds
+ {:editor
+  {:target :esm
+   :output-dir "public/build"
+   :asset-path "/build" ; source map prefix inside public folder
+   #_#_:output-to "public/build/editor.js"
+   :modules {:editor {:init-fn small.codemirror/init}}
+   #_#_:js-options {:js-provider :import}}
+;;   :editor-static
+;;   {:target :browser
+;;    :runtime :custom
+;;    :output-dir "public/editor-static"
+;;    :asset-path "/editor-static" ; source map prefix inside public folder
+;;    #_#_:output-to "public/build/editor.js"
+;;    :modules {:editor {:init-fn small.codemirror/init}}
+;;    #_#_:js-options {:js-provider :import}}
+  :web
+  {:target :esm
+   :output-dir "public/build-web"
+   :asset-path "/build-web" ; source map prefix inside public folder
+   :modules {:web {:exports {node small.web/node
+                             default small.web/node}}}
+   :runtime :custom ; default/only :browser, repl fails?
+   #_#_:js-options {:js-provider :import}}
+  :node
+  {:target :esm
+   :output-dir "build/"
+   :modules {:small {:exports {init small.node/init}}}
+   :js-options {:entry-keys ["module" "browser" "main"]
+                :js-provider :import}
+   :compiler-options {:externs ["datascript/externs.js"]}}}}

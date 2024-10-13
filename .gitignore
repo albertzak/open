@@ -16,3 +16,8 @@ build
 node_modules
 secrets.edn
 yarn-error.log
+.cpcache
+cljs-runtime
+public/vids
+build/small.js
+public/build-*

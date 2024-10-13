@@ -1,0 +1,6 @@
+{
+  "tasks": {
+    "start": "deno run --allow-all npm:shadow-cljs@2.26.2 watch editor node",
+    "clean": "rm -rf build; rm -rf public/build"
+  }
+}
