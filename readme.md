@@ -47,6 +47,13 @@ _that's basically it. how hard could it be?_
 
 From 2020-09 until 2024-08 I got paid to daydream (🚮). This is all I have to show for it.
 
+
+
+
+<details>
+
+<summary>Raw notes [20,000+ words]</summary>
+
 I collected random interesting internet finds and a few own ideas in Apple Notes. Order is somewhat chronological, newest at the top. Sadly only very few entries are timestamped or properly sourced. Lightly edited (typos, clarity, formatting) and small parts translated from German.
 
 |    | Legend |
@@ -3346,7 +3353,7 @@ wtf? but also intriguing. don't really understand
 OS Family Tree https://eylenburg.github.io/pics/Eylenburg_Operating_System_Timeline_Family_Tree.svg
 
 
-
+</details>
 
 
 
