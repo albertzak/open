@@ -42,17 +42,16 @@ _that's basically it. how hard could it be?_
 - `2024-10-12 15:35` writing live like this is so so so fun
 
 
-
-## Random Notes
-
-From 2020-09 until 2024-08 I got paid to daydream (🚮). This is all I have to show for it.
-
-
-
-
 <details>
 
-<summary>Raw notes [20,000+ words]</summary>
+<summary>
+
+## Raw notes [20,000+ words]
+
+
+</summary>
+
+From 2020-09 until 2024-08 I got paid to daydream (🚮). This is all I have to show for it.
 
 I collected random interesting internet finds and a few own ideas in Apple Notes. Order is somewhat chronological, newest at the top. Sadly only very few entries are timestamped or properly sourced. Lightly edited (typos, clarity, formatting) and small parts translated from German.
 
