@@ -452,7 +452,7 @@ https://github.com/davidbullado/blog/blob/main/we-need-a-new-versioning-notation
 
 Ending Dependency Chaos: A Proposal for Comprehensive Function Versioning
 
-````
+```
 @moduleVersion 2
  ...
 @funcVersion 16
