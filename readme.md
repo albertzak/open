@@ -1,7 +1,12 @@
 # 🌱 [open practice](https://www.youtube.com/watch?v=MJzV0CX0q8o)
 a.k.a. **NEW COMMIT EVERY MINUTE**
 
-<img align="right" src="img/video.png">
+<a href="https://www.youtube.com/watch?v=ehR-KIgw7T8" target="_blank">
+  <img align="right"
+    title="above all else, show the data"
+    alt="screenshot of a clojure live programming environment showing the current state of some leds of a remote raspberry pi"
+    src="img/video.png">
+</a>
 
 STATUS: **Highly experimental.** (have fun following along if you want.)
 
