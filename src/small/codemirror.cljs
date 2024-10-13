@@ -528,7 +528,6 @@
   (-> (js/fetch "/examples.cljs")
       (.then (fn [r] (.text r)))
       (.then (fn [t]
-               (clog "OKEOKE")
                (reset! all-examples
                        (->> (map s/trim (s/split t ";---"))
                             (map (fn [x] (let [x' (s/split x ";%")]
@@ -639,7 +638,6 @@
      :preventDefault true
      :stopPropagation true
      :run (fn [v]
-            (prn :ok)
             (let [[cursor text] (examples 1)]
               (.dispatch v (clj->js {:changes {:from 0 :to (.. v -state -doc -length)
                                                :insert text}
@@ -649,7 +647,6 @@
      :preventDefault true
      :stopPropagation true
      :run (fn [v]
-            (prn :ok)
             (let [[cursor text] (examples -1)]
               (.dispatch v (clj->js {:changes {:from 0 :to (.. v -state -doc -length)
                                                :insert text}

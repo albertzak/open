@@ -7,7 +7,7 @@
 (def green "var(--string, #93fc62)")
 (def darkgreen "#5CA25D")
 (def pink "var(--number, #fe517d)")
-(def purple "var(--keyword, #ff9327)")
+(def purple "var(--keyword, #c08fff)")
 (def blue "#329efd")
 (def gray "#999999")
 

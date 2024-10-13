@@ -117,7 +117,7 @@
 (defn ^:export init [ident caps]
   (p/do
     (reset! react-root (createRoot (js/document.getElementById "render-root")))
-    (render [:hi])
+    (render [:div])
     (core/connect!
      ident ; todo editor caps
      (merge
