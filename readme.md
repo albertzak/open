@@ -58,34 +58,6 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
-Is it really "Complex"? Or did we just make it "Complicated"?
-
-https://youtu.be/ubaX1Smg6pY?t=4326
-
-```
-Object: :needs [a b]  :produces [x y]
-Object: :needs [b u]  :produces [a]
-```
-
-Kay: an **OO system in which messages are only RECEIVED** (something to think about)
-
-Kay: Sending msgs is the problem; who are you gonna send them to?
-
-Kay: **Ship the design (the "what": constraints, meanings**...., not the "how")
-
-
----
-
-common lisp like condition system in clojure
-
-https://github.com/clojureman/special + related works
-
-https://github.com/bwo/conditions
-
-
----
-
-
 ### January 2024
 
 🧼 IDEAS
@@ -154,6 +126,41 @@ this solves external resouce problem, makes it super open world
 (note from sept 2024: this is like realtalk refs work!)
 
 ---
+
+
+
+
+Clojure var names (symbols) you're allowed to use: `$ % ! ? & >> << !! && | => _ -- `
+
+---
+
+Is it really "Complex"? Or did we just make it "Complicated"?
+
+https://youtu.be/ubaX1Smg6pY?t=4326
+
+```
+Object: :needs [a b]  :produces [x y]
+Object: :needs [b u]  :produces [a]
+```
+
+Kay: an **OO system in which messages are only RECEIVED** (something to think about)
+
+Kay: Sending msgs is the problem; who are you gonna send them to?
+
+Kay: **Ship the design (the "what": constraints, meanings**...., not the "how")
+
+
+---
+
+common lisp like condition system in clojure
+
+https://github.com/clojureman/special + related works
+
+https://github.com/bwo/conditions
+
+
+---
+
 
 Quokka/Wallaby
 
