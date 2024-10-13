@@ -37,16 +37,10 @@ _that's basically it. how hard could it be?_
 
 https://www.destroyallsoftware.com/talks/a-whole-new-world
 
-
-
 - crash layer: editor highlights lines involved in exceptions from production
 - performance layer: color slow lines
 - type layer: but inferred from _production runtime_ data
 
-
-
-
-- no ide, not a debugger,
 
 
 
