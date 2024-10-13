@@ -35,15 +35,10 @@ _that's basically it. how hard could it be?_
 
 ```
 
-mock-up of a dream text editor for making and debugging situated systems. (2012)
 
-- crash layer: highlight lines involved in _actual production exceptions_
-- performance layer: color slow lines
-- type layer: inferred from _production runtime_ data
 
-https://www.destroyallsoftware.com/talks/a-whole-new-world
 
-(it's pretty much exactly what i'm trying to build for clojure)
+
 
 
 ```
