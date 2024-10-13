@@ -32,6 +32,19 @@ _that's basically it. how hard could it be?_
 <details>
 <summary>
 
+
+#### What i'm typing this minute
+
+https://www.destroyallsoftware.com/talks/a-whole-new-world
+
+- editor highlights lines involved in a crash
+
+
+- no ide, not a debugger,
+
+
+
+
 ### DONE
 
 </summary>
