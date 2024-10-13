@@ -1,7 +1,7 @@
-<img align="right" src="img/video.png">
-
 # 🌱 [open practice](https://www.youtube.com/watch?v=MJzV0CX0q8o)
 a.k.a. **NEW COMMIT EVERY MINUTE**
+
+<img align="right" src="img/video.png">
 
 STATUS: **Highly experimental.** (have fun following along if you want.)
 
