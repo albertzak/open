@@ -124,7 +124,7 @@
            :src "/vids/apx.gif"}]]
    "ixi"
    [:div.w-100
-    [caption "ixi lang" "Magnusson (2010)" {:right 0 :top 0}]
+    [caption "ixi lang" "Magnusson (2010)" {:right 0 :top "3rem"}]
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
