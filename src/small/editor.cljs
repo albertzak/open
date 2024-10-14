@@ -118,13 +118,13 @@
   {"apx"
    [:div
     [caption "APX" "McDirmid (2015)" {:right 0 :top 0}]
-    [:img {:style {:max-width "100%"
+    [:img {:style {:width "100%"
                    :height :auto}
            :src "/vids/apx.gif"}]]
    "ixi"
    [:div
     [caption "ixi lang" "Magnusson (2010)" {:right 0 :top 0}]
-    [:video {:style {:max-width "100%"
+    [:video {:style {:width "100%"
                      :height :auto}
              :autoplay "autoplay"
              :loop "loop"
