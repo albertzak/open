@@ -18,7 +18,7 @@
       (lcd-write! s0 ""))))
 
 
-;--- ! (editor (slide "apx"))
+;--- ! (editor (slide "apx|"))
 ;%
 
 ;%
@@ -26,8 +26,16 @@
 
 ;---
 ! (editor (slide "ixi"))
+;%
+
+;%
+
 ;---
 ! (editor (slide "task"))
+;%
+
+;%
+
 ;---
 ! (editor (slide "capn"))
 ;---
