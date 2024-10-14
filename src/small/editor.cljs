@@ -123,7 +123,7 @@
                    :height :auto}
            :src "/vids/apx.gif"}]]
    "ixi"
-   [:div
+   [:div.w-100
     [caption "ixi lang" "Magnusson (2010)" {:right 0 :top 0}]
     [:video {:style {:width "100%"
                      :height :auto
@@ -135,7 +135,7 @@
 
 
 (defn slide [k]
-  [:div
+  [:div.w-100
    (get slides k (str "no slide: " k))])
 
 (defn global-scope []
