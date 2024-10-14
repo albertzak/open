@@ -1,7 +1,8 @@
 
 
 
-(editor (fn [{:keys [line-numbers import]}]
+(editor (fn [{:keys [line-numbers import render]}]
+          (render nil)
           (-> "https://esm.sh/canvas-confetti@1.6.0$default"
             (import)
             (then (fn [x]

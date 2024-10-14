@@ -163,7 +163,8 @@
    (get slides k (str "no slide: " k))])
 
 (defn global-scope []
-  {'slide (fn [k]
+  {'clear (fn [] (fn [{:keys [render]}] (render nil)))
+   'slide (fn [k]
             (fn [{:keys [render]}]
               (render (slide k))))})
 
