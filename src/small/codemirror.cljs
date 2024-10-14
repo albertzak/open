@@ -667,6 +667,7 @@
      :preventDefault true
      :run #(do
              (js/console.clear)
+             (editor/render [:div])
              (try
                (portal-web/clear) ; throws when portal is closed
                (catch :default _ nil))
