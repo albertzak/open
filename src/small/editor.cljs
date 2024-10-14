@@ -101,6 +101,11 @@
 
 (defonce react-root (atom nil))
 
+
+(def slides
+  {"apx" [:img {:src "/vids/apx.gif"}]})
+
+
 (defn slide [k]
   [:div
    {:style
@@ -109,7 +114,7 @@
      :right 0
      :bottom 0
      :left 0}}
-   (str k)])
+   (get slides k (str "no slide " k))])
 
 (defn global-scope []
   {'slide (fn [k]
