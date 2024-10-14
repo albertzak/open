@@ -176,6 +176,28 @@
              :muted true
              :src "/vids/strudel.mov"}]]
 
+   "eve"
+   [:div.w-100
+    [caption "strudel" "Granger+ (2016)" {:right 0 :bottom "2rem"}]
+    [:video {:style {:width "100%"
+                     :height :auto
+                     :object-fit :fill}
+             :autoplay "autoplay"
+             :loop "loop"
+             :muted true
+             :src "/vids/eve.mov"}]]
+
+   "dark"
+   [:div.w-100
+    [caption "Dark classic" "Chisa, Biggar (2018)" {:right 0 :bottom "2rem"}]
+    [:video {:style {:width "100%"
+                     :height :auto
+                     :object-fit :fill}
+             :autoplay "autoplay"
+             :loop "loop"
+             :muted true
+             :src "/vids/dark.mov"}]]
+
    })
 
 
