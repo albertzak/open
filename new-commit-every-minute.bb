@@ -3,7 +3,7 @@
 (require '[clojure.string :as s]) ; why is this a separate ns 😒
 
 (defn changes? []
-  (->> (sh "git" "dif" "--exit-code")
+  (->> (sh "git" "diff" "--exit-code")
        :exit
        zero?
        not))
