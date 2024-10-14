@@ -130,6 +130,7 @@
                      :height :auto}
              :autoplay "autoplay"
              :loop "loop"
+             :muted true
              :src "/vids/ixi.mp4"}]]})
 
 
