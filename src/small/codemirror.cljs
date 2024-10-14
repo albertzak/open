@@ -798,7 +798,7 @@
      [ui/shortcuts])
 
    ; first line hidden video frame helper line
-   [:div {:style {:position :fixed
+   #_[:div {:style {:position :fixed
                   :border-bottom "1px solid rgba(180, 94, 94, 0.8)"
                   :pointer-events :none
                   :top 0
