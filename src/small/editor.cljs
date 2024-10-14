@@ -107,7 +107,7 @@
          (merge
           {:position :absolute
            :background :black
-           :padding "1rem"
+           :padding "1.5rem"
            :font-size "200%"}
           pos)}
    [:b l1]
@@ -124,7 +124,7 @@
            :src "/vids/apx.gif"}]]
    "ixi"
    [:div.w-100
-    [caption "ixi lang" "Magnusson (2010)" {:right 0 :top "3rem"}]
+    [caption "ixi lang" "Magnusson (2010)" {:right 0 :bottom "2rem"}]
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
