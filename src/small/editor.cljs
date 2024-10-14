@@ -112,7 +112,8 @@
           pos)}
    [:b l1]
    [:br]
-   l2])
+   [:span {:style {:opacity 0.9}}
+    l2]])
 
 (def slides
   {"apx"
