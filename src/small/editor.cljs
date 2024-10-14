@@ -114,8 +114,6 @@
    [:br]
    l2])
 
-(defn slide [img l1 l2 pos])
-
 (def slides
   {"apx"
    [:div
