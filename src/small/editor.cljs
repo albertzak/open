@@ -154,6 +154,27 @@
              :loop "loop"
              :muted true
              :src "/vids/capnproto.mov"}]]
+   "gibber"
+   [:div.w-100
+    [caption "Gibber" "Roberts+ (2015)" {:right 0 :bottom "2rem"}]
+    [:video {:style {:width "100%"
+                     :height :auto
+                     :object-fit :fill}
+             :autoplay "autoplay"
+             :loop "loop"
+             :muted true
+             :src "/vids/gibber.mov"}]]
+
+   "strudel"
+   [:div.w-100
+    [caption "strudel" "Roos, McLean+ (2012)" {:right 0 :bottom "2rem"}]
+    [:video {:style {:width "100%"
+                     :height :auto
+                     :object-fit :fill}
+             :autoplay "autoplay"
+             :loop "loop"
+             :muted true
+             :src "/vids/strudel.mov"}]]
 
    })
 
