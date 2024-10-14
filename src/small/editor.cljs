@@ -101,8 +101,24 @@
 
 (defonce react-root (atom nil))
 
+(defn slide [k]
+  [:div
+   {:style
+    {:postion :fixed
+     :top 0
+     :right 0
+     :bottom 0
+     :left 0}}
+   (str k)])
+
+(defn global-scope []
+  {'slide (fn [k]
+            (fn [{:keys [render]}]
+              (render (slide k))))})
+
 (defn render-caps []
-  {:document js/document})
+  {:document js/document
+   :slide #'slide})
 
 (defn render [comp]
   (let [comp
@@ -125,7 +141,8 @@
       {:import #'js-import
        :editor? true
        :theme #'theme
-       :render #'render}))
+       :render #'render})
+     (global-scope))
     (portal/init)))
 
 (comment
