@@ -106,11 +106,13 @@
   [:div {:style
          (merge
           {:position :absolute
-           :background :red
+           :background :black
            :padding "1rem"
            :font-size "200%"}
           pos)}
-   l1 [:br] l2])
+   [:b l1]
+   [:br]
+   l2])
 
 (def slides
   {"apx"
