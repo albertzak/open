@@ -111,7 +111,7 @@
 
 (defn slide [k]
   [:div
-   (get slides k (str "no slide " k))])
+   (get slides k (str "no slide: " k))])
 
 (defn global-scope []
   {'slide (fn [k]
