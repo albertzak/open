@@ -142,7 +142,7 @@
              :autoplay "autoplay"
              :loop "loop"
              :muted true
-             :src "/vids/tasktxt.mp4"}]]})
+             :src "/vids/tasktxt.mov"}]]})
 
 
 (defn slide [k]
