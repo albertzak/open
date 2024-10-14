@@ -102,11 +102,19 @@
 (defonce react-root (atom nil))
 
 
+(defn caption [l1 l2]
+  [:div {:style {:background :red
+                 :padding "1rem"
+                 :font-size "200%"}}
+   l1 [:br] l2])
 
 (def slides
-  {"apx" [:img {:style {:max-width "100%"
-                        :height :auto}
-                :src "/vids/apx.gif"}]})
+  {"apx"
+   [:div
+    [caption "APX" "McDirmid (2015)"]
+    [:img {:style {:max-width "100%"
+                   :height :auto}
+           :src "/vids/apx.gif"}]]})
 
 
 (defn slide [k]
