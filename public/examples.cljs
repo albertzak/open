@@ -38,22 +38,67 @@
 
 ;---
 ! (editor (slide "capn|"))
+;%
+
+;%
+
+
 ;---
 ! (editor (slide "gibber|"))
+;%
+
+;%
+
+
 ;---
 ! (editor (slide "strudel|"))
+;%
+
+;%
+
+
 ;---
 ! (editor (slide "eve|"))
+;%
+
+;%
+
+
 ;---
 ! (editor (slide "dark|"))
+;%
+
+;%
+
+
 ;---
 ! (editor (slide "preimp|"))
+;%
+
+;%
+
+
 ;---
 ! (editor (slide "rslnd|"))
+;%
+
+;%
+
+
 ;---
 ! (editor (slide "dark|"))
+;%
+
+;%
+
+
 ;---
 ! (editor (slide "electric|"))
+;%
+
+;%
+
+
 
 
 
