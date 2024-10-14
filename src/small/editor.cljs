@@ -102,15 +102,18 @@
 (defonce react-root (atom nil))
 
 
+
 (def slides
-  {"apx" [:img {:src "/vids/apx.gif"}]})
+  {"apx" [:img {:style {:max-width "100%"
+                        :height :auto}
+                :src "/vids/apx.gif"}]})
 
 
 (defn slide [k]
   [:div
    {:style
     {:postion :fixed
-     :top 0
+     :top "3rem"
      :right 0
      :bottom 0
      :left 0}}
