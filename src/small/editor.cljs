@@ -167,7 +167,7 @@
 
    "strudel"
    [:div.w-100
-    [caption "strudel" "Roos, McLean+ (2012)" {:right 0 :bottom "2rem"}]
+    [caption "strudel" "Roos, McLean+ (2022)" {:right 0 :bottom "2rem"}]
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
