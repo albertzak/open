@@ -647,63 +647,65 @@
                  #_#_'p p'}
     :readers readers
     :bindings
-    {'ø nil ; single-character nil (alt-o) for live coding
-     'await 'js-await
-     'do! do!
-     '! #'!
-     '? #'?
-     '?> #'?>
-     '?>> #'?>>
+    (merge
+     {'ø nil ; single-character nil (alt-o) for live coding
+      'await 'js-await
+      'do! do!
+      '! #'!
+      '? #'?
+      '?> #'?>
+      '?>> #'?>>
 
-     '?- #'?- ; "paused" passthru variants
-     '?>- #'?>-
-     '?>>- #'?>>-
+      '?- #'?- ; "paused" passthru variants
+      '?>- #'?>-
+      '?>>- #'?>>-
 
-     'then then
-     'promise promise
-     'fn #'bound-fn ; haha!
-     #_#_'fn* #'bound-fn ; reader fns #() read as fn*
-     'unbound-fn #'unbound-fn
-     'update-vals update-vals
-     '** (fn [a b] (js/Math.pow a b))
-     '-- nil ; todo block separator
-     'typeof util/typeof
-     'promise? util/promise?
-     'atom r/atom
-     'every every
-     'object? object?
-     'clj-val? clj-val?
-     'scivar? scivar?
-     'with-context #'with-context
-     'context #'context
-     query-context-sym nil ; to avoid unbound err since resolve is apparently a macro not a fn in cljs/sci?
-     'history (fn [xs] (map :value xs))
+      'then then
+      'promise promise
+      'fn #'bound-fn ; haha!
+      #_#_'fn* #'bound-fn ; reader fns #() read as fn*
+      'unbound-fn #'unbound-fn
+      'update-vals update-vals
+      '** (fn [a b] (js/Math.pow a b))
+      '-- nil ; todo block separator
+      'typeof util/typeof
+      'promise? util/promise?
+      'atom r/atom
+      'every every
+      'object? object?
+      'clj-val? clj-val?
+      'scivar? scivar?
+      'with-context #'with-context
+      'context #'context
+      query-context-sym nil ; to avoid unbound err since resolve is apparently a macro not a fn in cljs/sci?
+      'history (fn [xs] (map :value xs))
 
 
      ; todo: decide if impure fns should be global?
-     'now now
-     'random-id random-id
-     'random random
-     'log log
-     'clog util/clog
-     'pprint util/pprint
-     'node node
-     'editor editor
-     'hi hi
-     'wait (fn [ms] (js/Promise. (fn [resolve]
-                                   (js/setTimeout #(resolve true)
-                                                  (or ms 500)))))
+      'now now
+      'random-id random-id
+      'random random
+      'log log
+      'clog util/clog
+      'pprint util/pprint
+      'node node
+      'editor editor
+      'hi hi
+      'wait (fn [ms] (js/Promise. (fn [resolve]
+                                    (js/setTimeout #(resolve true)
+                                                   (or ms 500)))))
 
      ; todo: these bindings should probably only be passed to node fns
-     'import dynamic-import
-     'serialize serialize
-     'deserialize deserialize
-     'stateful (partial stateful state)
-     'fetch js/globalThis.fetch
-     'json util/json
+      'import dynamic-import
+      'serialize serialize
+      'deserialize deserialize
+      'stateful (partial stateful state)
+      'fetch js/globalThis.fetch
+      'json util/json
 
-     'nuke!! nuke!! ;; todo: some bindings should be privileged & only available in the editor
-     }}))
+      'nuke!! nuke!! ;; todo: some bindings should be privileged & only available in the editor
+      }
+      (:global-scope @state))}))
 
 (defn full-eval [doc]
   (swap! state assoc :ctx (make-ctx)) ; fresh context for full eval
@@ -846,7 +848,7 @@
       (prn :failed-at-novelty novelty)
       (js/console.error "failed to eval novelty" e))))
 
-(defn connect! [ident caps]
+(defn connect! [ident caps & [global-scope]]
   (let [[broker proj node] (log (parse-ident ident))
         ^js client (.connect mqtt broker)
         subscribe (promisify #(.subscribe client proj))
@@ -870,7 +872,7 @@
 
                (or
                 (empty? nodes)
-                (or (contains? nodes (:node @state))))
+                (contains? nodes (:node @state)))
 
                (#'on-novelty novelty state))
              (catch :default e
@@ -894,6 +896,7 @@
                      caps
                      {:proj (keyword proj)
                       :node (keyword node)
+                      :global-scope global-scope
                       :broker broker
                       :vsn 0
                       :publish publish})
