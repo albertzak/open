@@ -25,35 +25,35 @@
 
 
 ;---
-! (editor (slide "ixi"))
+! (editor (slide "ixi|"))
 ;%
 
 ;%
 
 ;---
-! (editor (slide "task"))
+! (editor (slide "task|"))
 ;%
 
 ;%
 
 ;---
-! (editor (slide "capn"))
+! (editor (slide "capn|"))
 ;---
-! (editor (slide "gibber"))
+! (editor (slide "gibber|"))
 ;---
-! (editor (slide "strudel"))
+! (editor (slide "strudel|"))
 ;---
-! (editor (slide "eve"))
+! (editor (slide "eve|"))
 ;---
-! (editor (slide "dark"))
+! (editor (slide "dark|"))
 ;---
-! (editor (slide "preimp"))
+! (editor (slide "preimp|"))
 ;---
-! (editor (slide "rslnd"))
+! (editor (slide "rslnd|"))
 ;---
-! (editor (slide "dark"))
+! (editor (slide "dark|"))
 ;---
-! (editor (slide "electric"))
+! (editor (slide "electric|"))
 
 
 
