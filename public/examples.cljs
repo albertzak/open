@@ -17,6 +17,22 @@
       (lcd-write! s0 ""))))
 
 
+;---
+! (editor (slide "apx"))
+;---
+! (editor (slide "ixi"))
+;---
+! (editor (slide "task"))
+;---
+! (editor (slide "capn"))
+;---
+! (editor (slide "gibber"))
+;---
+! (editor (slide "strudel"))
+
+
+
+
 
 ;---
 
