@@ -125,7 +125,7 @@
            :src "/vids/apx.gif"}]]
    "ixi"
    [:div
-    [caption "ixi lang" "Magnusson (2011)" {:right 0 :top 0}]
+    [caption "ixi lang" "Magnusson (2010)" {:right 0 :top 0}]
     [:video {:style {:max-width "100%"
                      :height :auto}
              :autoplay "autoplay"
