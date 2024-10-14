@@ -111,13 +111,6 @@
 
 (defn slide [k]
   [:div
-   {:style
-    {:postion :fixed
-     :opacity 0.5
-     :top "3rem"
-     :right 0
-     :bottom 0
-     :left 0}}
    (get slides k (str "no slide " k))])
 
 (defn global-scope []
