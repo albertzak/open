@@ -114,13 +114,23 @@
    [:br]
    l2])
 
+(defn slide [img l1 l2 pos])
+
 (def slides
   {"apx"
    [:div
     [caption "APX" "McDirmid (2015)" {:right 0 :top 0}]
     [:img {:style {:max-width "100%"
                    :height :auto}
-           :src "/vids/apx.gif"}]]})
+           :src "/vids/apx.gif"}]]
+   "ixi"
+   [:div
+    [caption "ixi lang" "Magnusson (2011)" {:right 0 :top 0}]
+    [:video {:style {:max-width "100%"
+                     :height :auto}
+             :autoplay "autoplay"
+             :loop "loop"
+             :src "/vids/ixi.mp4"}]]})
 
 
 (defn slide [k]
