@@ -102,16 +102,20 @@
 (defonce react-root (atom nil))
 
 
-(defn caption [l1 l2]
-  [:div {:style {:background :red
-                 :padding "1rem"
-                 :font-size "200%"}}
+(defn caption [l1 l2 pos]
+  [:div {:style
+         (merge
+          {:position :absolute
+           :background :red
+           :padding "1rem"
+           :font-size "200%"}
+          pos)}
    l1 [:br] l2])
 
 (def slides
   {"apx"
    [:div
-    [caption "APX" "McDirmid (2015)"]
+    [caption "APX" "McDirmid (2015)" {:right 0 :top 0}]
     [:img {:style {:max-width "100%"
                    :height :auto}
            :src "/vids/apx.gif"}]]})
