@@ -189,7 +189,7 @@
 
    "dark"
    [:div.w-100
-    [caption "Dark classic" "Chisa, Biggar (2018)" {:right 0 :bottom "2rem"}]
+    [caption "Dark classic" "Chisa, Biggar (2018)" {:right 0 :top "1rem"}]
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
