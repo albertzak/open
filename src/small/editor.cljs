@@ -131,7 +131,18 @@
              :autoplay "autoplay"
              :loop "loop"
              :muted true
-             :src "/vids/ixi.mp4"}]]})
+             :src "/vids/ixi.mp4"}]]
+
+   "task"
+   [:div.w-100
+    [caption "TaskTXT" "Jeffery (2021)" {:right 0 :bottom "2rem"}]
+    [:video {:style {:width "100%"
+                     :height :auto
+                     :object-fit :fill}
+             :autoplay "autoplay"
+             :loop "loop"
+             :muted true
+             :src "/vids/tasktxt.mp4"}]]})
 
 
 (defn slide [k]
