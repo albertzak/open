@@ -113,6 +113,7 @@
   [:div
    {:style
     {:postion :fixed
+     :opacity 0.5
      :top "3rem"
      :right 0
      :bottom 0
