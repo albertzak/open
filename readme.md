@@ -83,6 +83,40 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 ---
 
 
+MUMPS!
+
+db+code in one global persistent structure, available on every node
+
+crazy 1966 system still in use today
+
+http://www.cs.uni.edu/~okane/index.html
+
+"Global has a different meaning in this language than in most; such variables are global across routines, processes, and sessions. Thus, editing a global variable is making permanent and immediate changes to a system-universal database (which survives reboots, etc.)"
+
+https://en.wikipedia.org/wiki/Cach%C3%A9_ObjectScript
+
+
+
+
+
+
+"I worked in MUMPS (the language Cache evolved from) for several years in the early nineties and am now in the Java world.  Although I don't miss the language itself much (except from a sick, twisted sense of nostalgia), I do miss some of its features.
+
+The thing I miss most about it is the hierarchical database backing it.  What takes multiple tables and cross-ref tables in a relational database can be done inside a single database structure (called a Global) in MUMPS.  Also, it is trivial (and runtime fast) to create any number of indices into a Global by putting your indexed data into the hierarchical keys.  So data search and retrieval can be incredibly fast and efficient.
+
+Another nice feature is the intimate relationship between the language and the database.  First, variables are also hierarchical and can contain data in the keys.  This means that you never have to write a sort - simply setting Var("DEF") = 1 and Var("ABC") = 2 will give you data sorted on the keys.  Second, you can set entire database structures into local memory with one operation.  Suppose you have a database record ^PATIENT("Data", 12345) and you want to fetch it.  You say SET PATIENT = ^PATIENT("Data", 12345), and now the PATIENT local variable contains the entire record.  No Object/Relational Mapping necessary."
+
+rob freundlich https://what.thedailywtf.com/post/38414
+
+https://what.thedailywtf.com/topic/508/intersystems-cach-233-gateway-to-hell/20
+
+" Then there is the database, which clearly sucks based on the programming language. There's no way to see the tables (it's a class, which doesn't make sense, because the idea behind a table is that it represents a single object, not a collection of objects. The data is the collection of objects. Then there's this Obj(ect)Id that I guess is what the damn tables should really be indexed on, but its a "imaginary" field the same way Sqrt(-1) is an imaginary number. So you have these tables, that you can't really see, and you have data, which is like no where. No way to access it. It's the ultimate system for holding data captive. THERE IS NO ESCAPE for your data."
+
+drakhelm
+
+
+
+---
 
 Glisp - wow! bidirectional ui+code, bound via clj metadata or type-wrapping fns
 
