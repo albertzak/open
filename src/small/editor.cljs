@@ -126,7 +126,8 @@
    [:div
     [caption "ixi lang" "Magnusson (2010)" {:right 0 :top 0}]
     [:video {:style {:width "100%"
-                     :height :auto}
+                     :height :auto
+                     :object-fit :fill}
              :autoplay "autoplay"
              :loop "loop"
              :muted true
