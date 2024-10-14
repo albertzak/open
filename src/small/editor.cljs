@@ -159,7 +159,7 @@
 
 
 (defn slide [k]
-  [:div.w-100
+  [:div.w-100 {:style {:padding "3rem"}}
    (get slides k (str "no slide: " k))])
 
 (defn global-scope []
