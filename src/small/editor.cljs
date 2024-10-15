@@ -154,7 +154,7 @@
              :autoplay "autoplay"
              :loop "loop"
              :muted true
-             :src "/vids/capnproto.mov"}]]
+             :src "/vids/capnp.mov"}]]
    "gibber"
    [:div.w-100
     [caption "Gibber" "Roberts+ (2015)" {:right 0 :top "10rem"}]
