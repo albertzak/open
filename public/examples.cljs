@@ -1070,10 +1070,12 @@ Informatics and the UAS Technikum Wien."
 
 '(nope
 
-   - no error handling
-   - no data persistence or conveyance
-   - no codebase management
-   - no collaboration)
+   errors
+   codebase
+   persistence
+   collaboration
+   security
+   communication)
 
 
 
