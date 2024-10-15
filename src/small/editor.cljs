@@ -136,7 +136,7 @@
 
    "task"
    [:div.w-100
-    [caption "TaskTXT" "Jeffery (2021)" {:right 0 :bottom "2rem"}]
+    [caption "TaskTXT" "Jeffery (2021)" {:right 0 :top "2rem"}]
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
@@ -147,7 +147,7 @@
 
    "capn"
    [:div.w-100
-    [caption "Cap'n Proto" "Varda+ (2013)" {:right 0 :bottom "2rem"}]
+    [caption "Cap'n Proto" "Varda+ (2013)" {:right 0 :top "2rem"}]
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
@@ -157,7 +157,7 @@
              :src "/vids/capnproto.mov"}]]
    "gibber"
    [:div.w-100
-    [caption "Gibber" "Roberts+ (2015)" {:right 0 :bottom "2rem"}]
+    [caption "Gibber" "Roberts+ (2015)" {:right 0 :top "2rem"}]
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
