@@ -123,9 +123,13 @@
    "apx.mov"
    [:div
     [caption "APX" "McDirmid (2015)" {:right 0 :top 0}]
-    [:img {:style {:width "100%"
-                   :height :auto}
-           :src "/vids/x.mov"}]]
+    [:video {:style {:width "100%"
+                     :height :auto
+                     :object-fit :fill}
+             :autoPlay "autoplay"
+             :loop "loop"
+             :muted true
+             :src "/vids/apx.mov"}]]
    "ixi.mov"
    [:div.w-100
     [caption "ixi lang" "Magnusson (2010)" {:right 0 :bottom "2rem"}]
