@@ -106,26 +106,36 @@ preempt reviewer Qs (from simple to deep)
 deeper:
 
 getting rid of things?
->> deleting text may or may not carry the intent of stopping that
+  - deleting text may or may not carry the intent of stopping that
 
 
 dynamically changing sets of ~things/nodes~:
->> web clients?
->> programmatically spawned processes?
-> that don't have a correspondence in text
->> how to look at them? stop them?
->> now: indirection via caps
->> future: maybe enhance the top level with imperative command syntax
-- `> restart` or `/fn blink` to replace with fn from db
+  - web clients?
+  - programmatically spawned processes?
+    - that don't have a correspondence in text
+  - how to look at them? stop them?
+  - now: indirection via caps
+  - future: maybe enhance the top level with imperative command syntax
+    - `> restart` or `/fn blink` to replace with fn from db
+    - see also sigils below
 
 what's the identity of a piece of code, a defn?
-> should we give ids to every expr?
->> i tried to keep it to a minimum.
->> what's the meaning of diff versions of "same" function running on diff nodes?
->> i kind of work around this by keeping change sets extremely small (eg try to  redeploy on every keystroke as often as possible)
->>> but then how'd you do a large refactor?
->>>> it really needs some notion of environment contexts, like dev/staging/prod
->>>> and control over when and how and where code changes are applied / happen
+  - should we give ids to every expr?
+    - i tried to keep exprs-with-ids to a minimum.
+  - what's the meaning of diff versions of "same" function running on diff nodes?
+  - i kind of work around this by keeping change sets extremely small (eg try to  redeploy on every keystroke as often as possible)
+    - but then how'd you do a large refactor?
+  - it really needs some notion of environment contexts, like dev/staging/prod
+  - and control over when and how and where code changes are applied / happen
+    - sigils? single character (like the `!`) preceding (top level?) forms
+      - may trigger an action on insertion/deletion, and serve as declarative wish at the same time.
+      - because it's only one char, it's a way to (somewhat) cleanly add imperative semantics to plain text
+      - eg.
+        - "under construction `🚧(defn ...`"
+          - intercepts calls, holds them pending, collects args to display in editor, and holds pendig until sigil is removed, the flushes with "new" version
+        - "only on my test machine"
+        - "intercept/stub side effects" and use these handlers instead
+      - heavily domain dependent, only need to provide a way to `(defsigil 🚧 [...])`
 
 
 
