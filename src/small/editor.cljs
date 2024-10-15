@@ -107,8 +107,8 @@
          (merge
           {:position :absolute
            :background :black
-           :text-align :center
-           :padding "1.5rem"
+           :text-align :left
+           :padding "3rem"
            :font-size "200%"}
           pos)}
    [:b l1]
