@@ -938,16 +938,6 @@ Informatics and the UAS Technikum Wien."
 
 
 
-;---
-
-
-(def deps
-  [:small-clojure-interpreter
-   :rewrite-clj
-   :zprint
-   :codemirror
-   :lezer])
-
 
 ;---
 
@@ -974,10 +964,19 @@ Informatics and the UAS Technikum Wien."
 
 ;%
 
+;---
+! (editor (show "capnp|.mov"))
+;%
+
+;%
+
+
+
 ;--- ! (editor (show "tode|.mov"))
 ;%
 
 ;%
+
 
 
 ;---
@@ -1014,11 +1013,19 @@ Informatics and the UAS Technikum Wien."
 
 
 
-;---
-! (editor (show "capnp|.mov"))
-;%
 
-;%
+;---
+
+(def deps
+  [:small-clojure-interpreter
+   :rewrite-clj
+   :zprint
+   :codemirror
+   :lezer])
+
+
+
+
 
 
 ;---
@@ -1052,18 +1059,6 @@ Informatics and the UAS Technikum Wien."
 
 
 
-;---
-! (editor (show "dark|.mov"))
-;%
-
-;%
-
-
-;---
-! (editor (show "electric|.mov"))
-;%
-
-;%
 
 
 
@@ -1079,6 +1074,16 @@ Informatics and the UAS Technikum Wien."
    - no data persistence or conveyance
    - no codebase management
    - no collaboration)
+
+
+
+;---
+! (editor (show "electric|.mov"))
+;%
+
+;%
+
+
 
 ;---
 
