@@ -175,7 +175,7 @@
 
    "preimp.mov"
    [:div.w-100
-    [caption "preimp" "Brandon (2022)" {:right 0 :top "1rem"}]
+    [caption "preimp" "Brandon (2022)" {:right 0 :bottom "2rem"}]
     [video "preimp.mov"]]
 
    "electric.mov"
@@ -185,7 +185,7 @@
 
    "rslnd.mov"
    [:div.w-100
-    [caption "Rosalind" "Fixpoint Systems GmbH (2015)" {:right 0 :top "1rem"}]
+    #_[caption "Rosalind" "Fixpoint Systems GmbH (2015)" {:right 0 :top "1rem"}]
     [video "rslnd.mov"]]
 
    "tode.mov"
