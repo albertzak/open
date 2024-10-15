@@ -100,6 +100,13 @@
 
     <script type="module">
       window.jsImport = async (url) => {
+
+        // offline for talk
+        if (url === 'https://esm.sh/canvas-confetti@1.6.0$default') {
+          console.log('rewriting url')
+          url = '/confetti.js'
+        }
+
         const p = await import(url)
         console.log('jsImport', p)
         return p
