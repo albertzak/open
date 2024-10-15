@@ -1114,9 +1114,9 @@ Informatics and the UAS Technikum Wien."
 
    see run time values + viz
    self-rewriting query macro
-   declare what should run where
-   focus with context
-   capability security)
+   pull deployment
+   focus context
+   capabilities)
 
 
 
