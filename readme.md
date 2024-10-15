@@ -103,6 +103,14 @@ preempt reviewer Qs (from simple to deep)
     - look at anything. it won't change from under you. and it's serializable, copypasteable, stable basis for comparison etc
 
 
+- caps and liveness
+  - i do think caps are a great fit in these live systems
+  - haven't seen this combination except maybe genode
+  - more generally for working inside stateful systems (OO in the large)
+    - kay: "we made objects too small"
+      - i agree. OO in the large is not only inevitable but feels reasonable too with a live system like this. reifying physical places?
+
+
 
 deeper design challenges that remain:
 
@@ -137,7 +145,7 @@ what's the identity of a piece of code, a defn?
   - it really needs some notion of environment contexts, like dev/staging/prod
   - and control over when and how and where code changes are applied / happen
     - sigils? single character (like the `!`) preceding (top level?) forms
-      - may trigger an action on insertion/deletion, and serve as declarative wish at the same time.
+      - they can simultaneously represent an "imperative action" because they're a single kepyress, as well as declaring the desired state for other nodes to catch up to async
       - because it's only one char, it's a way to (somewhat) cleanly add imperative semantics to plain text
       - eg.
         - "under construction `🚧(defn ...`"
@@ -155,19 +163,6 @@ what's the identity of a piece of code, a defn?
 
 
 
-
-what is the identity of a function?
-maybe the editor could support
-but then copy paste?
-i want to explore that single-character flags "sometimes i call them sigils"
-they can simultaneously represent an "imperative action" because they're a single kepyress, as well as the desired state for other nodes to catch up to async
-
-
-i do think caps are a great fit in these live systems, haven't seen that maybe genode. generally working inside stateful systems
-
-
-
-Sigils
 
 
 
