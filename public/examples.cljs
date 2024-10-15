@@ -1123,8 +1123,8 @@ Informatics and the UAS Technikum Wien."
 
 ; confetti hearts ❤️
 
-        '(thank-you!
+        '(thank-you!)
 
-          albertzak.com
-          github.com/albertzak/open)
+
+   albertzak.com github.com/albertzak/open
 
