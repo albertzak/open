@@ -211,7 +211,7 @@
 
 (defn render [comp]
   (let [comp
-        (cond (fn? comp) [comp render-caps]
+        (cond (fn? comp) [comp (render-caps)]
               (nil? comp) (constantly nil)
               (or (string? comp) (number? comp)) [:h1 comp]
               (vector? comp) comp
