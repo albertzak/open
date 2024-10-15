@@ -178,7 +178,9 @@ trying to be more social. i get cold sweat anytime i talk to someone. online too
 "is that now the worst piece of code on this githubs?"
 
 
+"you wanted those dynapad things
 
+right?"
 
 
 
