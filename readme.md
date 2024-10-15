@@ -76,6 +76,9 @@ doing now: getting updated LIVE/SPLASH demo ready
 
 instead of lcd serial output, demo ultrasonic serial input!
 
+1) ardu -> usb -> rpi serial -> cap
+
+
 
 add motifn, dreamberd
 
