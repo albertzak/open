@@ -17,6 +17,11 @@
    [zones.core :as zones :include-macros true]
    [goog.object]))
 
+(defn dynamic-import-intercept [url]
+  (if (= url "https://esm.sh/canvas-confetti@1.6.0$default")
+    (dynamic-import "/confetti.js")
+    (dynamic-import url)))
+
 (defonce state (r/atom nil))
 
 (defonce query-context-sym (gensym (str "qctx" (subs (str (random-id)) 1))))
@@ -465,7 +470,7 @@
                    {:pid id
                     :rerun rerun
                     :state proc-state
-                    :import dynamic-import
+                    :import dynamic-import-intercept
                     :serialize serialize
                     :deserialize deserialize
                     :fetch js/globalThis.fetch
@@ -696,7 +701,7 @@
                                                    (or ms 500)))))
 
      ; todo: these bindings should probably only be passed to node fns
-      'import dynamic-import
+      'import dynamic-import-intercept
       'serialize serialize
       'deserialize deserialize
       'stateful (partial stateful state)
