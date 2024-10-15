@@ -2581,6 +2581,37 @@ impose coordination on changes
   - maybe yes as internal representation for code db
 
 
+---
+
+DC-RES Curriculum
+
+- Year 1
+  - + 9 ECTS Formal Methods in Computer Science (6 VU + 3 UE)
+  - + 9 ECTS Discrete Mathematics (4 VO + 5 UE)
+  - + 6 ECTS minimum within the gatekeeper modules of the master program Computer Engineering , aligned with the focus of the doctoral thesis After 12 to 18 months you defend your dissertation proposal in front of an academic jury.
+
+6.0 Information Technology in Automation (kastner)
+
+
+- Years 2-4
+  - You are required to take 6 courses worth 18 ECTS minimum, where the amount of ECTS acquired with each course depends on the course’s difficulty and/or workload.
+  - + 9 ECTS min. in Fundamental Courses
+  - You have to take 3 fundamental courses in the areas of
+    - 3.0 Philosophy of Science (mandatory)
+    - 3.0 PhD seminar (conference-like system, mandatory)
+    - + 3.0 Research and Career Planning for PhD Students
+  - Research Methods, Research and Career Planning for PhD Students, , or Innovation. At least one course must be related to methodologies.
+
+  - + 9 ECTS min. in Area Courses
+    - You have to take 3 research domain specific Area Courses. They are selected together with your supervisor and need to be acknowledged by the DC’s chair and the Dean of Study Affairs.
+
+  - 4.5 Semantics of Programming Languages
+  - 4.0 Knowledge-based Systems
+  - 3.0 Methodical, industrial Software-Engineering using the Haskell functional language
+
+
+  - + 162 ECTS PhD Thesis
+
 
 
 ---

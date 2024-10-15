@@ -20,6 +20,13 @@
 
 
 
+;---
+
+
+"This work has been supported by the Doctoral College Resilient
+Embedded Systems, which is run jointly by the TU Wien's Faculty of
+Informatics and the UAS Technikum Wien."
+
 ;--- ! (editor (show "tode|.mov"))
 ;%
 
