@@ -28,7 +28,7 @@ _that's basically it. how hard could it be?_
 
 ### TODO
 
-- [ ] **CURRENT** get this thing working well enough to give a fun presentation in 1 week and 1 day.
+- [ ] **CURRENT** get this thing working well enough to give a fun presentation in 6 days.
 - [ ] upload slides (+ text?) of presentations
 - [ ] think of what to demo in 14min
 

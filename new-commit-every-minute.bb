@@ -15,13 +15,13 @@
        Integer/parseInt
        inc))
 
-(defn commit-and-push []
+(defn commit! []
   (when (changes?)
     (let [n (commit-count)]
       (sh "git" "add" "-A")
       (sh "git" "commit" "-m" (str n))
-      (sh "git" "push")
-      (println (str (java.time.Instant/now)) n))))
+      (println (str (java.time.Instant/now)) n)
+      true)))
 
 ; for better aesthetics
 (defn wait-until-next-full-minute []
@@ -33,5 +33,6 @@
 
 (loop []
   (wait-until-next-full-minute)
-  (commit-and-push)
+  (when (commit!)
+    (sh "git" "push"))
   (recur))

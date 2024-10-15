@@ -107,6 +107,7 @@
          (merge
           {:position :absolute
            :background :black
+           :text-align :center
            :padding "1.5rem"
            :font-size "200%"}
           pos)}
@@ -178,7 +179,7 @@
 
    "eve"
    [:div.w-100
-    [caption "strudel" "Granger+ (2016)" {:right 0 :bottom "2rem"}]
+    [caption "Eve" "Granger+ (2016)" {:right 0 :bottom "2rem"}]
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
@@ -197,6 +198,63 @@
              :loop "loop"
              :muted true
              :src "/vids/dark.mov"}]]
+
+   "glisp"
+   [:div.w-100
+    [caption "Glisp" "Hashimoto (2022)" {:right 0 :top "1rem"}]
+    [:video {:style {:width "100%"
+                     :height :auto
+                     :object-fit :fill}
+             :autoplay "autoplay"
+             :loop "loop"
+             :muted true
+             :src "/vids/glisp.mov"}]]
+
+   "preimp"
+   [:div.w-100
+    [caption "preimp" "Brandon (2022)" {:right 0 :top "1rem"}]
+    [:video {:style {:width "100%"
+                     :height :auto
+                     :object-fit :fill}
+             :autoplay "autoplay"
+             :loop "loop"
+             :muted true
+             :src "/vids/preimp.mov"}]]
+
+   "electric"
+   [:div.w-100
+    [caption "Electric Clojure" "Getz, Noel+ (2023)" {:right 0 :top "1rem"}]
+    [:video {:style {:width "100%"
+                     :height :auto
+                     :object-fit :fill}
+             :autoplay "autoplay"
+             :loop "loop"
+             :muted true
+             :src "/vids/electric.mov"}]]
+
+   "rslnd"
+   [:div.w-100
+    #_[caption "Rosalind" "Fixpoint Systems GmbH (2015)" {:right 0 :top "1rem"}]
+    [:video {:style {:width "100%"
+                     :height :auto
+                     :object-fit :fill}
+             :autoplay "autoplay"
+             :loop "loop"
+             :muted true
+             :src "/vids/rslnd.mov"}]]
+
+   "tode"
+   [:div.w-100
+    [caption "DreamBerd" "Wilson+ (2024)" {:right 0 :top "1rem"}]
+    [:video {:style {:width "100%"
+                     :height :auto
+                     :object-fit :fill}
+             :autoplay "autoplay"
+             :loop "loop"
+             :muted true
+             :src "/vids/tode.mov"}]]
+
+
 
    })
 
