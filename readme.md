@@ -165,7 +165,7 @@ what's the identity of a piece of code, a defn?
 
 ### [🐣 Toots](https://clj.social/@albertzak) hatchery
 
-trying to be more social. i get cold sweat anytime i talk to someone.
+trying to be more social. i get cold sweat anytime i talk to someone. online too.
 
 "[@todepond: why is everyone so obsessed with alan kay and bret victor] you forgot rich hickey. men men men <3"
 
