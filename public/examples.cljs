@@ -847,7 +847,7 @@ Informatics and the UAS Technikum Wien."
 
 
 ;---
-(def rpi :c98d5645c97db5d0be4fc9db) ; could also avg % last;%
+(def rpi :c98d5645c97db5d0be4fc9db)
 
 
 ; history viz
