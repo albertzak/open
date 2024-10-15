@@ -1090,6 +1090,7 @@ Informatics and the UAS Technikum Wien."
 
 
 '(near-future
+
    editor extensions
    secure enough
    collab via ocaps)
@@ -1097,12 +1098,11 @@ Informatics and the UAS Technikum Wien."
 
 ;---
 
-'(open-q
-  deleting
-  dynamic sets
-  
+'(open-qs
 
-  )
+   deleting
+   dynamic sets
+   identity of code)
 
 
 
@@ -1112,10 +1112,10 @@ Informatics and the UAS Technikum Wien."
 
 '(conclusion
 
-   > self-rewriting query macro
-   > see run time values + viz
-   > declarative distributed process scheduling
-   > capability security)
+   see run time values + viz
+   self-rewriting query macro
+   say what should run where
+   capability security)
 
 
 
