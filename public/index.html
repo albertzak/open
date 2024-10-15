@@ -74,10 +74,16 @@
         opacity: 0.4;
       }
 
-      #canvas {
-        position: absolute;
+      #canvas-wrapper {
+        position: fixed;
         z-index: -1;
         top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
     </style>
@@ -86,7 +92,11 @@
   <body>
     <div id="editor-root"></div>
     <div id="render-root"></div>
-    <canvas id="canvas" width="500" height="500"></canvas>
+
+    <div class="canvas-wrapper">
+      <canvas id="canvas" width="500" height="500"></canvas>
+    </div>
+
 
     <script type="module">
       window.jsImport = async (url) => {
