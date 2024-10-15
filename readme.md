@@ -74,6 +74,9 @@ _that's basically it. how hard could it be?_
 
 doing now: getting updated LIVE/SPLASH demo ready
 
+instead of lcd serial output, demo ultrasonic serial input!
+
+
 add motifn, dreamberd
 
 
