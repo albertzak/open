@@ -238,6 +238,6 @@ function drawBlossoms(blossomPoints) {
 }
 
 window.redrawScene = function (custom) {
-  custom()
+  console.log(custom)
   drawScene(document.getElementById('canvas'))
 }
