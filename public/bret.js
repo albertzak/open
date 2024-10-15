@@ -237,4 +237,7 @@ function drawBlossoms(blossomPoints) {
   ctx.globalAlpha = 1.0;
 }
 
-window.drawScene = drawScene
+window.redrawScene = function (custom) {
+  custom()
+  drawScene(document.getElementById('canvas'))
+}
