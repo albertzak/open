@@ -203,7 +203,7 @@
    'show (fn [k]
             (fn [{:keys [render]}]
               (render (show k))))
-   'redraw-scene (fn [custom]
+   'draw-scene (fn [custom]
                   (js/window.redrawScene custom))})
 
 (defn render-caps []
