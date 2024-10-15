@@ -91,10 +91,17 @@ preempt reviewer Qs (from simple to deep)
     - semi-structural paredit feels great, there's no divide between data and code.
 
 - why clojure?
-  - it puts plain printable data font and center.
->>  programs are just a handful of immutable data structures, and mostly pure functions operating on them
->> all state is usually kept ONE place, where state just means an identity, a succession over time of ~ plain inspectable immutable values.
->> hold on to intermediate steps of a compuitation, anywhere. look at anything. won't change from under you. and it's serializable, copypasteable, stable basis for comparison etc
+  - plain printable data font and center.
+  - programs are just data and function
+    - a handful of immutable data structures
+    - and mostly pure functions operating on them
+  - all state is usually kept ONE place
+    - state = identity = succession of values over time
+      - immutable, inspectable, printable etc
+  - hold on to intermediate steps of a computation, anywhere
+    - look at anything. it won't change from under you. and it's serializable, copypasteable, stable basis for comparison etc
+
+
 
 deeper:
 
