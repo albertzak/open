@@ -101,6 +101,8 @@
     <script type="module">
       window.jsImport = async (url) => {
 
+        console.log('jsImport ! ', url)
+
         // offline for talk
         if (url === 'https://esm.sh/canvas-confetti@1.6.0$default') {
           console.log('rewriting url')
