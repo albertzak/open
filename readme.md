@@ -2735,6 +2735,34 @@ Differentiation:
  - **focus on sw-engineering of Hickeys "situated programs" instead of pure visualization/exploration/algorithms/computation a la Victor**
    - https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/EffectivePrograms.md
 
+
+---
+
+Armstrong
+
+GOTO 2018 • Computer Science - A Guide for the Perplexed • Joe Armstrong
+
+Papers:
+- A Plea For Lean Software / Niklaus Wirth
+- The Emperor's Old Clothes / ACM 1980 Tony Hoare
+
+Books:
+- Algorithms + Data structures = Programs / Wirth
+
+Watch:
+- Alan Kay - Computer revolution has not happened yet
+- Ted Nelson - Computers for Cynics
+- Aaron Balkan - Free is a Lie
+- Matt Might - Winning the War on Error (codemesh 2017)
+
+Ideas
+- Linda Tuple Spaces / David Gelernter, Nicholas Carriero
+- Xanadu / Ted Nelson
+
+- TiddlyWiki
+- SonicPi
+
+
 ---
 
 Obvious Related Work:
