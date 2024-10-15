@@ -93,3 +93,7 @@ function extendCanvasContext(ctx) {
     ctx.closePath();
   }
 }
+
+module.exports = {
+  resetRandom, tween, random, lerp, extendCanvasContext
+}
