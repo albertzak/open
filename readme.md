@@ -3431,9 +3431,7 @@ OS Family Tree https://eylenburg.github.io/pics/Eylenburg_Operating_System_Timel
 
 ---
 
- PhD Project Ideas
-
-
+PhD Project Ideas
 
 2021-03-06 on hn
 
@@ -3460,38 +3458,41 @@ Currently Lunatic is just a runtime but ultimately we want it to be more like an
 
 take from kay's proposal:
 
-[Prot] Protection, Security, Safety
-Page 4 [De] Design Approaches
-[LB] Late Binding of Everything
-[Spec] Specifications that are runable and debuggable
-[SepM] Separation of Meanings from Optimizations
-[MM] Meaning what we mean, and holding on to it.
-[FNB] “From Nothing” Bootstrapping
-[Mc] How Lisp moved from “math” to a “programmable math”
+- [Prot] Protection, Security, Safety
+- Page 4 [De] Design Approaches
+- [LB] Late Binding of Everything
+- [Spec] Specifications that are runable and debuggable
+- [SepM] Separation of Meanings from Optimizations
+- [MM] Meaning what we mean, and holding on to it.
+- [FNB] “From Nothing” Bootstrapping
+- [Mc] How Lisp moved from “math” to a “programmable math”
 
 
 
+---
+
+🧼
+
+- software is *: bloat, legacy complexity, perf obsession, security issues
+- everything is networked
+- engineering practices: gluing together other peoples code
 
 
---
-
-software is *: bloat, legacy complexity, perf obsession, security issues
-everything is networked
-engineering practices: gluing together other peoples code
-
-everything is distributed
-software eng is composition
-runs software of unknown provenance
-trust is central
+- everything is distributed
+- software eng is composition
+- runs software of unknown provenance
+- trust is central
 
 OS FOR THE EDGE
-my interest in deployment systems
-immutability + state as cache only?
-hashed fuctions naming like this
+
+- my interest in deployment systems
+- immutability + state as cache only?
+- hashed fuctions naming like this
 
 
 
 5 keywords
+
 system analysis and design
 
 
