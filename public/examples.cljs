@@ -1073,7 +1073,6 @@ Informatics and the UAS Technikum Wien."
    errors
    codebase
    persistence
-   collaboration
    security
    communication)
 
@@ -1090,10 +1089,14 @@ Informatics and the UAS Technikum Wien."
 ;---
 
 
-'(future
-   code sharing via ocaps
-   actual security
-   editor extensions)
+'(near-future
+   editor extensions
+   secure enough
+   collab via ocaps)
+
+
+;---
+
 
 
 
