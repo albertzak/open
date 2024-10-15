@@ -441,7 +441,6 @@ Informatics and the UAS Technikum Wien."
 
 
 ;---
-;     another cap is importing, even in the ed;%
 
 
 ! (editor
@@ -456,8 +455,6 @@ Informatics and the UAS Technikum Wien."
 
 
 ;---
-
-;       back to pi, open world ;%
 
 
 ! (editor
