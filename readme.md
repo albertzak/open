@@ -178,9 +178,11 @@ trying to be more social. i get cold sweat anytime i talk to someone. online too
 "is that now the worst piece of code on this githubs?"
 
 
-"you wanted those dynapad things
+"you wanted those dynapads
 
 right?"
+
+"literacy in the computational medium"
 
 
 
@@ -190,7 +192,7 @@ From 2020-09 until 2024-08 I got paid to daydream (🚮). This is all I have to 
 
 I collected random interesting internet finds and a few own ideas in Apple Notes. Order is somewhat chronological, newest at the top. Sadly only very few entries are timestamped or properly sourced. Lightly edited (typos, clarity, formatting) and small parts translated from German.
 
-**WARNING:** very chaotic. i guess this is how my adhd brain works? anyways, welcome traveler!
+**WARNING:** very chaotic. i guess this is how my adhd brain works? anyways, *welcome traveler!*
 
 |    | Legend |
 | --- | --- |
