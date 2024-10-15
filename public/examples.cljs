@@ -6,8 +6,7 @@
           (-> "https://esm.sh/canvas-confetti@1.6.0$default"
             (import)
             (then (fn [x]
-                    (? :a2eee196 ((aget x "default"))
-                      #promise [:ba08d0b9 :fulfilled nil]))))
+                    (? :bc9992a2 (c) _))))
           (line-numbers false)))
 
 (def rpi :c98d5645c97db5d0be4fc9db)
