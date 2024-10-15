@@ -69,8 +69,9 @@ _that's basically it. how hard could it be?_
 
 ## Scratchpad (what i'm writing now)
 
-add motifn, dreamberd
+doing now: getting updated LIVE/SPLASH demo ready
 
+add motifn, dreamberd
 
 
 explain before during demo:
