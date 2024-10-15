@@ -108,7 +108,7 @@ preempt reviewer Qs (from simple to deep)
   - haven't seen this combination except maybe genode
   - more generally for working inside stateful systems (OO in the large)
     - kay: "we made objects too small"
-      - i agree. OO in the large is not only inevitable but feels reasonable too with a live system like this. reifying physical places?
+      - i agree. OO in the large is not only inevitable but feels reasonable too with a live system like this. reifying physical places!
 
 
 
