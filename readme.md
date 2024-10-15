@@ -965,6 +965,31 @@ effect types
 
 ---
 
+DC-RES Conf 23
+
+http://www.wikicfp.com/cfp/
+
+(ACM SAC 23 closed)
+
+IEEE COMPSAC - Symposium on Computer Architecture & Platforms (CAP) Track == 31 jan
+
+IEEE ICSE, DS == 1 Feb
+
+ACM SIGOPS HOTOS, USA, RI https://sigops.org/s/conferences/hotos/2023/index.html == 2 Feb
+
+ACM+IEEE SIGOPS ASE, LUX, Kirchberg https://conf.researchr.org/track/ase-2023/ase-2023-tool-demonstrations Tool Demonstration == 28 Feb++
+
+IEEE ICDCS Demo &Poster session, Hong Kong https://icdcs2023.icdcs.org/call-for-demo-and-posters/ == 6 April
+
+ACM SIGOPS / USENIX SOSP Symposium on Operating Systems Principles, DE, Koblenz https://sosp2023.mpi-sws.org/index.html == 10 April
+
+ACM SPLASH/OOPSLA/DBPL/DLS/Onward/LIVE PT,  == 14 April
+
+~ IEEE SECDEV Atlanta, GA, USA https://secdev.ieee.org/2023/home Conf oct 18~23
+
+
+---
+
 Show HN: We built a developer-first open-source Zapier alternative (trigger.dev)
 
 https://www.reddit.com/r/ProgrammingLanguages/comments/10gylhm/are_there_any_languages_with_transactions_as_a/
