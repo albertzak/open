@@ -78,6 +78,9 @@ instead of lcd serial output, demo ultrasonic serial input!
 
 1) ardu -> usb -> rpi serial -> cap
 
+2) rework state + history slides (more fun!)
+
+3) eve attribution +brandon +?
 
 
 add motifn, dreamberd

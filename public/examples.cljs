@@ -983,14 +983,6 @@ Informatics and the UAS Technikum Wien."
 
 
 
-
-;---
-! (editor (show "capnp|.mov"))
-;%
-
-;%
-
-
 ;---
 ! (editor (show "gibber|.mov"))
 ;%
@@ -1003,6 +995,17 @@ Informatics and the UAS Technikum Wien."
 ;%
 
 ;%
+
+
+
+
+
+;---
+! (editor (show "capnp|.mov"))
+;%
+
+;%
+
 
 ;---
 ! (editor (show "glisp|.mov"))
