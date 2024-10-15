@@ -3972,6 +3972,17 @@ Briefly sketch your knowledge in
     - i have some ideas how languages should deal with distribution that i would like to explore
 
 
+Bio: 25 yo
+
+spent all my life messing around with the amazing machines that are computers
+
+taking apart, trying OSes, programming languages, making them display soaking up as much as possible
+
+always been self-directed, started a software company right out of school that failed,
+
+now: basically would like to continue my childhood of exploring and playing around with these machines
+
+
 
 
 <details>
