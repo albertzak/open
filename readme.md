@@ -79,6 +79,7 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 | --- | --- |
 |  🕺  | [my advisor](https://i4c.at/goeschka/) (btw he was awesome: just let me do anything, or nothing, no academic 🚮) |
 |  🧼  | shower thoughts / own ideas (they get better from bottom to top) |
+|  🎙️  | talks i've given |
 | **bold** | this is the good stuff (i think) |
 
 ---
@@ -412,6 +413,71 @@ Open Qs:
         - if the eval proc is broken, there's no way to fix the system
           - maybe its ok after all, we can just install the prev vsn of the proc handler
 
+
+
+
+---
+
+dc-res abstract talk
+
+2023-06-02
+
+🎙️ Can Programs be User Interfaces for Databases?
+
+Freeform interactive s-expressions via edit-time macros
+
+Traditionally, code is considered a one way input to the machine, with minimal feedback to the programmer. This talk aims to enhance freeform text editing by cherry-picking interaction patterns from structural editing, treating parts of the program as a user interface to the state of the (distributed) system.
+
+Introducing basic composable single-character "sigils" that have an immediate effect on nearby expressions as soon as they are typed allows for instant evaluation or querying the live value of some state, drawing inspiration from interaction patterns found in Lisp REPLs (read-evaluate-print-loop).
+
+A general mechanism for defining inline editor macros is presented. These "emacros" run at edit time, have access to the state of the running system, and are capable of modifying their plain text representation, e.g. in response to some state change or programmer interaction. It is shown that they can be used to construct various affordances that live within the program as it's being worked on.
+
+
+
+
+*(below my words, then fed to chatgpt, above edited by me again)*
+
+
+🎙️ Can Programs be User Interfaces for Databases?
+
+Freeform interactive s-expressions via edit-time macros
+
+
+programmers interact with stateful and stateless structures through plain text
+most programmers don't want to miss the affordances of plaintext (copy-pasteable, temporatily allows invalid syntax, etc -- see graydon hoare's "always bet on text") - strict structural editing remains small niche because they generally remain cumbersome to use.
+
+code is usually seen as a one-way batch-like input to a machine, a (possibly very abstracted) list of instructions to carry out. the computer generally does not use the same medium to "talk back" to the programmer. machine output may appear in a log (semi-structured, usually not directly consumable by the program itself), a debugger (information remains locked inside complex UIs) or just by observation. lisp repls displaying evaluation results inline unobtrusive editor hints, autocompletion, are interaction patterns that have found success in bringing some affordances to plaintext editing for shortening the edit-save-recompile-restart-check-loop without getting in the way.
+
+between free-form text editing and strict structural editing lies a spectrum, we can borrow ideas from semi-structural plain text editing interfaces like emacs org-mode, TaskTXT, Soulver
+
+This talk introduces some ideas around treating the freeform program an a (programmer's) user interface to the running (distributed) program, especially its state. basically extending lisp repl semantics with more structure, control over immediacy, and over the entire running system (as opposed to the usual 1:1 editor-progam repl connection)
+
+First, some expressions like state definitions get persistent unique IDs right inside the code (eg as seen in Capt'n'Proto, somewhat also like in Unison).
+
+Second, basic composable single-character "sigils" that, as soon as they are typed, have an immediate effect on the expression they are near, such as instant evaluation (!) or querying the live value of some state (?).
+
+Third, a general mechanism of defining inline editor macros with the program, which are capable of modifying their plain text representation in response to some state change or user interaction. It is shown that they can be used to construct various affordances that live within the program as it's being built.
+
+
+
+
+--------------
+
+🎙️ Live demonstration of a novel interactive programming environment (early prototype)
+
+
+This is a demonstration of the current state of the proposed programming environment that allows constructing and interacting with a distributed application on the fly, without restarting, losing state, or the need for imperative deployment. Its immutable database and capability security primitives provide an environment amenable to exploration and modification.
+
+Code and data together with changes to both are represented as fully normalized atomic entity-attribute-value (EAV) facts.
+A single global writer accretes these facts as reified transactions in an immutable log together with timestamps and provenance metadata.
+
+Side effects are controlled via the object capability model; and capability tokens are used for node identity and group membership.
+
+The editing environment is comprised of any typical text editor writing plain s-expressions (Clojure data literal forms) to a scratch file; a file watcher reading the forms as assertions and retractions of facts to transact; and a viewer component for data visualization running in a web browser next to the editor.
+
+An early prototype was implemented in less than 600 lines of Clojure (so far; excluding dependencies) and can be used to show the feasibility of building a simple distributed application on top of it.
+
+Immediate future work includes supporting forward declarations, function namespacing, keeping named state out of closures, and handling exceptions.
 
 
 
