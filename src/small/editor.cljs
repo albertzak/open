@@ -130,7 +130,7 @@
    nil nil
 
    "apx.mov"
-   [:div
+   [:div.w-100
     [caption "APX" "McDirmid (2015)" {:right 0 :top 0}]
     [video "apx.mov"]]
 
@@ -189,12 +189,14 @@
     [video "rslnd.mov"]]
 
    "tode.mov"
-   [video "tode.mov"]})
+   [:div.w-100
+    [video "tode.mov"]]})
 
 
 (defn show [k]
-  [:div.w-100 {:style {:padding "1rem"}}
-   (get slides k (str "no slide: " k))])
+  (when k
+    [:div.w-100 {:style {:padding "1rem"}}
+     (get slides k (str "no slide: " k))]))
 
 (defn global-scope []
   {'clear (fn [] (fn [{:keys [render]}] (render [:div])))
