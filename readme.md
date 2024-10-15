@@ -29,7 +29,7 @@ _that's basically it. how hard could it be?_
 
 ### TODO
 
-- [ ] **CURRENT** get this thing working well enough to give a fun presentation in 6 days.
+- [ ] **CURRENT** get this thing working well enough to give a fun presentation in 5 days.
 - [ ] upload slides (+ text?) of presentations
 - [ ] think of what to demo in 14min
 
@@ -2911,7 +2911,7 @@ UNSURE
 
 ### December 2021
 
-DC-RES Talk Abstract: **Human-first interactive programming systems**
+🎙️ DC-RES Talk Abstract: **Human-first interactive programming systems**
 
 Cyber-physical systems are situated in our irregular world, interacting with humans and other machines, exchanging information, accreting memory over time, and are subject to faults and change.
 
