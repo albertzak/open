@@ -73,16 +73,23 @@ add motifn, dreamberd
 
 
 
-> how to connect node, specify caps (show after rpi is blinking first)
+- how to connect node, specify caps
+  - show after rpi is blinking first
+
+- (explain clj `#_#_` map keyval comment syntax)
 
 
 preempt reviewer Qs (from simple to deep)
 
-> lisp!
->> trivial to rewrite
->> navigate through the inlined data with the same motions as you're traversing your code. semi-structural paredit feels great, there's no divide.
-> also clojure!
->> it puts plain printable data font and center.
+
+- why lisp?
+  - trivial to rewrite
+    - though code isn't 100% data (whitespace, linebreaks, line comments)
+  - navigate through the inlined data with the same motions as you're traversing your code.
+    - semi-structural paredit feels great, there's no divide between data and code.
+
+- why clojure?
+  - it puts plain printable data font and center.
 >>  programs are just a handful of immutable data structures, and mostly pure functions operating on them
 >> all state is usually kept ONE place, where state just means an identity, a succession over time of ~ plain inspectable immutable values.
 >> hold on to intermediate steps of a compuitation, anywhere. look at anything. won't change from under you. and it's serializable, copypasteable, stable basis for comparison etc
@@ -98,6 +105,9 @@ dynamically changing sets of ~things/nodes~:
 >> programmatically spawned processes?
 > that don't have a correspondence in text
 >> how to look at them? stop them?
+>> now: indirection via caps
+>> future: maybe enhance the top level with imperative command syntax
+- `> restart` or `/fn blink` to replace with fn from db
 
 what's the identity of a piece of code, a defn?
 > should we give ids to every expr?
