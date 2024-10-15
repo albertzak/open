@@ -56,6 +56,7 @@ _that's basically it. how hard could it be?_
 #### After LIVE@SPLASH
 
 - [ ] make it nice
+  - [ ] no im doing it wrong again, share (s)crappy fiddle first
 - [ ] can we do it in [<26 loc](https://buttondown.com/tensegritics-curiosities/archive/writing-the-worst-datalog-ever-in-26loc/)? see data and run fns?
 - [ ] make it run my website
 - [ ] blog post: dream clojure notes (see below)
@@ -63,7 +64,9 @@ _that's basically it. how hard could it be?_
 
 ## Observations
 
+- `2024-10-15 18:34` still so so so fun!
 - `2024-10-12 15:35` writing live like this is so so so fun
+
 
 
 
