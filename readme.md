@@ -3862,6 +3862,116 @@ PEOPLE HAVE GOT TO BECOME MORE EFFECTIVE AT HANDLING COMPLEX PROBLEMS--AT THEIR 
 — Doug Engelbart (1968) 1968–12–09: The Mother of All Demos
 
 
+---
+
+
+### May 2020
+
+
+DC RES Questions
+
+What are your expectations from a PhD program?
+  - i'd love to be given the time and space to explore things that matter
+  - to be able to really get down there and acquire a deep understanding
+  - and to improve the state of the world a tiny bit
+
+
+Do you have an idea of what differentiates a PhD
+thesis from the work you have done so far?
+  - i guess i finally won't have to feel too bad for spending weeks or months just going down some rabbit hole
+  - i'll also enjoy trying out ideas in a throwaway/proof-of-concept way
+  - as opposed to having to deal with long term maintenance and customer support and the need for a fully polished product
+
+
+What kind of work / position is your mid/long-term target?
+  - i've always wanted to be some kind of inventor
+  - so i guess i spend my days doing whatever seems fun and interesting
+  - while trying to have good ideas to then write them down and try out, implement a proof of concept,
+  - maybe even try it out on my actual real world customers sometimes, that's fun too
+  - then tell people about it, i like giving talks and teaching
+
+How is your work style like?
+  - something between mad scientist and crazy artist
+  - spend a few weeks doing whatever else, then spend a few days in a row hunkered down
+  - pretty good output
+  - prefer to work solo
+
+
+How do you approach new difficult material?
+
+Do you prefer to read and learn or to develop your ideas?
+  - these days i think that both is absolutely required
+  - i used to be just a developer, hacking things together
+  - but i've definitely grown and think very highly of
+
+Do you prefer clear assignments or open questions?
+  - i my ideal world, there'd be no assignments ever
+  - give me the most vague idea of anything, or just let me go free,
+  - and i'll try to figure something out
+
+Which of your talents/abilities do you consider
+as the most important ones for doing research?
+  - (blank)
+
+Which support / surroundings do you consider as
+the most important to help you in writing a PhD thesis?
+  - (blank)
+
+What are you expecting from your supervisor?
+  - ah just continue like you did, occasionally interrogate me, guide me along the way
+
+If you were given some surplus time at the end of
+your PhD (say, one year or so) which you can
+arrange freely - what would you invest this time in?
+  - (blank)
+
+What are your favorite areas/topics?
+  - (blank)
+
+Tell something about your Master thesis?
+  - thesis describes the design and implementation of a very different kind of daabase
+  - built around an immutable log of EAV tuples, like 6th nf / resource description framework / semantic web
+  - we get nice properties: compact implementation, bitemporality, subscription lang, indexing, ACID txns
+
+Tell something about your background with resilient embedded systems?
+  - (blank)
+
+What is the most exciting experience of your
+studies so far? What are you proud of?
+  - the embedded lectures by prof friedrich bauer. beautiful. building up a Z80 processor from transistors basically.
+
+  - what i liked best was when i was given time to explore whatever i felt was interesting,
+  - during my final year of the bachelor's that was the dynamic software updating aspects of erlang/otp
+  - and right now i'm exploring an incredibly beautiful way to store data as it changes over time
+
+Briefly sketch your knowledge in
+  - HW design
+    - none, apart from getting my first electric shock at age 12
+    - well, i've wired up a few microcontrollers, wrote some C, tuned some pid controllers
+    - had a tiny single seminar on vhdl and a few lectures about the Z80 architecture
+    - but recently i've begun looking into tagged-pointer architectures and lisp machines, but really only at a surface level so far
+
+  - SW design
+    - i'd say quite a lot (?)
+
+  - Verification
+    - well i've tried to start teaching myself TLA+ by lamport
+    - like 10 times
+    - but could not get past the first 5 pages
+    - still more a friend of dynamic typing and just seeing if things work, but would love to
+
+  - Formal approaches
+    - none except what is taught in the first semesters,
+    - would have loved to go more in depth
+    - but i am very open to learning this
+    - because i struggle to understand eg the semantics notation in PLT papers but would really like to grok that one day
+
+  - Computer networks
+    - i do love distributed systems, make my living designing, building and running them reliably.
+    - also my bachelor's and master's theses were about distributed systems
+    - i have some ideas how languages should deal with distribution that i would like to explore
+
+
 
 
 <details>
