@@ -16,7 +16,8 @@ _"So I'm trying to incubate a personal dynamic..."_ nah
 
 <br>
 
-I just want to to **look inside** a function or variable and **see the data**
+I
+just want to to **look inside** a function or variable and **see the data**
 
 and tell **that machine** over there to **keep running this piece of code**.
 
@@ -3427,6 +3428,412 @@ wtf? but also intriguing. don't really understand
 ---
 
 OS Family Tree https://eylenburg.github.io/pics/Eylenburg_Operating_System_Timeline_Family_Tree.svg
+
+---
+
+ PhD Project Ideas
+
+
+
+2021-03-06 on hn
+
+https://news.ycombinator.com/item?id=26367029
+
+"""
+Lunatic runs Wasm modules as lightweight processes with its own heap/stack and preemptively schedules them on a multi-threaded executor. You can spawn those processes using a library we provide (currently for Rust and AssemblyScript) to enable actor-based architectures with message passing. Scheduling is implemented by modifying a Wasm module and adding “reduction counts” (similar to Erlang). You can write seemingly blocking code but it won’t actually block the underlying OS thread as our implementation of WebAssembly System Interface (WASI, think of it as POSIX syscalls) will be implemented with async Rust and a bit of magic [0] :) The code is JIT’ed and we build on top of existing Wasm runtimes Wasmtime/Wasmer for this part (codegen is done by LLVM or Cranelift).
+
+To step back from technical details, working on Lunatic for the past few months, we have started to form a bigger picture about server-side applications. Over the years we have witnessed many trends: Docker & containers became popular, asynchronous programming and green threads are ubiquitous for IO intense work, polyglot codebases are always present, microservice architecture became popular, and distributed is being used both for scale and to bring computation closer to clients to lower latency. Two important driving forces are hardware capabilities and how we develop software. Those have changed dramatically from the time operating systems were created.
+
+For example, to maximize resource usage of a single machine, we started running virtual machines and then moved to more lightweight containers, both to give isolation and sandboxing to different applications. Serverless is pushing this even further. Lunatic builds on top of WebAssembly security principles [1] to give sandboxing and isolation to enable even more lightweight environments.
+
+Servers also needed to handle more and more network connections and spawning an OS thread per connection became problematic so developers used different programming patterns, async implementations, or user-space threads/processes to tackle this problem. Lunatic solves this by using Erlang’s proven approach [2].
+
+How we develop software has also changed. Today most of our application consists of third-party libraries and it’s common to have hundreds or even thousands of dependencies and obviously it’s impossible to audit them all. When you compile and run your application, the whole code has the same privileges, so a malicious dependency could easily steal your private keys.[3,4,5] WebAssembly is trying to standardise ideas like Interface Types and dynamic linking between Wasm modules. We could isolate libraries into different modules based on capabilities they require (which “system calls” they use) and let developers decide which parts of their app have what capabilities.
+
+Other use-cases that Lunatic and Wasm enable are plugin architecture to run third-party code, sharing code between frontend and backend, polyglot codebases that use Wasm interface types to call each other functions, etc.
+
+Currently Lunatic is just a runtime but ultimately we want it to be more like an operating system for server-side applications. The value we want to give to developers is simpler deployment and management of running apps, better capability-based security model, and seamless integration with third-party tools (logging, monitoring, profiling). Ideally all you need to do is compile your app to WebAssembly and you are ready to go.
+"""
+
+
+---
+
+take from kay's proposal:
+
+[Prot] Protection, Security, Safety
+Page 4 [De] Design Approaches
+[LB] Late Binding of Everything
+[Spec] Specifications that are runable and debuggable
+[SepM] Separation of Meanings from Optimizations
+[MM] Meaning what we mean, and holding on to it.
+[FNB] “From Nothing” Bootstrapping
+[Mc] How Lisp moved from “math” to a “programmable math”
+
+
+
+
+
+--
+
+software is *: bloat, legacy complexity, perf obsession, security issues
+everything is networked
+engineering practices: gluing together other peoples code
+
+everything is distributed
+software eng is composition
+runs software of unknown provenance
+trust is central
+
+OS FOR THE EDGE
+my interest in deployment systems
+immutability + state as cache only?
+hashed fuctions naming like this
+
+
+
+5 keywords
+system analysis and design
+
+
+--
+🕺 tiny briefing
+
+agenda:  "für ein gebiet interessieren", "bisschen auskennen" und "reintigern wollen"
+state of the art: sprache, begriffe, what is embedded, what is cyber/physical?
+commission fragt evtl: "what's a cyber/phys system for you?"
+
+agenda vermittelt:
+interesse.
+nur ein bisschen abgrenzen.
+was gibts da schon?
+was sind offene fragen?
+evtl. bezug?
+relevanz methodik
+
+tlw. sehr großzügug? (hat auch eine lady die da data science macht)
+aktuelle workshops sind besser als konferenzen
+aktuelle eu forschungsprojekte sind gut
+
+
+zwei iterationen, grober draft im format.
+final draft, probevortag üben jetzt noch nicht nötig.
+march 24 mitternacht abgabe deadline.
+
+erlang talk im letter of intent erwähnen
+5 topics/keywords?
+will draft im letter sehen?
+
+eu standard cv
+
+---
+
+(grounded)
+
+- secure code reuse: stacks of regular or context free DSLs? "nosyntax"?  capabilities everywhere? unison? wasm sandboxing? algebraic side effects everywhere? [3L, langsec, multics, unison]
+- simplify the stack at every level: hw (SoC), os, interconnects, state, compiling, debugging, distribution  [blow, muratori]
+
+- find better orthogonal abstractions that compose better, minimize layers of abstraction through metalinguistic macros, tower of interpreters. late binding of everything. [alan kay steps]
+- universal description language with refinements as annotations. pass invariants to a solver. dependent typing. [???]
+- (crazy)
+
+chrysalisp / lispos / symbolics / burroughs [different hardware architectures? risc-v? b6000?]
+
+why don't we program near the cpu anymore?
+
+---
+
+I pray for a day where code is measured not by lines of code or code coverage but by call stack metrics.
+
+---
+
+http://www.stephendiehl.com/posts/decade.html
+
+"Haskell Problems For a New Decade"
+
+- algebraic effects systems
+- practical dependent types
+- wasm
+- refinements/invariants as annotations (macros) to pass to a solver
+- relocatable code (serialize ast + dependencies as closure hahaha)
+
+
+---
+
+uLisp <3 for arduino
+maybe port to risc-v
+
+---
+
+maybe static typing is superawesome after all?
+http://langsec.org <3
+
+"The Seven Turrets of Babel: A Taxonomy of LangSec Errors and How to Expunge Them"
+http://langsec.org/papers/langsec-cwes-secdev2016.pdf
+> make parsers regular or context free, with DSL.
+
+
+
+---
+
+re-read chrysalisp
+and lispos paper
+
+—--
+
+https://www.unisonweb.org/docs/language-reference/#abilities-and-ability-handlers
+
+unison itself is an interesting pure language + runtime that hashes the syntax tree for safe code reuse
+
+(!) nice algebraic effect handling system
+
+projectional editing?
+
+needs webassembly FFI story to succees (hn comment)
+
+"provision compute"
+
+whooop this is what we need https://www.youtube.com/watch?v=gCWtkvDQ2ZI
+
+
+---
+
+/r/nosyntax is a misnomer. should read: "let's focus on interacting with ASTs directly"
+
+---
+
+(?) means yet to check out / read
+
+notes from alan kays steps project:
+
+- proposal - "albert" bootstrap smalltalk kernel, user interface by composition of objects
+- year 1 - tcp/ip in 200 lines (vs 10-20k usual)l IS: translate js/prolog to intermediate standard language - - and then to machine forms, OMeta in JS, cairo-like composable graphics in 500 loc (vs 40k)
+
+2010 - "Nothing" language: general low level. "worlds" controlling the scope of side effects
+
+Meta II by Val Shorre in 1964 "vpri's favorite paper" - nah dont get it, just like ometa a syntax heavy bnf-transformer
+
+---
+
+jonathan david blow - "preventing the collapse of civilization"
+
+[bronze age was trading between many civs, but all collapsed within 100yrs. why? only elite was literate.]
+
+point: noone knows what out CPUs are doing
+- "productivity per programmer is approaching zero"
+- "robustness is declining"
+
+ken thompson wrote unix in 3 weeks (needed an editor, an assembler, and an "kernel" to tie everyting together)
+
+- "you can't just" copy a program from one computer to enother (containers? installers? dependencies? paths?)
+- "can't just draw pixels to the screen" [need crazy incompatible graphics package]
+- "can't just compile a program without a manifest"
+- "can't just run an unsigned program"
+
+because we added incompatibilities at the OS layer
+
+
+all this add friction, bugs, time, and headspace (!)
+
+keeps us from thinking about interesting things that me might atually want to do
+
+"deep knowledge replaced by trivia" [webpack config woes]
+
+"more to know, so you can only know a smaller percentage"
+
+"we're acting right now as if the upper limit on complexity was infinity" [if it's not infinity, what is it?]
+
+"the more complex, the less likely to survive a disaster" [are we past the point of reasonable complexity?]
+
+difficulty: generational transmission [we don't generally listen to greybeards, but likely should]
+
+if an eng has a picture of a complex system in their heads, they cant necessarily pass it fully on to another person/generation.
+
+"the amount of complexity we can sustain over time is LESS than the amount of complexity individuals ca do today."
+
+need to simplify at every level: hw, os, libraries, app code, communication systems (internet), comple, debug, distribution, interface with people
+
+"even if civ doens't collapse because of software, the future will be deeply mediocre if we continue on this path"
+
+ [blow: i don't believe civ is going to collapse or anything]
+
+
+[feeling VERY inspired to pursue resilient embedded thanks to jon <3]
+
+[he also repeatedly makes fun of the hn "container" crowd touting advacements in software]
+
+---
+
+links to casey muratori, The Thirty Million Line Problem
+"A historical argument for creating a stable instruction set architecture (ISA) for entire system-on-a-chip (SoC) packages."
+
+point: hardware quality is at its historical best, software quality is at its historical worst
+
+existence proof: in the 80s, whenever you bought a software/game on a floppy disk,
+it was a boot disk that came with its own "OS" to make the machine do exactly what it needed to do
+
+[everyone made amiga OSs in the 80s]
+
+today? NT, Linux, BSD
+
+[how did we end up here?]
+
+1995 USB, plug&play "the thing does <whatever>"
+
+1996 hw accelerated graphics, general use but completely opaque. hope the interface has what i need
+
+[what do we want?]
+
+literally nothing else. boot into the game. [hardcore esports? servers? security?]
+
+nothing else. full system resources. no interruptability.
+
+SoC: simplify communication, shrink down, remove cruft from motherboard. all chips designed together, packed together like a home computer form the 80s. connected in a predictable (!) way. NO configurability (!)
+
+idea: "extend the concept of an x86-64 ISA to cover the entire SoC"
+"everthing gets better when code gets removed, across the board"
+
+(?) referecnes to great paper: arrakis: the OS is the control plane [peter, li, zhang et al]
+
+
+
+---
+
+
+category theory + monadic kleisli composition + OS
+
+crazy brain dump that started it all for me: https://blog.usejournal.com/monoids-to-groupoids-492c35105113
+by codecraft "r&d incubator hub for applied category theory" in estonia
+mentioning yoneda, algebra/functions vs geometry/filesystem, multics OS first to hotload functions, plan9,
+powershell was named monas. is an OS a top level shell/REPL for an fp lang?
+multix: SQL, JSON OS. "Kan lift" lifts db from topology to lambda level, kleisli composes SQL with pure fn
+kiselyov imagined monadic OSs for a long time
+
+multics history: https://multicians.org/project-mac.html
+
+how multics handles continuous change: https://queue.acm.org/detail.cfm?id=1640399
+reference to BBN arpanet's 1-bit version number in each packet
+
+---
+
+3L modern lisp (scheme) os with security focus by hn user thecombjelly / thomas hintz
+has 2 modes: secure and development. no file system, just mapping of named to storage blocks.
+capabilities everywhere. souce mapped everywhere.
+
+(?) modern lisp OSs: Movitz, Mezzano, LoperOS, Pilos, etc.
+
+(?) genera holistic debugging
+
+(?) formally verified scheme: http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=881...
+
+------
+
+Alan by M-Industries. Business software modelling language that defines all states ans transitions declaratively.  It's an all homegrown mini linux OS with a custom graph database etc. But how is the frontend done?
+
+naaah...
+
+---
+
+
+Alan Kay on OO+FP+Time: https://news.ycombinator.com/item?id=11808551 <3
+
+"Reed's initial ideas in the 70s were about what an operating system for the whole Internet should look like." -- Croquet
+
+"In any case, I think it is a bit crazy to not use pseudo-time if you know about it, and it's a bit amateurish not to be aware of it. In the middle are religions whose identities are built on various "one true way"s (and this is the opposite of the way any science should be conducted)."
+
+pseudo-time + possible-worlds reasoning <3
+
+
+"One useful trick which I have not yet seen published is that you can have two-dimensional pseudo-times, so that one running system can track multiple chains of causation. (You would not want this happening all the time, since the whole point is to get a consistent history everywhere. But it is very useful for developers.) An example: Let's say I have an existing object and a clone of it where I have changed some of the methods' behavior, but I want to understand all the consequences of these differences across all the distributed objects they cooperate with. I can send them the same message with different y-coordinate pseudo-times. In a system that relied on wall clock time, the side-effects of these two message sends would merely step on each other non-deterministically. But with pseudo-time, their effects are causally distinct throughout the system and can be dynamically inspected, making it a lot easier to build a human understanding of the behavior of the distributed system."
+http://www.vpri.org/pdf/tr2011001_final_worlds.pdf
+
+
+---
+
+daeken: minimal high level kernel, abandeonden 2009
+https://web.archive.org/web/20121014114558/http://daeken.com/renraku-future-os
+
+hn on perfect os: "Software environments, languages, and other such abstractions aren't there to be perfect. They are there to help human beings manage absurd numbers of machine instructions. Maybe when we fully understand the human mind, we'll figure out the perfect way to map machine instructions to concepts that humans can grok. Until then, we'll have to make somewhat subjective design decisions in the face of uncertain constraints and priorities, which is certainly not going to lead to a "best" solution."
+
+---
+
+joy, prolog_lisp+forth: http://tunes.org/~iepos/joy.html#cakek
+http://www.kevinalbrecht.com/code/joy-mirror/j05cmp.html
+
+---
+
+bret victor:
+coding -> direct manipulation of data
+procedures -> goals and constraints
+text dump -> spatial representation
+sequential -> concurrent
+
+---
+
+urbit (since 2002!), cutting through bullshit naming like:
+
+"Urbit IDs are distributed by a sponsorship tree. At the top of the tree are 28 (256) galaxies. Each galaxy issues 28 stars, making a total of 216 (65K). Stars then each can issue 216 planets, making for 232 (~4B). As you might expect, each planet issues 232 moons. You can also call stars ‘infrastructure nodes’ and galaxies ‘governance nodes’, since those are more descriptive names for their roles. Stars help route packets, kind of like an ISP. And galaxies are a bit like DNS root servers or ICANN members. The difference, of course, is that Urbit IDs are owned cryptographically by many different people and accrue reputation independently."
+"the whole stack is incredibly compact. The whole system clocks in at around 50K lines of code"
+Nock, for mysterious reasons, uses 0 as true...and 1 as false...
+https://urbit.live/~bitweb-mophec
+
+urbit critique: https://wejn.org/2021/02/urbit-good-bad-insane/
+
+---
+1991 book by Peter M. Kogge "The Architecture of Symbolic Computers"
+
+---
+HOPL Lectures
+https://felleisen.org/matthias/7480-s21/lectures.html
+
+---
+fuchsia midori
+
+RustConf 2017 - Closing Keynote: Safe Systems Software and the Future of Computing by Joe Duffy
+https://www.youtube.com/watch?v=EVm938gMWl0
+
+You can get more glimpses of how things went when reading between the lines on his Midori postmortem, InfoQ content or occasional twitter comments.
+
+---
+
+
+visual programmin in vr
+
+jaron lanier invented vr (1984, founded vpl research "eyePhone" 230x240 b/w crt + color filters), vpl (for making music + programming)
+
+c2: JaronLanier's virtual reality company was called VPL, which stood for "VisualProgrammingLanguage". Chuck Blanchard developed the VisualProgrammingLanguage that he used called "Body Electric", and David Levitt later developed that into the BounceLanguage, by integrating the MacromediaDirector ShockWave library as a multimedia display engine.
+
+http://www.jaronlanier.com/vpl.html
+
+
+don hopkins (maxis)
+
+Here are some notes I wrote about some visual programming languages and real time performance tools for music and video that I wrote to the LEV mailing list in 2000 (and some additional notes and email I saved over the years).
+https://www.donhopkins.com/home/archive/visual-programming/b...
+That link also includes some interesting discussion with Jaron Lanier about visual programming language design.
+
+Body Electric supported all kinds of interesting input and output devices, including MIDI, sending and receiving UDP packets over Ethernet, loading Swivel3D 3D skeleton files and animating them, sending their state over the network to a pair of SGI workstations for rendering with the Isaac rendering engine to the VPL "EyePhones" VR headset (one SGI workstation per eye, with a Mac to run the simulation), VR input devices like VPL's DataGlove and Body Suit, 3D input devices like the Ascension Flock of Birds, Polhemus, and Spaceball, 3D audio output devices like the Convolvotron, and lots of other cool stuff.
+
+Mark Coniglio: Here's a bit of history. In 1986 my soon-to-be mentor and Interactor collaborator Mort Subotnick had just come from a residency at MIT where he was using a program called Hookup created by a student there named David Levitt. Hookup was the first program I know of that used the "patch-cord" metaphor, i.e., modules that manipulate data are linked by virtual wires, the connection of which is determined by the user. For those in the world of early analog, patch-cord programmed synthesizers, this was a familiar interface.
+
+caveat: see https://wiki.c2.com/?GeeLanguage, blueprintsfromhell, uml, xkcd circuit diagram
+
+vrs: VPL Research, however, filed for bankruptcy in 1990 and in 1999, all of its patents were bought by Sun Microsystems, another company active in virtual reality research and development. Sun Microsystems was not known to have sold any virtual reality products and, due in part to Oracle’s acquisition, it is unknown whether anything will come of the VPL patents.
+
+
+meh screenshots from hopkins, just another blueprint from hell: https://donhopkins.medium.com/bounce-stuff-8310551a96e3
+
+--
+
+intro to https://wiki.c2.com/?FutureOfProgrammingLanguages
+
+--
+
+
+PEOPLE HAVE GOT TO BECOME MORE EFFECTIVE AT HANDLING COMPLEX PROBLEMS--AT THEIR DAILY STRUGGLE WITH COMPLEX AND URGENT ISSUES. THE SURVIVAL OF MAN SEEMS DEPENDENT UPON IT. ANY REASONABLE POSSIBILITY SEEN BY SOCIETY FOR INCREASING THAT EFFECTIVENESS SHOULD WARRANT SERIOUS INVESTIGATION
+
+— Doug Engelbart (1968) 1968–12–09: The Mother of All Demos
+
+
 
 
 <details>
