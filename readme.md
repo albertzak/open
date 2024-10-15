@@ -100,8 +100,10 @@ preempt reviewer Qs (from simple to deep)
 - why lisp?
   - trivial to rewrite
     - though code isn't 100% data (whitespace, linebreaks, comments)
-  - navigate through the inlined data with the same motions as you're traversing your code.
-    - semi-structural paredit feels great, there's no divide between data and code.
+
+  - why inline?
+    - navigate through the inlined data with the same motions as you're traversing your code.
+      - semi-structural paredit feels great, there's no divide between data and code.
 
 - why clojure?
   - plain printable data font and center.
