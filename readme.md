@@ -136,6 +136,11 @@ what's the identity of a piece of code, a defn?
           - intercepts calls, holds them pending, collects args to display in editor, and holds pendig until sigil is removed, the flushes with "new" version
         - "only on my test machine"
         - "intercept/stub side effects" and use these handlers instead
+      - may not have to be single character, if we can clearly know when it's added and removed
+        - maybe autocomplete of all sigils in scope helps?
+        - btw do not be temped to treat multi char sigil as one inline-block
+          - need to keep copypasteability, and ability to cheaply toggle sigil by eg removing last character only
+            -
       - heavily domain dependent, only need to provide a way to `(defsigil 🚧 [...])`
 
 
