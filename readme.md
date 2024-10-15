@@ -140,7 +140,8 @@ what's the identity of a piece of code, a defn?
         - maybe autocomplete of all sigils in scope helps?
         - btw do not be temped to treat multi char sigil as one inline-block
           - need to keep copypasteability, and ability to cheaply toggle sigil by eg removing last character only
-            -
+            - or toggle between 2+ valis sigils with common prefix: `aaa` `aa` `aaaa`
+            - the fastest way to a/b test?
       - heavily domain dependent, only need to provide a way to `(defsigil 🚧 [...])`
 
 
