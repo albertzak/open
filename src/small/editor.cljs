@@ -108,7 +108,7 @@
           {:position :absolute
            :background :black
            :text-align :left
-           :padding "3rem"
+           :padding "2rem"
            :font-size "200%"}
           pos)}
    [:b l1]
@@ -179,7 +179,7 @@
 
    "eve"
    [:div.w-100
-    [caption "Eve" "Granger+ (2016)" {:right 0 :bottom "2rem"}]
+    [caption "Eve" "Granger+ (2016)" {:right 0 :top "5rem"}]
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
