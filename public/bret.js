@@ -101,7 +101,7 @@ window.lerp = lerp
 window.extendCanvasContext = extendCanvasContext
 
 
-var ctx, canvasWidth, canvasHeight;
+var ctx, canvasWidth, canvasHeight, customDrawBranches;
 
 function drawScene(canvas) {
 
@@ -193,6 +193,11 @@ function drawBranches(i, angle, x, y, width, blossomPoints) {
   ctx.save();
 
   var length = tween(i, 1, 62, 12, 3) * random(0.7, 1.3);
+
+  if (customDrawBranches) {
+    length = customDrawBranches()
+  }
+
   if (i == 0) { length = 98; }
 
   ctx.translate(x, y);
@@ -239,5 +244,8 @@ function drawBlossoms(blossomPoints) {
 
 window.redrawScene = function (custom) {
   console.log(custom)
+
+  customDrawBranches = custom
+
   drawScene(document.getElementById('canvas'))
 }
