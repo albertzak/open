@@ -117,13 +117,13 @@
     l2]])
 
 (def slides
-  {"apx"
+  {"apx.mov"
    [:div
     [caption "APX" "McDirmid (2015)" {:right 0 :top 0}]
     [:img {:style {:width "100%"
                    :height :auto}
-           :src "/vids/apx.gif"}]]
-   "ixi"
+           :src "/vids/apx.mov"}]]
+   "ixi.mov"
    [:div.w-100
     [caption "ixi lang" "Magnusson (2010)" {:right 0 :bottom "2rem"}]
     [:video {:style {:width "100%"
@@ -132,9 +132,9 @@
              :autoplay "autoplay"
              :loop "loop"
              :muted true
-             :src "/vids/ixi.mp4"}]]
+             :src "/vids/ixi.mov"}]]
 
-   "task"
+   "task.mov"
    [:div.w-100
     [caption "TaskTXT" "Jeffery (2021)" {:right 0 :top "2rem"}]
     [:video {:style {:width "100%"
@@ -145,7 +145,7 @@
              :muted true
              :src "/vids/tasktxt.mov"}]]
 
-   "capnp"
+   "capnp.mov"
    [:div.w-100
     [caption "Cap'n Proto" "Varda+ (2013)" {:right 0 :top "2rem"}]
     [:video {:style {:width "100%"
@@ -155,7 +155,7 @@
              :loop "loop"
              :muted true
              :src "/vids/capnp.mov"}]]
-   "gibber"
+   "gibber.mov"
    [:div.w-100
     [caption "Gibber" "Roberts+ (2015)" {:right 0 :top "10rem"}]
     [:video {:style {:width "100%"
@@ -166,7 +166,7 @@
              :muted true
              :src "/vids/gibber.mov"}]]
 
-   "strudel"
+   "strudel.mov"
    [:div.w-100
     [caption "strudel" "Roos, McLean+ (2022)" {:right 0 :top "10rem"}]
     [:video {:style {:width "100%"
@@ -177,7 +177,7 @@
              :muted true
              :src "/vids/strudel.mov"}]]
 
-   "eve"
+   "eve.mov"
    [:div.w-100
     [caption "Eve" "Granger+ (2016)" {:right 0 :top "10rem"}]
     [:video {:style {:width "100%"
@@ -188,7 +188,7 @@
              :muted true
              :src "/vids/eve.mov"}]]
 
-   "dark"
+   "dark.mov"
    [:div.w-100
     [caption "Dark classic" "Chisa, Biggar (2018)" {:right 0 :top "1rem"}]
     [:video {:style {:width "100%"
@@ -199,7 +199,7 @@
              :muted true
              :src "/vids/dark.mov"}]]
 
-   "glisp"
+   "glisp.mov"
    [:div.w-100
     [caption "Glisp" "Hashimoto (2022)" {:right 0 :top "1rem"}]
     [:video {:style {:width "100%"
@@ -210,7 +210,7 @@
              :muted true
              :src "/vids/glisp.mov"}]]
 
-   "preimp"
+   "preimp.mov"
    [:div.w-100
     [caption "preimp" "Brandon (2022)" {:right 0 :top "1rem"}]
     [:video {:style {:width "100%"
@@ -221,7 +221,7 @@
              :muted true
              :src "/vids/preimp.mov"}]]
 
-   "electric"
+   "electric.mov"
    [:div.w-100
     [caption "Electric Clojure" "Getz, Noel+ (2023)" {:right 0 :top "1rem"}]
     [:video {:style {:width "100%"
@@ -232,7 +232,7 @@
              :muted true
              :src "/vids/electric.mov"}]]
 
-   "rslnd"
+   "rslnd.mov"
    [:div.w-100
     #_[caption "Rosalind" "Fixpoint Systems GmbH (2015)" {:right 0 :top "1rem"}]
     [:video {:style {:width "100%"
@@ -243,7 +243,7 @@
              :muted true
              :src "/vids/rslnd.mov"}]]
 
-   "tode"
+   "tode.mov"
    [:div.w-100
     [caption "DreamBerd" "Wilson+ (2024)" {:right 0 :top "1rem"}]
     [:video {:style {:width "100%"
