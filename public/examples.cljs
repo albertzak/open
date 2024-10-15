@@ -20,96 +20,96 @@
 
 
 
-;--- ! (editor (slide "tode|"))
+;--- ! (editor (slide "tode|.mov"))
 ;%
 
 ;%
 
 
 
-;--- ! (editor (slide "apx|"))
-;%
-
-;%
-
-
-;---
-! (editor (slide "ixi|"))
-;%
-
-;%
-
-;---
-! (editor (slide "task|"))
-;%
-
-;%
-
-;---
-! (editor (slide "capnp|"))
+;--- ! (editor (slide "apx|.mov"))
 ;%
 
 ;%
 
 
 ;---
-! (editor (slide "gibber|"))
+! (editor (slide "ixi|.mov"))
+;
+
+;%
+
+;---
+! (editor (slide "task|.mov"))
+;%
+
+;%
+
+;---
+! (editor (slide "capnp|.mov"))
 ;%
 
 ;%
 
 
 ;---
-! (editor (slide "strudel|"))
-;%
-
-;%
-
-;---
-! (editor (slide "glisp|"))
-;%
-
-;%
-
-
-
-;---
-! (editor (slide "eve|"))
+! (editor (slide "gibber|.mov"))
 ;%
 
 ;%
 
 
 ;---
-! (editor (slide "dark|"))
+! (editor (slide "strudel|.mov"))
+;%
+
+;%
+
+;---
+! (editor (slide "glisp|.mov"))
+;%
+
+;%
+
+
+
+;---
+! (editor (slide "eve|.mov"))
 ;%
 
 ;%
 
 
 ;---
-! (editor (slide "preimp|"))
+! (editor (slide "dark|.mov"))
 ;%
 
 ;%
 
 
 ;---
-! (editor (slide "rslnd|"))
+! (editor (slide "preimp|.mov"))
 ;%
 
 ;%
 
 
 ;---
-! (editor (slide "dark|"))
+! (editor (slide "rslnd|.mov"))
 ;%
 
 ;%
 
 
 ;---
-! (editor (slide "electric|"))
+! (editor (slide "dark|.mov"))
+;%
+
+;%
+
+
+;---
+! (editor (slide "electric|.mov"))
 ;%
 
 ;%
