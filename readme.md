@@ -104,7 +104,7 @@ preempt reviewer Qs (from simple to deep)
 
 
 
-deeper:
+deeper design challenges that remain:
 
 getting rid of things?
   - deleting text may or may not carry the intent of stopping that
@@ -112,9 +112,13 @@ getting rid of things?
   - or creation/deletion may take very long (weeks for offline nodes?)
     - how to show in the editor what nodes run what code?
       - only if i want to see that, and then preferably in plain text as well
+  - there is a dynamically bound fn to register a cleanup handler for a process
+    - very manual, easy to forget
+    - need a more general purpose clean up mechanism, `(finally ...)` ?
 
 
 dynamically changing sets of ~things/nodes~:
+  - anything that can't be put in the text ahead of time
   - web clients?
   - programmatically spawned processes?
     - that don't have a correspondence in text
@@ -149,17 +153,6 @@ what's the identity of a piece of code, a defn?
       - heavily domain dependent, only need to provide a way to `(defsigil 🚧 [...])`
 
 
-
-
-
-zoom out / broader lessons
-successful so far? lisp, cloj, data, lo-wceremony, one format. just data and functions. and by necessity some "place".  imperative action to deploy declarative code?
-
-deeper design challenges that remain:
-dynamic sets of nodes, or anything that can't be put in the text ahead of time; think web clients
-a general purpose clean up mechanism, when a process should no longer be
-what happen if i delete a function/statement?
-diff versions of "same" function running on diff nodes
 
 
 
