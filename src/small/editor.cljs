@@ -117,7 +117,10 @@
     l2]])
 
 (def slides
-  {"apx.mov"
+  {"" nil
+   nil nil
+
+   "apx.mov"
    [:div
     [caption "APX" "McDirmid (2015)" {:right 0 :top 0}]
     [:img {:style {:width "100%"
