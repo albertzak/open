@@ -67,6 +67,79 @@ _that's basically it. how hard could it be?_
 
 
 
+## Scratchpad (what i'm writing now)
+
+add motifn, dreamberd
+
+
+
+> how to connect node, specify caps (show after rpi is blinking first)
+
+
+preempt reviewer Qs (from simple to deep)
+
+> lisp!
+>> trivial to rewrite
+>> navigate through the inlined data with the same motions as you're traversing your code. semi-structural paredit feels great, there's no divide.
+> also clojure!
+>> it puts plain printable data font and center.
+>>  programs are just a handful of immutable data structures, and mostly pure functions operating on them
+>> all state is usually kept ONE place, where state just means an identity, a succession over time of ~ plain inspectable immutable values.
+>> hold on to intermediate steps of a compuitation, anywhere. look at anything. won't change from under you. and it's serializable, copypasteable, stable basis for comparison etc
+
+deeper:
+
+getting rid of things?
+>> deleting text may or may not carry the intent of stopping that
+
+
+dynamically changing sets of ~things/nodes~:
+>> web clients?
+>> programmatically spawned processes?
+> that don't have a correspondence in text
+>> how to look at them? stop them?
+
+what's the identity of a piece of code, a defn?
+> should we give ids to every expr?
+>> i tried to keep it to a minimum.
+>> what's the meaning of diff versions of "same" function running on diff nodes?
+>> i kind of work around this by keeping change sets extremely small (eg try to  redeploy on every keystroke as often as possible)
+>>> but then how'd you do a large refactor?
+>>>> it really needs some notion of environment contexts, like dev/staging/prod
+>>>> and control over when and how and where code changes are applied / happen
+
+
+
+
+
+zoom out / broader lessons
+successful so far? lisp, cloj, data, lo-wceremony, one format. just data and functions. and by necessity some "place".  imperative action to deploy declarative code?
+
+deeper design challenges that remain:
+dynamic sets of nodes, or anything that can't be put in the text ahead of time; think web clients
+a general purpose clean up mechanism, when a process should no longer be
+also, the problem of mapping text to some (async!) (multiple!) physical processes somewhere
+what happen if i delete a function/statement?
+diff versions of "same" function running on diff nodes
+
+
+
+what is the identity of a function?
+maybe the editor could support
+but then copy paste?
+i want to explore that single-character flags "sometimes i call them sigils"
+they can simultaneously represent an "imperative action" because they're a single kepyress, as well as the desired state for other nodes to catch up to async
+
+
+i do think caps are a great fit in these live systems, haven't seen that maybe genode. generally working inside stateful systems
+
+
+
+Sigils
+
+
+
+
 ## Raw notes [20,000+ words]
 
 From 2020-09 until 2024-08 I got paid to daydream (🚮). This is all I have to show for it.
