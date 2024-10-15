@@ -95,3 +95,7 @@ function extendCanvasContext(ctx) {
 }
 
 window.resetRandom = resetRandom
+window.tween = tween
+window.random = random
+window.lerp = lerp
+window.extendCanvasContext = extendCanvasContext
