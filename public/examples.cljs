@@ -1107,8 +1107,8 @@ Informatics and the UAS Technikum Wien."
 
 '(conclusion
 
-   > self-rewriting edit time macros
-   > visualize run time values in code
+   > self-rewriting query macro
+   > see run time values + viz
    > declarative distributed process scheduling
    > capability security)
 
