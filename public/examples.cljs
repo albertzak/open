@@ -5,7 +5,7 @@
           (render nil)
           (-> "https://esm.sh/canvas-confetti@1.6.0$default"
             (import)
-            (then (fn [x]
+            (then (fn [c]
                     (? :bc9992a2 (c) _))))
           (line-numbers false)))
 
@@ -457,13 +457,12 @@ Informatics and the UAS Technikum Wien."
 ;---
 
 
-! (editor
+  (editor
     (fn [{:keys [theme help line-numbers import]}]
       (then
         (import "https://esm.sh/canvas-confetti@1.6.0$default")
-        (fn [x]
-          (? :a2eee196 ((aget x "default"))
-            _)))
+        (fn [c]
+          (? :bc9992a3 (c) _))))
       (help false)
       (line-numbers false)
       (theme
