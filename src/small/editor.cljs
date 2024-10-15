@@ -132,7 +132,7 @@
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
-             :autoplay "autoplay"
+             :autoPlay "autoplay"
              :loop "loop"
              :muted true
              :src "/vids/ixi.mov"}]]
@@ -143,7 +143,7 @@
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
-             :autoplay "autoplay"
+             :autoPlay "autoplay"
              :loop "loop"
              :muted true
              :src "/vids/tasktxt.mov"}]]
@@ -154,7 +154,7 @@
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
-             :autoplay "autoplay"
+             :autoPlay "autoplay"
              :loop "loop"
              :muted true
              :src "/vids/capnp.mov"}]]
@@ -164,7 +164,7 @@
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
-             :autoplay "autoplay"
+             :autoPlay "autoplay"
              :loop "loop"
              :muted true
              :src "/vids/gibber.mov"}]]
@@ -175,7 +175,7 @@
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
-             :autoplay "autoplay"
+             :autoPlay "autoplay"
              :loop "loop"
              :muted true
              :src "/vids/strudel.mov"}]]
@@ -186,7 +186,7 @@
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
-             :autoplay "autoplay"
+             :autoPlay "autoplay"
              :loop "loop"
              :muted true
              :src "/vids/eve.mov"}]]
@@ -197,7 +197,7 @@
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
-             :autoplay "autoplay"
+             :autoPlay "autoplay"
              :loop "loop"
              :muted true
              :src "/vids/dark.mov"}]]
@@ -208,7 +208,7 @@
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
-             :autoplay "autoplay"
+             :autoPlay "autoplay"
              :loop "loop"
              :muted true
              :src "/vids/glisp.mov"}]]
@@ -219,7 +219,7 @@
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
-             :autoplay "autoplay"
+             :autoPlay "autoplay"
              :loop "loop"
              :muted true
              :src "/vids/preimp.mov"}]]
@@ -230,7 +230,7 @@
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
-             :autoplay "autoplay"
+             :autoPlay "autoplay"
              :loop "loop"
              :muted true
              :src "/vids/electric.mov"}]]
@@ -241,7 +241,7 @@
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
-             :autoplay "autoplay"
+             :autoPlay "autoplay"
              :loop "loop"
              :muted true
              :src "/vids/rslnd.mov"}]]
@@ -252,7 +252,7 @@
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
-             :autoplay "autoplay"
+             :autoPlay "autoplay"
              :loop "loop"
              :muted true
              :src "/vids/tode.mov"}]]
