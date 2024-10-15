@@ -2176,6 +2176,42 @@ OR IDEA: these are just functions. but there's an orthogonal concept of LEVELS O
 when does that function run? where? what must it poke to compute? data? other fns? user? programmer?
 
 
+
+
+---
+
+
+🧼 IDEA 2022-06-17 21:17
+
+i could write a paper about what makes lisp dev envs "special"
+
+and the kind of light interaction with plain text: paredit/parinfer: raise, wrap, slurp, barf, select forms, eval forms, top level forms, orgmode blocks and references, emacs links
+
+
+but go further then orgmode: embed (local) editor state as data within the text.
+
+have a sigil to indicate open/collapsed sections, that sigil is part of the text
+
+but it's represented as data, with possibly an attribute that keeps it local to the dev's machine
+
+`[:fn/422 :collapsed? true] <--` nope, not expressive enough as it doesn't allow attaching owner
+
+(is this the same relations-as-entities problem form sql?)
+
+```
+[:collapse/123 :fn :fn/432]
+[:collapse/123 :collapsed? true]
+[:collapse/123 :owner :node/23]
+```
+
+IDEA 2022-06-17 22:04
+
+should the editing env be componsed ONLY OF (bi/directional) LENSES acting on relational<>text transformation?
+
+
+aside: hickey: prog langs shoud focus on functions and data. (followed by circlejerk from panel: fn with data, fn as data)
+
+
 ---
 
 OH YES OOH YES
