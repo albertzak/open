@@ -104,6 +104,9 @@ window.extendCanvasContext = extendCanvasContext
 var ctx, canvasWidth, canvasHeight;
 
 function drawScene(canvas) {
+
+  console.log('drawScene', canvas)
+
   ctx = canvas.getContext("2d");
   extendCanvasContext(ctx);
 
