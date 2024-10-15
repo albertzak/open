@@ -9,11 +9,14 @@
         font-family: 'Fira Code Retina', 'Fira Code', 'Source Code Pro', 'Monaco', monospace;
       }
 
+      html, body {
+        background-color: var(--background, #000);
+      }
+
       html, body, #editor-root {
         padding: 0;
         margin: 0;
         height: 100%;
-        background-color: var(--background, #000);
         color: #fff;
       }
 
@@ -60,6 +63,12 @@
 
       #render-root *:active {
         opacity: 0.4;
+      }
+
+      #canvas {
+        position: absolute;
+        z-index: -1;
+        top: 0;
       }
 
     </style>
