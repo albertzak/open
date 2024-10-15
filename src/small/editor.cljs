@@ -108,7 +108,7 @@
           {:position :absolute
            :background :black
            :text-align :left
-           :padding "2rem"
+           :padding "1rem"
            :font-size "130%"}
           pos)}
    [:b l1]
