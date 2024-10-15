@@ -116,6 +116,15 @@
    [:span {:style {:opacity 0.9}}
     l2]])
 
+(defn video [f]
+  [:video {:style {:width "100%"
+                   :height :auto
+                   :object-fit :fill}
+           :autoPlay "autoplay"
+           :loop "loop"
+           :muted true
+           :src (str "/vids/" f)}])
+
 (def slides
   {"" nil
    nil nil
@@ -123,147 +132,64 @@
    "apx.mov"
    [:div
     [caption "APX" "McDirmid (2015)" {:right 0 :top 0}]
-    [:video {:style {:width "100%"
-                     :height :auto
-                     :object-fit :fill}
-             :autoPlay "autoplay"
-             :loop "loop"
-             :muted true
-             :src "/vids/apx.mov"}]]
+    [video "apx.mov"]]
+
    "ixi.mov"
    [:div.w-100
     [caption "ixi lang" "Magnusson (2010)" {:right 0 :bottom "2rem"}]
-    [:video {:style {:width "100%"
-                     :height :auto
-                     :object-fit :fill}
-             :autoPlay "autoplay"
-             :loop "loop"
-             :muted true
-             :src "/vids/ixi.mov"}]]
+    [video "ixi.mov"]]
 
    "task.mov"
    [:div.w-100
     [caption "TaskTXT" "Jeffery (2021)" {:right 0 :top "2rem"}]
-    [:video {:style {:width "100%"
-                     :height :auto
-                     :object-fit :fill}
-             :autoPlay "autoplay"
-             :loop "loop"
-             :muted true
-             :src "/vids/tasktxt.mov"}]]
+    [video "tasktxt.mov"]]
 
    "capnp.mov"
    [:div.w-100
     [caption "Cap'n Proto" "Varda+ (2013)" {:right 0 :top "2rem"}]
-    [:video {:style {:width "100%"
-                     :height :auto
-                     :object-fit :fill}
-             :autoPlay "autoplay"
-             :loop "loop"
-             :muted true
-             :src "/vids/capnp.mov"}]]
+    [video "capnp.mov"]]
    "gibber.mov"
    [:div.w-100
     [caption "Gibber" "Roberts+ (2015)" {:right 0 :top "10rem"}]
-    [:video {:style {:width "100%"
-                     :height :auto
-                     :object-fit :fill}
-             :autoPlay "autoplay"
-             :loop "loop"
-             :muted true
-             :src "/vids/gibber.mov"}]]
+    [video "gibber.mov"]]
 
    "strudel.mov"
    [:div.w-100
     [caption "strudel" "Roos, McLean+ (2022)" {:right 0 :top "10rem"}]
-    [:video {:style {:width "100%"
-                     :height :auto
-                     :object-fit :fill}
-             :autoPlay "autoplay"
-             :loop "loop"
-             :muted true
-             :src "/vids/strudel.mov"}]]
+    [video "strudel.mov"]]
 
    "eve.mov"
    [:div.w-100
     [caption "Eve" "Granger+ (2016)" {:right 0 :top "10rem"}]
-    [:video {:style {:width "100%"
-                     :height :auto
-                     :object-fit :fill}
-             :autoPlay "autoplay"
-             :loop "loop"
-             :muted true
-             :src "/vids/eve.mov"}]]
+    [video "eve.mov"]]
 
    "dark.mov"
    [:div.w-100
     [caption "Dark classic" "Chisa, Biggar (2018)" {:right 0 :top "1rem"}]
-    [:video {:style {:width "100%"
-                     :height :auto
-                     :object-fit :fill}
-             :autoPlay "autoplay"
-             :loop "loop"
-             :muted true
-             :src "/vids/dark.mov"}]]
+    [video "dark.mov"]]
 
    "glisp.mov"
    [:div.w-100
     [caption "Glisp" "Hashimoto (2022)" {:right 0 :top "1rem"}]
-    [:video {:style {:width "100%"
-                     :height :auto
-                     :object-fit :fill}
-             :autoPlay "autoplay"
-             :loop "loop"
-             :muted true
-             :src "/vids/glisp.mov"}]]
+    [video "glisp.mov"]]
 
    "preimp.mov"
    [:div.w-100
     [caption "preimp" "Brandon (2022)" {:right 0 :top "1rem"}]
-    [:video {:style {:width "100%"
-                     :height :auto
-                     :object-fit :fill}
-             :autoPlay "autoplay"
-             :loop "loop"
-             :muted true
-             :src "/vids/preimp.mov"}]]
+    [video "preimp.mov"]]
 
    "electric.mov"
    [:div.w-100
     [caption "Electric Clojure" "Getz, Noel+ (2023)" {:right 0 :top "1rem"}]
-    [:video {:style {:width "100%"
-                     :height :auto
-                     :object-fit :fill}
-             :autoPlay "autoplay"
-             :loop "loop"
-             :muted true
-             :src "/vids/electric.mov"}]]
+    [video "electric.mov"]]
 
    "rslnd.mov"
    [:div.w-100
-    #_[caption "Rosalind" "Fixpoint Systems GmbH (2015)" {:right 0 :top "1rem"}]
-    [:video {:style {:width "100%"
-                     :height :auto
-                     :object-fit :fill}
-             :autoPlay "autoplay"
-             :loop "loop"
-             :muted true
-             :src "/vids/rslnd.mov"}]]
+    [caption "Rosalind" "Fixpoint Systems GmbH (2015)" {:right 0 :top "1rem"}]
+    [video "rslnd.mov"]]
 
    "tode.mov"
-   [:div.w-100
-    [caption "DreamBerd" "Wilson+ (2024)" {:right 0 :top "1rem"}]
-    [:video {:style {:width "100%"
-                     :height :auto
-                     :object-fit :fill}
-             :autoPlay "autoplay"
-             :loop "loop"
-             :muted true
-             :src "/vids/tode.mov"}]]
-
-
-
-   })
+   [video "tode.mov"]})
 
 
 (defn show [k]
