@@ -206,6 +206,7 @@
 
 (defn render-caps []
   {:document js/document
+   :window js/window
    :show #'show})
 
 (defn render [comp]
