@@ -1097,7 +1097,9 @@ Informatics and the UAS Technikum Wien."
 
 ;---
 
-
+'(qa
+  lisp / clojure
+  )
 
 
 
