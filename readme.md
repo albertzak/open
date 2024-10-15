@@ -3498,30 +3498,29 @@ system analysis and design
 --
 🕺 tiny briefing
 
-agenda:  "für ein gebiet interessieren", "bisschen auskennen" und "reintigern wollen"
-state of the art: sprache, begriffe, what is embedded, what is cyber/physical?
-commission fragt evtl: "what's a cyber/phys system for you?"
+agenda: this area interests you, you know a little, and you want to fully get into it.
 
-agenda vermittelt:
-interesse.
-nur ein bisschen abgrenzen.
-was gibts da schon?
-was sind offene fragen?
-evtl. bezug?
-relevanz methodik
+state of the art: language, terms, what is embedded, what is cyber/physical (gahh that weird term)
 
-tlw. sehr großzügug? (hat auch eine lady die da data science macht)
-aktuelle workshops sind besser als konferenzen
-aktuelle eu forschungsprojekte sind gut
+commission may ask: what's a cyber/phys system for you?
 
+agenda conveys: interest. just a little demarcated. what's there already? what are open questions? what's the relevance (why is this important?) + methods.
 
-zwei iterationen, grober draft im format.
-final draft, probevortag üben jetzt noch nicht nötig.
-march 24 mitternacht abgabe deadline.
+can be very broad (has a lady who does data science in the embedded college)
 
-erlang talk im letter of intent erwähnen
+current workshops are better than conferences
+
+current eu research projects are good
+
+2 iterations, raw draft in format
+
+final draft, staged presentation rehearsing not yet necessary
+
+deadline midnight 2020-04-24
+
+put ref to erlang talk in letter of intent
+
 5 topics/keywords?
-will draft im letter sehen?
 
 eu standard cv
 
