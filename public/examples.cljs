@@ -1097,8 +1097,11 @@ Informatics and the UAS Technikum Wien."
 
 ;---
 
-'(qa
-  lisp / clojure
+'(open-q
+  deleting
+  dynamic sets
+  
+
   )
 
 
