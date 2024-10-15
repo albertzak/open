@@ -163,13 +163,15 @@ what's the identity of a piece of code, a defn?
 
 
 
-### Toots hatchery
+### [🐣 Toots](https://clj.social/@albertzak) hatchery
 
 trying to be more social. i get cold sweat anytime i talk to someone.
 
 "[@todepond: why is everyone so obsessed with alan kay and bret victor] you forgot rich hickey. men men men <3"
 
 "berd victor"
+
+"is that now the worst piece of code on this githubs?"
 
 
 
