@@ -1114,9 +1114,12 @@ Informatics and the UAS Technikum Wien."
 
    see run time values + viz
    self-rewriting query macro
-   pull deployment
+   say what should run where
    focus context
-   capabilities)
+   capability security)
+
+;---
 
 
+; confetti hearts ❤️
 
