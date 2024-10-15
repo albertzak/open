@@ -98,6 +98,7 @@ preempt reviewer Qs (from simple to deep)
   - all state is usually kept ONE place
     - state = identity = succession of values over time
       - immutable, inspectable, printable etc
+    - except closures
   - hold on to intermediate steps of a computation, anywhere
     - look at anything. it won't change from under you. and it's serializable, copypasteable, stable basis for comparison etc
 
