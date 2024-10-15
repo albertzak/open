@@ -157,7 +157,7 @@
              :src "/vids/capnproto.mov"}]]
    "gibber"
    [:div.w-100
-    [caption "Gibber" "Roberts+ (2015)" {:right 0 :top "2rem"}]
+    [caption "Gibber" "Roberts+ (2015)" {:right 0 :top "5rem"}]
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
@@ -168,7 +168,7 @@
 
    "strudel"
    [:div.w-100
-    [caption "strudel" "Roos, McLean+ (2022)" {:right 0 :bottom "2rem"}]
+    [caption "strudel" "Roos, McLean+ (2022)" {:right 0 :top "10rem"}]
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
