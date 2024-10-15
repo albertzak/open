@@ -94,6 +94,4 @@ function extendCanvasContext(ctx) {
   }
 }
 
-module.exports = {
-  resetRandom, tween, random, lerp, extendCanvasContext
-}
+window.resetRandom = resetRandom
