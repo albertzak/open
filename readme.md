@@ -105,7 +105,7 @@ preempt reviewer Qs (from simple to deep)
 
 - caps and liveness
   - i do think caps are a great fit in these live systems
-  - haven't seen this combination except maybe genode
+  - haven't seen this combination except maybe *genode sculpt?*
   - more generally for working inside stateful systems (OO in the large)
     - kay: "we made objects too small"
       - i agree. OO in the large is not only inevitable but feels reasonable to work with in a live system like this. reifying physical places!
