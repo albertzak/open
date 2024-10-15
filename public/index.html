@@ -99,21 +99,6 @@
 
 
     <script type="module">
-      window.jsImport = async (url) => {
-
-        console.log('jsImport ! ', url)
-
-        // offline for talk
-        if (url === 'https://esm.sh/canvas-confetti@1.6.0$default') {
-          console.log('rewriting url')
-          url = '/confetti.js'
-        }
-
-        const p = await import(url)
-        console.log('jsImport', p)
-        return p
-      }
-
       const ident = window.location.hash.split('#')[2]
       document.title = '*' + ident
     </script>
