@@ -109,7 +109,7 @@
            :background :black
            :text-align :left
            :padding "2rem"
-           :font-size "200%"}
+           :font-size "130%"}
           pos)}
    [:b l1]
    [:br]
