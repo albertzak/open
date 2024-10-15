@@ -25,7 +25,7 @@
 
 "This work has been supported by the Doctoral College Resilient
 Embedded Systems, which is run jointly by the TU Wien's Faculty of
-Informatics and the UAS Technikum Wien."
+Informatics and the UAS Technikum Wien."|
 
 '(2020 - 2024)
 
@@ -38,7 +38,7 @@ Informatics and the UAS Technikum Wien."
 
 '(2020 - 2024)
 
-'(now looking for funding)
+'(now looking for funding|)
 
 
 
