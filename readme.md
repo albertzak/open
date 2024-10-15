@@ -73,6 +73,8 @@ add motifn, dreamberd
 
 
 
+explain before during demo:
+
 - how to connect node, specify caps
   - show after rpi is blinking first
 
