@@ -145,7 +145,7 @@
              :muted true
              :src "/vids/tasktxt.mov"}]]
 
-   "capn"
+   "capnp"
    [:div.w-100
     [caption "Cap'n Proto" "Varda+ (2013)" {:right 0 :top "2rem"}]
     [:video {:style {:width "100%"

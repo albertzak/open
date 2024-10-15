@@ -40,7 +40,7 @@
 ;%
 
 ;---
-! (editor (slide "capn|"))
+! (editor (slide "capnp|"))
 ;%
 
 ;%
@@ -58,6 +58,13 @@
 ;%
 
 ;%
+
+;---
+! (editor (slide "glisp|"))
+;%
+
+;%
+
 
 
 ;---
