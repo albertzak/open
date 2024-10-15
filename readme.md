@@ -2582,6 +2582,56 @@ impose coordination on changes
 
 
 
+
+---
+
+DC-RES Journals/Confs
+
+hierarchy:
+- transactions
+- journal == tier a conferences
+- magazines == tier b
+
+- goal: 1-2 phd poster submissions around prof exam
+- phd forum deadline earliest last week of 2022-01
+
+employment until sept to "volunteer" at srds
+
+3 areas: --> need to start with programming language aspects before dependability
+- programming languages
+- sw-engineering
+- dependability
+
+
+
+- SIGPLAN sponsors four major annual conferences
+  - International Conference on Functional Programming (ICFP), the Conference on Programming Language Design and Implementation (PLDI), the Symposium on Principles of Programming Languages (POPL), and the conference on Systems, Programming, Languages, and Applications (SPLASH)
+  - info: ACM OOPSLA & Onward are Tracks of SPLASH
+
+
+DEAD
+  - ACM SIGPLAN DYLA: Dynamic Languages and Applications (RIP 2014)
+  - ACM SIGPLAN ASID: Architectural and System Support for Improving Software Dependability (RIP 2006)
+  - ACM SIFPLAN ICFP: International Conference on Functional Programmuing (RIP 2016)
+  - ACM SIGPLAN SDE: Software Development Environments (RIP 1992)
+  - ACM SIGPLAN SLIPE: Symposium on Language Issues in Programming Environments (RIP 1985)
+  - 10s of lisp/smalltalk confs from the 90s
+
+
+
+UNSURE
+  - ACM SIGPLAN POPL Principles of Programming Languages (conf yearly)
+  - ACM PACMPL ICFP (conf yearly, hardcore haskell/ocaml/minikanren/elm)
+  - ACM SIGPLAN ICSE: International Conference on Software Engineering, conf, yearly
+  - ACM SIGPLAN MPLR: Managed Programming Languages and Runtimes (conf yearly since 2019)
+  - ACM SIGPLAN PPDP: Principles and Practice of Declarative Programming (symposium yearly)
+  - ACM SIGPLAN REBLS: Reactive and Event-based Languages & Systems (workshop yearly)
+  - ACM PACMHCI Proceedings of the ACM on Human-Computer Interaction - socoiology
+  - IEEE ICDCS International Conference on Distributed Computing Systems
+
+
+
+
 ### December 2021
 
 DC-RES Talk Abstract: **Human-first interactive programming systems**
