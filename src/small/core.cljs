@@ -19,7 +19,8 @@
 
 (defn dynamic-import-intercept [url]
   (if (= url "https://esm.sh/canvas-confetti@1.6.0$default")
-    (dynamic-import "/confetti.js")
+    (-> (dynamic-import "/confetti.js")
+        (p/then (fn [] js/window.confetti)))
     (dynamic-import url)))
 
 (defonce state (r/atom nil))
