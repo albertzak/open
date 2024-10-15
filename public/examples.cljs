@@ -917,6 +917,22 @@ Informatics and the UAS Technikum Wien."
 
 
 
+
+;---
+
+
+'(discussion)
+
+
+
+;--- ! (editor (show "rslnd|.mov"))
+;%
+
+;%
+
+
+;---
+
 '(discussion
    
    > hobbyists
@@ -1039,11 +1055,6 @@ Informatics and the UAS Technikum Wien."
 ;%
 
 
-;---
-! (editor (show "rslnd|.mov"))
-;%
-
-;%
 
 
 ;---
