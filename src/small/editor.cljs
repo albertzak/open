@@ -157,7 +157,7 @@
              :src "/vids/capnproto.mov"}]]
    "gibber"
    [:div.w-100
-    [caption "Gibber" "Roberts+ (2015)" {:right 0 :top "5rem"}]
+    [caption "Gibber" "Roberts+ (2015)" {:right 0 :top "10rem"}]
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
@@ -179,7 +179,7 @@
 
    "eve"
    [:div.w-100
-    [caption "Eve" "Granger+ (2016)" {:right 0 :top "5rem"}]
+    [caption "Eve" "Granger+ (2016)" {:right 0 :top "10rem"}]
     [:video {:style {:width "100%"
                      :height :auto
                      :object-fit :fill}
