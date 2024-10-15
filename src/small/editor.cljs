@@ -125,7 +125,7 @@
     [caption "APX" "McDirmid (2015)" {:right 0 :top 0}]
     [:img {:style {:width "100%"
                    :height :auto}
-           :src "/vids/apx.mov"}]]
+           :src "/vids/x.mov"}]]
    "ixi.mov"
    [:div.w-100
     [caption "ixi lang" "Magnusson (2010)" {:right 0 :bottom "2rem"}]
@@ -262,7 +262,7 @@
    })
 
 
-(defn slide [k]
+(defn show [k]
   [:div.w-100 {:style {:padding "1rem"}}
    (get slides k (str "no slide: " k))])
 
@@ -274,7 +274,7 @@
 
 (defn render-caps []
   {:document js/document
-   :slide #'slide})
+   :show #'show})
 
 (defn render [comp]
   (let [comp
