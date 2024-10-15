@@ -207,6 +207,7 @@
 (defn render-caps []
   {:document js/document
    :window js/window
+   :getElementById (fn [i] (js/document.getElementById i))
    :show #'show})
 
 (defn render [comp]
