@@ -268,9 +268,9 @@
 
 (defn global-scope []
   {'clear (fn [] (fn [{:keys [render]}] (render [:div])))
-   'slide (fn [k]
+   'show (fn [k]
             (fn [{:keys [render]}]
-              (render (slide k))))})
+              (render (show k))))})
 
 (defn render-caps []
   {:document js/document
