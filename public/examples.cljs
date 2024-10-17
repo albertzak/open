@@ -1069,7 +1069,6 @@ Informatics and the UAS Technikum Wien."
 
 '(conclusion|
 
-   see run time values + viz
    query macro
    deployment
    context
