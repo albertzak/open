@@ -21,7 +21,6 @@
 
 ;---
 
-:hello world
 
 
 
@@ -39,7 +38,6 @@ Informatics and the UAS Technikum Wien."|
 
 ;---
 
-:hello world
 
 
 
@@ -192,7 +190,6 @@ Informatics and the UAS Technikum Wien."
 ;
 
 ;---
-;  pause!  % you can use as simple todo ;%
 
 
 ; performance (60+ fps)
@@ -203,8 +200,7 @@ Informatics and the UAS Technikum Wien."
     (rerun 0)))
 
 ;---
-! (do ; very litew plain comput nb
-;%
+! (do
     (def todos
       '[|(:buy oranges peppers)
         #_(:clean code) 
@@ -217,55 +213,13 @@ Informatics and the UAS Technikum Wien."
     (? :a3e297bc (frequencies (map first todos))
       '{:buy 1})
 
+
+
+
+
+
 ;%
     )
-;---
-
-
-! (do
-;%
-    (def workouts
-      '[["2024-01-11" A
-         {:sq 4|4 :bp 38.5 :dl 88}]
-        ["2024-01-06" B
-         {:sq 42.25 :bp 38.5 :dl 86.5}]
-        ["2024-01-04" A
-         {:sq 42.25 :bp 38.5 :dl 86}]])
-
-    (? :next-weights
-      (-> workouts first last
-        (update-vals #(int (* % 1.03))))
-      {:sq 45,:bp 39,:dl 90})
-
-
-;%
-
-)
-
-
-
-;---
-
-! (do; smol calc scrtchp, 1d exc d&c plane, and ofc coding
-;%
-    (def portfolio 25000)
-    (def return 1.04)
-    (def years 3|5)
-    (def nw (* portfolio
-               (** return years)))
-
-    (? :ca148f13 (int nw) 98652)
-    (? :eddecbe5 (int (/ (* nw (dec return)) 12))
-      328)
-
-;%
-
-)
-
-
-
-;---
-
 
 ! (do (defn is [x] (if x "✅" "❌"))
     (editor
@@ -310,7 +264,6 @@ Informatics and the UAS Technikum Wien."
 
 
 ;---
-; (def rpi_ ;%
 
 
 ; distributed system
@@ -319,7 +272,6 @@ Informatics and the UAS Technikum Wien."
 
 
 ;---
-; (node ~ ? caps ~ let's ;%
 
 
 ; distributed system
@@ -329,7 +281,6 @@ Informatics and the UAS Technikum Wien."
 
 
 ;---
-;           > ;%
 
 
 ; distributed system
