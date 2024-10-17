@@ -91,7 +91,7 @@ Informatics and the UAS Technikum Wien."
     (defn say-hi [x]
       (str "Hello " x))
 
-    (say-hi "Live")
+    (say-hi "LIVE")
 
 
 
