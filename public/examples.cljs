@@ -1070,10 +1070,10 @@ Informatics and the UAS Technikum Wien."
 '(conclusion|
 
    see run time values + viz
-   self-rewriting query macro
-   say what should run where
-   focus context
-   capability security)
+   query macro
+   deployment
+   context
+   caps)
 
 ;---
 
@@ -1083,6 +1083,5 @@ Informatics and the UAS Technikum Wien."
 
     albertzak.com
     open practice
-    everything i do is open source
 
 
