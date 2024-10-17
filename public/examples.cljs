@@ -852,6 +852,11 @@ Informatics and the UAS Technikum Wien."
 
 
 
+;--- ! (editor (show|))
+;%
+
+;%
+
 ;--- ! (editor (show "rslnd|.mov"))
 ;%
 
@@ -875,6 +880,10 @@ Informatics and the UAS Technikum Wien."
 
 
 
+;--- ! (editor (show|))
+;%
+
+;%
 
 ;---
 ! (editor (show "task|.mov"))
@@ -955,6 +964,10 @@ Informatics and the UAS Technikum Wien."
 
 
 
+;--- ! (editor (show|))
+;%
+
+;%
 
 ;---
 ! (editor (show "glisp|.mov"))
@@ -1009,6 +1022,11 @@ Informatics and the UAS Technikum Wien."
    communication)
 
 
+
+;--- ! (editor (show|))
+;%
+
+;%
 
 ;---
 ! (editor (show "electric|.mov"))
@@ -1065,4 +1083,6 @@ Informatics and the UAS Technikum Wien."
 
     albertzak.com
     open practice
+    everything i do is open source
+
 
