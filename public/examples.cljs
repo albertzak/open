@@ -858,10 +858,10 @@ Informatics and the UAS Technikum Wien."
 ;%
 
 
-;---
+;--- ! (editor (show|))
+;%
 
-(editor (show |))
-
+;%
 
 ;---
 
@@ -932,9 +932,10 @@ Informatics and the UAS Technikum Wien."
 
 
 ;---
+! (editor (show|))
+;%
 
-(editor (show |))
-
+;%
 
 
 
@@ -986,9 +987,10 @@ Informatics and the UAS Technikum Wien."
 
 
 ;---
+! (editor (show |))
+;%
 
-(editor (show |))
-
+;%
 
 
 
@@ -1017,8 +1019,11 @@ Informatics and the UAS Technikum Wien."
 
 
 ;---
+! (editor (show|))
+;%
 
-(editor (show |))
+;%
+
 
 ;---
 
