@@ -288,18 +288,6 @@ Informatics and the UAS Technikum Wien."
 (def rpi :c98d5645c97db5d0be4fc9db)
 
 ! (node rpi
-    (fn [{:keys [gpio0 gpio5 gpio6|]}]))
-
-
-;---
-;           ...the editor is also ;%
-
-
-; distributed system
-
-(def rpi :c98d5645c97db5d0be4fc9db)
-
-! (node rpi
     (fn [{:keys [gpio0 gpio5 gpio6]}]
       (gpio0 false)
       (gpio5 false)
@@ -393,32 +381,6 @@ Informatics and the UAS Technikum Wien."
     (fn [{:keys [serial0 stateful lcd-write!]}]
       (let [s0 (stateful :f226b752 #(serial0))]|)))
 
-
-
-;---
-(def rpi :c98d5645c97db5d0be4fc9db) ;%
-
-
-; stateful subexpr
-
-! (node rpi
-    (fn [{:keys [serial0 stateful lcd-write!]}]
-      (let [s0 (stateful :f226b752 #(serial0))]
-        (lcd-write! s0
-          "Hello Joe        > Hello Mike "|))))
-
-
-;---
-(def rpi :c98d5645c97db5d0be4fc9db) ; ok fine ;%
-
-
-; stateful subexpr
-
-! (node rpi
-    (fn [{:keys [serial0 stateful lcd-write!]}]
-      (let [s0 (stateful :f226b752 #(serial0))]
-        (lcd-write! s0
-          "System working?  > Seems to be"|))))
 
 
 ;---
