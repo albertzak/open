@@ -1000,7 +1000,7 @@ Informatics and the UAS Technikum Wien."
 ;---
 
 
-'(nope
+'(nope|
 
    errors
    codebase
@@ -1028,7 +1028,7 @@ Informatics and the UAS Technikum Wien."
 ;---
 
 
-'(near-future
+'(near-future|
 
    editor extensions
    secure enough
@@ -1037,7 +1037,7 @@ Informatics and the UAS Technikum Wien."
 
 ;---
 
-'(open-qs
+'(open-qs|
 
    deleting
    dynamic sets
@@ -1049,7 +1049,7 @@ Informatics and the UAS Technikum Wien."
 ;---
 
 
-'(conclusion
+'(conclusion|
 
    see run time values + viz
    self-rewriting query macro
@@ -1059,8 +1059,6 @@ Informatics and the UAS Technikum Wien."
 
 ;---
 
-
-; confetti hearts ❤️
 
     '(thank-you!)
 
