@@ -103,15 +103,6 @@ Informatics and the UAS Technikum Wien."
       pretty|
       say-hi)
 
-    (->> '(1 2 3 4)
-      (map inc)
-      (concat [0 1])
-      (reverse)
-      (filter even?))
-
-
-
-
 
 
 
