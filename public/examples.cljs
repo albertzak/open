@@ -245,7 +245,7 @@
 ;---
 
 
-; custom context 
+; context 
 
 
 
@@ -334,7 +334,7 @@
 
 
 
-; custom context 
+; context 
 
 (context #{[:user "dave"]}
   (defn document-viewer [doc]
