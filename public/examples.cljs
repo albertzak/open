@@ -321,8 +321,6 @@
 
 
 ;---
-(def rpi :c98d5645c97db5d0be4fc9db)
-
 
 ; state & supervision
 
@@ -343,8 +341,6 @@
 
 ; stateful subexpr
 
-(def rpi :c98d5645c97db5d0be4fc9db)
-
 ! (node rpi
     (fn [{:keys [usbserial stateful|]}]))
 
@@ -355,8 +351,6 @@
 
 ; stateful subexpr
 
-(def rpi :c98d5645c97db5d0be4fc9db)
-
 ! (node rpi
     (fn [{:keys [usbserial stateful]}]
       (let [sensor (stateful :dewfqewa #(usbserial {:baud 19200}))]|)))
@@ -366,26 +360,12 @@
 ;---
 
 
-
-
-; process reconciliation
-
-
-(def rpi :c98d5645c97db5d0be4fc9db)
-
-
-
 ; process reconciliation
 
 ! (node rpi
-    {:red (blink 120 :gpio0)
+    {|:red (blink 120 :gpio0)
      :yellow (blink 160 :gpio5)
      :green (blink 180 :gpio6)})
-
-
-
-
-|
 
 
 
@@ -398,7 +378,7 @@
 
 
 ;---
-(declare sense);%
+(declare sense)
 
 
 ; query context
@@ -413,7 +393,7 @@
 
 
 ;---
-(declare sense);%
+(declare sense)
 
 
 ; query context
@@ -430,7 +410,7 @@
 
 
 ;---
-(declare sense) ;    defn co2 ppm.. % custom ;%
+(declare sense)
 
 
 ; query context
@@ -605,7 +585,6 @@
 
 
 ;---
-(def rpi :c98d5645c97db5d0be4fc9db) ;%
 
 
 ; inline visualization
@@ -637,7 +616,6 @@
 
 
 ;---
-(def rpi :c98d5645c97db5d0be4fc9db) ;%
 
 
 ; inline visualization
@@ -674,7 +652,6 @@
 
 
 ;---
-(def rpi :c98d5645c97db5d0be4fc9db) ;%
 
 
 ; context viz
@@ -721,7 +698,6 @@
 
 
 ;---
-(def rpi :c98d5645c97db5d0be4fc9db)
 
 
 ; history viz
@@ -757,7 +733,7 @@
 
 
 ;---
-(declare viz history avg val) ;%
+(declare viz history avg val)
 
 
 ; html viz
