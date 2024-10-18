@@ -338,20 +338,24 @@
 
 
 ;---
-(def rpi :c98d5645c97db5d0be4fc9db)
+
 
 
 ; stateful subexpr
+
+(def rpi :c98d5645c97db5d0be4fc9db)
 
 ! (node rpi
     (fn [{:keys [usbserial stateful|]}]))
 
 
 ;---
-(def rpi :c98d5645c97db5d0be4fc9db)
+
 
 
 ; stateful subexpr
+
+(def rpi :c98d5645c97db5d0be4fc9db)
 
 ! (node rpi
     (fn [{:keys [usbserial stateful]}]
@@ -367,44 +371,7 @@
 ; process reconciliation
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 (def rpi :c98d5645c97db5d0be4fc9db)
-
-! (node rpi
-    (fn [{:keys [serial0 stateful lcd-write!]}]
-      (let [s0 (stateful :f226b752 #(serial0))]
-        (lcd-write! s0
-          ""))))
-
-(defn blink [ms pin]
-  (fn [{:keys [rerun] :as caps}]
-    (-> (wait 0)
-      (then #((caps pin) true))
-      (then #(wait ms))
-      (then #((caps pin) false))
-      (then #(rerun ms)))))
-
-
-
-
-
 
 
 
