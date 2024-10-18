@@ -299,11 +299,11 @@
 
 
   (editor
-    (fn [{:keys [theme help line-numbers import]}]
+    (fn [{:keys [import]}]
       (then
         (import "https://esm.sh/canvas-confetti@1.6.0$default")
         (fn [c]
-          (? :bc9992a3 (c) _))))))
+          (? :bc9992a3 (c) _)))))
 
 ;---
 
