@@ -627,6 +627,13 @@
 (defn parse-int [x]
   (js/parseInt x))
 
+(defn pretty [x]
+  (str "✨ " x " ✨"))
+
+(defn say-hi [x]
+  (str "Hello " x))
+
+
 (defn then [^js o f]
   (.then o (fn [x]
              (f x))))
@@ -674,6 +681,8 @@
       ; for demo to save screen space. todo: figure out codebase mgmt
       'rpi :c98d5645c97db5d0be4fc9db
       'sense identity
+      'pretty pretty
+      'say-hi say-hi
 
       'then then
       'promise promise
@@ -720,7 +729,7 @@
 
       'nuke!! nuke!! ;; todo: some bindings should be privileged & only available in the editor
       }
-      (:global-scope @state))}))
+     (:global-scope @state))}))
 
 (defn full-eval [doc]
   (swap! state assoc :ctx (make-ctx)) ; fresh context for full eval

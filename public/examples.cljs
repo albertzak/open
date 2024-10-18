@@ -79,11 +79,6 @@
 
     ; functions
 
-    (defn pretty [x]
-      (str "✨ " x " ✨"))
-
-    (defn say-hi [x]
-      (str "Hello " x))
 
     (say-hi "LIVE")
 
@@ -369,29 +364,6 @@
 
 
 
-
-
-
-;---
-
-
-
-; stateful subexpr
-
-! (node rpi
-    (fn [{:keys [usbserial stateful|]}]))
-
-
-;---
-
-
-
-; stateful subexpr
-
-! (node rpi
-    (fn [{:keys [usbserial stateful]}]
-      (let [sensor (stateful :dewfqewa 
-                     #(usbserial {:baud 19200}))]|)))
 
 
 ;---
@@ -916,13 +888,6 @@
 
 ;---
 ! (editor (show "strudel|.mov"))
-;%
-
-;%
-
-
-;---
-! (editor (show "glisp|.mov"))
 ;%
 
 ;%
