@@ -310,8 +310,6 @@
 
 ; open world
 
-(def rpi :c98d5645c97db5d0be4fc9db)
-
 ! (node rpi
     (fn [{:keys [slurp]}]
       (slurp "/")))
