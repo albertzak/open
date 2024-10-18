@@ -751,16 +751,13 @@
 
 
 (node rpi
-  (fn [{:keys [usbserial stateful}]
-
-
-(defn gen [{:keys [rerun]}]
-  (val (? :ca5d4105 (random 100) 40))
-  (rerun 1400))
-
-(editor gen)
-
-
+  (fn [{:keys [usbserial stateful]}]
+    (let [sensor (stateful :dewfqewa #(usbserial {:baud 19200}))]
+      (? :ab219224 sensor #fn :f66367b3)
+      
+      (sensor
+        (fn [cm]
+          (? :ce8101bf cm graph _))))))
 
 
 ;---
