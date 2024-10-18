@@ -624,6 +624,9 @@
          {:bound-fn? true
           :unbound-fn ~f#}))))
 
+(defn parse-int [x]
+  (js/parseInt x))
+
 (defn then [^js o f]
   (.then o (fn [x]
              (f x))))
@@ -665,6 +668,8 @@
       '?- #'?- ; "paused" passthru variants
       '?>- #'?>-
       '?>>- #'?>>-
+
+      'parse-int parse-int
 
       'then then
       'promise promise
