@@ -374,6 +374,14 @@
 
 ; process reconciliation
 
+(defn blink [ms pin]
+  (fn [{:keys [rerun] :as caps}]
+    (-> (wait 0)
+      (then #((caps pin) true))
+      (then #(wait ms))
+      (then #((caps pin) false))
+      (then #(rerun ms)))))
+
 ! (node rpi
     {|:red (blink 120 :gpio0)
      :yellow (blink 160 :gpio5)
