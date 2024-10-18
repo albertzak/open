@@ -750,6 +750,8 @@
                   :width 20}}]))))]])
 
 
+(node rpi
+  (fn [{:keys [usbserial stateful}]
 
 
 (defn gen [{:keys [rerun]}]
