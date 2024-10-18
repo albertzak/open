@@ -55,7 +55,7 @@
               :path device-path})))
           rlp (ReadlineParser.)]
       (.pipe s rlp)
-      (.on "data" rlp (fn [d] (@rx-cb d)))
+      (.on rlp "data" (fn [d] (@rx-cb d)))
       (fn [on-rx]
         (reset! rx-cb on-rx)))))
 
