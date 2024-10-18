@@ -344,7 +344,7 @@
 ; stateful subexpr
 
 ! (node rpi
-    (fn [{:keys [serial0 stateful lcd-write!|]}]))
+    (fn [{:keys [usbserial stateful|]}]))
 
 
 ;---
@@ -354,8 +354,8 @@
 ; stateful subexpr
 
 ! (node rpi
-    (fn [{:keys [serial0 stateful lcd-write!]}]
-      (let [s0 (stateful :f226b752 #(serial0))]|)))
+    (fn [{:keys [usbserial stateful]}]
+      (let [sensor (stateful :dewfqewa #(usbserial {:baud 19200}))]|)))
 
 
 
