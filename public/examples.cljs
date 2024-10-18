@@ -786,11 +786,11 @@
 
 '(discussion
    
-   > hobbyists
-   > solo devs
+   > hobbyists, solo devs
    
-   > fun
-   > low ceremony)
+   > fun, low ceremony
+
+   > lisp? clojure!)
 
 
 
