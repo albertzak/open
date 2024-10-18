@@ -1,22 +1,50 @@
 
 
 
+
+
+
 (editor (fn [{:keys [line-numbers import render]}]
           (render nil)
           (-> "https://esm.sh/canvas-confetti@1.6.0$default"
             (import)
             (then (fn [c]
-                    (? :bc9992a2 (c) _))))
+                    (? :bc9992a2 (c) #promise [:e71b5034 :fulfilled nil]))))
           (line-numbers false)))
 
 (def rpi :c98d5645c97db5d0be4fc9db)
 
+(defn history [vs]
+  (->> vs (map :value)))
+
+(defn graph [vs]
+  ^:?/block
+  [:div
+   [into [:div.d-flex.flex-end.h100]
+    (let [vs (->> vs (map (comp parse-int :value)))]
+      (->> vs
+        (map (fn [v]
+               [:div.bg-green
+                {:style
+                 {:height (* 100 (/ v (apply max vs)))
+                  :width 20}}]))))]])
+
+
+
 (node rpi
-  (fn [{:keys [serial0 stateful lcd-write!]}]
-    (let [s0 (stateful :f226b752 #(serial0))]
-      (lcd-write! s0 ""))))
-
-
+  (fn [{:keys [usbserial stateful lcd-write!
+               gpio0 gpio5 gpio6]}]
+    (let [sensor (stateful :dewfqewa #(usbserial {:baud 19200}))]
+      (? :ab219224 sensor #fn :f66367b3)
+      
+      (sensor
+        (fn [cm]
+          (? :ce8101bf (parse-int cm) 95))))
+    (prn :ok)
+    (gpio0 false)
+    (gpio5 false)
+    (gpio6 false)
+    ))
 
 
 ;---
@@ -275,17 +303,9 @@
       (then
         (import "https://esm.sh/canvas-confetti@1.6.0$default")
         (fn [c]
-          (? :bc9992a3 (c) _))))
-      (help false)
-      (line-numbers false)
-      (theme
-        {:keyword "#e494ff"
-         :function "#ffe200"
-         :string "#a3f49e"})))
+          (? :bc9992a3 (c) _))))))
 
 ;---
-
-; /sys/block/ram1/size  /proc/stat ; next: state ;%
 
 
 ; open world
@@ -318,7 +338,7 @@
 
 
 ;---
-(def rpi :c98d5645c97db5d0be4fc9db) ;%
+(def rpi :c98d5645c97db5d0be4fc9db)
 
 
 ; stateful subexpr
@@ -328,7 +348,7 @@
 
 
 ;---
-(def rpi :c98d5645c97db5d0be4fc9db) ;%
+(def rpi :c98d5645c97db5d0be4fc9db)
 
 
 ; stateful subexpr
