@@ -3,7 +3,7 @@
             [clojure.string :as s]
 
             [promesa.core :as p]
-            [serialport :refer [SerialPort]]
+            [serialport :refer [SerialPort ReadlineParser]]
             [fs]
             [os]
             [child_process]
@@ -45,12 +45,19 @@
 (defn attenuate-serial
   [device-path]
   (fn open [{:keys [baud] :as opts}]
-    (SerialPort.
-     (clj->js
-      (merge
-       opts
-       {:baudRate (or baud 9600)
-        :path device-path})))))
+    (let [rx-cb (atom identity)
+          s
+          (SerialPort.
+           (clj->js
+            (merge
+             opts
+             {:baudRate (or baud 9600)
+              :path device-path})))
+          rlp (ReadlineParser.)]
+      (.pipe s rlp)
+      (.on "data" rlp (fn [d] (@rx-cb d)))
+      (fn [on-rx]
+        (reset! rx-cb on-rx)))))
 
 
 (def commands
@@ -72,7 +79,12 @@
         (.write s #js [0xFE (+ 0x80 64)])
         (.write s l2)))))
 
+(defn on-rx [^js s f]
+  ()
+  )
+
 (defn rpi-caps []
+
   (when (try (.readFileSync fs "/proc/device-tree/model" "ascii") true
              (catch :default _ false))
     {:lcd-command! lcd-command!
