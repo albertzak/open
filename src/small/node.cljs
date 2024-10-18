@@ -77,7 +77,9 @@
              (catch :default _ false))
     {:lcd-command! lcd-command!
      :lcd-write! lcd-write!
+     :serial (attenuate-serial "/dev/serial")
      :serial0 (attenuate-serial "/dev/serial0")
+     :serial1 (attenuate-serial "/dev/serial1")
      :gpio0 (attenuate-gpio 27)
      :gpio5 (attenuate-gpio 29)
      :gpio6 (attenuate-gpio 31)}))
