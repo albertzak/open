@@ -356,6 +356,18 @@
       (let [sensor (stateful :dewfqewa #(usbserial {:baud 19200}))]|)))
 
 
+;---
+
+
+
+; stateful subexpr
+
+! (node rpi
+    (fn [{:keys [usbserial stateful]}]
+      (let [sensor (stateful :dewfqewa #(usbserial {:baud 19200}))]
+        (sensor (fn [cm] |cm)))))
+
+
 
 ;---
 
@@ -372,7 +384,7 @@
 
 
 
-;
+
 
 
 
