@@ -77,6 +77,7 @@
              (catch :default _ false))
     {:lcd-command! lcd-command!
      :lcd-write! lcd-write!
+     :usbserial (attenuate-serial "/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_AH00PSLI-if00-port0")
      :serial (attenuate-serial "/dev/serial")
      :serial0 (attenuate-serial "/dev/serial0")
      :serial1 (attenuate-serial "/dev/serial1")
