@@ -847,21 +847,8 @@
 
 
 
-;--- ! (editor (show "tode|.mov"))
-;%
-
-;%
-
-
-
 ;---
 ! (editor (show "ixi|.mov"))
-;
-
-;%
-
-;---
-! (editor (show "motifn|.mov"))
 ;
 
 ;%
@@ -881,36 +868,6 @@
 
 ;%
 
-
-;---
-! (editor (show|))
-;%
-
-;%
-
-
-
-
-
-
-;---
-
-(def deps
-  [:small-clojure-interpreter
-   :rewrite-clj
-   :zprint
-   :codemirror
-   :lezer
-   :clojure-mode])
-
-
-
-
-
-;--- ! (editor (show|))
-;%
-
-;%
 
 ;---
 ! (editor (show "glisp|.mov"))
