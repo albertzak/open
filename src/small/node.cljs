@@ -55,8 +55,11 @@
               :path device-path})))
           rlp (ReadlineParser.)]
       (.pipe s rlp)
-      (.on rlp "data" (fn [d] (@rx-cb d)))
+      (.on rlp "data" (fn [d]
+                        (js/console.log "on-data" d)
+                        (@rx-cb d)))
       (fn [on-rx]
+        (js/console.log "reset-rx-cb" on-rx)
         (reset! rx-cb on-rx)))))
 
 
