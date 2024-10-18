@@ -733,25 +733,23 @@
 
 
 ;---
-(declare viz history avg val)
 
 
 ; html viz
 
-(defn val [x]
-  (? :e130ed5d x 40))
-
-(defn viz [rs]
+(defn graph [vs]
   ^:?/block
   [:div
    [into [:div.d-flex.flex-end.h100]
-    (->> rs
-      (map :value)
-      (map (fn [x]
-             [:div.bg-green
-              {:style
-               {:height x
-                :width 20}}])))]])
+    (let [vs (->> vs (map (comp parse-int :value)))]
+      (->> vs
+        (map (fn [v]
+               [:div.bg-green
+                {:style
+                 {:height (* 100 (/ v (apply max vs)))
+                  :width 20}}]))))]])
+
+
 
 
 (defn gen [{:keys [rerun]}]
