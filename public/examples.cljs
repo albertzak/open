@@ -408,7 +408,6 @@
 
 
 ;---
-(declare sense)
 
 
 ; query context
@@ -423,7 +422,6 @@
 
 
 ;---
-(declare sense)
 
 
 ; query context
@@ -440,7 +438,6 @@
 
 
 ;---
-(declare sense)
 
 
 ; query context
