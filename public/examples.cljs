@@ -75,18 +75,8 @@
   (fn [] ;%
 
 
+
     
-
-    ; functions
-
-
-    (say-hi "LIVE")
-
-
-
-
-    ; threading macros
-
     (-> "LIVE"
       pretty|
       say-hi)
