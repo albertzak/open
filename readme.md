@@ -134,6 +134,7 @@ getting rid of things?
   - deleting text may or may not carry the intent of stopping that
     - think unison scratchpad
   - or creation/deletion may take very long (weeks for offline nodes?)
+    - dependencies, docker containers, etc
     - how to show in the editor what nodes run what code?
       - only if i want to see that, and then preferably in plain text as well
   - there is a dynamically bound fn to register a cleanup handler for a process

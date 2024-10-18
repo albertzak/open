@@ -673,6 +673,7 @@
 
       ; for demo to save screen space. todo: figure out codebase mgmt
       'rpi :c98d5645c97db5d0be4fc9db
+      'sense identity
 
       'then then
       'promise promise
