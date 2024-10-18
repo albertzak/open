@@ -320,7 +320,46 @@
 
 ;---
 
-; state & supervision
+
+
+; processes
+
+(defn blink [ms pin]
+  (fn [{:keys [rerun] :as caps}]
+    (-> (wait 0)
+      (then #((caps pin) true))
+      (then #(wait ms))
+      (then #((caps pin) false))
+      (then #(rerun ms)))))
+
+! (node rpi
+    {|:red (blink 120 :gpio0)
+     :yellow (blink 160 :gpio5)
+     :green (blink 180 :gpio6)})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
+
+
+;---
+
+; state
 
 (defn blink [{:keys [rerun gpio0]} state]
   (gpio0 state)
@@ -367,44 +406,6 @@
                      #(usbserial {:baud 19200}))]
         (sensor (fn [cm] |cm)))))
 
-
-
-;---
-
-
-; process reconciliation
-
-(defn blink [ms pin]
-  (fn [{:keys [rerun] :as caps}]
-    (-> (wait 0)
-      (then #((caps pin) true))
-      (then #(wait ms))
-      (then #((caps pin) false))
-      (then #(rerun ms)))))
-
-! (node rpi
-    {|:red (blink 120 :gpio0)
-     :yellow (blink 160 :gpio5)
-     :green (blink 180 :gpio6)})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-;
 
 
 ;---
