@@ -351,7 +351,8 @@
 
 ! (node rpi
     (fn [{:keys [usbserial stateful]}]
-      (let [sensor (stateful :dewfqewa #(usbserial {:baud 19200}))]|)))
+      (let [sensor (stateful :dewfqewa 
+                     #(usbserial {:baud 19200}))]|)))
 
 
 ;---
@@ -362,7 +363,8 @@
 
 ! (node rpi
     (fn [{:keys [usbserial stateful]}]
-      (let [sensor (stateful :dewfqewa #(usbserial {:baud 19200}))]
+      (let [sensor (stateful :dewfqewa 
+                     #(usbserial {:baud 19200}))]
         (sensor (fn [cm] |cm)))))
 
 
