@@ -669,7 +669,7 @@
     (let [pinw (fn [b]
                  (context #{[:pid :green]}
                    ((caps pin)
-                    b)))]
+                    (? :d9a1446f b viz _))))]
       (-> (wait 0)
         (then #(pinw true))
         (then #(wait ms))
