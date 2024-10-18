@@ -958,6 +958,7 @@
 '(open-qs|
 
    deleting
+   async feedback
    dynamic sets
    identity of code)
 
