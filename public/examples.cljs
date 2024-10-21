@@ -812,8 +812,8 @@ Informatics and the UAS Technikum Wien."
 Embedded Systems, which is run jointly by the TU Wien's Faculty of
 Informatics and the UAS Technikum Wien."
 
-'(2020 - 2024)
-'(now looking for funding)
+'(2020 - 2024 🚮)
+'(now looking for funding/work)
 
 
 ;---
