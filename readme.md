@@ -8,7 +8,7 @@ a.k.a. **NEW COMMIT EVERY MINUTE**
     src="img/video.png">
 </a>
 
-STATUS: **Highly experimental.** (have fun following along if you want.)
+STATUS: **Highly experimental.** (have fun following along if you want. is this now the worst piece of code on this githubs?)
 
 <br>
 
@@ -29,9 +29,13 @@ _that's basically it. how hard could it be?_
 
 ### TODO
 
-- [ ] **CURRENT** get this thing working well enough to give a fun presentation in 5 days.
+- [ ] talk to fellow humans
+- [ ] make it nice
+  - [ ] no im doing it wrong again, just share (s)crappy fiddles
+- [ ] can it be done in [<26 loc](https://buttondown.com/tensegritics-curiosities/archive/writing-the-worst-datalog-ever-in-26loc/)? just see data inline and run fns somewhere?
+- [ ] make it secure enough to run my website
+- [ ] blog post: dream clojure notes (see below)
 - [ ] upload slides (+ text?) of presentations
-- [ ] think of what to demo in 14min
 
 
 
@@ -46,6 +50,7 @@ _that's basically it. how hard could it be?_
 
 (newest first)
 
+- [x] **CURRENT** get this thing working well enough to give a fun presentation in 5 days.
 - [x] upload codebases as-is (except check gitignore before)
 - [x] add [gary bernhardt talk "a whole new world"](https://www.destroyallsoftware.com/talks/a-whole-new-world) to related work. **it is sooo good and nobody has seen it**
 - [x] share [live 2024 submission reviews](2024-08-16-live2024-reviews.md)
@@ -53,17 +58,7 @@ _that's basically it. how hard could it be?_
 
 </details>
 
-#### After LIVE@SPLASH
-
-- [ ] make it nice
-  - [ ] no im doing it wrong again, share (s)crappy fiddle first
-- [ ] can we do it in [<26 loc](https://buttondown.com/tensegritics-curiosities/archive/writing-the-worst-datalog-ever-in-26loc/)? see data and run fns?
-- [ ] make it run my website
-- [ ] blog post: dream clojure notes (see below)
-
-
-## Observations
-
+- `2024-10-20 20:43` i hope the demo will work tomorrow
 - `2024-10-15 18:34` still so so so fun!
 - `2024-10-12 15:35` writing live like this is so so so fun
 
@@ -186,15 +181,6 @@ trying to be more social. i get cold sweat anytime i talk to someone. online too
 "[@todepond: why is everyone so obsessed with alan kay and bret victor] you forgot rich hickey. men men men <3"
 
 "berd victor"
-
-"is that now the worst piece of code on this githubs?"
-
-
-"you wanted those dynapads
-
-right?"
-
-"literacy in the computational medium"
 
 
 
