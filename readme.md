@@ -8,7 +8,7 @@ a.k.a. **NEW COMMIT EVERY MINUTE**
     src="img/video.png">
 </a>
 
-STATUS: **Highly experimental.** (have fun following along if you want. is this now the worst piece of code on this githubs?)
+STATUS: **Highly experimental.** (have fun following along if you want.)
 
 <br>
 
@@ -26,10 +26,13 @@ and tell **that machine** over there to **keep running this piece of code**.
 _that's basically it. how hard could it be?_
 
 
+<br>
+
+_(is this now the worst piece of code on this githubs?)_
 
 ### TODO
 
-- [ ] talk to fellow humans
+- [ ] demo it at LIVE@SPLASH & talk to fellow humans
 - [ ] make it nice
   - [ ] no im doing it wrong again, just share (s)crappy fiddles
 - [ ] can it be done in [<26 loc](https://buttondown.com/tensegritics-curiosities/archive/writing-the-worst-datalog-ever-in-26loc/)? just see data inline and run fns somewhere?
