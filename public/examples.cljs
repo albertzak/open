@@ -801,7 +801,7 @@ Informatics and the UAS Technikum Wien."
 
 
 
-    '(thank-you!)
+    '(thank-you! 💕)
 
 
     albertzak.com
