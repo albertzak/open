@@ -31,7 +31,7 @@
 
 
 
-(node rpi
+! (node rpi
   (fn [{:keys [usbserial stateful lcd-write!
                gpio0 gpio5 gpio6]}]
     (let [sensor (stateful :dewfqewa #(usbserial {:baud 19200}))]
