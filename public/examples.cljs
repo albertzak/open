@@ -592,15 +592,7 @@
 ;---
 
 
-
-'(discussion
-   
-   > hobbyists, solo devs
-   
-   > fun, low ceremony
-
-   > lisp? clojure!)
-
+'(discussion)
 
 
 ;--- ! (editor (show|))
@@ -618,6 +610,19 @@
 ;%
 
 ;%
+
+;---
+
+
+'(discussion
+   
+   > hobbyists, solo devs
+   
+   > fun, low ceremony
+
+   > lisp? clojure!)
+
+
 
 ;---
 
