@@ -32,7 +32,6 @@ _(is this now the worst piece of code on this githubs?)_
 
 ### TODO
 
-- [ ] demo it at LIVE@SPLASH & talk to fellow humans
 - [ ] make it nice
   - [ ] no im doing it wrong again, just share (s)crappy fiddles
 - [ ] can it be done in [<26 loc](https://buttondown.com/tensegritics-curiosities/archive/writing-the-worst-datalog-ever-in-26loc/)? just see data inline and run fns somewhere?
@@ -53,6 +52,7 @@ _(is this now the worst piece of code on this githubs?)_
 
 (newest first)
 
+- [x] demo it at LIVE@SPLASH & talk to fellow humans
 - [x] **CURRENT** get this thing working well enough to give a fun presentation in 5 days.
 - [x] upload codebases as-is (except check gitignore before)
 - [x] add [gary bernhardt talk "a whole new world"](https://www.destroyallsoftware.com/talks/a-whole-new-world) to related work. **it is sooo good and nobody has seen it**
