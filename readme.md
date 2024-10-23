@@ -32,6 +32,7 @@ _(is this now the worst piece of code on this githubs?)_
 
 ### TODO
 
+- [x] taking a break until 2024-11-01
 - [ ] make it nice
   - [ ] no im doing it wrong again, just share (s)crappy fiddles
 - [ ] can it be done in [<26 loc](https://buttondown.com/tensegritics-curiosities/archive/writing-the-worst-datalog-ever-in-26loc/)? just see data inline and run fns somewhere?
