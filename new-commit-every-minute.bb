@@ -8,6 +8,11 @@
        zero?
        not))
 
+(defn new-files? []
+  (->> (sh "git" "diff-index" "--quiet" "HEAD" "--")
+       :exit
+       zero?))
+
 (defn commit-count []
   (->> (sh "git" "rev-list" "--count" "HEAD")
        :out
@@ -16,7 +21,8 @@
        inc))
 
 (defn commit! []
-  (when (changes?)
+  (when (or (changes?)
+            (new-files?))
     (let [n (commit-count)]
       (sh "git" "add" "-A")
       (sh "git" "commit" "-m" (str n))
