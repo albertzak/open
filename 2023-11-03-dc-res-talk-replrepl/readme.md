@@ -1,13 +1,12 @@
 ![mock up slides animation showing the proposed repl interactions of querying live values across a distributed system and inlining them in code](./2023-11-03-replrepl.gif)
 
-slide notes for a talk i prepared but didn't give.
-
-was planned at dc-res seminar @ TU Wien for 2023-11-03.
+[slides](./2023-11-03-replrepl.pdf) and notes for a talk i prepared but didn't give.
 
 this is the first scrappy draft of these self-rewriting question mark query macros/expressions (though they didn't have that name back then).
 
 what i called "tickets" i don't think are a good idea, you'd just inline-def to further inspect a value.
 
+talk was planned for the dc-res seminar @ TU Wien on 2023-11-03.
 
 # REPLs - Asynchronous, Distributed, Multiplexed
 
