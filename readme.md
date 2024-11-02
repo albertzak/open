@@ -32,7 +32,6 @@ _(is this now the worst piece of code on this githubs?)_
 
 ### TODO
 
-- [x] taking a break until 2024-11-01
 - [ ] make it nice
   - [ ] no im doing it wrong again, just share (s)crappy fiddles
 - [ ] can it be done in [<26 loc](https://buttondown.com/tensegritics-curiosities/archive/writing-the-worst-datalog-ever-in-26loc/)? just see data inline and run fns somewhere?
@@ -53,6 +52,7 @@ _(is this now the worst piece of code on this githubs?)_
 
 (newest first)
 
+- [x] taking a break until 2024-11-01
 - [x] demo it at LIVE@SPLASH & talk to fellow humans
 - [x] **CURRENT** get this thing working well enough to give a fun presentation in 5 days.
 - [x] upload codebases as-is (except check gitignore before)
@@ -70,6 +70,43 @@ _(is this now the worst piece of code on this githubs?)_
 
 
 ## Scratchpad (what i'm writing now)
+
+
+
+### [🐣 Toots](https://clj.social/@albertzak) hatchery
+
+
+
+
+## Raw notes [20,000+ words]
+
+From 2020-09 until 2024-08 I got paid to daydream (🚮). This is all I have to show for it.
+
+I collected random interesting internet finds and a few own ideas in Apple Notes. Order is somewhat chronological, newest at the top. Sadly only very few entries are timestamped or properly sourced. Lightly edited (typos, clarity, formatting) and small parts translated from German.
+
+**WARNING: very chaotic.**  i guess this is how my adhd brain works? anyways, *welcome traveler!*
+
+|    | Legend |
+| --- | --- |
+|  🕺  | [my advisor](https://i4c.at/goeschka/) (btw he was awesome: just let me do anything, or nothing, no academic 🚮) |
+|  🧼  | shower thoughts / own ideas (they get better from bottom to top) |
+|  🎙️  | talks i've given |
+| **bold** | this is the good stuff (i think) |
+
+---
+
+🧼
+
+what if switching the git branch switched the repl conns
+  - master actually is prod all the time them
+  - but then you cant compare or investigate differences between envs (as easily)
+    - could still "global" maintain repl conns in secret/gitignored file
+  - eventually will need bidirectional sync to file system somehow
+
+
+---
+
+2024-10-15
 
 doing now: getting updated LIVE/SPLASH demo ready
 
@@ -177,31 +214,6 @@ what's the identity of a piece of code, a defn?
       - heavily domain dependent, only need to provide a way to `(defsigil 🚧 [...])`
 
 
-
-### [🐣 Toots](https://clj.social/@albertzak) hatchery
-
-trying to be more social. i get cold sweat anytime i talk to someone. online too.
-
-"[@todepond: why is everyone so obsessed with alan kay and bret victor] you forgot rich hickey. men men men <3"
-
-"berd victor"
-
-
-
-## Raw notes [20,000+ words]
-
-From 2020-09 until 2024-08 I got paid to daydream (🚮). This is all I have to show for it.
-
-I collected random interesting internet finds and a few own ideas in Apple Notes. Order is somewhat chronological, newest at the top. Sadly only very few entries are timestamped or properly sourced. Lightly edited (typos, clarity, formatting) and small parts translated from German.
-
-**WARNING: very chaotic.**  i guess this is how my adhd brain works? anyways, *welcome traveler!*
-
-|    | Legend |
-| --- | --- |
-|  🕺  | [my advisor](https://i4c.at/goeschka/) (btw he was awesome: just let me do anything, or nothing, no academic 🚮) |
-|  🧼  | shower thoughts / own ideas (they get better from bottom to top) |
-|  🎙️  | talks i've given |
-| **bold** | this is the good stuff (i think) |
 
 ---
 
