@@ -62,6 +62,7 @@ _(is this now the worst piece of code on this githubs?)_
 
 </details>
 
+- `2024-11-02 23:18` so many communities to check out, but now i'm just consuming even more rabbit holes all day. there's a fiddle to be scrapped
 - `2024-11-02 23:18` live was fun and next time i'll make sure to stay longer for the bonus unconfs
 - `2024-10-20 20:43` i hope the demo will work tomorrow
 - `2024-10-15 18:34` still so so so fun!
