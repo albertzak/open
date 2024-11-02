@@ -73,11 +73,13 @@ _(is this now the worst piece of code on this githubs?)_
 
 ## Scratchpad (what i'm writing now)
 
+`""`
 
 
 ### [🐣 Toots](https://clj.social/@albertzak) hatchery
 
 
+`'()`
 
 
 ## Raw notes [20,000+ words]
