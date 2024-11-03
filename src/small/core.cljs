@@ -689,6 +689,7 @@
       'fn #'bound-fn ; haha!
       #_#_'fn* #'bound-fn ; reader fns #() read as fn*
       'unbound-fn #'unbound-fn
+      'ufn #'unbound-fn
       'update-vals update-vals
       '** (fn [a b] (js/Math.pow a b))
       '-- nil ; todo block separator
