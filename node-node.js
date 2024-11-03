@@ -1,4 +1,4 @@
-#!/root/.nvm/versions/node/v21.7.3/bin/node
+#!/usr/bin/env node
 
 import { WebSocket } from 'ws'
 
