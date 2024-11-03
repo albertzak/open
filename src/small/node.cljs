@@ -131,9 +131,7 @@
                 (str e))))
 
    :spit (fn [path data] (.writeFileSync fs path data))
-   :exec (fn [cmd & [cb]]
-           (prn :cb cb)
-           (.exec child_process cmd cb))})
+   :exec (fn [cmd & [cb]] (.exec child_process cmd cb))})
 
 (def osx? (= "darwin" (.-platform os)))
 
