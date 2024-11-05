@@ -34,6 +34,7 @@ _(is this now the worst piece of code on this githubs?)_
 
 - [ ] needs a better todo
   - [ ] because i feel blocked, or don't know where to start?
+    - [x] _it's okay to relax for some time_
   - [ ] i should probably start over
   - [ ] what's the simplest thing to build on a day?
      - [ ] define portable editor text rewriting api?
