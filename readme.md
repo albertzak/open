@@ -32,6 +32,8 @@ _(is this now the worst piece of code on this githubs?)_
 
 ### TODO
 
+- [ ] needs a better todo
+  - [ ] because i feel blocked, or don't know where to start?
 - [ ] make it nice
   - [ ] no im doing it wrong again, just share (s)crappy fiddles
 - [ ] can it be done in [<26 loc](https://buttondown.com/tensegritics-curiosities/archive/writing-the-worst-datalog-ever-in-26loc/)? just see data inline and run fns somewhere?
