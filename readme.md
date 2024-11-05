@@ -40,6 +40,8 @@ _(is this now the worst piece of code on this githubs?)_
      - [ ] decide how to txfer caps over network?
      - [ ] daydream some more interactions
        - [ ] what code should run where, and when (environments like dev/prod/staging but also cross-env access?)
+       - [ ] how to persist & distribute code (something something hash)
+    - [ ] or should it be "just" a library after all to be added into existing clj(s) projects?
 - [ ] make it nice
   - [ ] no im doing it wrong again, just share (s)crappy fiddles
 - [ ] can it be done in [<26 loc](https://buttondown.com/tensegritics-curiosities/archive/writing-the-worst-datalog-ever-in-26loc/)? just see data inline and run fns somewhere?
