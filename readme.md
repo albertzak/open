@@ -34,6 +34,11 @@ _(is this now the worst piece of code on this githubs?)_
 
 - [ ] needs a better todo
   - [ ] because i feel blocked, or don't know where to start?
+  - [ ] i should probably start over
+  - [ ] what's the simplest thing to build on a day?
+     - [ ] define portable editor text rewriting api?
+     - [ ] decide how to txfer caps over network?
+     - [ ]
 - [ ] make it nice
   - [ ] no im doing it wrong again, just share (s)crappy fiddles
 - [ ] can it be done in [<26 loc](https://buttondown.com/tensegritics-curiosities/archive/writing-the-worst-datalog-ever-in-26loc/)? just see data inline and run fns somewhere?
