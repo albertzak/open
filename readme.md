@@ -38,7 +38,8 @@ _(is this now the worst piece of code on this githubs?)_
   - [ ] what's the simplest thing to build on a day?
      - [ ] define portable editor text rewriting api?
      - [ ] decide how to txfer caps over network?
-     - [ ]
+     - [ ] daydream some more interactions
+       - [ ] what code should run where, and when (environments like dev/prod/staging but also cross-env access?)
 - [ ] make it nice
   - [ ] no im doing it wrong again, just share (s)crappy fiddles
 - [ ] can it be done in [<26 loc](https://buttondown.com/tensegritics-curiosities/archive/writing-the-worst-datalog-ever-in-26loc/)? just see data inline and run fns somewhere?
