@@ -110,6 +110,12 @@ I collected random interesting internet finds and a few own ideas in Apple Notes
 
 ---
 
+
+🧼 instead of adding syntax like the `!` before a (top level) expression to redeploy on every change inside, why not make it part of the symbol: `(defn! live [] ...)`
+
+
+---
+
 🧼
 
 what if switching the git branch switched the repl conns
