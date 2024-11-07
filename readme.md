@@ -84,7 +84,13 @@ _(is this now the worst piece of code on this githubs?)_
 
 ## Scratchpad (what i'm writing now)
 
-`""`
+i think this is what i'll try next: a simple clj(s) library to include in a _real world_ clj(s) project but that gives me _easy and simple_ repl access into production nodes, web clients etc.
+
+keeping the central mqtt broker, so no port forwarding needed. keeping random IDs for nodes.
+
+the big unknown is how to handle the code base being "out of band" (ie files, githubs etc) vs what's loaded in process.
+
+i
 
 
 ### [🐣 Toots](https://clj.social/@albertzak) hatchery
