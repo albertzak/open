@@ -101,6 +101,13 @@ they say you should build what you need, and use it. let's go
 
 that's the name
 
+`nbb core.cljs` works
+
+can we do it in a single namespace? (sure!)
+
+so it should connect to some mqtt broker
+
+
 
 ### [🐣 Toots](https://clj.social/@albertzak) hatchery
 
