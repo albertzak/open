@@ -107,6 +107,8 @@ can we do it in a single namespace? (sure!)
 
 so it should connect to some mqtt broker
 
+but is there something more secure, like where channels are cap tokens?
+
 
 
 ### [🐣 Toots](https://clj.social/@albertzak) hatchery
