@@ -88,9 +88,9 @@ i think this is what i'll try next: a simple clj(s) library to include in a _rea
 
 keeping the central mqtt broker, so no port forwarding needed. keeping random IDs for nodes.
 
-the big unknown is how to handle the code base being "out of band" (ie files, githubs etc) vs what's loaded in process.
+the big unknown is how to handle the code base being "out of band" (ie files, githubs etc) and thus out of sync vs what's loaded in process.
 
-i
+i think i _do_ want to keep code in files, searching across files, scrolling, goto-anything, jump to definition is great and all.
 
 
 ### [🐣 Toots](https://clj.social/@albertzak) hatchery
