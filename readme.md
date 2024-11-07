@@ -90,7 +90,7 @@ keeping the central mqtt broker, so no port forwarding needed. keeping random ID
 
 the big unknown is how to handle the code base being "out of band" (ie files, githubs etc) and thus out of sync vs what's loaded in process.
 
-i think i _do_ want to keep code in files (for now? eventually maybe bidi sync fs<>db?), searching across files, scrolling, goto-anything, jump to definition is great and all.
+i think i _do_ want to keep code in files (for now? eventually maybe bidirectional sync between fs and some db?), searching across files, scrolling, goto-anything, jump to definition is great and all.
 
 i need this library somewhat urgently to debug a weird timeout bug in a real customer project (some crypto thing, not proud, but it pays the bills for now)
 
