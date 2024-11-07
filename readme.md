@@ -92,6 +92,11 @@ the big unknown is how to handle the code base being "out of band" (ie files, gi
 
 i think i _do_ want to keep code in files, searching across files, scrolling, goto-anything, jump to definition is great and all.
 
+i need this library somewhat urgently to debug a weird timeout bug in a real customer project (some crypto thing, not proud, but it pays the bills for now)
+
+they say you should build what you need, and use it. let's go
+
+
 
 ### [🐣 Toots](https://clj.social/@albertzak) hatchery
 
