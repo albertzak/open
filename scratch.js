@@ -1,6 +1,6 @@
 import mq from 'mqtt'
 
-let c = mq.connect('wss://q.fxp.at:443')
+let c = mq.connect('mqtt://test.mosquitto.org')
 
 c.on('error', (e) => console.error(e))
 c.on('message', (m) => console.log('msg', m))
