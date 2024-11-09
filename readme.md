@@ -4441,7 +4441,7 @@ Briefly sketch your knowledge in
     - i have some ideas how languages should deal with distribution that i would like to explore
 
 
-Bio: 25 yo
+Bio: 25 yo [in 2020] (* 1994)
 
 spent all my life messing around with the amazing machines that are computers
 
