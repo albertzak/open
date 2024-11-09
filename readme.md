@@ -149,12 +149,15 @@ right now:
 
 
 node state:
-
-  - vsn
   - proj (project identifier / random id. shared across all nodes of a "project". not sure if this is a good idea at all. maybe namespace of all nodes anywhere should be flat?)
   - node (stable random id)
   - MISSING: session id
   - broker
+  - global-scope
+  - vsn
+  - publish (fn)
+  - + custom caps
+
 
 
 ### [🐣 Toots](https://clj.social/@albertzak) hatchery
