@@ -160,8 +160,12 @@ each node keeps a state atom:
   - + custom caps
 
 atm not happy with:
-  - live-eval is such a hack, and you need to manually mark all downstream fns with `!`
-  - node state is a mess: "user-space" capabilities mixed in with systems-level stuff
+  - live-eval is such a hack
+    - you need to manually mark all downstream fns with `!`
+  - node state is a mess
+    - "user-space" capabilities mixed in with systems-level stuff
+  - i don't understand the codemirror api
+
 
 
 ok that prod timeout bug seems to be gone now
