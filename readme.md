@@ -116,6 +116,7 @@ i like the idea of json over websockets. (instead of edn over mqtt) how about js
 and don't do any funky encoding like trying to stuff tagged literals or ":keys" into json, just parse with :keywordize-keys. might just as well accept json and edn. put in json, get out json. put in edn, get out edn?
 
 edn < json
+
 mqtt < ws
 
 (i'd want this thing to be as open-world as possible, and as simple as possible. less concepts, less moving parts. is json simpler than edn?)
@@ -161,6 +162,8 @@ node state:
 atm not happy with:
   - live-eval is such a hack, and you need to manually mark all downstream fns with `!`
   - node state is a mess: "user-space" capabilities mixed in with systems-level stuff
+
+
 
 
 ### [🐣 Toots](https://clj.social/@albertzak) hatchery
