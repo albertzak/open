@@ -127,6 +127,23 @@ ok wait OF COURSE the server/broker should be built with the system itself, and 
 right now:
   - partial eval ()
   - full eval
+    - type: `:query-result` | ``
+    - node-context
+    - query-context
+    - value
+
+    - vsn (incrementing on every doc change, not used anywhere yet)
+    - proj (project identifier / random id. shared across all nodes of a "project". not sure if this is a good idea at all. maybe namespace of all nodes anywhere should be flat?)
+    - node (stable random id)
+    - MISSING: session id
+    - broker
+  - type: `:query-result`
+    - id (first arg of `(? :deadbeef ...`)
+    - vsn (not used)
+    - node-context
+    - query-context
+    - value
+    - + meta
 
 
 
