@@ -178,7 +178,9 @@ what are the blockers right now?
     - mqtt is good enough probably
       - for now, just slap a passw...
         - no! untrusted web clients need to connect as well w/o pw
-        - ...
+          - just let the server be a node for now and let it generate static pages okay
+
+conclusion: there are no blockers.
 
 
 
