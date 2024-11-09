@@ -120,7 +120,15 @@ mqtt < ws
 
 (i'd want this thing to be as open-world as possible, and as simple as possible. less concepts, less moving parts. is json simpler than edn?)
 
-(stop bikeshedding transport details)
+ok wait OF COURSE the server/broker should be built with the system itself, and it should be small. like a single bb script, or similar. and then you can inspect and change the server from within itself.
+
+(now stop bikeshedding transport details. what's _in_ the protocol?)
+
+right now:
+  - partial eval ()
+  - full eval
+
+
 
 
 
