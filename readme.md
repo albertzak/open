@@ -166,7 +166,9 @@ atm not happy with:
 
 ok that prod timeout bug seems to be gone now
 
+still loving the idea of a central broker that's implemented in the system itself
 
+must be able to run sci, so clj-syntax-to-php is out. but that's okay for now
 
 ### [🐣 Toots](https://clj.social/@albertzak) hatchery
 
