@@ -170,6 +170,18 @@ still loving the idea of a central broker that's implemented in the system itsel
 
 must be able to run sci, so clj-syntax-to-php is out. but that's okay for now
 
+what are the blockers right now?
+  - identifying expressions in the code
+    - is it possible without ugly ids everywhere?
+      - node-local short ids ("petnames") that get rewritten to uuids?
+  - broker/messaging protocol
+    - mqtt is good enough probably
+      - for now, just slap a passw...
+        - no! untrusted web clients need to connect as well w/o pw
+        - ...
+
+
+
 ### [🐣 Toots](https://clj.social/@albertzak) hatchery
 
 
