@@ -109,6 +109,19 @@ so it should connect to some mqtt broker
 
 but is there something more secure, like where channels are cap tokens?
 
+maybe mqtt is overkill and it's not nice to use from bb. plain websockets?
+
+i like the idea of json over websockets. (instead of edn over mqtt) how about json over anything? ssh? via json-over-file: edit a file as your local repl, watch process reads+evals, maybe writes back the result.
+
+and don't do any funky encoding like trying to stuff tagged literals or ":keys" into json, just parse with :keywordize-keys. might just as well accept json and edn. put in json, get out json. put in edn, get out edn?
+
+edn < json
+mqtt < ws
+
+(i'd want this thing to be as open-world as possible, and as simple as possible. less concepts, less moving parts. is json simpler than edn?)
+
+(stop bikeshedding transport details)
+
 
 
 ### [🐣 Toots](https://clj.social/@albertzak) hatchery
