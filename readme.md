@@ -125,7 +125,9 @@ ok wait OF COURSE the server/broker should be built with the system itself, and 
 (now stop bikeshedding transport details. what's _in_ the protocol?)
 
 right now:
-  - partial eval ()
+  - `:type :live-eval`
+    - sources (list of strings of all live blocks)
+    - vsn (autoinc, not used)
   - full eval
     - type: `:query-result` | ``
     - node-context
@@ -137,7 +139,7 @@ right now:
     - node (stable random id)
     - MISSING: session id
     - broker
-  - type: `:query-result`
+  - `:type :query-result`
     - id (first arg of `(? :deadbeef ...`)
     - vsn (not used)
     - node-context (dynamically scoped)
