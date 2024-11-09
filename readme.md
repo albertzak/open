@@ -164,6 +164,8 @@ atm not happy with:
   - node state is a mess: "user-space" capabilities mixed in with systems-level stuff
 
 
+ok that prod timeout bug seems to be gone now
+
 
 
 ### [🐣 Toots](https://clj.social/@albertzak) hatchery
