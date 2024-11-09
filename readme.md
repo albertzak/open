@@ -16,8 +16,7 @@ _"So I'm trying to incubate a personal dynamic..."_ nah
 
 <br>
 
-I
-just want to to **look inside** a function or variable and **see the data**
+I just want to to **look inside** a function or variable and **see the data**
 
 and tell **that machine** over there to **keep running this piece of code**.
 
@@ -28,21 +27,15 @@ _that's basically it. how hard could it be?_
 
 <br>
 
-_(is this now the worst piece of code on this githubs?)_
-
 ### TODO
 
-- [ ] needs a better todo
-  - [ ] because i feel blocked, or don't know where to start?
-    - [x] _it's okay to relax for some time_
-  - [ ] i should probably start over
-  - [ ] what's the simplest thing to build on a day?
-     - [ ] define portable editor text rewriting api?
-     - [ ] decide how to txfer caps over network?
-     - [ ] daydream some more interactions
-       - [ ] what code should run where, and when (environments like dev/prod/staging but also cross-env access?)
-       - [ ] how to persist & distribute code (something something hash)
-    - [ ] or should it be "just" a library after all to be added into existing clj(s) projects?
+- [ ] what's the simplest thing to build on a day?
+    - [ ] define portable editor text rewriting api?
+    - [ ] decide how to txfer caps over network?
+    - [ ] daydream some more interactions
+      - [ ] what code should run where, and when (environments like dev/prod/staging but also cross-env access?)
+      - [ ] how to persist & distribute code (something something hash)
+  - [ ] or should it be "just" a library after all to be added into existing clj(s) projects?
 - [ ] make it nice
   - [ ] no im doing it wrong again, just share (s)crappy fiddles
 - [ ] can it be done in [<26 loc](https://buttondown.com/tensegritics-curiosities/archive/writing-the-worst-datalog-ever-in-26loc/)? just see data inline and run fns somewhere?
