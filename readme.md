@@ -140,10 +140,12 @@ right now:
   - type: `:query-result`
     - id (first arg of `(? :deadbeef ...`)
     - vsn (not used)
-    - node-context
-    - query-context
+    - node-context (dynamically scoped)
+    - query-context (lexically scoped)
     - value
-    - + meta
+    - xform (viz fn form, unevaluated)
+    - xform-meta (meta of viz form, `^:?/block`)
+    - republish? (true when serialized value changes, eg on promise resolve)
 
 
 
