@@ -149,7 +149,7 @@ right now there are three kinds of messages:
     - republish? (true when serialized value changes, eg on promise resolve)
 
 
-node state:
+each node keeps a state atom:
   - proj (project identifier / random id. shared across all nodes of a "project". not sure if this is a good idea at all. maybe namespace of all nodes anywhere should be flat?)
   - node (stable random id)
   - MISSING: session id
