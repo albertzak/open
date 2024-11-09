@@ -127,18 +127,16 @@ ok wait OF COURSE the server/broker should be built with the system itself, and 
 right now:
   - `:type :live-eval`
     - sources (list of strings of all live blocks)
-    - vsn (autoinc, not used)
-  - full eval
-    - type: `:query-result` | ``
-    - node-context
-    - query-context
-    - value
-
     - vsn (incrementing on every doc change, not used anywhere yet)
-    - proj (project identifier / random id. shared across all nodes of a "project". not sure if this is a good idea at all. maybe namespace of all nodes anywhere should be flat?)
-    - node (stable random id)
-    - MISSING: session id
-    - broker
+    - from (sender node id)
+    - node-context
+    - t (timestamp)
+  - `:type :full-eval`
+    - source
+    - vsn (autoinc, not used)
+    - from (sender node id)
+    - node-context
+    - t (timestamp)
   - `:type :query-result`
     - id (first arg of `(? :deadbeef ...`)
     - vsn (not used)
@@ -150,7 +148,13 @@ right now:
     - republish? (true when serialized value changes, eg on promise resolve)
 
 
+node state:
 
+  - vsn
+  - proj (project identifier / random id. shared across all nodes of a "project". not sure if this is a good idea at all. maybe namespace of all nodes anywhere should be flat?)
+  - node (stable random id)
+  - MISSING: session id
+  - broker
 
 
 ### [🐣 Toots](https://clj.social/@albertzak) hatchery
