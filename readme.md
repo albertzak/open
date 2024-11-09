@@ -125,7 +125,7 @@ ok wait OF COURSE the server/broker should be built with the system itself, and 
 
 (now stop bikeshedding transport details. what's _in_ the protocol?)
 
-right now:
+right now there are three kinds of messages:
   - `:type :live-eval`
     - sources (list of strings of all live blocks)
     - vsn (incrementing on every doc change, not used anywhere yet)
