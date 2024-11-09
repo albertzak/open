@@ -182,7 +182,11 @@ what are the blockers right now?
 
 conclusion: there are no blockers.
 
+todo: ummm i still kinda want to yakshave the broker with websockets and cap tokens
 
+
+
+---
 
 ### [🐣 Toots](https://clj.social/@albertzak) hatchery
 
