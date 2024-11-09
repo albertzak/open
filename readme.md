@@ -158,6 +158,9 @@ node state:
   - publish (fn)
   - + custom caps
 
+atm not happy with:
+  - live-eval is such a hack, and you need to manually mark all downstream fns with `!`
+  - node state is a mess: "user-space" capabilities mixed in with
 
 
 ### [🐣 Toots](https://clj.social/@albertzak) hatchery
