@@ -13,7 +13,9 @@
   (.send ws "hello"))
 
 (defonce wss
-  (doto (WebSocketServer.
-         #js {:port 8080})
-    (.on "connection" #'on-connection)))
+  (WebSocketServer.
+   #js {:port 8080}))
+
+(.on wss "connection" (fn [^js ws] (#'on-connection ws)))
+
 
