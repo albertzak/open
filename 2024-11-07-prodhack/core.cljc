@@ -1,5 +1,6 @@
 (ns prodhack.core
-  (:require #?(:cljs ["ws" :refer [WebSocketServer WebSocket]])))
+  (:require #?(:cljs ["ws" :refer [WebSocketServer WebSocket]]
+               :clj [org.httpkit.server :as server])))
 
 (defn log [& xs]
   (apply prn xs)
