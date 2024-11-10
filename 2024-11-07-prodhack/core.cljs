@@ -1,3 +1,4 @@
-(ns prodhack.core)
+(ns prodhack.core
+  (:require ["ws" :as ws]))
 
-(prn "yo i dont like src directories, does that work too?")
+(prn ws)
