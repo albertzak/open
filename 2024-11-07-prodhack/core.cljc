@@ -5,13 +5,26 @@
   (apply prn xs)
   (last xs))
 
+(defn random-id
+  ([] (random-id 8))
+  ([length]
+   (->> (str (random-uuid))
+        (take (dec length))
+        (apply str (rand-nth "abcdef")) ; start with letter to be valid keyword
+        keyword)))
+
 (defonce state (atom {}))
 
-(defn on-connection [{:keys [on-message send] :as _socket}]
-  (on-message
-   (fn [s]
-     (log :got-string s)
-     (send "hello back"))))
+(defn broadcast [s]
+  (doseq [send (-> @state :websocket-clients vals)]
+    (send s)))
+
+(defn on-connection [{:keys [on-message send on-close] :as socket}]
+  (let [id (random-id)]
+    (swap! state assoc-in [:websocket-clients id] send)
+    (on-close
+     (fn [] (swap! state update :websocket-clients dissoc id)))
+    (on-message (fn [s] (broadcast s)))))
 
 (defn start [& [{:keys [port]}]]
   (let [port (or port 8080)]
@@ -26,13 +39,13 @@
             (.on "error" (partial log :error))
             (.on "connection"
                  (fn [^js ws]
-                   (let [on-message-fn (atom identity)]
-                     (.on ws "message"
-                          (fn [^js buf]
-                            (log :on-ws-message (str buf))
-                            (@on-message-fn (str buf))))
+                   (let [on-message-fn (atom identity)
+                         on-close-fn (atom identity)]
+                     (.on ws "message" (fn [^js buf] (@on-message-fn (str buf))))
+                     (.on ws "close" (fn [] (@on-close-fn)))
                      (#'on-connection
-                      {:on-message (fn [f] (reset! on-message-fn f))
+                      {:on-close (fn [f] (reset! on-close-fn f))
+                       :on-message (fn [f] (reset! on-message-fn f))
                        :send (fn [s] (.send ws s))})))))
           :clj nil)))))
 
@@ -47,4 +60,5 @@
   (.on ws "open" log)
   (.on ws "message" (partial log :ws-client-rx))
   (.send ws "hi")
+  (.close ws)
   )
