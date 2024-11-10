@@ -55,10 +55,12 @@
 (comment
   (start)
 
+  @state
+
   (def ws (WebSocket. "ws://localhost:8080"))
   (.on ws "error" log)
   (.on ws "open" log)
   (.on ws "message" (partial log :ws-client-rx))
-  (.send ws "hi")
+  (.send ws "hiooo")
   (.close ws)
   )
