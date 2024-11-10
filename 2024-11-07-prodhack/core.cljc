@@ -10,12 +10,13 @@
 (defn on-connection [{:keys [on-message send] :as _socket}]
   (on-message
    (fn [s]
+     (log :got-string s)
      (send "hello"))))
 
-(defn start []
+(defn start [{:keys [port] :or [port 8080]}]
   (let [wss
         #?(:cljs
-           (doto (WebSocketServer. #js {:port 8080})
+           (doto (WebSocketServer. #js {:port port})
              (.on "error" (partial log :error))
              (.on "connection"
                   (fn [^js ws]
