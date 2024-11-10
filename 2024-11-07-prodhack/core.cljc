@@ -1,25 +1,44 @@
 (ns prodhack.core
-  (:require ["ws" :refer [WebSocketServer WebSocket]]))
+  (:require #?(:cljs ["ws" :refer [WebSocketServer WebSocket]])))
 
 (defn log [& xs]
   (apply prn xs)
   (last xs))
 
-(defn on-connection [^js ws]
-  (.on ws "error" (partial log :error))
-  (.on ws "message"
-       (fn [data]
-         (log :ws-message data)))
-  (.send ws "hello"))
+(defonce state (atom {}))
 
-(defonce wss
-  (WebSocketServer.
-   #js {:port 8080}))
+(defn on-connection [{:keys [on-message send] :as socket}]
+  (on-message
+   (fn [s]
+     (send "hello"))))
+
 
 (.on wss "connection" (fn [^js ws] (#'on-connection ws)))
 
+(defn start []
+  (let [wss
+        #?(:cljs
+           (doto (WebSocketServer. #js {:port 8080})
+             (.on "error" (partial log :error))
+             (.on "connection"
+                  (fn [^js ws]
+                    (#'on-connection
+                     {:on-message
+                      (fn [f]
+                        (log :on-ws-message (str buf))
+                        (.on ws "message"
+                             (fn [^js buf]
+                               (f (str buf)))))
+                      :send (fn [s] (.send ws s))}))))
+           :clj nil)]
+    (swap! state assoc :websocket-server wss)))
 
 
-(def ws (WebSocket. "ws://localhost:8080"))
-(.on ws "error" log)
 
+
+(comment
+  (def ws (WebSocket. "ws://localhost:8080"))
+  (.on ws "error" log)
+  (.on ws "open" log)
+  (.on ws "message" (partial log :ws-client-rx))
+  (.send ws "hi"))
