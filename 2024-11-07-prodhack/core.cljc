@@ -7,13 +7,10 @@
 
 (defonce state (atom {}))
 
-(defn on-connection [{:keys [on-message send] :as socket}]
+(defn on-connection [{:keys [on-message send] :as _socket}]
   (on-message
    (fn [s]
      (send "hello"))))
-
-
-(.on wss "connection" (fn [^js ws] (#'on-connection ws)))
 
 (defn start []
   (let [wss
@@ -25,9 +22,9 @@
                     (#'on-connection
                      {:on-message
                       (fn [f]
-                        (log :on-ws-message (str buf))
                         (.on ws "message"
                              (fn [^js buf]
+                               (log :on-ws-message (str buf))
                                (f (str buf)))))
                       :send (fn [s] (.send ws s))}))))
            :clj nil)]
