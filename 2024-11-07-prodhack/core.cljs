@@ -1,5 +1,5 @@
 (ns prodhack.core
-  (:require ["ws" :refer [WebSocketServer]]))
+  (:require ["ws" :refer [WebSocketServer WebSocket]]))
 
 (defn log [& xs]
   (apply prn xs)
@@ -18,4 +18,8 @@
 
 (.on wss "connection" (fn [^js ws] (#'on-connection ws)))
 
+
+
+(def ws (WebSocket. "ws://localhost:8080"))
+(.on ws "error" log)
 
