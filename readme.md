@@ -33,53 +33,24 @@ _that's basically it. how hard could it be?_
 - [ ] accept code via http post for broadcast
 
 
-- [ ] what's the simplest thing to build on a day?
-    - [ ] define portable editor text rewriting api?
-    - [ ] decide how to txfer caps over network?
-    - [ ] daydream some more interactions
-      - [ ] what code should run where, and when (environments like dev/prod/staging but also cross-env access?)
-      - [ ] how to persist & distribute code (something something hash)
-  - [ ] or should it be "just" a library after all to be added into existing clj(s) projects?
-- [ ] make it nice
-  - [ ] no im doing it wrong again, just share (s)crappy fiddles
-- [ ] can it be done in [<26 loc](https://buttondown.com/tensegritics-curiosities/archive/writing-the-worst-datalog-ever-in-26loc/)? just see data inline and run fns somewhere?
-- [ ] make it secure enough to run my website
-- [ ] blog post: dream clojure notes (see below)
-- [ ] upload slides (+ text?) of presentations
-
-
-
-
-
-<details>
-<summary>
-
-### DONE
-
-</summary>
-
-(newest first)
-
-- [x] taking a break until 2024-11-01
-- [x] demo it at LIVE@SPLASH & talk to fellow humans
-- [x] **CURRENT** get this thing working well enough to give a fun presentation in 5 days.
-- [x] upload codebases as-is (except check gitignore before)
-- [x] add [gary bernhardt talk "a whole new world"](https://www.destroyallsoftware.com/talks/a-whole-new-world) to related work. **it is sooo good and nobody has seen it**
-- [x] share [live 2024 submission reviews](2024-08-16-live2024-reviews.md)
-- [x] share huge [raw notes](#raw-notes) file
-
-</details>
-
-- `2024-11-02 23:18` so many communities to check out, but now i'm just consuming even more rabbit holes all day. there's a fiddle to be scrapped
-- `2024-11-02 23:18` live was fun and next time i'll make sure to stay longer for the bonus unconfs
-- `2024-10-20 20:43` i hope the demo will work tomorrow
-- `2024-10-15 18:34` still so so so fun!
-- `2024-10-12 15:35` writing live like this is so so so fun
-
-
-
-
 ## Scratchpad (what i'm writing now)
+
+
+
+
+
+future: the ws/httpkit dependencies should probably be passed in as caps to the start fn. practice what you preach.
+
+
+btw the broker should also accept "repl"/code forms via http post. for super easy open world scripting of the _whole system_ via curl. (the ws part is really only needed to receive ? results in the editor, or to receive new code as a node. but to imperatively push new code, a post req is sufficent. yay!)
+
+ok so get a http endpoint up and running that you can change by, well, changing the code.
+
+okay, cljs impl with ws package is easy.
+
+
+
+----
 
 i think this is what i'll try next: a simple clj(s) library to include in a _real world_ clj(s) project but that gives me _easy and simple_ repl access into production nodes, web clients etc.
 
@@ -184,12 +155,6 @@ what are the blockers right now?
 conclusion: there are no blockers.
 
 todo: ummm i still kinda want to yakshave the broker with websockets and cap tokens
-
-ok so get a http endpoint up and running that you can change by, well, changing the code.
-
-okay, cljs impl with ws package is easy.
-
-btw the broker should also accept "repl"/code forms via http post. for super easy open world scripting of the _whole system_ via curl. (the ws part is really only needed to receive ? results in the editor, or to receive new code as a node. but to imperatively push new code, a post req is sufficent. yay!)
 
 
 ---
