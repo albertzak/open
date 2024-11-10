@@ -29,6 +29,10 @@ _that's basically it. how hard could it be?_
 
 ### TODO
 
+- [ ] write ws broker for clj/bb
+- [ ] accept code via http post for broadcast
+
+
 - [ ] what's the simplest thing to build on a day?
     - [ ] define portable editor text rewriting api?
     - [ ] decide how to txfer caps over network?
