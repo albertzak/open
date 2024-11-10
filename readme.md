@@ -183,6 +183,7 @@ todo: ummm i still kinda want to yakshave the broker with websockets and cap tok
 
 ok so get a http endpoint up and running that you can change by, well, changing the code.
 
+okay, cljs impl with ws package is easy.
 
 
 ---
