@@ -185,6 +185,8 @@ ok so get a http endpoint up and running that you can change by, well, changing 
 
 okay, cljs impl with ws package is easy.
 
+btw the broker should also accept "repl"/code forms via http post. for super easy open world scripting of the _whole system_ via curl. (the ws part is really only needed to receive ? results in the editor, or to receive new code as a node. but to imperatively push new code, a post req is sufficent. yay!)
+
 
 ---
 
