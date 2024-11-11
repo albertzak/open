@@ -49,13 +49,14 @@
                        :on-message (fn [f] (reset! on-message-fn f))
                        :send (fn [s] (.send ws s))})))))
           :clj (server/run-server
-                (fn [req]
-                  (server/with-channel req channel
-                    (on-close channel (fn [_status] (prn :closed _status)))
-                    (on-receive channel
-                                       (fn [data]
-                                         (prn :rx data)
-                                         (server/send! channel data)))))
+                (fn [ring-req]
+                  (if (:websocket? ring-req)
+                    (server/as-channel
+                     ring-req
+                     {:on-open (fn [])
+                      :on-receive (fn [])
+                      :on-close (fn [])})
+                    {:status 200 :body "connect via websockets"}))
                 {:port port}))))))
 
 
