@@ -51,8 +51,8 @@
           :clj (server/run-server
                 (fn [req]
                   (server/with-channel req channel
-                    (server/on-close channel (fn [_status] (prn :closed _status)))
-                    (server/on-receive channel
+                    (on-close channel (fn [_status] (prn :closed _status)))
+                    (on-receive channel
                                        (fn [data]
                                          (prn :rx data)
                                          (server/send! channel data)))))
@@ -63,6 +63,8 @@
 
 (comment
   (start)
+
+
 
   @state
 
