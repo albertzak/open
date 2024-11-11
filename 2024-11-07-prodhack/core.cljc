@@ -34,7 +34,7 @@
      (fn [wss]
        (when wss
          #?(:cljs (.close wss)
-            :clj nil))
+            :clj (wss :timeout 100)))
        #?(:cljs
           (doto (WebSocketServer. #js {:port port})
             (.on "error" (partial log :error))
@@ -48,7 +48,15 @@
                       {:on-close (fn [f] (reset! on-close-fn f))
                        :on-message (fn [f] (reset! on-message-fn f))
                        :send (fn [s] (.send ws s))})))))
-          :clj nil)))))
+          :clj (server/run-server
+                (fn [req]
+                  (server/with-channel req channel
+                    (server/on-close channel (fn [_status] (prn :closed _status)))
+                    (server/on-receive channel
+                                       (fn [data]
+                                         (prn :rx data)
+                                         (server/send! channel data)))))
+                {:port port}))))))
 
 
 
