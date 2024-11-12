@@ -1,6 +1,8 @@
 (ns prodhack.core
   (:require #?(:cljs ["ws" :refer [WebSocketServer WebSocket]]
-               :clj [org.httpkit.server :as server])))
+               :clj [org.httpkit.server :as server])
+            #?(:bb [babashka.http-client.websocket :as ws]
+               :clj [hato.websocket :as ws])))
 
 (defn log [& xs]
   (apply prn xs)
@@ -53,9 +55,9 @@
                   (if (:websocket? ring-req)
                     (server/as-channel
                      ring-req
-                     {:on-open (fn [])
-                      :on-receive (fn [])
-                      :on-close (fn [])})
+                     {:on-open (fn [] (log :s/open))
+                      :on-receive (fn [] (log :s/rx))
+                      :on-close (fn [] (log :s/close))})
                     {:status 200 :body "connect via websockets"}))
                 {:port port}))))))
 
@@ -68,6 +70,7 @@
 
 
   @state
+  ((:websocket-server @state))
 
   (def ws (WebSocket. "ws://localhost:8080"))
   (.on ws "error" log)
@@ -75,4 +78,20 @@
   (.on ws "message" (partial log :ws-client-rx))
   (.send ws "hiooo")
   (.close ws)
+
+
+
+  (let [ws
+        (ws/websocket
+         {:uri "ws://localhost:8080"
+          :on-open (fn [ws]
+                     (log :c/open))
+          :on-error (fn [ws err]
+                      (log :c/err err))
+          :on-message (fn [ws msg last?]
+                        (log :c/rx msg))
+          :on-close (fn [ws status reason]
+                      (log :c/closed status reason))})]
+    (ws/send! ws "hi from clj client")
+    (log :ok))
   )
