@@ -78,6 +78,8 @@
   (.send ws "hiooo")
   (.close ws)
 
+  (log :ok)
+
 
 
   (let [ws
