@@ -37,8 +37,19 @@ _that's basically it. how hard could it be?_
 
 
 
-- ws+http broker on clj/cljs/bb/nbb
-- add-lib at runtime
+
+- software components to write:
+  - cljc core with sci
+  - cljc ws client
+  - cljc ws server
+  - ws+http broker on clj/cljs/bb/nbb
+
+
+- what it will be able to do:
+  - import + add-lib at runtime without restart
+
+
+
 
 
 
