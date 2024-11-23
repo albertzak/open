@@ -50,10 +50,13 @@ _that's basically it. how hard could it be?_
 
 
   - what v1 will be able to do
+    - inspect data inline as text
+
+    - ship `?` macro as library to embed in existing codebase
+      - might not need sci?
+
     - run fns on nodes
-    - inspect data
-      - open Q: how to integrate with existing codebase
-        -
+      - not 100% sure how
     - import + add-lib at runtime without restart
 
 
