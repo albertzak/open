@@ -66,6 +66,7 @@ _that's basically it. how hard could it be?_
         - Q: want to avoid having to run local sidecar clj(s) app that computes rewriting ops, but also keep extension super simple
           - should the broker compute rewrite actions before publishing? hmmm feels dirty
           - or should the extension just `exec` a clj/bb sidecar? yes!!
+            - bb ilysm <3
 
     - run fns on nodes
       - Q: within sci or not?
