@@ -64,7 +64,8 @@ _that's basically it. how hard could it be?_
     - inspect data inline as text
       - only via editor extension that rewrites buffer with id
         - Q: want to avoid having to run local sidecar clj(s) app that computes rewriting ops, but also keep extension super simple
-          - should the broker compute rewrite actions before publishing? hmmm
+          - should the broker compute rewrite actions before publishing? hmmm feels dirty
+          - or should the extension just `exec` a clj/bb sidecar? yes!!
 
     - run fns on nodes
       - Q: within sci or not?
