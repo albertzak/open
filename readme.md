@@ -37,7 +37,12 @@ _that's basically it. how hard could it be?_
 
 
 
+- ws+http broker on clj/cljs/bb/nbb
+- add-lib at runtime
 
+
+
+---
 
 future: the ws/httpkit dependencies should probably be passed in as caps to the start fn. practice what you preach.
 
