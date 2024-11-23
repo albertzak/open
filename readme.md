@@ -37,18 +37,19 @@ _that's basically it. how hard could it be?_
 
 
 
-
-- software components to write:
-  - cljc core with sci
-  - cljc ws client
-  - cljc ws server
-  - ws+http broker on clj/cljs/bb/nbb
-
-
-- what it will be able to do:
-  - import + add-lib at runtime without restart
+- v1:
+  - software components to write:
+    - cljc core with sci
+    - cljc ws client
+    - cljc ws server
+    - ws+http broker on clj/cljs/bb/nbb
 
 
+  - what it will be able to do:
+    - import + add-lib at runtime without restart
+
+- v2:
+  - codebase management
 
 
 
