@@ -43,13 +43,23 @@ _that's basically it. how hard could it be?_
     - cljc ws client
     - cljc ws server
     - ws+http broker on clj/cljs/bb/nbb
+    - simple editor rewriting protocol + extensions
+      - buffer changed
+      - replace string from to
+
 
 
   - what it will be able to do:
+    - run fns on nodes
+    - inspect data
+      - open Q: how to integrate with existing codebase
+        -
     - import + add-lib at runtime without restart
 
+
 - v2:
-  - codebase management
+  - codebase management (grug unison style)
+
 
 
 
