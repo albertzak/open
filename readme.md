@@ -59,6 +59,7 @@ _that's basically it. how hard could it be?_
 
 - what v2 will have (but not v1)
   - codebase management (grug unison style)
+  - control over when code changes are applied (environments?)
 
 
 
