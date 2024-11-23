@@ -49,7 +49,7 @@ _that's basically it. how hard could it be?_
 
 
 
-  - what it will be able to do:
+  - what v1 will be able to do
     - run fns on nodes
     - inspect data
       - open Q: how to integrate with existing codebase
@@ -57,7 +57,7 @@ _that's basically it. how hard could it be?_
     - import + add-lib at runtime without restart
 
 
-- v2:
+- what v2 will have (but not v1)
   - codebase management (grug unison style)
 
 
