@@ -50,14 +50,18 @@ _that's basically it. how hard could it be?_
 
 
   - what v1 will be able to do
-    - inspect data inline as text
+    - see the data
 
+
+
+  - how?
     - ship `?` macro as library to embed in existing codebase
       - just publish to configured broker and return value unchanged
       - might not need sci?
       - inspired by tonsky's `#p`
         - but showing data inline with code (no more hunting through logs)
 
+    - inspect data inline as text
 
     - run fns on nodes
       - Q: within sci or not?
