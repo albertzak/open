@@ -53,10 +53,14 @@ _that's basically it. how hard could it be?_
     - inspect data inline as text
 
     - ship `?` macro as library to embed in existing codebase
+      - just publish to configured broker and return value unchanged
       - might not need sci?
+      - inspired by tonsky's `#p`
+        - but showing data inline with code (no more hunting through logs)
+
 
     - run fns on nodes
-      - not 100% sure how
+      - Q: within sci or not?
     - import + add-lib at runtime without restart
 
 
